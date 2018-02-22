@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/txtWeeklyReportDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingBottom="@dimen/activity_add_child_new_margin_tb"
+                    android:paddingLeft="@dimen/activity_add_child_new_margin_lr"
+                    android:paddingTop="@dimen/activity_add_child_new_margin_tb"
+                    android:text="Weekly report"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/txtPrint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_add_child_new_margin_tb"
+                    android:text="Print"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_3" />
+            </LinearLayout>
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/bg_gray"
+                android:gravity="left"
+                android:padding="@dimen/activity_add_child_new_margin_tb"
+                android:text="Garage Detail"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtGarageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtGarageAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtGarageMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                android:text="Garage Detail"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtGarageEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                android:text="Garage Detail"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtGarageAbn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                android:text="Garage Detail"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtGarageNameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/colorPrimary"
+                android:gravity="left"
+                android:padding="@dimen/activity_add_child_new_margin_tb"
+                android:paddingLeft="@dimen/activity_add_child_new_margin_tb"
+                android:text="Client Detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Number of jobs completed for the week"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/txtJobsCompleted"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/txt_size_3" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Start review for the week"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/txtStarReview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/txt_size_3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Total earning for the week"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/txtTotalEarning"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/hint_color"
+                    android:textSize="@dimen/txt_size_3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:gravity="left"
+                    android:padding="@dimen/activity_add_child_new_margin_tb"
+                    android:paddingLeft="@dimen/activity_add_child_new_margin_tb"
+                    android:text="List of jobs completed for the week"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.2"
+                    android:background="@color/colorPrimary"
+                    android:gravity="right"
+                    android:padding="@dimen/activity_add_child_new_margin_tb"
+                    android:text="Date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_3" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

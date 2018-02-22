@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_6"
+            android:text="Follow Up Work"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/SignIn_margin"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtFollowup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Follow up"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:inputType="text"
+        android:layout_weight="1"/>
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtPrice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Price"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:inputType="number"
+        android:layout_weight="2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtFollowup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Follow up"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:inputType="text"
+        android:layout_weight="1"/>
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtPrice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Price"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:inputType="number"
+        android:layout_weight="2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtFollowup3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Follow up"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:inputType="text"
+        android:layout_weight="1"/>
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtPrice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Price"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:inputType="number"
+        android:layout_weight="2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtFollowup4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Follow up"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:inputType="text"
+        android:layout_weight="1"/>
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtPrice4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Price"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:inputType="number"
+        android:layout_weight="2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtFollowup5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Follow up"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:inputType="text"
+        android:layout_weight="1"/>
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+        android:id="@+id/edtPrice5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_inner_boarder"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/black"
+        android:hint="Price"
+        android:gravity="center"
+        android:padding="@dimen/edittextpadding"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:inputType="number"
+        android:layout_weight="2"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

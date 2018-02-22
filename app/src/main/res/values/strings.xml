@@ -1,0 +1,598 @@
+<resources>
+    <string name="app_name">Grease Crowd</string>
+    <string name="connect_with_facebook">CONNECT WITH FACEBOOK</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="ok">OK</string>
+    <string name="str_cancel">Cancel</string>
+    <!--Twitter App ID-->
+    <!--<string name="twitter_app_id">Vn2SPUXa9UTgkupPUdYLI1E5t</string>-->
+
+    <!-- Google Place API Key -->
+    <!--<string name="api_key">AIzaSyCgUxBQw6lOW1oRxVPqqBJ6F1Q-CO0hCZE</string>-->
+    <string name="api_key">AIzaSyCYtq6Ecc60WXKSXbXCw_87uFHgjv0tRz0</string>
+
+    <!--Facebook App ID-->
+    <string name="facebook_app_id">183683602120587</string>
+    <string name="fb_login_protocol_scheme">fb183683602120587</string>
+
+    <string name="blank_password">Please enter Password!</string>
+    <string name="valid_email">Please enter valid Email!</string>
+    <string name="blank_email">Please enter Email!</string>
+    <!--<string name="valid_password">Password needs to contain alphanumeric character, no space character and must be within 8&#8211;15 characters long!</string>-->
+    <!--<string name="valid_password">Password must be within 8&#8211;15 characters long!</string>-->
+    <string name="valid_password">Password should be minimum 8 characters long!</string>
+    <string name="your_email">your email</string>
+    <string name="your_otp">enter security code</string>
+    <string name="password">Password</string>
+    <string name="new_password">new password</string>
+    <string name="current_password">current passwrod</string>
+    <string name="email">email</string>
+    <string name="name">name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="gender">GENDER</string>
+    <string name="blank_c_password">Please enter Confirm Password!</string>
+    <string name="valid_c_password">Password and Confirm Password must be same!</string>
+    <string name="blank_name">Please enter Name!</string>
+    <string name="cancel">CANCEL</string>
+    <string name="cancel_">Cancel</string>
+    <string name="no_internet">No Internet Connection. Please try again!</string>
+    <string name="restore_your_passwrod">restore your password</string>
+    <string name="restore_password">restore password</string>
+    <string name="restore_password_">RESET PASSWORD</string>
+    <string name="verify_email">VERIFY YOUR ACCOUNT</string>
+    <string name="verify_code">VERIFY CODE</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="signout">SIGN OUT</string>
+    <string name="manage_video">PROFILE</string>
+    <string name="search">Search</string>
+    <string name="settings">SETTINGS</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="done">Done</string>
+    <string name="try_again">Please try again</string>
+    <string name="some_error_try_again">Some Error occured. Please try again!</string>
+
+    <string name="facebook_registration_successful">Registration Successful. Signing In</string>
+    <string name="normal_registration_successful">Registration Successful. Check your inbox in order to verify your account.</string>
+    <string name="email_already_exist">Email already exists.</string>
+    <string name="email_doesnt_exist">Email id does not exist!</string>
+    <string name="email_or_password_wrong">Email and Password does not match!</string>
+    <string name="email_not_activated">Account not verified yet. Check your inbox for verification code!</string>
+    <string name="login_successful">Signed in successfully!</string>
+    <string name="code_not_verified">Incorrect security code!</string>
+    <string name="token_not_verified">Incorrect security token!</string>
+    <string name="error_enter_code">Enter verification code!</string>
+    <string name="password_reset_successfully">Password has been changed successfully.</string>
+    <string name="logged_in_with_facebook">You have signed in with facebook!</string>
+    <string name="logout_successfully">Signed out!</string>
+    <string name="logout_alert">You have been logged in with another device.</string>
+    <string name="signout_">Sign Out</string>
+    <string name="user_not_logged_in">You are not logged in!</string>
+    <string name="sign_in_">Sign In</string>
+    <string name="register">Register</string>
+    <string name="email_small">Email</string>
+    <string name="password_small">password</string>
+    <string name="forgot_password_small">Forgot password?</string>
+    <string name="please_enter_valid_email">Please Enter Valid Email</string>
+    <string name="please_enter_email">Please Enter Email</string>
+    <string name="please_enter_carmake">Please Enter Carmakers</string>
+    <string name="password_contains_space">Password contains space.</string>
+    <string name="password_must_be_8_to_15_characters">Password length must be from 8 to 15 characters.</string>
+    <string name="please_enter_assword">Please enter Password</string>
+    <string name="enter_mobile">Please enter mobile</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_email_or_mobile">Please enter Email or Mobile number</string>
+    <string name="error_code_length">Username must be character 4 digit long.</string>
+    <string name="enter_valid_username">Enter valid username.</string>
+    <string name="enter_username">Please Enter username.</string>
+    <string name="error_enter_email_or_username">Enter username or email.</string>
+    <string name="error_password_space">Password contains space.</string>
+    <string name="error_password_length">Password length must be from 8 to 15 characters</string>
+    <string name="error_password">Please enter Password</string>
+    <string name="error_state">Please enter State</string>
+    <string name="error_subrub">Please enter Subrub</string>
+    <string name="error_terms_polity">Please Accept Terms of use and Privacy Policy</string>
+    <string name="error_postcode">Please enter Postcode</string>
+    <string name="error_postcode_lenght">Postcode length must be 4 digit</string>
+    <string name="error_confirmpassword">Please enter Confirm Password</string>
+    <string name="error_not_match_pass">Password and Confirm password doesn’t match</string>
+    <string name="enter_amount_should_be_morethanwallet">Entered amount should be less than Wallet Balance.</string>
+    <string name="or">OR</string>
+    <string name="code">+44</string>
+    <string name="enter_phone">enter phone</string>
+    <string name="already_have_account">Already have an account? sign in here</string>
+    <string name="enter_password">enter password</string>
+    <string name="no_selection">No Selection</string>
+    <string name="please_enter_mobile">Please enter mobile number</string>
+    <string name="mobile_length_10">Mobile number should be 10 digits </string>
+    <string name="telephone_length_15">Telephone number should not exceed 15 digits </string>
+    <string name="mobile_length_10_no_country_code">Please enter a valid mobile number. Mobile number should not exceed 15 digits. No need to enter country code.</string>
+    <string name="verify_your_account">Verify Your Account</string>
+    <string name="enter_code">enter code</string>
+    <string name="account_verified">Account verified successfully!</string>
+    <string name="invalid_code">Verification code invalid. Please try again!</string>
+
+    <string name="user_profile">User Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="terms_of_use">Terms Of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="short_dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="medium_dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry,and more recently with desktop publishing software like Aldus PageMaker including versions.</string>
+    <string name="logout_push_notification">You have been logged out as You are logged in with new device.</string>
+    <string name="logout">Logout</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="enter_text"></string>
+    <string name="enter_email_or_number">enter email or mobile number</string>
+    <string name="dont_have_account">Don\'t have an account? sign up here</string>
+    <string name="enter_valied_email_or_mobile">Please enter valid Email or Mobile number</string>
+    <string name="please_enter_valid_phone">Please enter valid Mobile number.</string>
+    <string name="account_not_verified">Account is not verified yet. Check your inbox for verification code!</string>
+    <string name="account_not_verified_resend">Account is not verified yet!</string>
+    <string name="email_or_passwrod_incorrect">Email or Passwrod is incorrect</string>
+
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="new_job_feed">New Jobs Feed</string>
+    <string name="my_garages">My Garages</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="how_it_work">How It Works</string>
+    <string name="change_passeord">Change Password</string>
+    <string name="contact_us_">Contact Us/Help</string>
+    <string name="mailbox">Mail Box</string>
+    <string name="notification">Notifications</string>
+    <string name="setiings">My Setting</string>
+
+    <!--Navigation menu items Car Owner-->
+    <string-array name="navigation_drawer_items">
+        <item name="home">@string/home</item>
+        <item name="profile">@string/my_profile</item>
+        <item name="jobs_feed">@string/new_job_feed</item>
+        <item name="garages">@string/my_garages</item>
+        <item name="transaction_his">@string/transaction_history</item>
+        <item name="hoe_works">@string/how_it_work</item>
+        <item name="settings">@string/setiings</item>
+        <item name="contactus">@string/contact_us_</item>
+
+
+    </string-array>
+
+    <!--Navigation menu items Garage Owner-->
+    <string-array name="navigation_drawer_items_garage_owner">
+        <item name="home">@string/home</item>
+        <item name="profile">@string/my_profile</item>
+        <item name="mailbox">@string/mailbox</item>
+        <item name="notifications">@string/notification</item>
+        <item name="transaction_his">@string/transaction_history</item>
+        <item name="hoe_works">@string/how_it_work</item>
+        <item name="settings">@string/setiings</item>
+        <item name="contactus">@string/contact_us_</item>
+    </string-array>
+
+    <string name="enter_name">Please enter name.</string>
+    <string name="enter_model_name">Please enter model name.</string>
+    <string name="enter_year">Please enter year.</string>
+    <string name="enter_color">Please enter color.</string>
+    <string name="enter_license_number">Please enter license number.</string>
+    <string name="vehicle_list">Vehicles</string>
+    <string name="are_you_sure_to_delete_this_vehicle">Are you sure you want to delete this vehicle?</string>
+    <string name="are_you_sure_to_deactivate_account">Are you sure you want to deactivate the account?</string>
+    <string name="local_service_started">Location tracking</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="continue_">Continue</string>
+    <string name="select_trip_date">Select Empty Trip Date</string>
+    <string name="select_trip_time">Select Empty Trip Time</string>
+    <string name="select_valid_time">Select Time  after Current time or select date after current date.</string>
+    <string name="select_valid_time1">Select Time  after one hour of Current time or select date after current date.</string>
+    <string name="trip_is_in_past">Alas! Past empty trip cannot be booked.</string>
+    <string name="select_valid_time2">Select Future time for trip.</string>
+    <string name="select_from_location">Kindly select from location for an empty trip!</string>
+    <string name="select_to_location">Kindly select to location for an empty trip!</string>
+    <string name="no_vehicles_added">No vehicles added yet!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="price">Price</string>
+    <string name="recommended_price">Recommended Price: </string>
+    <string name="uber_price">Uber Price: </string>
+    <string name="no_of_seats">Number Of Seats</string>
+    <string name="trip_comments">Empty Trip Comments</string>
+    <string name="specify_your_pick_up_location">Specify Your Pick-up Location</string>
+    <string name="trip_details">Empty Trip Details</string>
+    <string name="luggage_size">Luggage Size\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="pick_up_flexibility">Pick-up Flexibility\u0020\u0020\u0020</string>
+    <string name="see_out_terms">See Our Terms Of service</string>
+    <string name="publish">Publish</string>
+    <string name="publishandupdate">Publish &amp; Update</string>
+    <string name="cancelTrip">Cancel Empty Trip</string>
+    <string name="passengers">Passengers</string>
+    <string name="select_vehicletype">Select vehicle type</string>
+    <string name="find_">Find</string>
+    <string name="seats_can_not_zero">Seats can not be 0.</string>
+    <string name="flexibility_can_not_zero">Flexibility can not be 0.</string>
+    <string name="trip_offered_successfully">Empty trip offered successfully.</string>
+    <string name="trip_updated_successfully">Empty trip Updated Successfully.</string>
+    <string name="payment_cant_done">Payment can be done once you board on the trip</string>
+    <string-array name="luggage_size_array">
+        <item>Small Size</item>
+        <item>Medium Size</item>
+        <item>Big Size</item>
+    </string-array>
+    <string-array name="pickup_flexibility_array">
+        <item>On Time</item>
+        <item>15 Min</item>
+        <item>30 Min</item>
+        <item>1 Hour</item>
+        <item>2 Hours</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="view_profile">View Profile</string>
+    <string name="dob">DOB</string>
+    <string name="phone">Phone</string>
+    <string name="edit_your_profile">Edit Your Profile</string>
+    <string name="tommorow">Tomorrow</string>
+    <string name="time_range">Time Range</string>
+    <string name="price_per_passenger">Price Per Empty Trip</string>
+    <string name="edit_your_profile_to_add_a_mini_bio">Edit Your Profile to add a mini bio</string>
+    <string name="facebook_verified">Facebook Verified</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_">Email</string>
+    <string name="username">UserName</string>
+    <string name="email_not_entered">Email not provided</string>
+    <string name="phone_not_entered">Phone not provided</string>
+    <string name="facebook_not_verified">Facebook not verified</string>
+    <string name="bio_not_entered">Bio not provided</string>
+    <string name="bio">Bio</string>
+    <string name="save">Save</string>
+    <string name="search_filter">Search Filter</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="today">Today</string>
+    <string name="no_change">There is no change.</string>
+    <string name="profile_updated">Profile updated successfully</string>
+    <string name="pass_word">Password</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="text_notification">Text Notification</string>
+    <string name="email_notification">Email Notification</string>
+    <string name="date_route">Date and Route</string>
+    <string name="change_password_">Change Password</string>
+    <string name="submit">Submit</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+    <string name="enter_confirm_email">Please Enter Confirm Email</string>
+    <string name="email_should_be_same">Email and Confirm Email should be same.</string>
+    <string name="pu_valid_current_password">Please put valid current password.</string>
+    <string name="change_pass">Change Password</string>
+    <string name="seats">Seats</string>
+    <string name="commnet_from_driver">Comment From\u0020</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="trips_offered">Empty Trip Offered</string>
+    <string name="book">Book Now</string>
+    <string name="book_now">Book Now</string>
+    <string name="driver_and_vehicle_information">Driver and Vehicle Information</string>
+    <string name="name_">Name</string>
+    <string name="model">Model</string>
+    <string name="color">Color</string>
+    <string name="wallet">Wallet</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="paypal">Paypal</string>
+    <string name="write_your_paypal_id">Write your Paypal ID</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="write_your_bank_details_here">Write Your Bank Details Here</string>
+    <string name="enter_paypal_id">Please enter Paypal ID</string>
+    <string name="enter_bankdetails">Please enter your bank details</string>
+    <string name="coming_soon">coming Soon</string>
+    <string name="passenger">Passengers</string>
+    <string name="passenger_">Passenger</string>
+    <string name="tips">Tips</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="booking_fee">Booking Fee</string>
+    <string name="enjoy_your_trip_with">Enjoy Your Empty Trip With\u0020</string>
+    <string name="total">Total</string>
+    <string name="ride_offered">Empty Trip Offered:\u0020</string>
+    <string name="member_since">Member Since:\u0020</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="share_trip">Share Empty Trip</string>
+    <string name="leave_a_rating">Leave a Rating</string>
+    <string name="find_a_member_by_phone_number_or_email">Find a member by phone number or Email</string>
+    <string name="trips">Trips</string>
+    <string name="hide_car_owners_without_photos">Hide Car Owners Without Photos</string>
+    <string name="comments">Comments</string>
+    <string name="no_comments">No Comments</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="exchnage_trips">Exchange Empty Trip</string>
+    <string name="overall_experience">Overall Experience</string>
+    <string name="please_enter_comment">Please share a comment about your Empty Trip.</string>
+    <string name="please_rate_your_ride">Please rate your Empty Trip</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="fund">Fund</string>
+    <string name="transfer">Transfer</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="please_add_some_amount">Add some amount for wallet.</string>
+    <string name="add_fund">Fund</string>
+    <string name="deactivate_account">Deactivate Account</string>
+    <string name="you_don_t_have_any_bookings">You don\'t have any bookings</string>
+    <string name="you_didn_t_have_any_booking">You didn\'t have any booking</string>
+    <!--<string name="search_user_by_using_email_or_phone_muber">Search User by using email or mobile number</string>-->
+    <string name="search_user_by_using_email_or_phone_muber">Find member by mobile number or email</string>
+    <string name="tos">I have read and accept the TOS, and certify that I am at least 18 years old, holding a valid driving license and have valid car insurance.</string>
+    <string name="are_you_sure_to_cancel_ride">Are you sure you want to cancel the Empty Trip?</string>
+    <string name="contact">Contact</string>
+    <string name="how_it_works">How it works?</string>
+    <string name="trip_price">Empty Trip Price:</string>
+    <string name="submit_">Submit</string>
+    <string name="email_phone_number">Email/Phone Number</string>
+    <string name="total_price">Total Price:</string>
+    <string name="you_did_n_havve_any_passenger">You did not have any passenger on this Empty Trip.</string>
+    <string name="paid">Paid</string>
+    <string name="requested">Requested</string>
+    <string name="how_was_your_ride">How was your Empty Trip?</string>
+    <string name="no_notifications_found">No Notifications Found</string>
+    <string name="gbp">\u0020GBP</string>
+
+    <string name="price_can_not_zero">Price can not be 0 GBP</string>
+    <string name="seats_can_not_morethan_10">Seats can not be more than 10 GBP</string>
+    <string name="please_fille_bankpaypal_details">Please fill your Bank/Paypal details for withdraw request.</string>
+    <string name="your_wallet_balance_is_low">You have insufficient fund, Please add appropriate fund!</string>
+    <string name="trip_route">Trip Route</string>
+    <string name="locate_passenger">Locate Passenger</string>
+    <string name="locate_driver">Locate Driver</string>
+    <string name="complete">Complete</string>
+    <string name="completed">Completed</string>
+    <string name="trip_started">Alas! Trip is started.</string>
+    <string name="trip_cant_complete_payment">Trip can not be marked complete before payment.</string>
+    <string name="trip_cant_complete_time">Trip can not be marked complete before arrival.</string>
+    <string name="rate_driver">Rate Driver</string>
+    <string name="rate_passenger">Rate Passenger</string>
+    <string name="ratings_not_provided_by_driver_yet">Ratings not provided by Driver Yet!</string>
+    <string name="ratings_not_provided_by_passenger_yet">Ratings not provided by Passenger Yet!</string>
+    <string name="flexibility">Flexibility (in miles)</string>
+    <string name="to_location">To Location</string>
+    <string name="from_location">From Location</string>
+    <string name="notification_error_ssl_cert_invalid">Unable to make a secure connection to server!</string>
+    <string name="send_to">Send to</string>
+    <string name="affiliate">Affiliate</string>
+    <string name="affiliate_link_code">Affiliate Code/Link</string>
+    <string name="protect_contacts">Protect Your Contacts</string>
+    <string name="your_referrals">Your Referrals</string>
+    <string name="reffrel">Referral</string>
+    <string name="affialiate">Affiliate</string>
+    <string name="protect_contact">Protect Your Contacts</string>
+    <string name="import_phone_contacts">Protect From Phone Contacts</string>
+    <string name="import_social_media_contacts">Protect From Social Accounts</string>
+    <string name="import_email_contacts">Protect From Email Contacts</string>
+    <string name="socila_media_contacts">Social Media Contacts</string>
+    <string name="phone_contacts">Phone Contacts</string>
+    <string name="email_contacts">Email Contacts</string>
+    <string name="please_select_atleast_one_contact">Please select atleast one contact.</string>
+    <string name="view_your_contacts">View Your Contacts</string>
+    <string name="protect_manually">Protect Manually</string>
+    <string name="empty_trip_offer_affiliate_earning_to_their_users_all_you_need_to_do_is_protect_as_much_contacts_as_you_can_by_following_methods">Empty Trip offer affiliate earning to their users. All you need to do is Protect as much contacts as you can by following methods.</string>
+    <string name="portect_manually">Protect Manually</string>
+    <string name="view_frommanually_added">View From Manually Added</string>
+    <string name="view_from_phone_contacts">View From Phone Contacts</string>
+    <string name="view_social_contacts">View From Social Contacts</string>
+    <string name="view_from_email_accounts">View From Email Accounts</string>
+    <string name="add">Add</string>
+    <string name="driver_added_succesfully">Driver added Successfully.</string>
+    <string name="country_code">+44</string>
+    <string name="phone_">Phone Number</string>
+    <string name="enter_fname">Please enter first name</string>
+    <string name="enter_lname">Please enter last name</string>
+    <string name="user_login">USER LOGIN</string>
+    <string name="garage_owner_login">GARAGE LOGIN</string>
+    <string name="use_facebook_or_google_for_quicker_sign_up">Use Facebook or Google+ For Quicker Sign Up</string>
+    <string name="user">User</string>
+    <string name="garage_owner">Garage</string>
+    <string name="login">LOGIN</string>
+    <string name="Signuptext"><![CDATA[<font color=#12092B>Don\'t Have an Account?</font> <font color=#ffffff>Sign Up </font> <font color=#12092B>here</font>]]></string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="slide_1_title">Post Your Job</string>
+    <string name="slide_1_desc">Post your job on GreaseCrowd.com.au by entering the information about your repair and maintenance needs </string>
+    <string name="slide_2_title">Receive Quote</string>
+    <string name="slide_2_desc">Receive multiple quotes directly from your local garages. Review the cost, distance from you and othere customer reviews/ratings</string>
+    <string name="slide_3_title">ChOOSE A QUOTE/GARAGE</string>
+    <string name="slide_3_desc"> Choose a quote that best meets your repair and maintenance needs and award to the garage you can pay on pick up or online using credit card and paypal </string>
+    <string name="slide_4_title">DROPP OFF YOUR CAR</string>
+    <string name="slide_4_desc"> Drop off your car to the garage. once the job is completed you will receive a message from the garage to pick up your car</string>
+    <string name="got_it">Got it</string>
+    <string name="next">Next</string>
+    <string name="resgister_account">REGISTER ACCOUNT</string>
+    <string name="register_car">REGISTER YOUR CAR</string>
+    <string name="your_personal_details">Your Personal Details</string>
+    <string name="email_address">Email Address</string>
+    <string name="confirm_email_address">Confirm Email Address</string>
+    <string name="user_detail">User Detail</string>
+    <string name="select_state">Select State</string>
+    <string name="subrub">Subrub</string>
+    <string name="refferel_code">Refferal Code (optional)</string>
+    <string name="post_code">Post Code</string>
+    <string name="your_details">Your Details</string>
+    <string name="continue_small">Continue</string>
+    <string name="by_using_grease_crowd_you_agree_to_our_to_our_terms_of_use_and_privacy_policy">I agree to the Grease Crowd Terms of Service and Privacy Policy</string>
+    <string name="subscribe_to_grease_crows_newsletter">Subscribe to Grease Crowd Newsletter</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="select_make">Select Make</string>
+    <string name="select_model">Select Model</string>
+    <string name="select_badge_variant">Select Badge/Variant</string>
+    <string name="automatic">Automatic</string>
+    <string name="manual">Manual</string>
+    <string name="registration_number">Registration Number</string>
+    <string name="year">Year</string>
+    <string name="select_car_maker">Please select Car Maker.</string>
+    <string name="select_car_model">Please select car model.</string>
+    <string name="select_car_makers">Please select car makers</string>
+    <string name="please_select_model">Please select model</string>
+    <string name="select_badge">Please select badge.</string>
+    <string name="emter_reg_number">Please enter Registration number</string>
+    <string name="please_enter_year">Please enter year.</string>
+    <string name="car_registration">CAR REGISTRATION</string>
+    <string name="garage_registration">GARAGE REGISTRATION</string>
+    <string name="garage_details">GARAGE DETAIL</string>
+    <string name="services_offered">SERVICES OFFERED</string>
+    <string name="keywords">KEYWORDS</string>
+    <string name="manager_owner_details">Manager / Owner Details</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_email_address">Business Email Address</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string name="abn_number">ABN Number</string>
+    <string name="business_address_details">Business Address Details</string>
+    <string name="enter_business_name">Please enter business name.</string>
+    <string name="abn_should_be_11_digit">ABN number should not less 11 digit.</string>
+    <string name="enter_abn_number">Please enter ABN number</string>
+    <string name="enter_streetnumber_orname">Please enter street number or name.</string>
+    <string name="telephone_number_">Telephone Number</string>
+    <string name="enter_telephone">Please enter telephone number.</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="simple_text">Simple Text</string>
+
+    <string name="Sitebase">Site based/ Fixed Address</string>
+    <string name="mobile">Mobile Machanic,"we'll come to you"</string>
+    <string name="select_some_item">Please Select Atleast one service</string>
+
+    <string name="settime">Please Enter correct timings</string>
+
+    <string name="keywordhint">eg. Mechnical, Logbook servicing,toyota, Battry (Optional)</string>
+    <string name="keyword1">eg. Toyota, Mazda, Ford,Hyundai, Holden</string>
+    <string name="post_a_job">Post a Job</string>
+    <string name="my_home">My Home</string>
+    <string name="my_jobs">My Jobs</string>
+    <string name="job_details">Job Details</string>
+    <string name="quotes">Quote</string>
+    <string name="discussion">Discussion</string>
+
+    <string name="ask_the_crowd">Ask the crowd</string>
+    <string name="my_crowd">My Crowd</string>
+    <string name="save_bigeer">SAVE</string>
+    <string name="registered_cars">Registered Cars</string>
+    <string name="there_is_no_chnage">There is no change</string>
+    <string name="are_you_srure_to_exit">Are you sure you want to exit?</string>
+    <string name="skip">SKIP</string>
+    <string name="upload_here">Upload here</string>
+    <string name="no_images_found">No Images Found</string>
+    <string name="motor_industry_memberships">Motor Industry Memberships</string>
+    <string name="gallaery">Gallery</string>
+    <string name="summry_of_reviews">Summary Of Reviews</string>
+    <string name="response">Response</string>
+    <string name="reviews">Reviews</string>
+    <string name="no_reviews_found">No Reviews Found</string>
+    <string name="no_badges">No Badges Available.</string>
+    <string name="enter_job_title">Enter Job Title</string>
+    <string name="eg_replace_all_my_brake_pads_and_service_my_car">eg, Service My Car Or replace My Tyre.</string>
+    <string name="select_your_car">Select Your Car</string>
+    <string name="please_select_atleast_one_category">Please Select Atleast One Category</string>
+    <string name="please_select_sub_category">Please Select Sub Category</string>
+    <string name="please_select_specifiaction">Please enter Specification</string>
+    <string name="please_enter_brand_name">Please Enter Your Tyre Brand Name</string>
+    <string name="please_enter_model_name">Please Enter Model</string>
+    <string name="please_select_number_of_tyre">Please Select Number Of Tyre</string>
+    <string name="no_video_found">No Video</string>
+    <string name="back">Back</string>
+    <string name="help_diagnose_my_car">Help !\n(Diagnose My Car)</string>
+    <string name="additional_features">ADDITIONAL FEATURES</string>
+    <string name="drop_off_date">Please Enter Drop Off Date</string>
+    <string name="enter_pick_up_date">Please Enter Pick Up Date</string>
+    <string name="drop_off_not_less_than_pick_up">Pick up Date/Time should not be less than drop off date/time</string>
+    <string name="please_enter_job_description">Please Enter Job Desription</string>
+    <string name="please_enter_crowd_description">Please describe your problem in few words</string>
+    <string name="insurence_compny_name">Please Enter Insurance Company Name</string>
+    <string name="policy_number">Please Enter Policy Number</string>
+    <string name="please_enter_claim_number">Please Enter Claim Number</string>
+    <string name="please_enter_current_location">Please Enter Current Location</string>
+    <string name="post">Post</string>
+    <string name="user_registrat_ion">User Registration</string>
+    <string name="include_roadside_assistance">Include roadside assistance</string>
+    <string name="include_standard_manufacturer">Include standard manufacturers recommended logbook service</string>
+    <string name="car_detail">Car Detail</string>
+    <string name="job_detail">Job Detail</string>
+    <string name="photos_videos">Photos and Videos</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_close">Close</string>
+    <string name="str_delete">Delete</string>
+    <string name="str_convert_to_job">Convert to a Job</string>
+    <string name="str_Emergency">Emergency</string>
+    <string name="str_insurance_claim">Is this an Insurance Claim?</string>
+    <string name="str_insurance_Company">Insurance Company :</string>
+    <string name="str_policy_number">Policy Number :</string>
+    <string name="str_claim_number">Claim Number :</string>
+    <string name="str_quotes_from_local_garage">Quotes from your local garages</string>
+    <string-array name="job_status">
+        <item>Select Car Make</item>
+        <item>Posted</item>
+        <item>Quoted</item>
+        <item>Awarded</item>
+        <item>Drop Off</item>
+        <item>Complete</item>
+        <item>Pickup</item>
+    </string-array>
+
+    <string name="str_dummy_username"><u>Username</u></string>
+    <string name="str_quote_from_garage">Quote From Garage</string>
+    <string name="str_additional_offer">Additional Offer : </string>
+    <string name="str_accept_additional_offer">Accept Additional Offer?</string>
+    <string name="str_award">Award</string>
+    <string name="str_print_quote">Print Quote</string>
+    <string name="str_free_inclusion_by_garage">Free inclusion by Garage</string>
+    <string name="str_tyre_detail">Tyre Detail &amp; Specification : </string>
+    <string name="str_search_for_projects">Search For Projects</string>
+    <string name="str_refine_by_cat">Refine by Category</string>
+    <string name="str_refine_by_make">Refine by Make</string>
+    <string name="str_refine_by_model">Refine by Car Model</string>
+    <string name="str_successfully_posted">successfully posted</string>
+    <string name="str_message">Message</string>
+    <string name="distance">Distance</string>
+    <string name="str_refine_by_subcat">Refine by Sub Category</string>
+
+
+    <string name="str_search_for_jobs">Search For Jobs</string>
+    <string name="str_quote_details">Quote Details</string>
+    <string name="str_quote_from_ur_local_garage">Quotes from your local garages</string>
+    <string name="job_discription_question">Job Discription / Question</string>
+    <string name="quote_from_bob_s_garage">Quote from Bob\'s Garage</string>
+    <string name="additional_offers">Additional Offers</string>
+    <string name="additional_offers_price">Additional Offers price : </string>
+    <string name="str_select_service_type">Select service type >></string>
+    <string name="str_select_service">Please select service</string>
+    <string name="str_freeinclusions">Free inclusions by garage >></string>
+    <string name="str_bid">Bid</string>
+    <string name="hint_comment">Quote: eg, We will service your car according to your manufacturer recommendations.</string>
+    <string name="type_a_message">type a message</string>
+    <string name="varified_partner">Verified Partner</string>
+    <string name="main_quote">Main Quote</string>
+    <string name="saved">Safety Report saved successfully.</string>
+    <string name="str_current_location">Current Location for Roadside assistance or Tow truck</string>
+    <string name="str_dest_address">Destination Address</string>
+    <string name="no_app_found_for_open_pdf">Pdf viewer not found</string>
+    <string name="please_rate_the_job">Please rate the job</string>
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+</resources>

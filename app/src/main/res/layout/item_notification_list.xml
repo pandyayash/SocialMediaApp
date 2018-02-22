@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|right|center"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:gravity="end|right|center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_1"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:gravity="center">
+
+            <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+                android:id="@+id/iv_headerprofile"
+                android:layout_width="@dimen/header_height"
+                android:layout_height="@dimen/header_height"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/no_user" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/icon_back_left_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtJobDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/dark_grey_bg"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtChatMessage"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/dark_grey_bg"
+                android:textSize="@dimen/txt_size_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="@dimen/sb_progrees_margin_t"
+                android:layout_height="@dimen/sb_progrees_margin_t"
+                android:src="@drawable/close" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/notes_dialog_stroke_w"
+        android:layout_marginTop="@dimen/icon_back_left_margin"
+        android:background="@color/bg_gray" />
+
+</LinearLayout>

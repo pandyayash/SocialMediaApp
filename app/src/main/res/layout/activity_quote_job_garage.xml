@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="technource.greasecrowd.activities.QuoteJobGarageActivity">
+
+    <include layout="@layout/app_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:layout_marginTop="@dimen/SignIn_margin"
+        android:orientation="vertical">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtjobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size_5"
+            android:text="Job title : "/>
+
+        <LinearLayout
+            android:id="@+id/ll_propose_new_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Propose New Time : "/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:button="@drawable/custom_checkbox"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_new_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_add_child_new_sub_layout_padding"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_add_child_new_sub_layout_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drop Off"
+                    android:textSize="@dimen/txt_size_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_drop_off_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_inner_boarder"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/tv_drop_off_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="08-11-2017"
+                    android:padding="@dimen/activity_add_child_new_margin_lr"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black_light_text"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <ImageView
+                    android:layout_width="@dimen/row_screening_detail_header_h"
+                    android:layout_height="@dimen/row_screening_detail_header_h"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                    android:src="@drawable/date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_drop_off_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:layout_weight="1.15"
+                android:background="@drawable/rect_inner_boarder"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/tv_drop_off_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_add_child_new_margin_lr"
+                    android:text="9:00"
+                    android:textColorHint="@color/black_light_text"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                    android:src="@drawable/down" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_add_child_new_sub_layout_padding"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_add_child_new_sub_layout_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Up"
+                    android:textSize="@dimen/txt_size_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pick_up_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rect_inner_boarder"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/tv_pick_up_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="08-11-2017"
+                    android:padding="@dimen/activity_add_child_new_margin_lr"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black_light_text"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                    android:src="@drawable/date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pick_up_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:layout_weight="1.15"
+                android:background="@drawable/rect_inner_boarder"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/tv_pick_up_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_add_child_new_margin_lr"
+                    android:text="17:00"
+                    android:textColorHint="@color/black_light_text"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                    android:src="@drawable/down" />
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/SignIn_margin"
+                android:layout_marginRight="@dimen/SignIn_margin"
+                android:layout_weight="1">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/btnServiceType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_select_service_type"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:paddingTop="@dimen/icon_back_left_margin"
+                    android:paddingBottom="@dimen/icon_back_left_margin"
+                    android:paddingLeft="@dimen/sb_progrees_margin_t"
+                    android:paddingRight="@dimen/sb_progrees_margin_t"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textAllCaps="true"/>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                    android:id="@+id/edtComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_textview_border"
+                    android:layout_marginTop="@dimen/SignIn_margin"
+                    android:hint="@string/hint_comment"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:maxLines="8"
+                    android:minLines="3"
+                    android:padding="@dimen/icon_back_left_margin"
+                    android:inputType="textMultiLine"
+                    android:textSize="@dimen/txt_size_3"
+                    android:gravity="top|left"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/SignIn_margin"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:paddingTop="@dimen/edittextpadding"
+                    android:paddingBottom="@dimen/edittextpadding"
+                    android:layout_weight="1.5"/>
+
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_quote"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:paddingTop="@dimen/edittextpadding"
+                    android:paddingBottom="@dimen/edittextpadding"
+                    android:layout_weight="1"/>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                    android:id="@+id/edtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/quotes_box"
+                    android:hint="$00"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:padding="@dimen/edittextpadding"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                android:id="@+id/edtOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/additional_offers"
+                android:background="@drawable/blue_textview_border"
+                android:minLines="2"
+                android:maxLines="5"
+                android:gravity="top|left"
+                android:layout_marginTop="@dimen/SignIn_margin"
+                android:layout_marginRight="@dimen/SignIn_margin"
+                android:padding="@dimen/icon_back_left_margin"
+                android:textSize="@dimen/txt_size_3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/SignIn_margin"
+                android:orientation="horizontal">
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:paddingTop="@dimen/edittextpadding"
+                    android:paddingBottom="@dimen/edittextpadding"
+                    android:layout_weight="1.5"/>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/additional_offers"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:paddingTop="@dimen/edittextpadding"
+                    android:paddingBottom="@dimen/edittextpadding"
+                    android:layout_weight="1"/>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                    android:id="@+id/edtOfferPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/quotes_box"
+                    android:hint="$00"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:padding="@dimen/edittextpadding"
+                    android:layout_weight="1"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/SignIn_margin"
+                android:orientation="horizontal">
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:paddingTop="@dimen/edittextpadding"
+                    android:paddingBottom="@dimen/edittextpadding"
+                    android:layout_weight="1.5"/>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColor="@color/colorAccent"
+                    android:gravity="start"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:paddingTop="@dimen/edittextpadding"
+                    android:paddingBottom="@dimen/edittextpadding"
+                    android:layout_weight="1"/>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                    android:id="@+id/edtTotalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/quotes_box"
+                    android:hint="$00"
+                    android:textSize="@dimen/txt_size_3"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="@color/colorAccent"
+                    android:textAlignment="center"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:layout_marginRight="@dimen/SignIn_margin"
+                    android:padding="@dimen/edittextpadding"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            android:id="@+id/btnInclusions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_freeinclusions"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/icon_back_left_margin"
+            android:paddingBottom="@dimen/icon_back_left_margin"
+            android:paddingLeft="@dimen/sb_progrees_margin_t"
+            android:paddingRight="@dimen/sb_progrees_margin_t"
+            android:textAlignment="center"
+            android:textSize="@dimen/txt_size_3"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/SignIn_margin"
+            android:layout_marginRight="@dimen/SignIn_margin"/>
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            android:id="@+id/btnBid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_bid"
+            android:background="@color/green_btn"
+            android:textColor="@color/white"
+            android:paddingTop="@dimen/icon_back_left_margin"
+            android:paddingBottom="@dimen/icon_back_left_margin"
+            android:paddingLeft="@dimen/sb_progrees_margin_t"
+            android:paddingRight="@dimen/sb_progrees_margin_t"
+            android:textAlignment="center"
+            android:textSize="@dimen/txt_size_4"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/SignIn_margin"
+            android:layout_marginRight="@dimen/SignIn_margin"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+    <include layout="@layout/app_footer"/>
+</LinearLayout>

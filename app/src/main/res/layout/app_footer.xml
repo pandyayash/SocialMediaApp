@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+    android:background="@color/white"
+  android:orientation="vertical">
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="3dp"
+    android:background="@color/view_color2" />
+
+  <LinearLayout
+      android:id="@+id/ll_for_job"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
+    android:layout_marginLeft="@dimen/llSignInMain_margin_t"
+    android:layout_marginRight="@dimen/llSignInMain_margin_t"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:id="@+id/ll_postjob"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/iv_post_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listitem_purchase_btn_h"
+        android:src="@drawable/add_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+        android:id="@+id/tv_postjob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/post_a_job"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/ll_home"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/iv_home_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listitem_purchase_btn_h"
+        android:src="@drawable/home_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+        android:id="@+id/tv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/my_home"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/ll_myjobs"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/iv_jobs_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listitem_purchase_btn_h"
+        android:src="@drawable/carlist_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+        android:id="@+id/tv_my_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/my_jobs"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:visibility="gone"
+      android:id="@+id/ll_for_crowd"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
+      android:layout_marginLeft="@dimen/llSignInMain_margin_t"
+      android:layout_marginRight="@dimen/llSignInMain_margin_t"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_postjob_crowd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_post_image_crowd"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/add_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_postjob_crowd"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/ask_the_crowd"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_crowd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_home_image_crowd"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/home_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_home_crowd"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/my_home"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_myjobs_crowd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_jobs_image_crowd"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/carlist_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_my_jobs_crowd"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/my_crowd"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:visibility="visible"
+      android:id="@+id/ll_for_garageowner"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
+      android:layout_marginLeft="@dimen/llSignInMain_margin_t"
+      android:layout_marginRight="@dimen/llSignInMain_margin_t"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_postjob_garageowner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_post_image_garage"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/add_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_postjob_garage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/my_jobs"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_garage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_home_image_garage"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/home_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_home_garage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/my_home"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_myjobs_garage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_jobs_image_garage"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/carlist_normal" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_my_jobs_garage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/my_crowd"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:visibility="gone"
+      android:id="@+id/ll_for_jobdetails"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
+      android:layout_marginLeft="@dimen/llSignInMain_margin_t"
+      android:layout_marginRight="@dimen/llSignInMain_margin_t"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_job_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_job_details"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/info" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_job_details"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/job_details"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_Quotes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_quotes"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/quotes_g" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_quotes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/quotes"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_discussion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:id="@+id/iv_discussion"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/listitem_purchase_btn_h"
+          android:src="@drawable/discussion_g" />
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+          android:id="@+id/tv_discussion"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:text="@string/discussion"
+          android:textColor="@color/text_color"
+          android:textSize="@dimen/txt_size_2" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

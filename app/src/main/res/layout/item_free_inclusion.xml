@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/SignIn_margin"
+    android:layout_marginRight="@dimen/SignIn_margin"
+    android:layout_marginTop="@dimen/icon_back_left_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_textview_border"
+        android:orientation="horizontal">
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_free_inclusion_by_garage"
+            android:padding="@dimen/icon_back_left_margin"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/icon_back_left_margin"
+            android:gravity="end"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_width="@dimen/txt_size_8"
+                android:layout_height="@dimen/txt_size_8"
+                android:src="@drawable/check"
+                android:layout_gravity="end"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

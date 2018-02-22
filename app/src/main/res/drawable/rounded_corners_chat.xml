@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:width="200dp"-->
+    <!--android:height="200dp"-->
+    <!--android:viewportHeight="64"-->
+    <!--android:viewportWidth="64">-->
+
+    <!--<path-->
+        <!--android:fillColor="@color/white_50"-->
+        <!--android:pathData="M22,32-->
+        <!--A10,10 0 1,1 42,32-->
+        <!--A10,10 0 1,1 22,32 Z" />-->
+<!--</vector>-->
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:maxLevel="0">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <solid
+            android:color="@color/colorPrimary"/>
+        <stroke
+            android:color="@color/colorPrimary"
+            android:width="@dimen/icon_back_left_margin"/>
+        <corners
+            android:radius="@dimen/notes_dialog_stroke_w"/>
+    </shape>
+</item>
+    <item android:maxLevel="1">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid
+                android:color="@color/white"/>
+            <stroke
+                android:color="@color/white"
+                android:width="@dimen/icon_back_left_margin"/>
+            <corners
+                android:radius="@dimen/notes_dialog_stroke_w"/>
+        </shape>
+    </item>
+</level-list>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/edittextpadding"
+    android:layout_marginLeft="@dimen/SignIn_margin"
+    android:layout_marginRight="@dimen/SignIn_margin"
+    android:layout_marginTop="@dimen/icon_back_left_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray"
+        android:orientation="horizontal"
+        android:padding="@dimen/icon_back_left_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1.2">
+
+
+            <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+                android:id="@+id/avatar_img"
+                android:layout_width="@dimen/listitem_purchase_h"
+                android:layout_height="@dimen/listitem_purchase_h"
+                android:src="@drawable/car_p"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/icon_back_left_margin"
+            android:layout_weight="1">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtGarageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bob's Garage"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_size_3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:max="5"
+                    android:rating="0"
+                    style="@style/RatingBarstyleNew"/>
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:id="@+id/txtRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:text="0"
+                    android:textSize="@dimen/txt_size_2"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="@dimen/icon_back_left_margin"/>
+
+            </LinearLayout>
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="(0 Reviews)"
+                android:textSize="@dimen/txt_size_3"/>
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_2"
+                android:text="Distance: 0 KM"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/icon_back_left_margin"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/btnPostJobGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Post a Job on this Garage"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="@dimen/txt_size_0"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:paddingBottom="@dimen/icon_back_left_margin"/>
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/btnJobCompleteByGarage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jobs Completed By Garage"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="@dimen/txt_size_0"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:paddingBottom="@dimen/icon_back_left_margin"
+                android:layout_marginTop="@dimen/icon_back_left_margin"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/icon_back_left_margin"
+        android:layout_marginRight="@dimen/icon_back_left_margin"
+        android:layout_marginTop="@dimen/icon_back_left_margin"
+        android:background="@color/item_bg"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/item_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/SignIn_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:id="@+id/textJobTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Job Tittle #01"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/txt_size_2" />
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:id="@+id/textDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="July 13, 2017"
+                    android:textColor="@color/date"
+                    android:textSize="@dimen/txt_size_1" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/icon_back_left_margin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        android:id="@+id/textJobDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/short_dummy_text"
+                        android:textColor="@color/date"
+                        android:textSize="@dimen/txt_size_2" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Category :"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/txt_size_3" />
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                            android:id="@+id/textCategory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/icon_back_left_margin"
+                            android:singleLine="true"
+                            android:text="@string/short_dummy_text"
+                            android:textColor="@color/date"
+                            android:textSize="@dimen/txt_size_2" />
+
+                    </LinearLayout>
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        android:id="@+id/textCarModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Honda, City 2.0 TFSI Premium Plus"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/txt_size_3" />
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txtName"
+                            android:layout_height="wrap_content"
+                            android:text="name"
+                            android:textColor="@color/date"
+                            android:textSize="@dimen/txt_size_2" />
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                            android:id="@+id/txtAddress"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/icon_back_left_margin"
+                            android:singleLine="true"
+                            android:text="@string/short_dummy_text"
+                            android:textColor="@color/date"
+                            android:textSize="@dimen/txt_size_2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="2.1"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        android:id="@+id/textDistance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="Distance : 0 KM"
+                        android:textColor="@color/date"
+                        android:textSize="@dimen/txt_size_1" />
+
+
+                    <LinearLayout
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical">
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                            android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                            android:layout_marginTop="@dimen/icon_back_left_margin"
+                            android:text="Responses"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size_2" />
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                            android:id="@+id/textResponses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:layout_marginTop="@dimen/icon_back_left_margin"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/txt_size_2" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

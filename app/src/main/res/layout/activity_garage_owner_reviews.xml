@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_garage_owner_gallery"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:orientation="vertical"
+  tools:context="technource.greasecrowd.activities.GarageOwnerReviewsActivity">
+
+  <include layout="@layout/app_header" />
+
+  <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/icon_back_left_margin"
+    android:gravity="center"
+    android:text="@string/summry_of_reviews"
+    android:textColor="@color/colorPrimary"
+    android:textSize="@dimen/txt_size_4" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+    android:orientation="horizontal">
+
+    <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+      android:id="@+id/Profile_omg"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/listitem_purchase_h"
+      android:layout_weight="3"
+      android:layout_gravity="center"
+      android:src="@drawable/tp" />
+
+    <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="7"
+      android:orientation="vertical">
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        android:id="@+id/tv_businessname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_size_5" />
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+          android:id="@+id/ratingBar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="2dp"
+          app:srb_borderColor="@color/colorPrimary"
+          app:srb_fillColor="@color/colorPrimary"
+          app:srb_isIndicator="true"
+          app:srb_numberOfStars="5"
+          app:srb_rating="3"
+          app:srb_starBackgroundColor="@color/view_color2"
+          app:srb_drawBorderEnabled="false"
+          app:srb_starCornerRadius="1"
+          app:srb_starSize="21dp" />
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+          android:id="@+id/tv_ratingCount"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginLeft="5dp"
+          android:text="3"
+          android:textColor="@color/colorPrimary"
+          android:textSize="@dimen/txt_size_5" />
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+          android:id="@+id/tvrreview_count"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_marginTop="2dp"
+          android:layout_marginLeft="5dp"
+          android:textColor="@color/black_light_text"
+          android:textSize="@dimen/txt_size_3" />
+
+      </LinearLayout>
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"
+        android:text="Distance: 6814 KM"
+        android:textColor="@color/black_light_text"
+        android:textSize="@dimen/txt_size_3"
+        android:visibility="invisible" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+    android:background="@color/view_color2" />
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+    android:background="@color/white">
+
+    <ListView
+      android:id="@+id/reviewList"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/activity_add_child_new_margin_tb"
+      android:layout_marginRight="@dimen/activity_add_child_new_margin_tb"
+      android:divider="@android:color/transparent"
+      android:dividerHeight="10.0sp" />
+
+    <TextView
+      android:id="@+id/nodata"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/no_reviews_found"
+      android:textColor="@color/black"
+      android:textSize="@dimen/txt_size_4"
+      android:visibility="gone" />
+
+  </RelativeLayout>
+
+</LinearLayout>

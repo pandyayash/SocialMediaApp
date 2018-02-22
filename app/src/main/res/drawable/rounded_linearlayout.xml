@@ -1,0 +1,23 @@
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <!--<stroke
+              android:color="@color/view_color"
+              android:width="1dp"/>-->
+            <solid android:color="@color/color_Splash" />
+
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+    <item android:maxLevel="1">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <!--<stroke
+              android:color="@color/view_color"
+              android:width="1dp"/>-->
+            <solid android:color="@color/green_click" />
+
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</level-list>

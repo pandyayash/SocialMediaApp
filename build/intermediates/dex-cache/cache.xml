@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/6c15133687e7b494c2dece3519894725da86084b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4b32372f6821e003ae24cd3389bdd7925247f100">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c7e0dea0d016e0786544e256c369b9373575ab09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/2f50e3aca1ddd1fc9a4ea388064ff72d85522aca/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_788de426ec9de84c53c53c5a534ff4569a0bff58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/38dd14a02c57eb82004b85e19105cbf10b367a81/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d66698d19f3126e177291cba6d6478a82c941660/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/42d90341a0efcf2e7bb2a86236e04a65731a0dcb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b13d4f173090bc6b1f9a2e495f62a6dae9325f84/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/9ca321b26b02ae31f8e578b0f93def1f74c11e7b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba8f07250d99a23f0418002d3518d01990a10386/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/032c02a97f55a3cdcf8882c3984b23b0b82d7f63/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bb93341fe00540cec01b768c40ea469f196b54a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/bcfb25caf35165bf58920fa7c6cf14e9535ea00b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fbe086d474e57f3691091258ce3af9a831b015b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/c682008b6369c6bacc1b550483d78816740649f4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1c54b559477e7d0cf4fc17656dcf8266e0680aca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/0cad7a88270c4dd56110771f90b9d3944706a612/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6b86e9f6951887e8fbd27b0272b31a93b9c77350/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9398d41d2b797617af320cbd9f92600711dd00cd">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_ca6f0a552ed037931108653aeb018398edaec44c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/9972687ef63fd19276c8501aedd62760243308a1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8c33e34e58f149044a673113ea6e462ca7e34f4c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/9227b640a2cc10e8ccfc926c0d05d1249d96290f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_63ff56d038c72e2bb024bee9b87ddae0ad9bb9e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/8beb18d388df509b31be1ae549f1909fd2734fac/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_516bfc9ed72dfbeb4fcc26884b8cd00d9477a15b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/db1a51fef729ea0c81d37ca4cf9467964208dc9e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b6818f5804ca0b5eb089d902458faea4179eca1d">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f44435481058c178adfcb50e66f6562a6bf95f56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_08e0bee3eabf28eab4a08e778b3cfeb4ddc7fea9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/454e97ea0e9d13ef8dc3d69cf817ce60219f30a5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3146d400aa2fb6d62d50d09f56ede4378b7c7f2e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/a799bf9edaf62aa02949a3b23151f89317362249/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cfa47e1b140562d47bc670629d07e209cd8b02c4">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_77ca505e3f4dfa2a5be017f9290de794abefe6f5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/a465dc1d6eaf9e35e06d4c45b0b223055f6657d0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ba27c2b73f53ba2ef0460c10488c3219deff4f80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/technource/.android/build-cache/986ea224b7f742b73f954a4b3d3c1387f8170628/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="abf7c64e0bbaaa931738856734f76646ae62d9a5">
+        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f9995d67349b5ca4e1ccb0fa5bc98b461705f6f7/classes.dex" />
+    </item>
+
+</items>

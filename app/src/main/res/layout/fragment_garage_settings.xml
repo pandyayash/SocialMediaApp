@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
+      android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+      android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+      android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+      android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+        android:padding="@dimen/iv_AddChild_margin_r"
+        android:orientation="horizontal">
+
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="8"
+          android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+          android:layout_gravity="center|center_vertical"
+          android:gravity="left|center_vertical"
+          android:text="@string/notification"
+          android:textColor="@color/black_light_text"
+          android:textSize="@dimen/txt_size_4" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+        android:background="@color/view_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+        android:padding="@dimen/iv_AddChild_margin_r"
+        android:orientation="horizontal">
+
+
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="8"
+          android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+          android:layout_gravity="center|center_vertical"
+          android:gravity="left|center_vertical"
+          android:text="@string/change_pass"
+          android:textColor="@color/black_light_text"
+          android:textSize="@dimen/txt_size_4" />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_pass"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+        android:background="@color/view_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_paypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+        android:padding="@dimen/iv_AddChild_margin_r"
+        android:orientation="horizontal">
+
+
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="8"
+          android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+          android:layout_gravity="center|center_vertical"
+          android:gravity="left|center_vertical"
+          android:text="@string/paypal"
+          android:textColor="@color/black_light_text"
+          android:textSize="@dimen/txt_size_4"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/pay_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+        android:background="@color/view_color" />
+
+
+  </LinearLayout>
+
+</LinearLayout>

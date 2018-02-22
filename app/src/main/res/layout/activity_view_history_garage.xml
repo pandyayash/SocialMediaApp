@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_history_garage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="technource.greasecrowd.activities.ViewHistoryGarageActivity">
+
+
+    <include layout="@layout/app_header" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_add_child_downarrow_h"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        android:id="@+id/nohistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="No History Found"
+        android:textColor="@color/text_color2"
+        android:textSize="@dimen/txt_size_4" />
+
+    <include layout="@layout/app_footer" />
+
+
+</LinearLayout>

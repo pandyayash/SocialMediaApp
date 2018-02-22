@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinnerTextview"
+    style="@style/Widget.Holo.TextView.SpinnerItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:singleLine="true"
+    android:text="@string/app_name"
+    android:textAlignment="center"
+    android:textColor="@color/hint_color"
+    android:textSize="@dimen/txt_size_0">
+
+</technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview>

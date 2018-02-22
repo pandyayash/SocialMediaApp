@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/andds_logo_w"
+  android:layout_gravity="center"
+  android:background="@color/white"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:theme="@style/ThemeOverlay.AppCompat.Dark">
+  <LinearLayout
+    android:id="@+id/ll_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_add_child_downarrow_w"
+    android:layout_marginBottom="@dimen/llSignInMain_margin_lr"
+    android:layout_marginStart="@dimen/llSignInMain_margin_lr"
+    android:layout_marginEnd="@dimen/llSignInMain_margin_lr"
+    android:layout_marginLeft="@dimen/llSignInMain_margin_lr"
+    android:layout_marginRight="@dimen/llSignInMain_margin_lr"
+    android:orientation="horizontal">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/blue_circle">
+
+      <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/ivNewScreening_h"
+        android:layout_height="@dimen/ivNewScreening_h"
+        android:layout_margin="3dp"
+        android:src="@drawable/logo5" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/llSignInMain_margin_lr"
+        android:layout_marginLeft="@dimen/llSignInMain_margin_lr"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+          android:id="@+id/username"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="John Deo"
+          android:textColor="@color/colorPrimary"
+          android:textSize="@dimen/txt_size_6" />
+      <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+          android:id="@+id/balance"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/colorPrimary"
+          android:textSize="@dimen/txt_size_3"
+          android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+
+
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/hint_color" />
+
+</LinearLayout>

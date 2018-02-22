@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="technource.greasecrowd.fragment.FragmentDiscussionPublic">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/i_footer"
+        android:layout_below="@+id/i_header"
+        app:cardPreventCornerOverlap="false"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/bg_gray"
+                android:visibility="gone"
+                card_view:reverseLayout="true" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Start discussion"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/typeMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rect_inner_boarder"
+                android:orientation="horizontal">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                    android:id="@+id/et_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/type_a_message"
+                    android:lines="1"
+                    android:padding="@dimen/SignIn_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="@dimen/txt_size_3" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/icon_back_left_margin"
+                    android:background="@color/bg_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_send"
+                    android:layout_width="@dimen/sb_progrees_margin_lr"
+                    android:layout_height="@dimen/sb_progrees_margin_lr"
+                    android:layout_gravity="center"
+                    android:src="@drawable/send"
+                    android:tint="@color/color_Splash" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</FrameLayout>

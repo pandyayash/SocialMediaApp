@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <technource.greasecrowd.CustomViews.Grid_image
+            android:id="@+id/gridimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/design_navigation_icon_padding"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_car" />
+
+        <ImageView
+            android:id="@+id/video_button"
+            android:layout_width="@dimen/row_screening_detail_header_h"
+            android:layout_height="@dimen/row_screening_detail_header_h"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_post"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="@dimen/row_screening_detail_header_h"
+            android:layout_height="@dimen/row_screening_detail_header_h"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/edit"
+            android:visibility="gone"/>
+
+
+
+
+</FrameLayout>

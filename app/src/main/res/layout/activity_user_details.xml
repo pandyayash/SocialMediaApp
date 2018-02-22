@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_add_child_downarrow_h">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_width_height"
+                android:layout_marginTop="@dimen/activity_add_child_downarrow_w"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="@dimen/img_width_height"
+                        android:layout_height="@dimen/img_width_height"
+                        android:src="@drawable/demo_user" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/txt_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llAddres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        android:id="@+id/tvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/txt_size_3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        android:id="@+id/tvMAil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                        android:gravity="center"
+                        android:text="@string/app_name"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/txt_size_3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/tvMailButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
+                android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
+                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/activity_add_child_new_margin_tb"
+                android:text="Email User"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_4" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/tvRegisteredCarButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
+                android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
+                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/activity_add_child_new_margin_tb"
+                android:text="Registered cars"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_4" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

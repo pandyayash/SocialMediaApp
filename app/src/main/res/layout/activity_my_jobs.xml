@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_mycrowdgarage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="technource.greasecrowd.activities.MycrowdgarageActivity">
+
+    <include layout="@layout/app_header" />
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/my_jobs_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/white"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:textAlignment="center"
+        app:tabIndicatorHeight="@dimen/icon_back_left_margin"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabTextColor="@color/tab_text"
+        app:tabSelectedTextColor="@color/colorPrimary"/> <!-- View pager to swipe views -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/notes_dialog_stroke_w"
+        android:background="@color/tab_text"/>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_weight="1"/>
+
+        <include layout="@layout/app_footer"/>
+
+
+
+
+</LinearLayout>

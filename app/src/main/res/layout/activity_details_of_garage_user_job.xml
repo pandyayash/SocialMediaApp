@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/bg_gray"
+                android:gravity="left"
+                android:padding="@dimen/activity_add_child_new_margin_tb"
+                android:text="Garage Detail"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtGarageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtGarageAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtGarageMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtGarageEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtGarageAbn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/bg_gray"
+                android:gravity="left"
+                android:padding="@dimen/activity_add_child_new_margin_tb"
+                android:text="Client Detail"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtClientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtClientSubrub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtClientAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtClientMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtClientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                android:background="@color/bg_gray"
+                android:gravity="left"
+                android:padding="@dimen/activity_add_child_new_margin_tb"
+                android:text="Car Detail"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtCarMake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtCarModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtCarBadge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtCarRegNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/txtCarType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:gravity="left"
+                android:text="Garage Detail"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_3" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

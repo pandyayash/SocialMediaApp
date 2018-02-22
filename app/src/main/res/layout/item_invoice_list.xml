@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtJobId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/activity_add_child_new_margin_lr"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_3" />
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtJobDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/activity_add_child_new_margin_lr"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtUnit"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="@dimen/activity_add_child_new_margin_lr"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_3" />
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtUnitPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:paddingRight="@dimen/activity_add_child_new_margin_lr"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtGstPercent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/activity_add_child_new_margin_lr"
+            android:text="10%"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_3" />
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtGstAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingRight="@dimen/activity_add_child_new_margin_lr"
+
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_gray" />
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="technource.greasecrowd.activities.SearchCrowdActivity">
+    <include layout="@layout/app_header" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/SignIn_margin"
+                android:orientation="vertical">
+
+
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/txt_size_3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect_inner_boarder"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/sb_progrees_margin_t"
+                    android:layout_marginRight="@dimen/sb_progrees_margin_t"
+                    android:layout_marginTop="@dimen/icon_back_left_margin"
+                    android:paddingTop="@dimen/icon_back_left_margin"
+                    android:paddingBottom="@dimen/icon_back_left_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search_grey_400_18dp"
+                        android:visibility="visible"
+                        android:layout_gravity="center_vertical"/>
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                        android:id="@+id/edtSearchforProject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_search_for_projects"
+                        android:textSize="@dimen/txt_size_3"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:textAlignment="center"
+                        android:textColorHint="@color/hint_color"/>
+
+                </LinearLayout>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_refine_by_cat"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/txt_size_3"
+                    android:layout_marginTop="@dimen/SignIn_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rect_inner_boarder"
+                    android:layout_marginLeft="@dimen/sb_progrees_margin_t"
+                    android:layout_marginRight="@dimen/sb_progrees_margin_t"
+                    android:layout_marginTop="@dimen/icon_back_left_margin">
+                    <Spinner
+                        android:id="@+id/sp_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/icon_back_left_margin"
+                        android:layout_centerInParent="true">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:layout_width="@dimen/SignIn_margin"
+                        android:layout_height="@dimen/SignIn_margin"
+                        android:src="@drawable/down"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/SignIn_margin"/>
+                </RelativeLayout>
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_refine_by_make"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/txt_size_3"
+                    android:layout_marginTop="@dimen/SignIn_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rect_inner_boarder"
+                    android:layout_marginLeft="@dimen/sb_progrees_margin_t"
+                    android:layout_marginRight="@dimen/sb_progrees_margin_t"
+                    android:layout_marginTop="@dimen/icon_back_left_margin">
+                    <Spinner
+                        android:id="@+id/sp_make"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/icon_back_left_margin"
+                        android:layout_centerInParent="true">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:layout_width="@dimen/SignIn_margin"
+                        android:layout_height="@dimen/SignIn_margin"
+                        android:src="@drawable/down"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/SignIn_margin"/>
+                </RelativeLayout>
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_refine_by_model"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/txt_size_3"
+                    android:layout_marginTop="@dimen/SignIn_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rect_inner_boarder"
+                    android:layout_marginLeft="@dimen/sb_progrees_margin_t"
+                    android:layout_marginRight="@dimen/sb_progrees_margin_t"
+                    android:layout_marginTop="@dimen/icon_back_left_margin">
+                    <Spinner
+                        android:id="@+id/sp_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"
+                        android:layout_centerHorizontal="true"
+                        android:padding="@dimen/icon_back_left_margin"
+                        android:layout_centerInParent="true">
+
+                    </Spinner>
+
+                    <ImageView
+                        android:layout_width="@dimen/SignIn_margin"
+                        android:layout_height="@dimen/SignIn_margin"
+                        android:src="@drawable/down"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/SignIn_margin"/>
+                </RelativeLayout>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    android:id="@+id/btnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/txt_size_3"
+                    android:layout_marginLeft="@dimen/sb_progrees_margin_t"
+                    android:layout_marginRight="@dimen/sb_progrees_margin_t"
+                    android:layout_marginTop="@dimen/SignIn_margin"
+                    android:paddingTop="@dimen/SignIn_margin"
+                    android:paddingBottom="@dimen/SignIn_margin"
+                    android:background="@color/colorAccent"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+    <include layout="@layout/app_footer"/>
+</LinearLayout>

@@ -1,0 +1,638 @@
+package technource.greasecrowd.activities;
+
+import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.graphics.Point;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.Display;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
+import technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext;
+import technource.greasecrowd.R;
+import technource.greasecrowd.activities.PostJob.PostNewJobFive;
+import technource.greasecrowd.helper.AppLog;
+import technource.greasecrowd.helper.Connectivity;
+import technource.greasecrowd.helper.Constants;
+import technource.greasecrowd.helper.CustomJsonObjectRequest;
+import technource.greasecrowd.helper.HelperMethods;
+import technource.greasecrowd.helper.WebServiceURLs;
+import technource.greasecrowd.model.DetailsOfGarageCarJobDBO;
+import technource.greasecrowd.model.JobDetail_DBO;
+import technource.greasecrowd.model.LoginDetail_DBO;
+
+import static technource.greasecrowd.adapter.AdptQuoteDetailsPager.juId;
+
+public class QuoteJobGarageActivity extends BaseActivity {
+
+    private String TAG = "QuoteJobGarageActivity";
+    private TextView btnServiceType;
+    private EditText edtComments;
+    private EditText edtPrice;
+    private EditText edtOfferPrice;
+    private EditText edtTotalPrice;
+    private EditText edtOffer;
+    private TextView btnInclusions;
+    private TextView btnBid;
+    private TextView txtjobTitle;
+    private CheckBox checkbox;
+    LinearLayout ll_back;
+    private LinearLayout ll_propose_new_time,ll_new_time,ll_pick_up_time, ll_pick_up_date, ll_drop_off_date, ll_drop_off_time;
+    TextView tv_drop_off_date, tv_drop_off_time, tv_pick_up_date, tv_pick_up_time;
+    String selected_year_drop_off = "0", selected_month_drop_off = "0", selected_day_drop_off = "0", selected_year_pick_up = "0", selected_month_pick_up = "0", selected_day_pick_up = "0";
+    JobDetail_DBO jobDetail_dbo;
+    LoginDetail_DBO loginDetail_dbo;
+    Context appContext;
+    int bidPrice=0;
+    int offerPrice=0;
+    String strInclusions="";
+    ArrayList<String> inclusionsArrayList;
+    ArrayList<String> subservicesArrayList;
+    boolean isFlexible; int flag = 1;
+    int drop_off_time = 16, pick_up_time = 32;
+    String job_title="";
+    String strBidPrice="",strBidComment="",strOffer="",strOfferPrice="",strTotal="",strServiceId="",strServices="",strDateTime1="",strDateTime2="";
+    public static String time[] = {"01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30",
+            "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30",
+            "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30",
+            "14:00", "14:30", "15:00", "15:30", "16:00", "16:30",
+            "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30",
+            "22:00", "22:30", "23:00", "23:30", "24:00"};
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_quote_job_garage);
+        inclusionsArrayList = new ArrayList<>();
+        subservicesArrayList = new ArrayList<>();
+        Intent intent = getIntent();
+        if (intent!=null){
+            isFlexible = intent.getBooleanExtra("isFlexible",false);
+            job_title = intent.getStringExtra("jobTitle");
+            AppLog.Log(TAG,"isFlexible --> "+isFlexible);
+        }
+        getViews();
+        setHeader("Quote A Job");
+        setfooter("garageowner");
+        setHomeFooterGarage(QuoteJobGarageActivity.this);
+        setlistenrforfooter();
+
+        setOnClickListener();
+
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Bundle bundle = intent.getExtras();
+        if (bundle!=null){
+            if (bundle.getStringArrayList("strServices")!=null){
+                subservicesArrayList = bundle.getStringArrayList("strServices");
+                strServices = android.text.TextUtils.join(",", subservicesArrayList);
+            }
+            if (bundle.getString("strServiceId")!=null){
+                strServiceId = bundle.getString("strServiceId");
+            }
+           if ( bundle.getStringArrayList("strInclusions")!=null){
+               inclusionsArrayList = bundle.getStringArrayList("strInclusions");
+               strInclusions = android.text.TextUtils.join(",", inclusionsArrayList);
+
+           }
+
+
+
+            AppLog.Log(TAG,strServices);
+            AppLog.Log(TAG,"Inclusions ---> " +strInclusions);
+        }
+    }
+
+    private void getViews() {
+        appContext = this;
+        jobDetail_dbo = HelperMethods.getjobDetailsSharedPreferences(appContext);
+        loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
+        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        btnServiceType = (TextView)findViewById( R.id.btnServiceType );
+        edtComments = (EditText)findViewById( R.id.edtComments );
+        edtPrice = (EditText)findViewById( R.id.edtPrice );
+        edtOfferPrice = (EditText)findViewById( R.id.edtOfferPrice );
+        edtTotalPrice = (EditText)findViewById( R.id.edtTotalPrice );
+        edtOffer = (EditText)findViewById( R.id.edtOffer );
+        btnInclusions = (TextView)findViewById( R.id.btnInclusions );
+        btnBid = (TextView)findViewById( R.id.btnBid );
+        txtjobTitle = (TextView)findViewById( R.id.txtjobTitle );
+        ll_propose_new_time = (LinearLayout)findViewById( R.id.ll_propose_new_time );
+        ll_new_time = (LinearLayout)findViewById( R.id.ll_new_time );
+        checkbox = (CheckBox)findViewById( R.id.checkbox );
+        tv_drop_off_date = (TextView) findViewById(R.id.tv_drop_off_date);
+        tv_drop_off_time = (TextView) findViewById(R.id.tv_drop_off_time);
+        tv_pick_up_date = (TextView) findViewById(R.id.tv_pick_up_date);
+        tv_pick_up_time = (TextView) findViewById(R.id.tv_pick_up_time);
+        ll_pick_up_time = (LinearLayout) findViewById(R.id.ll_pick_up_time);
+        ll_pick_up_date = (LinearLayout) findViewById(R.id.ll_pick_up_date);
+        ll_drop_off_date = (LinearLayout) findViewById(R.id.ll_drop_off_date);
+        ll_drop_off_time = (LinearLayout) findViewById(R.id.ll_drop_off_time);
+
+        txtjobTitle.setText("Job title : "+ job_title);
+        if (isFlexible){
+            ll_propose_new_time.setVisibility(View.VISIBLE);
+        }else {
+            ll_propose_new_time.setVisibility(View.GONE);
+        }
+
+
+        checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    ll_new_time.setVisibility(View.VISIBLE);
+                    SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
+                    String date = format.format(new Date());
+
+                    tv_drop_off_date.setText(date);
+                    tv_pick_up_date.setText(date);
+                    tv_drop_off_time.setText("");
+                    tv_pick_up_time.setText("");
+
+                }else {
+                    ll_new_time.setVisibility(View.GONE);
+                }
+            }
+        });
+
+
+
+        edtPrice.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (edtOfferPrice.getText().toString().length()==0){
+                    offerPrice = 0;
+                }else {
+                    offerPrice = Integer.parseInt(edtOfferPrice.getText().toString());
+                }
+                if (edtPrice.getText().toString().length()==0){
+                    bidPrice = 0;
+                }else {
+                    bidPrice = Integer.parseInt(edtPrice.getText().toString());
+                }
+
+
+                int  total = bidPrice + offerPrice;
+
+                edtTotalPrice.setText(String.valueOf(total));
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+
+        edtOfferPrice.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+
+                if (edtOfferPrice.getText().toString().length()==0){
+                    offerPrice = 0;
+                }else {
+                    offerPrice = Integer.parseInt(edtOfferPrice.getText().toString());
+                }
+                if (edtPrice.getText().toString().length()==0){
+                    bidPrice = 0;
+                }else {
+                    bidPrice = Integer.parseInt(edtPrice.getText().toString());
+                }
+
+
+                int  total = bidPrice + offerPrice;
+
+                edtTotalPrice.setText(String.valueOf(total));
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+    }
+
+    public void setOnClickListener(){
+        btnServiceType.setOnClickListener(this);
+        btnBid.setOnClickListener(this);
+        btnInclusions.setOnClickListener(this);
+        tv_drop_off_date.setOnClickListener(this);
+        tv_drop_off_time.setOnClickListener(this);
+        tv_pick_up_date.setOnClickListener(this);
+        tv_pick_up_time.setOnClickListener(this);
+        ll_pick_up_time.setOnClickListener(this);
+        ll_pick_up_date.setOnClickListener(this);
+        ll_drop_off_date.setOnClickListener(this);
+        ll_drop_off_time.setOnClickListener(this);
+        ll_back.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        super.onClick(view);
+
+        if (view==btnServiceType ){
+
+            if (jobDetail_dbo.getGarageServicesArrayList().size()>0){
+                Intent intent = new Intent(QuoteJobGarageActivity.this,ViewSelectSeriviceTypeActivity.class);
+                startActivityForResult(intent,1);
+                activityTransition();
+            }else {
+                showAlertDialog("No services found!");
+            }
+
+
+
+        }
+        if (view==btnInclusions){
+            Intent intent = new Intent(QuoteJobGarageActivity.this,FreeInclusionGarageActivity.class);
+            startActivityForResult(intent,2);
+            activityTransition();
+        }
+        if (view==btnBid){
+            if (isValidate()){
+                if (Connectivity.isConnected(appContext)){
+                    SubmitBid();
+                }else {
+                    showAlertDialog(getString(R.string.no_internet));
+                }
+            }
+
+        }
+        if (view==ll_drop_off_date){
+            flag = 1;
+            showDateDialog();
+        }
+        if (view==ll_drop_off_time) {
+
+            flag = 1;
+            displaytime();
+        }
+        if (view==ll_pick_up_date){
+            flag = 2;
+            showDateDialog();
+        }
+        if (view==ll_pick_up_time) {
+
+            flag = 2;
+            displaytime();
+        }if (view==ll_back) {
+
+            onBackPressed();
+        }
+
+
+
+
+
+    }
+
+    public boolean isValidate(){
+
+        if (edtComments.getText().toString().length()==0){
+            showAlertDialog("Please enter comment");
+            return false;
+        }else if (edtPrice.getText().toString().length()==0){
+            showAlertDialog("Please enter bid price");
+            return false;
+        }
+
+        return true;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setHeader("Quote A Job");
+        setfooter("garageowner");
+        setHomeFooterGarage(QuoteJobGarageActivity.this);
+        setlistenrforfooter();
+    }
+
+
+    public void SubmitBid(){
+        strBidComment = edtComments.getText().toString();
+        strBidPrice = edtPrice.getText().toString();
+        strTotal = edtTotalPrice.getText().toString();
+        strOffer = edtOffer.getText().toString();
+        strOfferPrice = edtOfferPrice.getText().toString();
+        strDateTime1 = parseDateToddMMyyyy(tv_drop_off_date.getText().toString())+ " "+ tv_drop_off_time.getText().toString()+":00";
+        strDateTime2 =  parseDateToddMMyyyy(tv_pick_up_date.getText().toString())+ " "+ tv_pick_up_time.getText().toString()+":00";
+        showLoadingDialog(true);
+        RequestQueue queue = Volley.newRequestQueue(appContext);
+        String url = WebServiceURLs.BASE_URL;
+        AppLog.Log(TAG, "App URL : " + url);
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put(Constants.SERVICE_NAME, WebServiceURLs.SUBMIT_BID);
+        //params.put(Constants.JOB_ACTIONS.ACTION, "CLO");
+        params.put(Constants.SUBMIT_BIDS.JOB_ID, jobDetail_dbo.getCjob_id());
+        params.put(Constants.SUBMIT_BIDS.GARAGE_ID, loginDetail_dbo.getUserid());
+        params.put(Constants.SUBMIT_BIDS.BID_PRICE, strBidPrice);
+        params.put(Constants.SUBMIT_BIDS.BID_COMMENT, strBidComment);
+        params.put(Constants.SUBMIT_BIDS.ADD_OFFER, strOffer);
+        params.put(Constants.SUBMIT_BIDS.ADD_OFFER_PRICE, strOfferPrice);
+        params.put(Constants.SUBMIT_BIDS.TOTAL, "$"+strTotal);
+        params.put(Constants.SUBMIT_BIDS.SERVICES, strServices);
+        params.put(Constants.SUBMIT_BIDS.SERVICE_ID, strServiceId);
+        params.put(Constants.SUBMIT_BIDS.INCLUSION, strInclusions);
+        params.put(Constants.SUBMIT_BIDS.DATETIME1, strDateTime1);
+        params.put(Constants.SUBMIT_BIDS.DATETIME2, strDateTime2);
+        params.put(Constants.SUBMIT_BIDS.FLEET_ARR, "{}");
+
+        AppLog.Log(TAG, "Params : " + params);
+        CustomJsonObjectRequest jsonObjReq = new CustomJsonObjectRequest(Request.Method.POST,
+                url, appContext, new JSONObject(params),
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+
+                        AppLog.Log("Response", "Bid JOb --> " + response);
+                        try {
+                            String status = response.getString(Constants.STATUS);
+
+                            if (status.equalsIgnoreCase(Constants.SUCCESS)) {
+                                Toast.makeText(appContext, response.getString(Constants.MESSAGE), Toast.LENGTH_SHORT).show();
+                                finish();
+                                Intent intent = new Intent(appContext,MyJobsGarageActivity.class);
+                                startActivity(intent);
+                                activityTransition();
+
+
+                            } else {
+                                showAlertDialog(response.getString(Constants.MESSAGE));
+                            }
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                        showLoadingDialog(false);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        showLoadingDialog(false);
+                    }
+                });
+        queue.add(jsonObjReq);
+    }
+    public String parseDateToddMMyyyy(String time) {
+        String inputPattern = "dd-MM-yyyy";
+        String outputPattern = "yyyy-MM-dd";
+        SimpleDateFormat inputFormat = new SimpleDateFormat(inputPattern);
+        SimpleDateFormat outputFormat = new SimpleDateFormat(outputPattern);
+
+        Date date = null;
+        String str = null;
+
+        try {
+            date = inputFormat.parse(time);
+            str = outputFormat.format(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return str;
+    }
+    private void showDateDialog() {
+        final Calendar c = Calendar.getInstance();
+        int today_date = 0, today_month = 0, today_year = 0;
+        Calendar min = Calendar.getInstance();
+        min.set(min.MONTH, Calendar.JANUARY);
+        min.set(min.DAY_OF_MONTH, 1);
+        min.set(min.YEAR, 1970);
+        try {
+
+        } catch (NumberFormatException e) {
+            today_date = c.get(Calendar.DAY_OF_MONTH);
+            today_month = c.get(Calendar.MONTH);
+            today_year = c.get(Calendar.YEAR);
+            AppLog.Log(TAG, "Number Format Exception");
+        } catch (Exception e) {
+            AppLog.Log(TAG, "Exception");
+        }
+
+
+        DatePickerDialog dpd = new DatePickerDialog(appContext,R.style.DatePickerDialogTheme,
+                new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year,
+                                          int monthOfYear, int dayOfMonth) {
+                        AppLog.Log(TAG, "onDateSet date");
+
+                        if (flag == 1) {
+
+                            tv_drop_off_date.setText(dayOfMonth + "-" + (monthOfYear+1) + "-" + year);
+                            selected_year_drop_off = HelperMethods.pad(year);
+                            selected_month_drop_off = HelperMethods.pad(monthOfYear + 1);
+                            selected_day_drop_off = HelperMethods.pad(dayOfMonth);
+
+                        } else if (flag == 2) {
+                            tv_pick_up_date.setText(dayOfMonth + "-" + (monthOfYear+1) + "-" + year);
+                            selected_year_pick_up = HelperMethods.pad(year);
+                            selected_month_pick_up = HelperMethods.pad(monthOfYear + 1);
+                            selected_day_pick_up = HelperMethods.pad(dayOfMonth);
+                        }
+
+                    }
+                }, today_year, today_month, today_date);
+        dpd.setTitle(getResources().getString(R.string.select_trip_date));
+        Calendar maxDate = Calendar.getInstance();
+//    maxDate.add(Calendar.DATE,1);
+        maxDate.set(Calendar.HOUR_OF_DAY, 23);
+        maxDate.set(Calendar.MINUTE, 59);
+        maxDate.set(Calendar.SECOND, 59);
+        dpd.getDatePicker().setMinDate(maxDate.getTimeInMillis());
+//    dpd.getDatePicker().setMinDate(min.getTimeInMillis());
+        dpd.setButton(DialogInterface.BUTTON_NEGATIVE, getResources().getString(R.string.cancel),
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+
+                        dialog.dismiss();
+
+                    }
+                });
+        dpd.setButton(DialogInterface.BUTTON_POSITIVE, getResources().getString(R.string.done), dpd);
+        dpd.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+
+            }
+        });
+        dpd.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface arg0) {
+
+            }
+        });
+        dpd.show();
+    }
+
+    private void displaytime() {
+
+        final Dialog dialog = new Dialog(appContext);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        View view = this.getLayoutInflater().inflate(R.layout.dialog_main, null);
+        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                if (flag == 1) {
+                    tv_drop_off_time.setText(time[i]);
+                    drop_off_time = i;
+                } else if (flag == 2) {
+                    tv_pick_up_time.setText(time[i]);
+                    pick_up_time = i;
+                }
+                dialog.dismiss();
+            }
+        });
+        WindowManager wm = (WindowManager) appContext.getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+        Point size = new Point();
+        display.getSize(size);
+
+        WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
+        lp.copyFrom(dialog.getWindow().getAttributes());
+
+        int width = size.x - 50;  //Set your heights
+        int height = (int) (size.y / 1.4); //Set your widths
+
+
+        lp.width = width;
+        lp.height = height;
+
+        CustomListAdapterOther clad = new CustomListAdapterOther(appContext, time);
+        lv.setAdapter(clad);
+        dialog.setContentView(view);
+        dialog.getWindow().setAttributes(lp);
+        dialog.show();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+       // Toast.makeText(appContext, "Called", Toast.LENGTH_SHORT).show();
+    }
+
+    public class CustomListAdapterOther extends BaseAdapter {
+
+        Context context;
+        LayoutInflater layoutInflater;
+        private String time[];
+
+        public CustomListAdapterOther(Context appContext, String list[]) {
+            context = appContext;
+            layoutInflater = LayoutInflater.from(appContext);
+            time = list;
+        }
+
+        @Override
+        public int getCount() {
+            return time.length;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return time[position];
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View row = convertView;
+            final ChallengerHolder holder;
+
+            String model = time[position];
+            if (row == null) {
+                holder = new CustomListAdapterOther.ChallengerHolder();
+                row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
+                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+
+                row.setTag(holder);
+            } else {
+                holder = (CustomListAdapterOther.ChallengerHolder) row.getTag();
+            }
+
+            holder.tv_name.setText(model);
+            return row;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+
+            return getCount();
+        }
+
+        @Override
+        public int getItemViewType(int position) {
+
+            return position;
+        }
+
+        class ChallengerHolder {
+
+            TextView tv_name;
+        }
+    }
+
+
+
+}

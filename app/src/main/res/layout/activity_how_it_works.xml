@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_how_it_works"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/color_Splash"
+  android:orientation="vertical"
+  android:weightSum="10"
+  tools:context="technource.greasecrowd.activities.How_it_works">
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+      android:id="@+id/btn_skip"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/row_screening_detail_header_h"
+      android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+      android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+      android:gravity="right"
+      android:text="SKIP"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/txt_size_4" />
+
+
+    <android.support.v4.view.ViewPager
+      android:id="@+id/view_pager"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="5"
+      android:layout_gravity="center" />
+
+    <LinearLayout
+      android:id="@+id/layoutDots"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dots_height"
+      android:layout_marginBottom="@dimen/dots_margin_bottom"
+      android:layout_alignParentBottom="true"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+      android:id="@+id/btn_next"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentLeft="true"
+      android:background="@null"
+      android:gravity="center"
+      android:text="NEXT"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/txt_size_5" />
+
+  </LinearLayout>
+</LinearLayout>
+
+
+

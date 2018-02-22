@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+        android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+        android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+        android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+            android:orientation="horizontal"
+            android:padding="@dimen/iv_AddChild_margin_r">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:layout_weight="8"
+                android:gravity="left|center_vertical"
+                android:text="@string/push_notification"
+                android:textColor="@color/black_light_text"
+                android:textSize="@dimen/txt_size_4" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchPushNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:checked="false"
+                app:theme="@style/Color1SwitchStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+            android:orientation="horizontal"
+            android:padding="@dimen/iv_AddChild_margin_r">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:layout_weight="8"
+                android:gravity="left|center_vertical"
+                android:text="@string/text_notification"
+                android:textColor="@color/black_light_text"
+                android:textSize="@dimen/txt_size_4" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchTextnotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:theme="@style/Color1SwitchStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+            android:background="@color/view_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+            android:orientation="horizontal"
+            android:padding="@dimen/iv_AddChild_margin_r">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
+                android:layout_weight="8"
+                android:gravity="left|center_vertical"
+                android:text="@string/email_notification"
+                android:textColor="@color/black_light_text"
+                android:textSize="@dimen/txt_size_4" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchEmailNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:theme="@style/Color1SwitchStyle" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/iv_AddChild_margin_r"
+            android:background="@color/view_color" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 23
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.4.0'
+}
+
+publish {
+    artifactId = 'sliding-root-nav'
+    userOrg = rootProject.userOrg
+    groupId = rootProject.groupId
+    uploadName = rootProject.uploadName
+    publishVersion = rootProject.publishVersion
+    description = rootProject.description
+    licences = rootProject.licences
+}
+

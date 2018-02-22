@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="technource.greasecrowd.activities.SplashScreen"
+    android:weightSum="10"
+    android:background="@color/color_Splash"
+    android:orientation="vertical"
+    android:id="@+id/activity_splash">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_weight="2"
+      android:weightSum="5"
+      android:gravity="center"
+      android:layout_height="0dp"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="2.5"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView"
+        android:layout_marginTop="@dimen/text_margin"/>
+
+
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:orientation="vertical"
+      android:layout_weight="3.8"
+      android:gravity="center"
+      android:layout_marginTop="-20dp"
+      android:weightSum="4">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/logo_icon"
+        android:id="@+id/imageView2"
+        android:layout_weight="3"
+        />
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="4.5"
+      android:orientation="vertical"
+      android:gravity="center">
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="How it Works!"
+        android:textSize="@dimen/txt_size_3"
+        android:textColor="@color/white"
+        android:layout_weight="3"
+        android:id="@+id/howitworks"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/txt_size_6"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="@dimen/ivObservationNote_h"
+        android:layout_height="@dimen/dimen_margin_85_dp"
+        android:layout_weight="0"
+        android:src="@drawable/play_n"
+        android:id="@+id/play"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/SignIn_margin"/>
+
+    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="SKIP"
+        android:textSize="@dimen/txt_size_6"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:id="@+id/skip"
+        android:layout_marginTop="@dimen/txt_size_6"/>
+  </LinearLayout>
+
+
+</LinearLayout>

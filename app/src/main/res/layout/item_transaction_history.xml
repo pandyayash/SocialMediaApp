@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/bg_gray"
+        android:padding="@dimen/icon_back_left_margin"
+        android:layout_marginLeft="@dimen/SignIn_margin"
+        android:layout_marginRight="@dimen/SignIn_margin"
+        android:layout_marginTop="@dimen/icon_back_left_margin">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/textTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/short_dummy_text"
+            android:textSize="@dimen/txt_size_2"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/textDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="July 31, 2018"
+            android:textSize="@dimen/txt_size_1"
+            android:layout_weight="3"
+            android:gravity="end"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

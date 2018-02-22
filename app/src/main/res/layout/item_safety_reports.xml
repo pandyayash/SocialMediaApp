@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/SignIn_margin"
+    android:layout_marginRight="@dimen/SignIn_margin"
+    android:background="@color/bg_gray"
+    android:layout_marginTop="@dimen/icon_back_left_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/SignIn_margin"
+        android:paddingLeft="@dimen/SignIn_margin"
+        android:paddingRight="@dimen/SignIn_margin"
+        android:orientation="horizontal">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ispum is simply dummy   "
+            android:layout_weight="1"
+            android:textSize="@dimen/txt_size_3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_bg"
+                />
+            <ImageView
+                android:id="@+id/imgYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_bg"
+                android:layout_marginLeft="@dimen/icon_back_left_margin"/>
+            <ImageView
+                android:id="@+id/imgRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_bg"
+                android:layout_marginLeft="@dimen/icon_back_left_margin"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/SignIn_margin"
+        android:paddingLeft="@dimen/SignIn_margin"
+        android:paddingRight="@dimen/SignIn_margin"
+        android:paddingBottom="@dimen/SignIn_margin">
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+            android:id="@+id/edtRecommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recommendation"
+            android:textSize="@dimen/txt_size_3"
+            android:padding="@dimen/icon_back_left_margin"
+            android:background="@drawable/blue_textview_border"
+            android:inputType="textMultiLine"
+            android:minLines="2"
+            android:maxLines="4"
+            android:gravity="top|left"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

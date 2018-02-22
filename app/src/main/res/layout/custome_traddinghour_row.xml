@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/t_hours"
+        android:focusable="false"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="false"
+            android:padding="@dimen/activity_add_child_downarrow_h"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/row"
+                android:focusable="false"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:background="@drawable/rect_border"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:orientation="horizontal">
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                            android:layout_width="0dp"
+                            android:focusable="false"
+                            android:id="@+id/day_name"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/activity_add_child_downarrow_h"
+                            android:text="SUNDAY"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size_3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_add_child_new_margin_tb"
+                            android:focusable="false"
+                            android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                            android:id="@+id/sun"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/rect_border">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:focusable="false"
+                                android:padding="@dimen/activity_add_child_new_margin_tb"
+                                android:layout_height="match_parent">
+
+                                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                                    android:id="@+id/edt_sun_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:hint="8:00"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white_90"
+                                    android:textSize="@dimen/txt_size_2" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_add_child_downarrow_h"
+                                    android:focusable="false"
+                                    android:layout_height="@dimen/activity_add_child_downarrow_h"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
+                                    android:rotation="270"
+                                    android:src="@drawable/arrow" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                            android:focusable="false"
+                            android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                            android:id="@+id/sun1"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/rect_border">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/activity_add_child_new_margin_tb"
+                                android:focusable="false">
+
+                                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                                    android:id="@+id/edt_am_pm_sun"
+                                    android:layout_width="wrap_content"
+                                    android:focusable="false"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@null"
+                                    android:editable="false"
+                                    android:gravity="center"
+                                    android:hint="A.M"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white_90"
+                                    android:textSize="@dimen/txt_size_2" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_add_child_downarrow_h"
+                                    android:focusable="false"
+                                    android:layout_height="@dimen/activity_add_child_downarrow_h"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
+                                    android:rotation="270"
+                                    android:src="@drawable/arrow" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
+                        android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+                        android:focusable="false"
+                        android:orientation="horizontal">
+
+                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                            android:layout_width="0dp"
+                            android:focusable="false"
+                            android:id="@+id/day_name1"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/activity_add_child_downarrow_h"
+                            android:text="SUNDAY"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_size_3"
+                            android:visibility="invisible"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_add_child_new_margin_tb"
+                            android:focusable="false"
+                            android:id="@+id/sun2"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/rect_border">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/activity_add_child_new_margin_tb"
+                                android:focusable="false">
+
+                                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                                    android:id="@+id/edt1_sun_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="8:00"
+
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white_90"
+                                    android:textSize="@dimen/txt_size_2" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_add_child_downarrow_h"
+                                    android:layout_height="@dimen/activity_add_child_downarrow_h"
+                                    android:focusable="false"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
+                                    android:rotation="270"
+                                    android:src="@drawable/arrow" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
+                            android:focusable="false"
+                            android:id="@+id/sun3"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:background="@drawable/rect_border">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="@dimen/activity_add_child_new_margin_tb"
+                                android:focusable="false">
+
+                                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                                    android:id="@+id/edt1_am_pm_sun"
+                                    android:layout_width="wrap_content"
+                                    android:focusable="false"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:background="@null"
+                                    android:editable="false"
+                                    android:gravity="center"
+                                    android:hint="A.M"
+                                    android:singleLine="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/white_90"
+                                    android:textSize="@dimen/txt_size_2" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/activity_add_child_downarrow_h"
+                                    android:focusable="false"
+                                    android:layout_height="@dimen/activity_add_child_downarrow_h"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
+                                    android:rotation="270"
+                                    android:src="@drawable/arrow" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    </LinearLayout>

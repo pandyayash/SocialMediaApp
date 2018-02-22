@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="#00BB7E"/>
+            <stroke
+                android:width="1px"
+                android:color="@color/colorPrimary"/>
+            <size android:width="@dimen/activity_add_child_downarrow_h"
+                android:height="@dimen/activity_add_child_downarrow_h"/>
+        </shape>
+    </item>
+    <item android:maxLevel="1">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="#00BB7E"/>
+
+            <size android:width="@dimen/activity_add_child_downarrow_h"
+                android:height="@dimen/activity_add_child_downarrow_h"/>
+        </shape>
+    </item>
+    <item android:maxLevel="2">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="#ffcf3b"/>
+            <stroke
+                android:width="1px"
+                android:color="@color/colorPrimary"/>
+            <size android:width="@dimen/activity_add_child_downarrow_h"
+                android:height="@dimen/activity_add_child_downarrow_h"/>
+        </shape>
+    </item>
+    <item android:maxLevel="3">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="#ffcf3b"/>
+
+            <size android:width="@dimen/activity_add_child_downarrow_h"
+                android:height="@dimen/activity_add_child_downarrow_h"/>
+        </shape>
+    </item>
+    <item android:maxLevel="4">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="#ff4e63"/>
+            <stroke
+                android:width="1px"
+                android:color="@color/colorPrimary"/>
+            <size android:width="@dimen/activity_add_child_downarrow_h"
+                android:height="@dimen/activity_add_child_downarrow_h"/>
+        </shape>
+    </item>
+    <item android:maxLevel="5">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <solid android:color="#ff4e63"/>
+            <size android:width="@dimen/activity_add_child_downarrow_h"
+                android:height="@dimen/activity_add_child_downarrow_h"/>
+        </shape>
+    </item>
+</level-list>
+
+<!--<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:maxLevel="0">
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android"
+            />
+    <solid android:color="#00BB7E"/>
+    <stroke
+        android:width="1px"
+        android:color="@color/colorPrimary"/>
+    <size android:width="@dimen/activity_add_child_downarrow_h"
+        android:height="@dimen/activity_add_child_downarrow_h"/>
+    </item>
+    <item android:maxLevel="1">
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <solid android:color="#00BB7E"/>
+
+    <size android:width="@dimen/activity_add_child_downarrow_h"
+        android:height="@dimen/activity_add_child_downarrow_h"/>
+    </item>
+    <item android:maxLevel="2">
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android"/>
+        <solid android:color="#ffcf3b"/>
+        <stroke
+            android:width="1px"
+            android:color="@color/colorPrimary"/>
+        <size android:width="@dimen/activity_add_child_downarrow_h"
+            android:height="@dimen/activity_add_child_downarrow_h"/>
+    </item>
+    <item android:maxLevel="3">
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android"/>
+        <solid android:color="#ffcf3b"/>
+
+        <size android:width="@dimen/activity_add_child_downarrow_h"
+            android:height="@dimen/activity_add_child_downarrow_h"/>
+    </item>
+    <item android:maxLevel="4">
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android"/>
+        <solid android:color="#ff4e63"/>
+        <stroke
+            android:width="1px"
+            android:color="@color/colorPrimary"/>
+        <size android:width="@dimen/activity_add_child_downarrow_h"
+            android:height="@dimen/activity_add_child_downarrow_h"/>
+    </item>
+    <item android:maxLevel="5">
+        <shape android:shape="oval" xmlns:android="http://schemas.android.com/apk/res/android"/>
+        <solid android:color="#ff4e63"/>
+
+        <size android:width="@dimen/activity_add_child_downarrow_h"
+            android:height="@dimen/activity_add_child_downarrow_h"/>
+    </item>
+
+</level-list>-->

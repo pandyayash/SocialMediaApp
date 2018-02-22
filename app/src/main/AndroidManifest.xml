@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="technource.greasecrowd">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:name=".helper.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SplashScreen"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginScreen"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.ForgotPassword"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.StaticScreen"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.How_it_works"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.SignUpCarOwner"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.SignUpGarageOwner"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.DialogActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".activities.DashboardScreen"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".activities.ChangepasswordActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.NotificationActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.RegisterdCarsScreen"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PaypalActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".activities.PostJob.PostNewJobStepOne"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDBA3-8GEh_IUywUsD2STZkH0oEqi5Q5IA" />
+
+        <activity
+            android:name=".activities.GarageOwnerProfileMapActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.RegisterNewCarActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.GarageOwnerGalleryActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.GarageOwnerHoursActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.GarageOwnerServicesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.GarageOwnerFacilitiesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.GarageOwnerReviewsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.ViewHistoryGarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.EditRegisteredCarActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.CarDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.StaticWebpages"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.PostJob.PostNewJobStepTwo"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PostJob.PostNewJobStepThree"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.MyJobsUserActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.MyCrowdUserActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.MyJobsGarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.MycrowdgarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PostJob.PostNewJobStepFour"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".activities.PostJob.PostNewJobFive"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.PostJob.PostNewJobAdditionalStep"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.AskTheCrowd.AskTheCrowdStepOne"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".activities.AskTheCrowd.AskTheCrowdStepTwo"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".activities.AskTheCrowd.AskTheCrowdStepThree"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.AskTheCrowd.AskTheCrowdStepFour"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.JobDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.AskTheCrowd.AskTheCrowdStepFive"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name=".activities.AskTheCrowd.AskTheCrowdAdditionalStep"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.QuotedjobDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PostJob.EditJobStepOne"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PostJob.EditJobStepTwo"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PostJob.EditJobStepThree"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PostJob.EditJobStepFour"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.PostJob.EditJobStepFive"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.SearchCrowdActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.ViewNotificationActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.MyCrowdDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.ViewNewJobsFeedDetailActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.SearchGarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.QuoteJobDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.QuoteJobDetailsPagerActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.QuoteJobGarageActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.UpdateQuoteGarageActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.ViewSelectSeriviceTypeActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.ViewFreeInclusionsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.FreeInclusionGarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.SelectSubServicesGarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.DiscussionActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.GarageOwnerDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.DisplayGarageOwnerHoursActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.DisplayGarageOwnerServicesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.DisplayGarageOwnerFacilitiesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.DisplayGarageOwnerReviewsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.UserDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.GenerateSafetyReportGarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.UserDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.DisplayUserRegisterdCarsScreen"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.InvoiceDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.DetailsOfGarageUserJobActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.WeeklyDetailsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.JobsWaitingForReviewActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.AddAReviewScreenActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activities.JobsCompletedByGarageActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".activities.ViewFollowUpWorkActivity"></activity>
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

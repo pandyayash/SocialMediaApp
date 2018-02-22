@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+        android:orientation="vertical">
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="Tax Invoice"
+            android:textColor="@color/edittext_bg"
+            android:textSize="@dimen/txt_size_4" />
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/txtInvoiceDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="Invoice Dtae: 24/08/2018"
+            android:textColor="@color/edittext_bg"
+            android:textSize="@dimen/txt_size_4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtJobId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="@dimen/activity_add_child_new_margin_lr"
+                android:text="JOB #"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/txtExclGst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="@dimen/activity_add_child_new_margin_lr"
+                android:text="Description"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="@dimen/activity_add_child_new_margin_lr"
+                android:text="UNIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:paddingRight="@dimen/activity_add_child_new_margin_lr"
+                android:text="UNIT PRICE"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:paddingLeft="@dimen/activity_add_child_new_margin_lr"
+                android:text="GST"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingRight="@dimen/activity_add_child_new_margin_lr"
+                android:text="Amount"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SignIn_margin"
+            android:orientation="horizontal">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/btnDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/SignIn_margin"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingBottom="@dimen/icon_back_left_margin"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:text="Detail"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/btnPrint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/SignIn_margin"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingBottom="@dimen/icon_back_left_margin"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:text="Print"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/btmMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/SignIn_margin"
+                android:layout_marginRight="@dimen/SignIn_margin"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:paddingBottom="@dimen/icon_back_left_margin"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:text="Mail to Client"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_3" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

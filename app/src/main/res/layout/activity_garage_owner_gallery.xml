@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_garage_owner_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="technource.greasecrowd.activities.GarageOwnerGalleryActivity">
+
+    <include layout="@layout/app_header" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/foot"
+            layout="@layout/app_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_above="@id/foot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_add_child_new_margin_lr"
+                android:orientation="vertical">
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
+                    android:text="@string/motor_industry_memberships"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txt_size_4" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/activity_child_layout_two_layout_h"
+                    android:layout_height="@dimen/activity_child_layout_two_layout_h"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="@dimen/activity_add_child_downarrow_h">
+
+                    <ImageView
+                        android:id="@+id/motorImage"
+                        android:layout_width="@dimen/ivObservationNote_h"
+                        android:layout_height="@dimen/activity_child_layout_two_layout_h"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/default_car" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/editBtn"
+                            android:layout_width="@dimen/cb_keepSignIn_hw"
+                            android:layout_height="@dimen/cb_keepSignIn_hw"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/edit" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_upload"
+                    android:layout_width="@dimen/pur_lic_btn_w"
+                    android:layout_height="@dimen/pur_lic_btn_w"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/row_screening_detail_header_h"
+                    android:background="@drawable/dotted_border_box"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/btnUserProfile_h"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/upload_icon" />
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/upload_here"
+                        android:textSize="@dimen/txt_size_2" />
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/screening_info_layout_margin_lr"
+                        android:text="Select File"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/txt_size_4" />
+
+                </LinearLayout>
+
+                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
+                    android:text="Gallary"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/txt_size_4" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/activity_add_child_downarrow_h">
+
+                    <technource.greasecrowd.CustomViews.MyGridView
+                        android:id="@+id/gridview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="10dp" />
+
+                    <TextView
+                        android:id="@+id/nodata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/no_images_found"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_size_4"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/activity_add_child_downarrow_h"
+                android:text="Select Type"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/row_screening_detail_header_h"
+                android:layout_marginRight="@dimen/row_screening_detail_header_h"
+                android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_add_child_new_margin_tb"
+                    android:layout_weight="1"
+                    android:background="@color/edittext_bg"
+                    android:focusableInTouchMode="true">
+
+                    <CheckBox
+                        android:id="@+id/checksite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/autoText"
+                        android:layout_centerVertical="true"
+                        android:checked="true" />
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                        android:id="@+id/autoText1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/auto"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/activity_add_child_downarrow_h"
+                        android:paddingLeft="@dimen/activity_add_child_new_margin_tb"
+                        android:paddingRight="@dimen/activity_add_child_downarrow_h"
+                        android:paddingTop="@dimen/activity_add_child_downarrow_h"
+                        android:singleLine="true"
+                        android:text="@string/Sitebase"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white_90"
+                        android:textSize="@dimen/txt_size_4" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/row_screening_detail_header_h"
+                android:layout_marginRight="@dimen/row_screening_detail_header_h"
+                android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_add_child_new_margin_tb"
+                    android:layout_weight="1"
+                    android:background="@color/edittext_bg">
+
+                    <CheckBox
+                        android:id="@+id/checkmobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignRight="@+id/autoText"
+                        android:layout_centerVertical="true"
+                        android:checked="true" />
+
+                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                        android:id="@+id/autoText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/auto"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/activity_add_child_downarrow_h"
+                        android:paddingLeft="@dimen/activity_add_child_new_margin_tb"
+                        android:paddingRight="@dimen/activity_add_child_downarrow_h"
+                        android:paddingTop="@dimen/activity_add_child_downarrow_h"
+                        android:singleLine="true"
+                        android:text="@string/mobile"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white_90"
+                        android:textSize="@dimen/txt_size_4" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/activity_add_child_downarrow_h"
+                android:text="Select Services Offered"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_4" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
+                android:layout_marginRight="@dimen/marginLeft_tvChildNameDB">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                android:id="@+id/cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/activity_add_child_downarrow_h"
+                android:text="CONTINUE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_6" />
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mycrowdgarage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="technource.greasecrowd.activities.MycrowdgarageActivity">
+
+    <include layout="@layout/app_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/SignIn_margin"
+            android:orientation="horizontal">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/icon_back_left_margin"
+                android:text="Search"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_6" />
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:id="@+id/btnSort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/SignIn_margin"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="@dimen/icon_back_left_margin"
+                android:text="Sort"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_6" />
+
+        </LinearLayout>
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
+            android:id="@+id/txtNoDataFound"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="No Data Found!"
+            android:textSize="@dimen/txt_size_3"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/crowd_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/btnAskCrowd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+            android:layout_marginLeft="@dimen/dialog_common_btn_h"
+            android:layout_marginRight="@dimen/dialog_common_btn_h"
+            android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/icon_back_left_margin"
+            android:text="Ask the crowd"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_6"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/app_footer" />
+</LinearLayout>

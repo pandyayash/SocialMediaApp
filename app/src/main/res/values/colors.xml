@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#773AF7</color>
+  <color name="colorPrimaryDark">#773AF7</color>
+  <color name="colorPrimaryNav">#773AF7</color>
+  <color name="colorAccent">#773AF7</color>
+  <color name="black">#000000</color>
+  <color name="black_light_text">#98000000</color>
+  <color name="white">#ffffff</color>
+  <color name="white_80">#80FFFFFF</color>
+  <color name="white_90">#95FFFFFF</color>
+  <color name="white_50">#50FFFFFF</color>
+  <color name="white_light">#F3F3F3</color>
+
+  <color name="full_transparent_white">#00FFFFFF</color>
+  <color name="login_bg">#F7F7F7</color>
+  <color name="view_color">#BFBFBF</color>
+  <color name="view_color2">#AAAAAA</color>
+  <color name="login_txt">#5A5A5A</color>
+  <color name="splash_mask">#854F869D</color>
+  <color name="splash_mask2">#377092</color>
+  <color name="green_click">#9ED130</color>
+  <color name="green_btn">#008000</color>
+  <color name="colorPrimary_transaparent">#80FFFFFF</color>
+  <color name="tab_header">#9DCE4D</color>
+  <color name="tab_header_trips">#E2E2E2</color>#466C78
+  <color name="upcoming_header_trips">#466C78</color>
+  <color name="background_dark">#031442</color>
+  <color name="hint_color">#B9B9B9</color>
+  <color name="header_color">#585858</color>
+  <color name="bg_gray">#F5F5F5</color>
+  <color name="text_color2">#797979</color>
+  <color name="text_color">#12092B</color>
+  <color name="dialog_back">#60072269</color>
+  <color name="item_bg">#F1F1F1</color>
+  <color name="map_route">#467B93</color>
+  <color name="red_color">#ed0808</color>
+  <color name="colorPrimarytransaparent">#88467B93</color>
+  <color name="edittext_bg">#A367F8</color>
+
+  <color name="color_Splash">#7d19ff</color>
+  <color name="pager_dot_active">#ffffff</color>
+  <color name="pager_dot_inactive">#33ffffff</color>
+
+  <color name="boardarcolor">#959595</color>
+
+  <color name="description">#8d8d8d</color>
+  <color name="type">#8e8e8e</color>
+  <color name="date">#616161</color>
+  <color name="tab_text">#bbbbbb</color>
+  <color name="light_black">#303030</color>
+  <color name="dark_grey_bg">#545454</color>
+  <color name="RadiumColor">#3CE53C</color>
+</resources>

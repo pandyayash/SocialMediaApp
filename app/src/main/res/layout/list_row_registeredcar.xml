@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_add_child_new_margin_lr"
+    android:background="@color/item_bg"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/SignIn_margin"
+    android:layout_marginLeft="@dimen/SignIn_margin"
+    android:layout_marginRight="@dimen/SignIn_margin"
+    android:padding="@dimen/SignIn_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2.5">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+                android:id="@+id/iv_image"
+                android:layout_width="@dimen/width_height_ivHelp"
+                android:layout_height="@dimen/width_height_ivHelp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/no_user" />
+
+            <ImageView
+                android:id="@+id/iv_upload"
+                android:layout_width="@dimen/width_height_ivHelp"
+                android:layout_height="@dimen/width_height_ivHelp"
+                android:padding="2dp"
+                android:src="@drawable/upload_mask" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="match_parent"
+                android:id="@+id/carname"
+                android:layout_height="wrap_content"
+                android:text="Honda city"
+                android:textSize="@dimen/txt_size_2"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"
+                android:textColor="@color/black"/>
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+                android:layout_width="match_parent"
+                android:id="@+id/edit"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Edit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_2"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/icon_back_left_margin"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:paddingBottom="@dimen/icon_back_left_margin"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/icon_back_left_margin"
+            android:orientation="horizontal">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="match_parent"
+                android:id="@+id/registration_number"
+                android:layout_height="wrap_content"
+                android:text="23650"
+                android:textSize="@dimen/txt_size_2"
+                android:textColor="@color/black"
+                android:layout_weight="1.5"
+                android:layout_gravity="center"/>
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+                android:layout_width="match_parent"
+                android:id="@+id/postjob"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Post A Job"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_2"
+                android:layout_marginLeft="@dimen/icon_back_left_margin"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:paddingBottom="@dimen/icon_back_left_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/icon_back_left_margin">
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                android:layout_width="match_parent"
+                android:id="@+id/viewhistory"
+                android:layout_height="wrap_content"
+                android:text="View History"
+                android:textColor="@color/color_Splash"
+                android:textSize="@dimen/txt_size_2"
+                android:layout_weight="1.5"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_marginTop="@dimen/icon_back_left_margin"/>
+
+            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+                android:layout_width="match_parent"
+                android:id="@+id/askthecrowd"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="Ask The Crowd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_2"
+                android:layout_marginLeft="@dimen/icon_back_left_margin"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingTop="@dimen/icon_back_left_margin"
+                android:paddingBottom="@dimen/icon_back_left_margin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:visibility="gone">
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
