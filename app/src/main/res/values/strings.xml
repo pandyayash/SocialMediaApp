@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Grease Crowd</string>
+    <string name="app_name">Autoreum</string>
     <string name="connect_with_facebook">CONNECT WITH FACEBOOK</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
@@ -10,11 +10,25 @@
 
     <!-- Google Place API Key -->
     <!--<string name="api_key">AIzaSyCgUxBQw6lOW1oRxVPqqBJ6F1Q-CO0hCZE</string>-->
-    <string name="api_key">AIzaSyCYtq6Ecc60WXKSXbXCw_87uFHgjv0tRz0</string>
+    <!--<string name="api_key">AIzaSyCYtq6Ecc60WXKSXbXCw_87uFHgjv0tRz0</string>-->
+    <string name="api_key">AIzaSyDtAqzvWKNP1ZeVR52PwBw_DVGpX49QlMQ</string>
 
-    <!--Facebook App ID-->
-    <string name="facebook_app_id">183683602120587</string>
-    <string name="fb_login_protocol_scheme">fb183683602120587</string>
+
+    <!-- greasecrowd Facebook App ID -->
+   <!-- <string name="facebook_app_id">183683602120587</string>
+    <string name="fb_login_protocol_scheme">fb183683602120587</string>-->
+
+    <!-- greasecrowd client Facebook App ID -->
+    <!--<string name="facebook_app_id">1848959605117072</string>
+    <string name="fb_login_protocol_scheme">fb1848959605117072</string>-->
+
+
+        <!--Autoreum fb app id-->
+    <!--<string name="facebook_app_id">224243941477154</string>
+    <string name="fb_login_protocol_scheme">fb224243941477154</string>-->
+
+    <string name="facebook_app_id">1715163968564526</string>
+    <string name="fb_login_protocol_scheme">fb1715163968564526</string>
 
     <string name="blank_password">Please enter Password!</string>
     <string name="valid_email">Please enter valid Email!</string>
@@ -141,7 +155,7 @@
 
     <string name="home">Home</string>
     <string name="my_profile">My Profile</string>
-    <string name="new_job_feed">New Jobs Feed</string>
+    <string name="new_job_feed">Market Feed</string>
     <string name="my_garages">My Garages</string>
     <string name="transaction_history">Transaction History</string>
     <string name="how_it_work">How It Works</string>
@@ -422,8 +436,8 @@
     <string name="post_code">Post Code</string>
     <string name="your_details">Your Details</string>
     <string name="continue_small">Continue</string>
-    <string name="by_using_grease_crowd_you_agree_to_our_to_our_terms_of_use_and_privacy_policy">I agree to the Grease Crowd Terms of Service and Privacy Policy</string>
-    <string name="subscribe_to_grease_crows_newsletter">Subscribe to Grease Crowd Newsletter</string>
+    <string name="by_using_grease_crowd_you_agree_to_our_to_our_terms_of_use_and_privacy_policy">I agree to the Autoreum Terms of Service and Privacy Policy</string>
+    <string name="subscribe_to_grease_crows_newsletter">Subscribe to Autoreum Newsletter</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="select_make">Select Make</string>
     <string name="select_model">Select Model</string>
@@ -472,7 +486,7 @@
     <string name="my_home">My Home</string>
     <string name="my_jobs">My Jobs</string>
     <string name="job_details">Job Details</string>
-    <string name="quotes">Quote</string>
+    <string name="quotes">Quotes</string>
     <string name="discussion">Discussion</string>
 
     <string name="ask_the_crowd">Ask the crowd</string>
@@ -562,10 +576,10 @@
     <string name="str_quote_details">Quote Details</string>
     <string name="str_quote_from_ur_local_garage">Quotes from your local garages</string>
     <string name="job_discription_question">Job Discription / Question</string>
-    <string name="quote_from_bob_s_garage">Quote from Bob\'s Garage</string>
+    <string name="quote_from_bob_s_garage">Bob\'s Garage</string>
     <string name="additional_offers">Additional Offers</string>
-    <string name="additional_offers_price">Additional Offers price : </string>
-    <string name="str_select_service_type">Select service type >></string>
+    <string name="additional_offers_price">Additional Offers: </string>
+    <string name="str_select_service_type">Select job type >></string>
     <string name="str_select_service">Please select service</string>
     <string name="str_freeinclusions">Free inclusions by garage >></string>
     <string name="str_bid">Bid</string>
@@ -578,6 +592,13 @@
     <string name="str_dest_address">Destination Address</string>
     <string name="no_app_found_for_open_pdf">Pdf viewer not found</string>
     <string name="please_rate_the_job">Please rate the job</string>
+    <string name="type_message">Please type message.</string>
+    <string name="str_review_rate">Review &amp; Rate</string>
+    <string name="select_carmake">Select CarMake</string>
+    <string name="str_propose_new_time">Garage proposed a new pick up and drop off time.</string>
+    <string name="str_accept_new_time">Accept New Propose time?</string>
+    <string name="str_review">Review submitted successfully</string>
+
 
     <string-array name="months_array">
         <item>January</item>
@@ -593,6 +614,8 @@
         <item>November</item>
         <item>December</item>
     </string-array>
+
+    <string name="icon_heart">&#xf004;</string>
 
 
 </resources>

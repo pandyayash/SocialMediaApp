@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             android:visibility="visible">
 
-            <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+            <technource.autoreum.CustomViews.Widgets.CircularImageView
                 android:id="@+id/iv_image"
                 android:layout_width="@dimen/width_height_ivHelp"
                 android:layout_height="@dimen/width_height_ivHelp"
@@ -51,7 +51,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/carname"
                 android:layout_height="wrap_content"
@@ -60,11 +60,11 @@
                 android:layout_weight="1.5"
                 android:layout_gravity="center"
                 android:textColor="@color/black"/>
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/edit"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:gravity="center"
                 android:text="Edit"
                 android:textColor="@color/white"
@@ -82,7 +82,7 @@
             android:layout_marginTop="@dimen/icon_back_left_margin"
             android:orientation="horizontal">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/registration_number"
                 android:layout_height="wrap_content"
@@ -92,11 +92,11 @@
                 android:layout_weight="1.5"
                 android:layout_gravity="center"/>
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/postjob"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:gravity="center"
                 android:text="Post A Job"
                 android:textColor="@color/white"
@@ -115,7 +115,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="@dimen/icon_back_left_margin">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/viewhistory"
                 android:layout_height="wrap_content"
@@ -127,11 +127,11 @@
                 android:gravity="bottom"
                 android:layout_marginTop="@dimen/icon_back_left_margin"/>
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/askthecrowd"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:text="Ask The Crowd"

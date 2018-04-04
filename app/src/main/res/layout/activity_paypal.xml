@@ -13,59 +13,56 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/ivObservationNote_h"
             android:layout_marginBottom="@dimen/tv_Screening_padding"
             android:layout_marginLeft="@dimen/tv_Screening_padding"
             android:layout_marginRight="@dimen/tv_Screening_padding"
+            android:layout_marginTop="@dimen/ivObservationNote_h"
             android:orientation="vertical">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/paypal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:textCursorDrawable="@drawable/blue_cursor"
-                android:padding="@dimen/tv_Screening_padding"
                 android:hint="@string/paypal"
+                android:padding="@dimen/tv_Screening_padding"
                 android:textColor="@color/black_light_text"
+                android:textCursorDrawable="@drawable/blue_cursor"
                 android:textSize="@dimen/txt_size_4" />
 
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText  android:inputType="textNoSuggestions"
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                 android:id="@+id/ed_paypal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
-                android:padding="@dimen/tv_Screening_padding"
                 android:background="@drawable/rect_inner_boarder"
                 android:gravity="center"
                 android:hint="@string/write_your_paypal_id"
+                android:inputType="textNoSuggestions|textCapSentences"
+                android:padding="@dimen/tv_Screening_padding"
                 android:singleLine="true"
                 android:textColor="@color/black_light_text"
                 android:textCursorDrawable="@drawable/blue_cursor"
                 android:textSize="@dimen/txt_size_4" />
 
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/btnPaypal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
-                android:layout_margin="@dimen/activity_add_child_downarrow_h"
                 android:layout_gravity="center"
-                android:paddingTop="@dimen/activity_add_child_new_margin_tb"
+                android:layout_margin="@dimen/activity_add_child_downarrow_h"
+                android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
+                android:background="@drawable/corner_button"
+                android:gravity="center"
                 android:paddingBottom="@dimen/activity_add_child_new_margin_tb"
                 android:paddingLeft="@dimen/activity_add_child_downarrow_h"
                 android:paddingRight="@dimen/activity_add_child_downarrow_h"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
+                android:paddingTop="@dimen/activity_add_child_new_margin_tb"
                 android:text="Update"
                 android:textColor="@color/white"
-                android:textSize="@dimen/txt_size_5"/>
-
-
-
-
+                android:textSize="@dimen/txt_size_5" />
 
 
         </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="technource.greasecrowd.activities.QuoteJobGarageActivity">
+    tools:context="technource.autoreum.activities.QuoteJobGarageActivity">
 
     <include layout="@layout/app_header" />
     <ScrollView
@@ -24,7 +24,7 @@
         android:layout_marginTop="@dimen/SignIn_margin"
         android:orientation="vertical">
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtjobTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:orientation="horizontal"
             android:visibility="gone">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Propose New Time : "/>
@@ -58,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginRight="@dimen/SignIn_margin"
             android:visibility="gone">
 
 
@@ -65,8 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_add_child_new_sub_layout_padding"
-            android:orientation="horizontal"
-            android:padding="@dimen/activity_add_child_new_sub_layout_padding">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                 android:layout_weight="1.4"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Drop Off"
@@ -90,16 +90,16 @@
                 android:background="@drawable/rect_inner_boarder"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/tv_drop_off_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="08-11-2017"
                     android:padding="@dimen/activity_add_child_new_margin_lr"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dark_gray_text"
                     android:textColorHint="@color/black_light_text"
-                    android:textSize="@dimen/txt_size_3" />
+                    android:textSize="@dimen/txt_size_2" />
 
                 <ImageView
                     android:layout_width="@dimen/row_screening_detail_header_h"
@@ -118,7 +118,7 @@
                 android:background="@drawable/rect_inner_boarder"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/tv_drop_off_time"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -127,7 +127,8 @@
                     android:padding="@dimen/activity_add_child_new_margin_lr"
                     android:text="9:00"
                     android:textColorHint="@color/black_light_text"
-                    android:textSize="@dimen/txt_size_3" />
+                    android:textSize="@dimen/txt_size_2"
+                    android:textColor="@color/dark_gray_text" />
 
                 <ImageView
                     android:layout_width="20dp"
@@ -143,8 +144,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_add_child_new_sub_layout_padding"
-            android:orientation="horizontal"
-            android:padding="@dimen/activity_add_child_new_sub_layout_padding">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -153,7 +153,7 @@
                 android:layout_weight="1.4"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Pick Up"
@@ -168,16 +168,16 @@
                 android:background="@drawable/rect_inner_boarder"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/tv_pick_up_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="08-11-2017"
                     android:padding="@dimen/activity_add_child_new_margin_lr"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dark_gray_text"
                     android:textColorHint="@color/black_light_text"
-                    android:textSize="@dimen/txt_size_3" />
+                    android:textSize="@dimen/txt_size_2" />
 
                 <ImageView
                     android:layout_width="30dp"
@@ -196,7 +196,7 @@
                 android:background="@drawable/rect_inner_boarder"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/tv_pick_up_time"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -205,7 +205,8 @@
                     android:padding="@dimen/activity_add_child_new_margin_lr"
                     android:text="17:00"
                     android:textColorHint="@color/black_light_text"
-                    android:textSize="@dimen/txt_size_3" />
+                    android:textSize="@dimen/txt_size_2"
+                    android:textColor="@color/dark_gray_text" />
 
                 <ImageView
                     android:layout_width="20dp"
@@ -233,12 +234,12 @@
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:layout_weight="1">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/btnServiceType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/str_select_service_type"
-                    android:background="@color/colorPrimary"
+                    android:background="@drawable/corner_button"
                     android:textColor="@color/white"
                     android:paddingTop="@dimen/icon_back_left_margin"
                     android:paddingBottom="@dimen/icon_back_left_margin"
@@ -248,7 +249,7 @@
                     android:textSize="@dimen/txt_size_3"
                     android:textAllCaps="true"/>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
                     android:id="@+id/edtComments"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -260,9 +261,11 @@
                     android:maxLines="8"
                     android:minLines="3"
                     android:padding="@dimen/icon_back_left_margin"
-                    android:inputType="textMultiLine"
+                    android:inputType="textMultiLine|textCapSentences"
                     android:textSize="@dimen/txt_size_3"
-                    android:gravity="top|left"/>
+                    android:gravity="top|left"
+                    android:textColor="@color/dark_gray_text"
+                    android:textCursorDrawable="@drawable/edittext_cursor"/>
 
             </LinearLayout>
 
@@ -272,7 +275,7 @@
                 android:layout_marginTop="@dimen/SignIn_margin"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/txt_size_3"
@@ -285,7 +288,7 @@
                     android:layout_weight="1.5"/>
 
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/main_quote"
@@ -298,7 +301,7 @@
                     android:paddingBottom="@dimen/edittextpadding"
                     android:layout_weight="1"/>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
                     android:id="@+id/edtPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -313,13 +316,14 @@
                     android:layout_marginLeft="@dimen/SignIn_margin"
                     android:layout_marginRight="@dimen/SignIn_margin"
                     android:padding="@dimen/edittextpadding"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:textCursorDrawable="@drawable/edittext_cursor"/>
 
 
             </LinearLayout>
 
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
                 android:id="@+id/edtOffer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -331,14 +335,17 @@
                 android:layout_marginTop="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:padding="@dimen/icon_back_left_margin"
-                android:textSize="@dimen/txt_size_3"/>
+                android:textSize="@dimen/txt_size_3"
+                android:textColor="@color/dark_gray_text"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textCursorDrawable="@drawable/edittext_cursor"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/txt_size_3"
@@ -350,7 +357,7 @@
                     android:paddingBottom="@dimen/edittextpadding"
                     android:layout_weight="1.5"/>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/additional_offers"
@@ -363,7 +370,7 @@
                     android:paddingBottom="@dimen/edittextpadding"
                     android:layout_weight="1"/>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
                     android:id="@+id/edtOfferPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -377,7 +384,8 @@
                     android:layout_marginRight="@dimen/SignIn_margin"
                     android:padding="@dimen/edittextpadding"
                     android:layout_weight="1"
-                    android:textAlignment="center"/>
+                    android:textAlignment="center"
+                    android:textCursorDrawable="@drawable/edittext_cursor"/>
 
             </LinearLayout>
 
@@ -386,7 +394,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/txt_size_3"
@@ -398,7 +406,7 @@
                     android:paddingBottom="@dimen/edittextpadding"
                     android:layout_weight="1.5"/>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Total Price"
@@ -411,7 +419,7 @@
                     android:paddingBottom="@dimen/edittextpadding"
                     android:layout_weight="1"/>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
                     android:id="@+id/edtTotalPrice"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -426,7 +434,8 @@
                     android:layout_marginLeft="@dimen/SignIn_margin"
                     android:layout_marginRight="@dimen/SignIn_margin"
                     android:padding="@dimen/edittextpadding"
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:textCursorDrawable="@drawable/edittext_cursor"/>
 
             </LinearLayout>
 
@@ -437,12 +446,12 @@
 
 
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/btnInclusions"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/str_freeinclusions"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/corner_button"
             android:textColor="@color/white"
             android:paddingTop="@dimen/icon_back_left_margin"
             android:paddingBottom="@dimen/icon_back_left_margin"
@@ -454,12 +463,12 @@
             android:layout_marginTop="@dimen/SignIn_margin"
             android:layout_marginRight="@dimen/SignIn_margin"/>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/btnBid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/str_bid"
-            android:background="@color/green_btn"
+            android:background="@drawable/corner_greeg_bg"
             android:textColor="@color/white"
             android:paddingTop="@dimen/icon_back_left_margin"
             android:paddingBottom="@dimen/icon_back_left_margin"
@@ -469,7 +478,8 @@
             android:textSize="@dimen/txt_size_4"
             android:textAllCaps="false"
             android:layout_marginTop="@dimen/SignIn_margin"
-            android:layout_marginRight="@dimen/SignIn_margin"/>
+            android:layout_marginRight="@dimen/SignIn_margin"
+            android:layout_marginBottom="@dimen/txt_size_8"/>
 
     </LinearLayout>
 

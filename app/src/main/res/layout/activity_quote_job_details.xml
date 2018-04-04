@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.greasecrowd.activities.MycrowdgarageActivity">
+    tools:context="technource.autoreum.activities.MycrowdgarageActivity">
 
     <include layout="@layout/app_header" />
 
@@ -16,7 +16,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/tv_jobTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,15 +28,16 @@
             android:textSize="@dimen/txt_size_4" />
 
         <LinearLayout
+            android:id="@+id/llHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/SignIn_margin"
-            android:background="@color/tab_text"
+            android:background="@drawable/grey_rounder_corner"
             android:gravity="center"
             android:paddingBottom="@dimen/icon_back_left_margin"
             android:paddingTop="@dimen/icon_back_left_margin">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_add_child_new_margin_lr"
@@ -46,7 +47,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_size_1" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/activity_add_child_new_margin_tb"
@@ -88,7 +89,7 @@
 
         </LinearLayout>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
             android:id="@+id/txtNoDataFound"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -97,12 +98,19 @@
             android:textSize="@dimen/txt_size_3"
             android:visibility="gone" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recyclerView"
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/pull_to_refresh"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </android.support.v7.widget.RecyclerView>
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
     </LinearLayout>
 
     <include layout="@layout/app_footer" />

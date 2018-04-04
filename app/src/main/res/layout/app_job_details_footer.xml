@@ -34,7 +34,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/add_normal" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_postjob"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/home_normal" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_home"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/carlist_normal" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_my_jobs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -117,7 +117,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/add_normal" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_postjob_crowd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/home_normal" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_home_crowd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/carlist_normal" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_my_jobs_crowd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/info" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_postjob_garage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -224,7 +224,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/quotes_g" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_home_garage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -248,7 +248,7 @@
                 android:layout_height="@dimen/listitem_purchase_btn_h"
                 android:src="@drawable/discussion_g" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                 android:id="@+id/tv_my_jobs_garage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

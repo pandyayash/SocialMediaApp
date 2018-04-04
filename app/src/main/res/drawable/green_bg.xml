@@ -6,8 +6,8 @@
             android:shape="oval">
             <solid android:color="#00BB7E"/>
             <stroke
-                android:width="1px"
-                android:color="@color/colorPrimary"/>
+                android:width="@dimen/edittextpadding"
+                android:color="@color/type"/>
             <size android:width="@dimen/activity_add_child_downarrow_h"
                 android:height="@dimen/activity_add_child_downarrow_h"/>
         </shape>
@@ -26,8 +26,8 @@
             android:shape="oval">
             <solid android:color="#ffcf3b"/>
             <stroke
-                android:width="1px"
-                android:color="@color/colorPrimary"/>
+                android:width="@dimen/edittextpadding"
+                android:color="@color/type"/>
             <size android:width="@dimen/activity_add_child_downarrow_h"
                 android:height="@dimen/activity_add_child_downarrow_h"/>
         </shape>
@@ -46,8 +46,8 @@
             android:shape="oval">
             <solid android:color="#ff4e63"/>
             <stroke
-                android:width="1px"
-                android:color="@color/colorPrimary"/>
+                android:width="@dimen/edittextpadding"
+                android:color="@color/type"/>
             <size android:width="@dimen/activity_add_child_downarrow_h"
                 android:height="@dimen/activity_add_child_downarrow_h"/>
         </shape>

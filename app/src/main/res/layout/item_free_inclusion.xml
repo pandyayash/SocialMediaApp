@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/blue_textview_border"
         android:orientation="horizontal">
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/str_free_inclusion_by_garage"

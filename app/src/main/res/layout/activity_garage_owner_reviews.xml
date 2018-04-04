@@ -7,11 +7,11 @@
   android:layout_height="match_parent"
   android:background="@color/white"
   android:orientation="vertical"
-  tools:context="technource.greasecrowd.activities.GarageOwnerReviewsActivity">
+  tools:context="technource.autoreum.activities.GarageOwnerReviewsActivity">
 
   <include layout="@layout/app_header" />
 
-  <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+  <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/icon_back_left_margin"
@@ -23,79 +23,81 @@
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
     android:orientation="horizontal">
 
-    <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+
+    <technource.autoreum.CustomViews.Widgets.CircularImageView
       android:id="@+id/Profile_omg"
-      android:layout_width="0dp"
+      android:layout_width="@dimen/listitem_purchase_h"
       android:layout_height="@dimen/listitem_purchase_h"
-      android:layout_weight="3"
-      android:layout_gravity="center"
-      android:src="@drawable/tp" />
+      android:src="@drawable/tp"
+        app:civ_border_color="@color/white"
+        android:layout_marginLeft="@dimen/SignIn_margin"/>
 
     <LinearLayout
-      android:layout_width="0dp"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_weight="7"
+        android:layout_marginLeft="@dimen/SignIn_margin"
       android:orientation="vertical">
 
-      <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+      <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
         android:id="@+id/tv_businessname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/txt_size_5" />
+        android:textSize="@dimen/txt_size_5"
+          android:text="@string/app_name"/>
 
       <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <com.iarcuschin.simpleratingbar.SimpleRatingBar
           android:id="@+id/ratingBar"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginTop="2dp"
           app:srb_borderColor="@color/colorPrimary"
           app:srb_fillColor="@color/colorPrimary"
           app:srb_isIndicator="true"
           app:srb_numberOfStars="5"
-          app:srb_rating="3"
+          app:srb_rating="0"
           app:srb_starBackgroundColor="@color/view_color2"
           app:srb_drawBorderEnabled="false"
           app:srb_starCornerRadius="1"
-          app:srb_starSize="21dp" />
+          app:srb_starSize="21dp"
+            app:srb_stepSize="0.5"/>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
           android:id="@+id/tv_ratingCount"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
           android:layout_marginLeft="5dp"
           android:text="3"
           android:textColor="@color/colorPrimary"
-          android:textSize="@dimen/txt_size_5" />
+          android:textSize="@dimen/txt_size_3"
+            android:layout_gravity="center_vertical"/>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
           android:id="@+id/tvrreview_count"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
-          android:layout_marginTop="2dp"
-          android:layout_marginLeft="5dp"
+          android:layout_marginLeft="2dp"
           android:textColor="@color/black_light_text"
-          android:textSize="@dimen/txt_size_3" />
+          android:textSize="@dimen/txt_size_3"
+            android:text="@string/app_name"/>
 
       </LinearLayout>
 
-      <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+      <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginTop="6dp"
         android:text="Distance: 6814 KM"
         android:textColor="@color/black_light_text"
         android:textSize="@dimen/txt_size_3"
-        android:visibility="invisible" />
+        android:visibility="visible"
+          android:id="@+id/distance"/>
 
     </LinearLayout>
 
@@ -105,7 +107,8 @@
     android:layout_width="match_parent"
     android:layout_height="1dp"
     android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
-    android:background="@color/view_color2" />
+    android:background="@color/view_color2"
+      android:visibility="gone"/>
   <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"

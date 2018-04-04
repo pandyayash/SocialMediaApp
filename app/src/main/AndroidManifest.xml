@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="technource.greasecrowd">
+    package="technource.autoreum">
 
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -20,14 +20,14 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <application
-        android:name=".helper.AppController"
+        android:name="technource.autoreum.helper.AppController"
         android:allowBackup="true"
-        android:icon="@drawable/applogo"
+        android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.SplashScreen"
+            android:name="technource.autoreum.activities.SplashScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
@@ -36,17 +36,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider183683602120587"
+            android:exported="true" />
+
         <activity
-            android:name=".activities.LoginScreen"
+            android:name="technource.autoreum.activities.LoginScreen"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.ForgotPassword"
+            android:name="technource.autoreum.activities.ForgotPassword"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.StaticScreen"
+            android:name="technource.autoreum.activities.StaticScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
@@ -66,44 +72,44 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.How_it_works"
+            android:name="technource.autoreum.activities.How_it_works"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activities.SignUpCarOwner"
+            android:name="technource.autoreum.activities.SignUpCarOwner"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.SignUpGarageOwner"
+            android:name="technource.autoreum.activities.SignUpGarageOwner"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.DialogActivity"
+            android:name="technource.autoreum.activities.DialogActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".activities.DashboardScreen"
+            android:name="technource.autoreum.activities.DashboardScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name=".activities.ChangepasswordActivity"
+            android:name="technource.autoreum.activities.ChangepasswordActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.NotificationActivity"
+            android:name="technource.autoreum.activities.NotificationActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.RegisterdCarsScreen"
+            android:name="technource.autoreum.activities.RegisterdCarsScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PaypalActivity"
+            android:name="technource.autoreum.activities.PaypalActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name=".activities.PostJob.PostNewJobStepOne"
+            android:name="technource.autoreum.activities.PostJob.PostNewJobStepOne"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
@@ -112,320 +118,332 @@
             android:value="@string/facebook_app_id" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDBA3-8GEh_IUywUsD2STZkH0oEqi5Q5IA" />
+            android:value="@string/api_key" />
 
         <activity
-            android:name=".activities.GarageOwnerProfileMapActivity"
+            android:name="technource.autoreum.activities.GarageOwnerProfileMapActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.RegisterNewCarActivity"
+            android:name="technource.autoreum.activities.RegisterNewCarActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.GarageOwnerGalleryActivity"
+            android:name="technource.autoreum.activities.GarageOwnerGalleryActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.GarageOwnerHoursActivity"
+            android:name="technource.autoreum.activities.GarageOwnerHoursActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.GarageOwnerServicesActivity"
+            android:name="technource.autoreum.activities.GarageOwnerServicesActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.GarageOwnerFacilitiesActivity"
+            android:name="technource.autoreum.activities.GarageOwnerFacilitiesActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.GarageOwnerReviewsActivity"
+            android:name="technource.autoreum.activities.GarageOwnerReviewsActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.ViewHistoryGarageActivity"
+            android:name="technource.autoreum.activities.ViewHistoryGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.EditRegisteredCarActivity"
+            android:name="technource.autoreum.activities.EditRegisteredCarActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
-        <service android:name=".firebase.MyFirebaseMessagingService">
+        <service android:name="technource.autoreum.firebase.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name=".activities.CarDetailsActivity"
+            android:name="technource.autoreum.activities.CarDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.StaticWebpages"
+            android:name="technource.autoreum.activities.StaticWebpages"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".activities.PostJob.PostNewJobStepTwo"
+            android:name="technource.autoreum.activities.PostJob.PostNewJobStepTwo"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PostJob.PostNewJobStepThree"
+            android:name="technource.autoreum.activities.PostJob.PostNewJobStepThree"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.MyJobsUserActivity"
+            android:name="technource.autoreum.activities.MyJobsUserActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.MyCrowdUserActivity"
+            android:name="technource.autoreum.activities.MyCrowdUserActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.MyJobsGarageActivity"
+            android:name="technource.autoreum.activities.MyJobsGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.MycrowdgarageActivity"
+            android:name="technource.autoreum.activities.MycrowdgarageActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PostJob.PostNewJobStepFour"
+            android:name="technource.autoreum.activities.PostJob.PostNewJobStepFour"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name=".activities.PostJob.PostNewJobFive"
+            android:name="technource.autoreum.activities.PostJob.PostNewJobFive"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="technource.autoreum.activities.PostJob.PostNewJobAdditionalStep"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.PostJob.PostNewJobAdditionalStep"
-            android:screenOrientation="sensorPortrait"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".activities.AskTheCrowd.AskTheCrowdStepOne"
+            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepOne"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name=".activities.AskTheCrowd.AskTheCrowdStepTwo"
+            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepTwo"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name=".activities.AskTheCrowd.AskTheCrowdStepThree"
+            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepThree"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.AskTheCrowd.AskTheCrowdStepFour"
+            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepFour"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.JobDetailsActivity"
+            android:name="technource.autoreum.activities.JobDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.AskTheCrowd.AskTheCrowdStepFive"
+            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepFive"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustNothing" />
         <activity
-            android:name=".activities.AskTheCrowd.AskTheCrowdAdditionalStep"
+            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdAdditionalStep"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.QuotedjobDetailsActivity"
+            android:name="technource.autoreum.activities.QuotedjobDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PostJob.EditJobStepOne"
+            android:name="technource.autoreum.activities.PostJob.EditJobStepOne"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PostJob.EditJobStepTwo"
+            android:name="technource.autoreum.activities.PostJob.EditJobStepTwo"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PostJob.EditJobStepThree"
+            android:name="technource.autoreum.activities.PostJob.EditJobStepThree"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PostJob.EditJobStepFour"
+            android:name="technource.autoreum.activities.PostJob.EditJobStepFour"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.PostJob.EditJobStepFive"
+            android:name="technource.autoreum.activities.PostJob.EditJobStepFive"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="technource.autoreum.activities.SearchCrowdActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.SearchCrowdActivity"
+            android:name="technource.autoreum.activities.ViewNotificationActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.ViewNotificationActivity"
+            android:name="technource.autoreum.activities.MyCrowdDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.MyCrowdDetailsActivity"
+            android:name="technource.autoreum.activities.ViewNewJobsFeedDetailActivity"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="technource.autoreum.activities.SearchGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.ViewNewJobsFeedDetailActivity"
+            android:name="technource.autoreum.activities.QuoteJobDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.SearchGarageActivity"
+            android:name="technource.autoreum.activities.QuoteJobDetailsPagerActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.QuoteJobDetailsActivity"
-            android:screenOrientation="sensorPortrait"
-            android:theme="@style/AppThemeNavigation"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity
-            android:name=".activities.QuoteJobDetailsPagerActivity"
-            android:screenOrientation="sensorPortrait"
-            android:theme="@style/AppThemeNavigation"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity
-            android:name=".activities.QuoteJobGarageActivity"
+            android:name="technource.autoreum.activities.QuoteJobGarageActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.UpdateQuoteGarageActivity"
+            android:name="technource.autoreum.activities.UpdateQuoteGarageActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.ViewSelectSeriviceTypeActivity"
+            android:name="technource.autoreum.activities.ViewSelectSeriviceTypeActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.ViewFreeInclusionsActivity"
+            android:name="technource.autoreum.activities.ViewFreeInclusionsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.FreeInclusionGarageActivity"
+            android:name="technource.autoreum.activities.FreeInclusionGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.SelectSubServicesGarageActivity"
+            android:name="technource.autoreum.activities.SelectSubServicesGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.DiscussionActivity"
+            android:name="technource.autoreum.activities.DiscussionActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.GarageOwnerDetailsActivity"
+            android:name="technource.autoreum.activities.GarageOwnerDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.DisplayGarageOwnerHoursActivity"
+            android:name="technource.autoreum.activities.DisplayGarageOwnerHoursActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.DisplayGarageOwnerServicesActivity"
+            android:name="technource.autoreum.activities.DisplayGarageOwnerServicesActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.DisplayGarageOwnerFacilitiesActivity"
+            android:name="technource.autoreum.activities.DisplayGarageOwnerFacilitiesActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.DisplayGarageOwnerReviewsActivity"
+            android:name="technource.autoreum.activities.DisplayGarageOwnerReviewsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.UserDetailsActivity"
+            android:name="technource.autoreum.activities.UserDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.GenerateSafetyReportGarageActivity"
+            android:name="technource.autoreum.activities.GenerateSafetyReportGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.UserDetailsActivity"
+            android:name="technource.autoreum.activities.UserDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.DisplayUserRegisterdCarsScreen"
+            android:name="technource.autoreum.activities.DisplayUserRegisterdCarsScreen"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.InvoiceDetailsActivity"
+            android:name="technource.autoreum.activities.InvoiceDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.DetailsOfGarageUserJobActivity"
+            android:name="technource.autoreum.activities.DetailsOfGarageUserJobActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.WebViewActivity"
+            android:name="technource.autoreum.activities.WebViewActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.WeeklyDetailsActivity"
+            android:name="technource.autoreum.activities.WeeklyDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.JobsWaitingForReviewActivity"
+            android:name="technource.autoreum.activities.JobsWaitingForReviewActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.AddAReviewScreenActivity"
+            android:name="technource.autoreum.activities.AddAReviewScreenActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name=".activities.JobsCompletedByGarageActivity"
+            android:name="technource.autoreum.activities.JobsCompletedByGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity android:name=".activities.ViewFollowUpWorkActivity"></activity>
-        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+        <activity android:name="technource.autoreum.activities.ViewFollowUpWorkActivity" />
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="${applicationId}.braintree" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="technource.autoreum.activities.DisplayServiceInclusionActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="technource.autoreum.activities.CrowdDiscussionBoardActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
     </application>
 
 </manifest>

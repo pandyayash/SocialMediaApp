@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.greasecrowd.activities.MycrowdgarageActivity">
+    tools:context="technource.autoreum.activities.MycrowdgarageActivity">
 
     <include layout="@layout/app_header" />
 
@@ -24,25 +24,25 @@
             android:layout_margin="@dimen/SignIn_margin"
             android:orientation="horizontal">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                 android:id="@+id/btnSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:padding="@dimen/icon_back_left_margin"
                 android:text="Search"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_size_6" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                 android:id="@+id/btnSort"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_weight="1"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:padding="@dimen/icon_back_left_margin"
                 android:text="Sort"
                 android:textAlignment="center"
@@ -51,7 +51,7 @@
 
         </LinearLayout>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
             android:id="@+id/txtNoDataFound"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -61,13 +61,21 @@
             android:textSize="@dimen/txt_size_3"
             android:visibility="gone" />
 
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
         <android.support.v7.widget.RecyclerView
             android:id="@+id/crowd_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+            android:layout_weight="1">
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/btnAskCrowd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

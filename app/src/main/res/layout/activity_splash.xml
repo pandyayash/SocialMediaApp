@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="technource.greasecrowd.activities.SplashScreen"
+    tools:context="technource.autoreum.activities.SplashScreen"
     android:weightSum="10"
     android:background="@color/color_Splash"
     android:orientation="vertical"
     android:id="@+id/activity_splash">
 
   <LinearLayout
-      android:layout_width="wrap_content"
+      android:layout_width="match_parent"
       android:layout_weight="2"
       android:weightSum="5"
       android:gravity="center"
@@ -25,11 +25,23 @@
         android:layout_height="0dp"
         app:srcCompat="@drawable/logo"
         android:id="@+id/imageView"
-        android:layout_marginTop="@dimen/text_margin"/>
+        android:layout_marginTop="@dimen/text_margin"
+        android:visibility="gone"/>
+
+    <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/app_name"
+        android:textSize="@dimen/notes_dialog_menu_h"
+        android:textColor="@color/red_color"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+
+    </LinearLayout>
 
 
 
-  </LinearLayout>
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="0dp"
@@ -42,7 +54,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:src="@drawable/logo_icon"
+        android:src="@drawable/logoicon"
         android:id="@+id/imageView2"
         android:layout_weight="3"
         />
@@ -55,7 +67,7 @@
       android:orientation="vertical"
       android:gravity="center">
 
-    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center"
@@ -77,7 +89,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/SignIn_margin"/>
 
-    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.greasecrowd.activities.CarDetailsActivity">
+    tools:context="technource.autoreum.activities.CarDetailsActivity">
     <include layout="@layout/app_header">
     </include>
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="horizontal">
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

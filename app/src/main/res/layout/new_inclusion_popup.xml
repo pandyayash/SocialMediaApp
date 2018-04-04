@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
+    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
         android:id="@+id/edtInclucion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,6 +14,7 @@
         android:gravity="center"
         android:padding="@dimen/edittextpadding"
         android:layout_margin="@dimen/SignIn_margin"
-        android:inputType="text"/>
+        android:inputType="text|textCapSentences"
+        android:textCursorDrawable="@drawable/edittext_cursor"/>
 
 </LinearLayout>

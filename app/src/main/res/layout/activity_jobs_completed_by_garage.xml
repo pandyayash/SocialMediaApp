@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="technource.greasecrowd.activities.JobsCompletedByGarageActivity">
+    tools:context="technource.autoreum.activities.JobsCompletedByGarageActivity">
 
     <LinearLayout
         android:orientation="horizontal" android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 android:layout_gravity="center"
                 />
         </LinearLayout>
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/tv_header"
             android:layout_width="match_parent"
             android:textAllCaps="true"
@@ -48,6 +48,10 @@
         android:orientation="vertical"
         android:background="@color/white"
         android:layout_weight="1">
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/pull_to_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -55,6 +59,7 @@
             android:layout_height="match_parent">
 
         </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>
 

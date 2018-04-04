@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.greasecrowd.activities.GarageOwnerGalleryActivity">
+    tools:context="technource.autoreum.activities.GarageOwnerGalleryActivity">
 
     <include layout="@layout/app_header" />
 
@@ -51,7 +51,7 @@
                         android:layout_marginTop="5dp"
                         android:src="@drawable/upload_icon" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -59,7 +59,7 @@
                         android:text="@string/upload_here"
                         android:textSize="@dimen/txt_size_2" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -70,7 +70,7 @@
 
                 </LinearLayout>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.greasecrowd.CustomViews.MyGridView
+                    <technource.autoreum.CustomViews.MyGridView
                         android:id="@+id/gridview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
 
                 </RelativeLayout>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
@@ -121,7 +121,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.greasecrowd.CustomViews.MyGridView
+                    <technource.autoreum.CustomViews.MyGridView
                         android:id="@+id/gridview_video"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -154,11 +154,11 @@
                     android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
                     android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                     android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
-                    android:background="@color/colorPrimary"
+                    android:background="@drawable/corner_button"
                     android:gravity="center"
                     android:padding="@dimen/activity_add_child_new_margin_tb">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/buttonChange"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -176,10 +176,10 @@
                     android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
                     android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                     android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
-                    android:background="@color/view_color"
+                    android:background="@drawable/grey_rounder_corner"
                     android:padding="@dimen/activity_add_child_new_margin_tb">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -198,10 +198,10 @@
                     android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
                     android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                     android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
-                    android:background="@color/view_color"
+                    android:background="@drawable/grey_rounder_corner"
                     android:padding="@dimen/activity_add_child_new_margin_tb">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -213,7 +213,7 @@
 
                 </LinearLayout>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

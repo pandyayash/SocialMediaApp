@@ -21,12 +21,12 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
-                android:text="Rate"
                 android:gravity="center"
+                android:text="Rate"
                 android:textColor="@color/black"
                 android:textSize="@dimen/txt_size_4" />
 
@@ -44,11 +44,12 @@
                 app:srb_rating="0"
                 app:srb_starBackgroundColor="@color/view_color2"
                 app:srb_starCornerRadius="1"
-                app:srb_starSize="25dp" />
+                app:srb_starSize="25dp"
+                app:srb_stepSize="0.5"/>
 
         </LinearLayout>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="@dimen/activity_add_child_new_margin_lr"
@@ -57,7 +58,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/txt_size_4" />
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
             android:id="@+id/message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,8 +68,9 @@
             android:ellipsize="end"
             android:gravity="top|left"
             android:hint="Add Your Review Here"
-            android:inputType="textMultiLine"
+            android:inputType="textMultiLine|textCapSentences"
             android:lines="3"
+            android:maxLength="200"
             android:maxLines="5"
             android:minLines="3"
             android:overScrollMode="always"
@@ -77,15 +79,23 @@
             android:scrollbarStyle="insideInset"
             android:scrollbars="vertical"
             android:singleLine="true"
-            android:textSize="@dimen/txt_size_3" />
+            android:textSize="@dimen/txt_size_3"
+            android:textCursorDrawable="@drawable/edittext_cursor"/>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+            android:id="@+id/tvCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="0/200" />
+
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtSubmitReview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="@dimen/icon_back_left_margin"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/corner_button"
             android:padding="@dimen/SignIn_padding"
             android:text="Submit Review"
             android:textAlignment="center"

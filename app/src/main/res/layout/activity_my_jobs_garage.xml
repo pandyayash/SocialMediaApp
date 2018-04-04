@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.greasecrowd.activities.MycrowdgarageActivity">
+    tools:context="technource.autoreum.activities.MycrowdgarageActivity">
 
     <include layout="@layout/app_header" />
 
-    <technource.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
+    <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"

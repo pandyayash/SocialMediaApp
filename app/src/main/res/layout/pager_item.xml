@@ -12,16 +12,16 @@
             tools:src="@drawable/car_demo"
             android:id="@+id/img_pager_item"
             android:adjustViewBounds="true"
-            android:clickable="false"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:src="@drawable/ic_star_black_18dp"
-            android:id="@+id/btn_play"
-            android:adjustViewBounds="true"
             android:layout_centerInParent="true"
-            android:clickable="false"
-            android:visibility="visible"/>
+            android:clickable="false"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_play"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:background="@drawable/ic_play_circle"/>
 
 
 

@@ -3,27 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_garage_owner_hours"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.greasecrowd.activities.GarageOwnerHoursActivity">
+    tools:context="technource.autoreum.activities.GarageOwnerHoursActivity">
 
     <include layout="@layout/app_header" />
+
     <LinearLayout
         android:id="@+id/t_hours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:visibility="visible">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="@dimen/activity_add_child_downarrow_h"
                 android:gravity="center"
+                android:padding="@dimen/activity_add_child_downarrow_h"
                 android:text="Trading Hours"
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/txt_size_5" />
@@ -39,16 +41,17 @@
             android:layout_weight="1">
 
         </ListView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/save"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/activity_add_child_downarrow_w"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:gravity="center"
                 android:padding="@dimen/activity_add_child_new_margin_lr"
                 android:text="SAVE"
@@ -58,5 +61,7 @@
         </LinearLayout>
 
     </LinearLayout>
-    <include layout="@layout/app_footer" />
+
+    <include
+        layout="@layout/app_footer" />
 </LinearLayout>

@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="technource.greasecrowd.activities.AskTheCrowd.AskTheCrowdAdditionalStep">
+    tools:context="technource.autoreum.activities.AskTheCrowd.AskTheCrowdAdditionalStep">
 
 </android.support.constraint.ConstraintLayout>

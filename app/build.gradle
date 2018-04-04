@@ -6,7 +6,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        applicationId "technource.greasecrowd"
+        applicationId "technource.autoreum"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -48,7 +48,7 @@ android {
 }
 
 ext.supportLibraryVersion = '26.0.0'
-ext.googleLibraryVersion = '10.2.1'
+ext.googleLibraryVersion = '11.8.0'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -65,14 +65,14 @@ dependencies {
     compile "com.google.firebase:firebase-core:${googleLibraryVersion}"
     compile 'com.google.code.gson:gson:2.8.1'
     compile 'com.android.support:multidex:1.0.1'
-    compile 'com.android.support:support-v4:26.0.0'
+    compile 'com.android.support:support-v4:25.3.1'
     compile 'org.apache.httpcomponents:httpcore:4.3.3'
     compile 'org.apache.httpcomponents:httpmime:4.3.6'
     compile 'org.apache.httpcomponents:httpclient:4.3.6'
     compile 'com.facebook.android:facebook-android-sdk:4.28.0'
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile 'com.android.support:recyclerview-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:25.1.1'
     compile 'com.iarcuschin:simpleratingbar:0.1.1'
     compile "com.android.support:customtabs:${supportLibraryVersion}"
     compile "com.squareup.picasso:picasso:2.5.2"
@@ -81,6 +81,7 @@ dependencies {
     compile 'com.mikhaellopez:circularimageview:3.0.2'
     compile 'com.braintreepayments.api:drop-in:3.2.1'
     compile 'com.android.support:multidex:1.0.0'
+    compile 'com.sprylab.android.texturevideoview:texturevideoview:1.0.2'
 
 
 

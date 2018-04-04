@@ -47,7 +47,16 @@
             android:layout_height="0dp"
             android:layout_weight="3"
             android:layout_gravity="center"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logo"
+              android:visibility="gone"/>
+          <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="@string/app_name"
+              android:textSize="@dimen/notes_dialog_menu_h"
+              android:textColor="@color/red_color"
+              android:gravity="center"
+              android:layout_gravity="center"/>
         </LinearLayout>
       </LinearLayout>
 
@@ -65,7 +74,8 @@
           android:layout_marginRight="@dimen/activity_add_child_spinner_h"
           android:background="@color/edittext_bg">
 
-          <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText  android:inputType="textNoSuggestions"
+          <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+              android:inputType="textNoSuggestions|textCapSentences"
             android:id="@+id/edt_username"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -86,7 +96,7 @@
           android:layout_marginRight="@dimen/activity_add_child_spinner_h"
           android:background="@color/edittext_bg">
 
-          <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+          <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -107,9 +117,9 @@
           android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
           android:layout_marginLeft="@dimen/activity_add_child_spinner_h"
           android:layout_marginRight="@dimen/activity_add_child_spinner_h"
-          android:background="@color/white">
+            android:background="@drawable/white_bg">
 
-          <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+          <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -121,7 +131,7 @@
 
         </LinearLayout>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
           android:id="@+id/forget_password"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -167,7 +177,7 @@
 
         </LinearLayout>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
           android:id="@+id/signup_txt"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"

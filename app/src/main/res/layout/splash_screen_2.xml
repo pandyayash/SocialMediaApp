@@ -4,7 +4,7 @@
     android:id="@+id/activity_how_it_works"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="technource.greasecrowd.activities.How_it_works"
+    tools:context="technource.autoreum.activities.How_it_works"
     android:orientation="vertical"
     android:background="@color/color_Splash"
     android:weightSum="10">
@@ -34,7 +34,7 @@
         android:layout_marginRight="@dimen/activity_signup_layout_margin_lr"
         android:orientation="vertical">
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/slide_2_title"
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/description"

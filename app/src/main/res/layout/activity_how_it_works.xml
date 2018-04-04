@@ -7,7 +7,7 @@
   android:background="@color/color_Splash"
   android:orientation="vertical"
   android:weightSum="10"
-  tools:context="technource.greasecrowd.activities.How_it_works">
+  tools:context="technource.autoreum.activities.How_it_works">
 
   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -15,7 +15,7 @@
     android:orientation="vertical">
 
 
-    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
       android:id="@+id/btn_skip"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
 
     </LinearLayout>
 
-    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
       android:id="@+id/btn_next"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

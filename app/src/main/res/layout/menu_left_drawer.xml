@@ -41,7 +41,7 @@
         android:orientation="vertical">
 
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginTop="@dimen/cb_keepSignIn_hw"
@@ -65,7 +65,7 @@
           android:layout_width="match_parent"
           android:layout_height="wrap_content">
 
-          <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+          <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_add_child_downarrow_h"

@@ -5,13 +5,14 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <include layout="@layout/app_header"/>
+    <include layout="@layout/app_header" />
+
     <ScrollView
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:layout_marginBottom="@dimen/activity_add_child_downarrow_w">
+        android:layout_marginBottom="@dimen/activity_add_child_downarrow_w"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <LinearLayout
             android:id="@+id/ll_personal_details"
@@ -23,25 +24,25 @@
             android:visibility="visible">
 
             <RelativeLayout
-                android:background="@drawable/rect_inner_boarder"
                 android:id="@+id/ll_make"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/row_screening_detail_header_h"
                 android:layout_marginRight="@dimen/row_screening_detail_header_h"
-                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr">
+                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                android:background="@drawable/rect_inner_boarder">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                     android:id="@+id/edt_make"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:editable="false"
                     android:gravity="center"
-                    android:textColor="@color/black_light_text"
                     android:hint="@string/select_make"
                     android:padding="@dimen/activity_add_child_new_margin_lr"
                     android:singleLine="true"
+                    android:textColor="@color/black_light_text"
                     android:textSize="@dimen/txt_size_4" />
 
                 <ImageView
@@ -55,14 +56,14 @@
 
             <RelativeLayout
                 android:id="@+id/ll_model"
-                android:background="@drawable/rect_inner_boarder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/row_screening_detail_header_h"
                 android:layout_marginRight="@dimen/row_screening_detail_header_h"
-                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr">
+                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                android:background="@drawable/rect_inner_boarder">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                     android:id="@+id/edt_model"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -70,9 +71,9 @@
                     android:editable="false"
                     android:gravity="center"
                     android:hint="@string/select_model"
-                    android:textColor="@color/black_light_text"
                     android:padding="@dimen/activity_add_child_new_margin_lr"
                     android:singleLine="true"
+                    android:textColor="@color/black_light_text"
                     android:textSize="@dimen/txt_size_4" />
 
                 <ImageView
@@ -86,25 +87,26 @@
 
             <RelativeLayout
                 android:id="@+id/ll_badge"
-                android:background="@drawable/rect_inner_boarder"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/row_screening_detail_header_h"
                 android:layout_marginRight="@dimen/row_screening_detail_header_h"
-                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr">
+                android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+                android:background="@drawable/rect_inner_boarder">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                     android:id="@+id/edt_badge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@null"
-                    android:textColor="@color/black_light_text"
                     android:editable="false"
                     android:gravity="center"
                     android:hint="@string/select_badge_variant"
                     android:padding="@dimen/activity_add_child_new_margin_lr"
                     android:singleLine="true"
+                    android:textColor="@color/black_light_text"
                     android:textSize="@dimen/txt_size_4" />
+
                 <ImageView
                     android:layout_width="@dimen/activity_add_child_downarrow_h"
                     android:layout_height="@dimen/activity_add_child_downarrow_h"
@@ -124,43 +126,44 @@
 
                 <LinearLayout
                     android:id="@+id/autometic"
-                    android:background="@drawable/rect_inner_boarder"
                     android:layout_width="0dp"
-                    android:gravity="center"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/activity_add_child_new_margin_tb"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_inner_boarder"
+                    android:gravity="center">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/autoText"
-                        android:duplicateParentState="false"
-                        android:gravity="center"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_alignLeft="@+id/auto"
-                        android:text="@string/automatic"
-                       android:padding="@dimen/activity_add_child_new_margin_lr"
+                        android:duplicateParentState="false"
+                        android:gravity="center"
+                        android:padding="@dimen/activity_add_child_new_margin_lr"
                         android:singleLine="true"
+                        android:text="@string/automatic"
                         android:textSize="@dimen/txt_size_4" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/manual"
-                    android:gravity="center"
-                    android:background="@drawable/rect_inner_boarder"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/activity_add_child_new_margin_tb"
-                    android:layout_weight="1">
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    android:layout_weight="1"
+                    android:background="@drawable/rect_inner_boarder"
+                    android:gravity="center">
+
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/manualTxt"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/manual"
                         android:gravity="center"
                         android:padding="@dimen/activity_add_child_new_margin_lr"
                         android:singleLine="true"
+                        android:text="@string/manual"
                         android:textSize="@dimen/txt_size_4" />
 
                 </LinearLayout>
@@ -175,18 +178,19 @@
                 android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
                 android:background="@drawable/rect_inner_boarder">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
-                    android:inputType="textNoSuggestions"
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                     android:id="@+id/edt_reg_number"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
                     android:gravity="center"
-                    android:textColor="@color/black_light_text"
                     android:hint="@string/registration_number"
+                    android:inputType="textNoSuggestions|textCapSentences"
                     android:padding="@dimen/activity_add_child_new_margin_lr"
                     android:singleLine="true"
-                    android:textSize="@dimen/txt_size_4" />
+                    android:textColor="@color/black_light_text"
+                    android:textSize="@dimen/txt_size_4"
+                    android:textCursorDrawable="@drawable/edittext_cursor"/>
 
             </LinearLayout>
 
@@ -198,32 +202,33 @@
                 android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
                 android:background="@drawable/rect_inner_boarder">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                     android:id="@+id/edt_year"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
-                    android:textColor="@color/black_light_text"
                     android:gravity="center"
                     android:hint="@string/year"
                     android:inputType="number"
                     android:maxLength="4"
                     android:padding="@dimen/activity_add_child_new_margin_lr"
                     android:singleLine="true"
-                    android:textSize="@dimen/txt_size_4" />
+                    android:textColor="@color/black_light_text"
+                    android:textSize="@dimen/txt_size_4"
+                    android:textCursorDrawable="@drawable/edittext_cursor"/>
 
             </LinearLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/row_screening_detail_header_h"
                 android:layout_marginRight="@dimen/row_screening_detail_header_h"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
-                android:background="@color/colorPrimary">
+                android:background="@drawable/corner_button">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/registerBtn"
 
                     android:layout_width="match_parent"
@@ -235,17 +240,18 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/txt_size_4" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/add_more_car"
                 android:layout_width="match_parent"
-                android:background="@color/colorPrimary"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/row_screening_detail_header_h"
                 android:layout_marginRight="@dimen/row_screening_detail_header_h"
                 android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
+                android:background="@drawable/corner_button"
                 android:gravity="center">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
@@ -257,20 +263,16 @@
             </LinearLayout>
 
 
-
-
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/activity_add_child_spinner_h"
                 android:layout_marginRight="@dimen/activity_add_child_spinner_h"
                 android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
-                android:visibility="invisible"
-                android:background="@color/white">
+                android:background="@color/white"
+                android:visibility="invisible">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
@@ -284,6 +286,7 @@
         </LinearLayout>
 
     </ScrollView>
+
     <include layout="@layout/app_footer" />
 
 </LinearLayout>

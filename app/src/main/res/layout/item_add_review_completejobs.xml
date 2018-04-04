@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/textJobTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
                     android:textColor="@color/colorAccent"
                     android:textSize="@dimen/txt_size_2" />
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/textDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                     android:layout_weight="1.3"
                     android:orientation="vertical">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtToUser"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
                         android:textColor="@color/date"
                         android:textSize="@dimen/txt_size_2" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/textCarModel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -89,13 +89,13 @@
                     android:orientation="vertical">
 
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/textPrice"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
                         android:layout_marginTop="@dimen/icon_back_left_margin"
-                        android:background="@color/colorPrimary"
+                        android:background="@drawable/corner_button"
                         android:padding="@dimen/activity_add_child_new_margin_tb"
                         android:text="Provide Review"
                         android:textAlignment="center"

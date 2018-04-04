@@ -13,7 +13,7 @@
         android:layout_marginRight="@dimen/SignIn_margin"
         android:layout_marginTop="@dimen/icon_back_left_margin">
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/textTransaction"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:textColor="@color/black"
             android:layout_weight="1"/>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/textDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.greasecrowd.activities.GarageOwnerServicesActivity">
+    tools:context="technource.autoreum.activities.GarageOwnerServicesActivity">
 
     <include layout="@layout/app_header"/>
     <android.support.v4.widget.NestedScrollView
@@ -22,7 +22,7 @@
             android:orientation="vertical">
 
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -52,9 +52,9 @@
                 android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                 android:layout_gravity="center"
                 android:padding="@dimen/activity_add_child_new_margin_tb"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:gravity="center">
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/buttonChange"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -73,9 +73,9 @@
                 android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
                 android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                 android:padding="@dimen/activity_add_child_new_margin_tb"
-                android:background="@color/view_color">
+                android:background="@drawable/grey_rounder_corner">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -96,9 +96,9 @@
                 android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
                 android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                 android:padding="@dimen/activity_add_child_new_margin_tb"
-                android:background="@color/view_color">
+                android:background="@drawable/grey_rounder_corner">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -109,7 +109,7 @@
                     android:textSize="@dimen/txt_size_5" />
 
             </LinearLayout>
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:visibility="invisible"
                 android:background="@color/colorPrimary"

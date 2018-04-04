@@ -51,4 +51,14 @@
   <color name="light_black">#303030</color>
   <color name="dark_grey_bg">#545454</color>
   <color name="RadiumColor">#3CE53C</color>
+  <color name="dark_gray_text">#636363</color>
+  <color name="grey_border">#C3C3C3</color>
+  <color name="text_bg">#F8F8F8</color>
+  <color name="text_clr">#464646</color>
+  <color name="safety_report">#434343</color>
+  <color name="devider_clr">#F0F0F0</color>
+  <color name="footer_button">#C8C8C8</color>
+  <color name="new_border_color">#7A7A7A</color>
+  <color name="new_job_title_color">#282828</color>
+  <color name="quote_job_text">#5F5F5F</color>
 </resources>

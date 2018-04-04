@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="technource.greasecrowd.activities.ViewFreeInclusionsActivity">
+    tools:context="technource.autoreum.activities.ViewFreeInclusionsActivity">
 
 </android.support.constraint.ConstraintLayout>

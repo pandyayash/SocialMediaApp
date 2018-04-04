@@ -16,4 +16,19 @@
             android:scaleType="fitCenter"
             android:src="@drawable/tyre_img" />
 
+        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+            android:id="@+id/btnDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:background="@drawable/corner_button"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/SignIn_margin"
+            android:paddingRight="@dimen/SignIn_margin"
+            android:paddingTop="@dimen/icon_back_left_margin"
+            android:paddingBottom="@dimen/icon_back_left_margin"
+            android:layout_below="@+id/img"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/SignIn_margin"/>
+
 </RelativeLayout>

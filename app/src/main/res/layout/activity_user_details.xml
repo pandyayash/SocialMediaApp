@@ -30,7 +30,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center">
 
-                    <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+                    <technource.autoreum.CustomViews.Widgets.CircularImageView
                         android:id="@+id/iv_image"
                         android:layout_width="@dimen/img_width_height"
                         android:layout_height="@dimen/img_width_height"
@@ -54,7 +54,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvAddress"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvMAil"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
 
             </LinearLayout>
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/tvMailButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                 android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
                 android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                 android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:gravity="center"
                 android:padding="@dimen/activity_add_child_new_margin_tb"
                 android:text="Email User"
@@ -121,7 +121,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_size_4" />
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/tvRegisteredCarButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -129,7 +129,7 @@
                 android:layout_marginLeft="@dimen/marginLeft_tvChildNameDB"
                 android:layout_marginRight="@dimen/marginLeft_tvChildNameDB"
                 android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/corner_button"
                 android:gravity="center"
                 android:padding="@dimen/activity_add_child_new_margin_tb"
                 android:text="Registered cars"

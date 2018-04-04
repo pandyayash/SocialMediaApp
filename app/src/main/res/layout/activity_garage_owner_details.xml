@@ -7,6 +7,7 @@
     android:orientation="vertical">
 
     <include layout="@layout/app_header" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -18,7 +19,7 @@
             android:orientation="vertical"
             android:padding="@dimen/activity_add_child_downarrow_h">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/tvGarageName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,7 +47,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center">
 
-                    <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+                    <technource.autoreum.CustomViews.Widgets.CircularImageView
                         android:id="@+id/iv_image"
                         android:layout_width="@dimen/img_width_height"
                         android:layout_height="@dimen/img_width_height"
@@ -62,51 +63,73 @@
                 android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
                 android:orientation="horizontal">
 
-                <com.iarcuschin.simpleratingbar.SimpleRatingBar
-                    android:id="@+id/ratingBar"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="2dp"
-                    android:layout_weight="1"
-                    app:srb_borderColor="@color/colorPrimary"
-                    app:srb_drawBorderEnabled="false"
-                    app:srb_fillColor="@color/colorPrimary"
-                    app:srb_isIndicator="true"
-                    app:srb_numberOfStars="5"
-                    app:srb_rating="3"
-                    app:srb_starBackgroundColor="@color/view_color2"
-                    app:srb_starCornerRadius="1"
-                    app:srb_starSize="15dp" />
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
-                    android:id="@+id/rate_count"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="0.5"
-                    android:text="(3)"
-                    android:textColor="@color/text_color2"
-                    android:textSize="@dimen/txt_size_2" />
+                    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                        android:id="@+id/ratingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        app:srb_borderColor="@color/colorPrimary"
+                        app:srb_drawBorderEnabled="false"
+                        app:srb_fillColor="@color/colorPrimary"
+                        app:srb_isIndicator="true"
+                        app:srb_numberOfStars="5"
+                        app:srb_rating="3"
+                        app:srb_starBackgroundColor="@color/view_color2"
+                        app:srb_starCornerRadius="1"
+                        app:srb_starSize="15dp"
+                        app:srb_stepSize="0.5"/>
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
-                    android:id="@+id/tvReviews"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:text=" 24 Reviews"
-                    android:textColor="@color/text_color2"
-                    android:textSize="@dimen/txt_size_2" />
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        android:id="@+id/rate_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/icon_back_left_margin"
+                        android:text="(3)"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/txt_size_2" />
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
-                    android:id="@+id/tvDistnace"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="1"
-                    android:text="Distnace: 20KM"
-                    android:textColor="@color/text_color2"
-                    android:textSize="@dimen/txt_size_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1.2">
+
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        android:id="@+id/tvReviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text=" 24 Reviews"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/txt_size_2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="0.9">
+
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        android:id="@+id/tvDistnace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Distnace: 0KM"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/txt_size_2" />
+
+                </LinearLayout>
+
+
             </LinearLayout>
 
             <LinearLayout
@@ -129,13 +152,14 @@
                         android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                         android:src="@drawable/location" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvLocation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/txt_size_6"
+                        android:gravity="start"
                         android:text="@string/app_name"
-                        android:textColor="@color/text_color2"
+                        android:textColor="#0066CC"
                         android:textSize="@dimen/txt_size_3" />
                 </LinearLayout>
 
@@ -158,13 +182,14 @@
                         android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                         android:src="@drawable/call" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvCall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/txt_size_6"
+                        android:gravity="start"
                         android:text="@string/app_name"
-                        android:textColor="@color/text_color2"
+                        android:textColor="#0066CC"
                         android:textSize="@dimen/txt_size_3" />
 
                 </LinearLayout>
@@ -187,13 +212,14 @@
                         android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                         android:src="@drawable/msg" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvMsg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/txt_size_6"
+                        android:gravity="start"
                         android:text="@string/app_name"
-                        android:textColor="@color/text_color2"
+                        android:textColor="#0066CC"
                         android:textSize="@dimen/txt_size_3" />
 
                 </LinearLayout>
@@ -211,12 +237,13 @@
                 android:orientation="horizontal">
 
                 <ImageView
+                    android:id="@+id/img_verify_1"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                     android:src="@drawable/verified" />
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/tvVerified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -226,6 +253,7 @@
                     android:textSize="@dimen/txt_size_3" />
 
                 <ImageView
+                    android:id="@+id/img_verify_2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_margin="@dimen/activity_add_child_new_margin_tb"
@@ -258,7 +286,7 @@
                             android:layout_height="@dimen/activity_reports_new_btn_w"
                             android:src="@drawable/car_demo" />
 
-                        <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+                        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"
@@ -291,6 +319,8 @@
         </LinearLayout>
 
     </ScrollView>
+
     <include layout="@layout/garage_profile_footer_details" />
+
     <include layout="@layout/app_footer" />
 </LinearLayout>

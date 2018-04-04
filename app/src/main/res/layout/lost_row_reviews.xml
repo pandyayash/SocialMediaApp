@@ -6,19 +6,20 @@
   android:background="@color/white_light"
   android:orientation="vertical">
 
-  <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+  <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
     android:id="@+id/tv_job_title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="0dp"
     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
+      android:layout_marginTop="@dimen/icon_back_left_margin"
     android:text="Job Title: 'I want to change my car color'"
     android:textColor="@color/colorPrimary" />
 
   <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
+      android:layout_marginTop="@dimen/icon_back_left_margin"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -27,7 +28,7 @@
       android:layout_weight="3"
       android:orientation="vertical">
 
-      <technource.greasecrowd.CustomViews.Widgets.CircularImageView
+      <technource.autoreum.CustomViews.Widgets.CircularImageView
         android:id="@+id/iv_image"
         android:layout_width="match_parent"
         android:layout_height="@dimen/activity_reports_new_btn_w"
@@ -35,7 +36,7 @@
         android:layout_gravity="center"
         android:src="@drawable/tp" />
 
-      <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+      <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +46,7 @@
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/txt_size_1" />
 
-      <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+      <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/tv_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,9 +82,10 @@
           app:srb_starBackgroundColor="@color/view_color2"
           app:srb_drawBorderEnabled="false"
           app:srb_starCornerRadius="1"
-          app:srb_starSize="15dp" />
+          app:srb_starSize="15dp"
+            app:srb_stepSize="0.5"/>
 
-        <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
           android:id="@+id/rate_count"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
@@ -94,31 +96,39 @@
 
       </LinearLayout>
 
-      <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+      <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/tv_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
         android:text="@string/medium_dummy_text"
         android:textColor="@color/black_light_text"
-        android:textSize="@dimen/txt_size_2" />
+        android:textSize="@dimen/txt_size_3" />
+      <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+          android:id="@+id/tv_date"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/icon_back_left_margin"
+          android:text="15/03/2018"
+          android:textSize="@dimen/txt_size_2"
+          android:textColor="@color/black_light_text"
+          android:visibility="visible"/>
 
     </LinearLayout>
 
   </LinearLayout>
 
-  <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+  <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
     android:id="@+id/response_title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/activity_add_child_new_margin_tb"
     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
     android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
     android:text="@string/response"
     android:textColor="@color/colorPrimary"
     android:textSize="@dimen/txt_size_3" />
 
-  <technource.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
+  <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
     android:id="@+id/tv_response"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

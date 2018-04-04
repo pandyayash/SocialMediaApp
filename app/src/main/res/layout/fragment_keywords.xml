@@ -17,12 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:padding="@dimen/activity_add_child_downarrow_h"
-                android:text="Tradding Hours"
+                android:text="Trading Hours"
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_size_5" />
 
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/continueto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -68,7 +68,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -93,7 +93,7 @@
                     android:background="@drawable/rect_border">
 
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/keywords"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
             </LinearLayout>
 
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -145,7 +145,7 @@
 
             </LinearLayout>
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/cont"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -208,7 +208,7 @@
                         android:layout_gravity="center"
                         android:checked="true" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignLeft="@+id/auto"
@@ -253,7 +253,7 @@
                         android:layout_gravity="center"
                         android:checked="false" />
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -290,7 +290,7 @@
                     android:background="@drawable/rect_border">
 
 
-                    <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
+                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/edt_models"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -298,7 +298,7 @@
                         android:background="@null"
                         android:gravity="top|left"
                         android:hint="@string/keyword1"
-                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:inputType="textMultiLine|textNoSuggestions|textCapSentences"
                         android:lines="4"
                         android:maxLines="8"
                         android:minLines="4"
@@ -324,9 +324,9 @@
                 android:layout_marginLeft="@dimen/row_screening_detail_header_h"
                 android:layout_marginRight="@dimen/row_screening_detail_header_h"
                 android:layout_marginTop="@dimen/activity_reports_new_ll_h"
-                android:background="@color/white">
+                android:background="@drawable/white_bg">
 
-                <technource.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/registerBtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
