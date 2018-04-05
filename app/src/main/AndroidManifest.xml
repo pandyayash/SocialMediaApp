@@ -397,10 +397,7 @@
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.WebViewActivity"
-            android:screenOrientation="sensorPortrait"
-            android:theme="@style/AppThemeNavigation"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
+            android:name="technource.autoreum.activities.WebViewActivity" />
         <activity
             android:name="technource.autoreum.activities.WeeklyDetailsActivity"
             android:screenOrientation="sensorPortrait"

@@ -1376,6 +1376,10 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
 //                                startActivity(intent);
 //                                activityTransition();
                                 download_file_url = WebServiceURLs.BASE_URL_IMAGE_PROFILE + pdfUrl;
+//                                Intent intent = new Intent(apContext,WebViewActivity.class);
+//                                intent.putExtra("url",download_file_url);
+//                                startActivity(intent);
+//                                activityTransition();
                                 String urlStr = download_file_url;
                                 URL url = new URL(urlStr);
                                 URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(),
@@ -1569,7 +1573,12 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                 } catch (ActivityNotFoundException e) {
-                    showAlertDialog(getString(R.string.no_app_found_for_open_pdf));
+                    //showAlertDialog(getString(R.string.no_app_found_for_open_pdf));
+                    Intent intent = new Intent(apContext,WebViewActivity.class);
+                    intent.putExtra("url",download_file_url);
+                    startActivity(intent);
+                    activityTransition();
+
                 }
             }
         }).start();

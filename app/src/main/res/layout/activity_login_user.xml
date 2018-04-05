@@ -47,8 +47,8 @@
             android:layout_height="0dp"
             android:layout_weight="3"
             android:layout_gravity="center"
-            android:src="@drawable/logo"
-              android:visibility="gone"/>
+            android:src="@drawable/textlogo"
+              android:visibility="visible"/>
           <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
               android:layout_width="match_parent"
               android:layout_height="match_parent"
@@ -56,7 +56,8 @@
               android:textSize="@dimen/notes_dialog_menu_h"
               android:textColor="@color/red_color"
               android:gravity="center"
-              android:layout_gravity="center"/>
+              android:layout_gravity="center"
+              android:visibility="gone"/>
         </LinearLayout>
       </LinearLayout>
 

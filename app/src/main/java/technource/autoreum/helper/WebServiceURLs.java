@@ -7,9 +7,15 @@ package technource.autoreum.helper;
 public class WebServiceURLs {
 
     // BASE URL
-    public static final String BASE_URL = "http://greasecrowd.com.au/web-service";
-    public static final String BASE_URL_IMAGE_PROFILE = "http://greasecrowd.com.au/";
-    public static final String BASE_URL_VIDEO = "http://greasecrowd.com.au/web-service";
+//    public static final String BASE_URL = "http://greasecrowd.com.au/web-service";
+//    public static final String BASE_URL_IMAGE_PROFILE = "http://greasecrowd.com.au/";
+//    public static final String BASE_URL_VIDEO = "http://greasecrowd.com.au/web-service";
+
+    public static final String BASE_URL = "http://www.autoreum.com.au/web-service";
+
+    public static final String BASE_URL_IMAGE_PROFILE = "http://www.autoreum.com.au/";
+
+    public static final String BASE_URL_VIDEO = "http://www.autoreum.com.au/web-service";
 
     // webservices name
     public static final String MY_JOBS_USER = "my_jobs_user";

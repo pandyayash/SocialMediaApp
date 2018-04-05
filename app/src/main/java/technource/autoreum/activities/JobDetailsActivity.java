@@ -856,8 +856,7 @@ public class JobDetailsActivity extends BaseActivity {
         if (ShareDialog.canShow(ShareLinkContent.class)) {
             String str="\""+tv_desc.getText().toString()+"\"";
             ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                    .setContentUrl(Uri.parse("http://greasecrowd.com.au/"))
-                    .setQuote(str+"\n\n"+shareGarageName+ "\nRated \""+ shareRatting +"\" out of 5 and "+ shareReview +" reviewed."+" \n#AUTOREUM")
+                    .setQuote("http://greasecrowd.com.au/\n"+str+"\n\n"+shareGarageName+ "\nRated \""+ shareRatting +"\" out of 5 and "+ shareReview +" reviewed."+" \n#AUTOREUM")
                     .build();
             shareDialog.show(linkContent);
             // Show facebook ShareDialog
