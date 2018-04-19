@@ -119,14 +119,14 @@ public class SearchCrowdActivity extends BaseActivity {
         carModelDBOArrayList = new ArrayList<>();
         model_list = new ArrayList<>();
 
-        sp_category = (Spinner) findViewById(R.id.sp_category);
-        btnSearch = (TextView) findViewById(R.id.btnSearch);
-        edtSearchforProject = (EditText) findViewById(R.id.edtSearchforProject);
+        sp_category = findViewById(R.id.sp_category);
+        btnSearch = findViewById(R.id.btnSearch);
+        edtSearchforProject = findViewById(R.id.edtSearchforProject);
         btnSearch.setOnClickListener(this);
-        ll_make = (RelativeLayout) findViewById(R.id.ll_make);
-        ll_model = (RelativeLayout) findViewById(R.id.ll_model);
-        edt_make = (EditText) findViewById(R.id.edt_make);
-        edt_model = (EditText) findViewById(R.id.edt_model);
+        ll_make = findViewById(R.id.ll_make);
+        ll_model = findViewById(R.id.ll_model);
+        edt_make = findViewById(R.id.edt_make);
+        edt_model = findViewById(R.id.edt_model);
         ll_make.setOnClickListener(this);
         edt_make.setOnClickListener(this);
         edt_model.setOnClickListener(this);
@@ -182,13 +182,7 @@ public class SearchCrowdActivity extends BaseActivity {
 
                 @Override
                 public boolean isEnabled(int position) {
-                    if (position == 0) {
-
-                        return false;
-                    } else {
-
-                        return true;
-                    }
+                    return position != 0;
                 }
 
                 @Override
@@ -233,8 +227,8 @@ public class SearchCrowdActivity extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        ListView lv = view.findViewById(R.id.custom_list);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Select make");
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -271,8 +265,8 @@ public class SearchCrowdActivity extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        ListView lv = view.findViewById(R.id.custom_list);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Model");
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -503,8 +497,8 @@ public class SearchCrowdActivity extends BaseActivity {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_dialog, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
-                holder.tv_header = (TextView) row.findViewById(R.id.tv_header);
+                holder.tv_name = row.findViewById(R.id.tv_name);
+                holder.tv_header = row.findViewById(R.id.tv_header);
 
                 row.setTag(holder);
             } else {
@@ -586,7 +580,7 @@ public class SearchCrowdActivity extends BaseActivity {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
 
                 row.setTag(holder);
             } else {

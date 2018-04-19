@@ -106,10 +106,10 @@ public class AdptSettingInvoiceWeekly extends RecyclerView.Adapter<AdptSettingIn
 
         public ViewHolder(View itemView) {
             super(itemView);
-            iv_close = (ImageView) itemView.findViewById(R.id.iv_close);
-            txtNotification = (TextView) itemView.findViewById(R.id.txtNotification);
-            tv_date = (TextView) itemView.findViewById(R.id.tv_date);
-            linear = (LinearLayout) itemView.findViewById(R.id.linear);
+            iv_close = itemView.findViewById(R.id.iv_close);
+            txtNotification = itemView.findViewById(R.id.txtNotification);
+            tv_date = itemView.findViewById(R.id.tv_date);
+            linear = itemView.findViewById(R.id.linear);
         }
 
         public String parseDateToddMMyyyy(String time) {

@@ -76,17 +76,17 @@ public class GarageOwnerReviewsActivity extends BaseActivity implements OnClickL
         setHeader(getString(R.string.reviews));
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
 
-        tv_businessname = (TextView) findViewById(R.id.tv_businessname);
-        tv_ratingCount = (TextView) findViewById(R.id.tv_ratingCount);
-        tvrreview_count = (TextView) findViewById(R.id.tvrreview_count);
-        Profile_omg = (ImageView) findViewById(R.id.Profile_omg);
+        tv_businessname = findViewById(R.id.tv_businessname);
+        tv_ratingCount = findViewById(R.id.tv_ratingCount);
+        tvrreview_count = findViewById(R.id.tvrreview_count);
+        Profile_omg = findViewById(R.id.Profile_omg);
 
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ratingBar = (SimpleRatingBar) findViewById(R.id.ratingBar);
+        ll_back = findViewById(R.id.ll_back);
+        ratingBar = findViewById(R.id.ratingBar);
         adapter = new ReviewAdapter(appContext, reviewArray);
-        reviewList = (ListView) findViewById(R.id.reviewList);
+        reviewList = findViewById(R.id.reviewList);
         reviewList.setAdapter(adapter);
-        nodata = (TextView) findViewById(R.id.nodata);
+        nodata = findViewById(R.id.nodata);
     }
 
     @Override
@@ -252,17 +252,17 @@ public class GarageOwnerReviewsActivity extends BaseActivity implements OnClickL
 
             if (convertView == null) {
                 convertView = inflater.inflate(R.layout.lost_row_reviews, null);
-                holder.iv_image = (ImageView) convertView.findViewById(R.id.iv_image);
-                holder.tv_job_title = (TextView) convertView.findViewById(R.id.tv_job_title);
-                holder.tv_desc = (TextView) convertView.findViewById(R.id.tv_desc);
-                holder.tv_address = (TextView) convertView.findViewById(R.id.tv_address);
-                holder.tv_name = (TextView) convertView.findViewById(R.id.tv_name);
-                holder.rate_count = (TextView) convertView.findViewById(R.id.rate_count);
-                holder.tv_response = (TextView) convertView.findViewById(R.id.tv_response);
-                holder.response_title = (TextView) convertView.findViewById(R.id.response_title);
-                holder.tv_date = (TextView) convertView.findViewById(R.id.tv_date);
+                holder.iv_image = convertView.findViewById(R.id.iv_image);
+                holder.tv_job_title = convertView.findViewById(R.id.tv_job_title);
+                holder.tv_desc = convertView.findViewById(R.id.tv_desc);
+                holder.tv_address = convertView.findViewById(R.id.tv_address);
+                holder.tv_name = convertView.findViewById(R.id.tv_name);
+                holder.rate_count = convertView.findViewById(R.id.rate_count);
+                holder.tv_response = convertView.findViewById(R.id.tv_response);
+                holder.response_title = convertView.findViewById(R.id.response_title);
+                holder.tv_date = convertView.findViewById(R.id.tv_date);
                 holder.tv_date.setVisibility(View.VISIBLE);
-                holder.row_rating = (SimpleRatingBar) convertView.findViewById(R.id.ratingBar);
+                holder.row_rating = convertView.findViewById(R.id.ratingBar);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();

@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +18,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -53,10 +57,10 @@ public class PostNewJobStepTwo extends BaseActivity {
     LinearLayout ll_continue, ll_cancel, ll_back, ll_back_button;
     String additional = "";
     String additional_id = "";
-    int subCat=0;
+    int subCat = 0;
     ArrayList<DroppOffLocationDbo> dropofflocation;
-    String garageId="";
-    boolean isFromMyGarage=false;
+    String garageId = "";
+    boolean isFromMyGarage = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,16 +80,16 @@ public class PostNewJobStepTwo extends BaseActivity {
     }
 
     public void getviews() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         appContext = this;
         catogoriesDBOArrayList = new ArrayList<>();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         jwt = loginDetail_dbo.getJWTToken();
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_back = findViewById(R.id.ll_back);
         dropofflocation = new ArrayList<>();
     }
 
@@ -105,10 +109,10 @@ public class PostNewJobStepTwo extends BaseActivity {
     public void getAndSetData() {
 
         Intent intent = getIntent();
-        if(intent!=null){
+        if (intent != null) {
             job_id = intent.getStringExtra("job_id");
             garageId = intent.getStringExtra("garageId");
-            isFromMyGarage = intent.getBooleanExtra("isFromMyGarage",false);
+            isFromMyGarage = intent.getBooleanExtra("isFromMyGarage", false);
             if (intent.hasExtra("categories")) {
                 category_id = intent.getStringExtra("categories");
                 AppLog.Log("cat_id", "cat_id" + " " + category_id);
@@ -159,6 +163,7 @@ public class PostNewJobStepTwo extends BaseActivity {
 
                                     categories.setName(obj.getString("name"));
                                     categories.setItext(obj.getString("itext"));
+                                    categories.setImage(obj.getString("image"));
 
                                     catogoriesDBOArrayList.add(categories);
                                 }
@@ -204,7 +209,7 @@ public class PostNewJobStepTwo extends BaseActivity {
         params.put(Constants.PostNewJob.STEP, "2");
         params.put(Constants.PostNewJob.CAT_ID, category_id);
         params.put(Constants.PostNewJob.JID, job_id);
-        if (isFromMyGarage){
+        if (isFromMyGarage) {
             params.put(Constants.PostNewJob.ASSIGNED_TO_GARAGE, garageId);
 
         }
@@ -261,7 +266,7 @@ public class PostNewJobStepTwo extends BaseActivity {
                                     droppOffLocationDbo.setName(jobj3.getString("address"));
                                     dropofflocation.add(droppOffLocationDbo);
                                 }
-                                if (subCat!=0) {
+                                if (subCat != 0) {
                                     Intent intent = new Intent(appContext, PostNewJobStepThree.class);
                                     intent.putExtra("additional", additional);
                                     intent.putExtra("category_name", category_name);
@@ -270,8 +275,8 @@ public class PostNewJobStepTwo extends BaseActivity {
                                     intent.putExtra("job_id", job_id);
                                     startActivity(intent);
                                     activityTransition();
-                                }else {
-                                    Intent intent = new Intent(appContext,PostNewJobStepFour.class);
+                                } else {
+                                    Intent intent = new Intent(appContext, PostNewJobStepFour.class);
                                     startActivity(intent);
                                     activityTransition();
                                 }
@@ -331,7 +336,7 @@ public class PostNewJobStepTwo extends BaseActivity {
         @Override
         public Recycleradapter.Recycleviewholder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_row_services_with_info, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_categories_new, parent, false);
             Recycleradapter.Recycleviewholder recycleviewholder = new Recycleradapter.Recycleviewholder(view);
             return recycleviewholder;
         }
@@ -340,13 +345,26 @@ public class PostNewJobStepTwo extends BaseActivity {
         public void onBindViewHolder(final Recycleradapter.Recycleviewholder holder, final int position) {
 
             holder.services_text.setText(services.get(position).getName());
+            Glide.with(appContext)
+                    .load(services.get(position).getImage())
+                    .asBitmap()
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .placeholder(R.drawable.ic_dummy)
+                    .error(R.drawable.ic_dummy)
+                    .into(holder.iv_category);
+
             if (services.get(position).isSelected()) {
-                holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
-                holder.services_text.setTextColor(getResources().getColor(R.color.white));
+                holder.iv_check.setImageResource(R.drawable.checked);
+                holder.checkbox.setChecked(true);
+
+//                holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
+//                holder.services_text.setTextColor(getResources().getColor(R.color.white));
 
             } else {
-                holder.service_ll.setBackground(getDrawable(R.drawable.rect_inner_boarder));
-                holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
+                holder.iv_check.setImageResource(R.drawable.box);
+                holder.checkbox.setChecked(false);
+//                holder.service_ll.setBackground(getDrawable(R.drawable.rect_inner_boarder));
+//                holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
 
             }
             holder.service_ll.setOnClickListener(new View.OnClickListener() {
@@ -354,8 +372,10 @@ public class PostNewJobStepTwo extends BaseActivity {
                 public void onClick(View view) {
                     services.get(position).setSelected(!services.get(position).isSelected());
                     if (services.get(position).isSelected()) {
-                        holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
-                        holder.services_text.setTextColor(getResources().getColor(R.color.white));
+                        holder.iv_check.setImageResource(R.drawable.checked);
+                        holder.checkbox.setChecked(true);
+//                        holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
+//                        holder.services_text.setTextColor(getResources().getColor(R.color.white));
                         for (int i = 0; i < services.size(); i++) {
                             if (!(position == i)) {
                                 catogoriesDBOArrayList.get(i).setSelected(false);
@@ -363,8 +383,10 @@ public class PostNewJobStepTwo extends BaseActivity {
                         }
                         adapter.notifyDataSetChanged();
                     } else {
-                        holder.service_ll.setBackground(getDrawable(R.drawable.rect_inner_boarder));
-                        holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
+                        holder.iv_check.setImageResource(R.drawable.box);
+                        holder.checkbox.setChecked(false);
+//                        holder.service_ll.setBackground(getDrawable(R.drawable.rect_inner_boarder));
+//                        holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
                         category_id = "";
 
                     }
@@ -398,15 +420,20 @@ public class PostNewJobStepTwo extends BaseActivity {
         public class Recycleviewholder extends RecyclerView.ViewHolder {
             private View view;
             LinearLayout service_ll, ll_info;
-
+            ImageView iv_category,iv_check;
             TextView services_text;
+            CheckBox checkbox;
 
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                services_text = (TextView) itemView.findViewById(R.id.autoText2);
-                service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
-                ll_info = (LinearLayout) itemView.findViewById(R.id.ll_info);
+                services_text = itemView.findViewById(R.id.autoText2);
+                service_ll = itemView.findViewById(R.id.service_ll);
+                ll_info = itemView.findViewById(R.id.ll_info);
+                iv_category = itemView.findViewById(R.id.iv_category);
+                iv_check = itemView.findViewById(R.id.iv_check);
+                checkbox = itemView.findViewById(R.id.checkbox);
+
             }
 
             //if you implement onclick here you must have to use getposition() instead of making variable position global see documentation

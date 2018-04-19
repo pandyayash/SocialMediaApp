@@ -58,7 +58,7 @@ public class StaticWebpages extends BaseActivity {
     private void getViews() {
 
         appContext = this;
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(this);
         final Intent intent = getIntent();
         if (intent != null) {
@@ -83,7 +83,7 @@ public class StaticWebpages extends BaseActivity {
 
         }
 
-        wv = (WebView) findViewById(R.id.wv);
+        wv = findViewById(R.id.wv);
     }
 
     @Override
@@ -161,7 +161,7 @@ public class StaticWebpages extends BaseActivity {
         }) {
 
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
 //                    String auth = "Bearer " + loginDetail_dbo.getLogin_token();
                 HashMap<String, String> headers = new HashMap<String, String>();
 //                headers.put("Authorization", auth);
@@ -251,7 +251,7 @@ public class StaticWebpages extends BaseActivity {
         }) {
 
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
 //                    String auth = "Bearer " + loginDetail_dbo.getLogin_token();
                 HashMap<String, String> headers = new HashMap<String, String>();
 //                headers.put("Authorization", auth);

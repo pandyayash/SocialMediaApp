@@ -59,11 +59,11 @@ public class AddAReviewScreenActivity extends BaseActivity {
     private void findViews() {
         appContext = this;
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        ratingBar = (SimpleRatingBar) findViewById(R.id.ratingBar);
-        message = (EditText) findViewById(R.id.message);
-        txtSubmitReview = (TextView) findViewById(R.id.txtSubmitReview);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        tvCounter = (TextView) findViewById(R.id.tvCounter);
+        ratingBar = findViewById(R.id.ratingBar);
+        message = findViewById(R.id.message);
+        txtSubmitReview = findViewById(R.id.txtSubmitReview);
+        ll_back = findViewById(R.id.ll_back);
+        tvCounter = findViewById(R.id.tvCounter);
         message.addTextChangedListener(mTextEditorWatcher);
     }
 

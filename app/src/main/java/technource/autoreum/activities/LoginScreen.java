@@ -114,24 +114,24 @@ public class LoginScreen extends BaseActivity implements OnClickListener,
 
 
     public void getViews() {
-        Signup = (TextView) findViewById(R.id.signup_txt);
+        Signup = findViewById(R.id.signup_txt);
         String text = getString(R.string.Signuptext);
         Signup.setText(Html.fromHtml(text));
-        ll_back = (ImageView) findViewById(R.id.ll_back);
-        edt_username = (EditText) findViewById(R.id.edt_username);
-        edt_password = (EditText) findViewById(R.id.edt_password);
-        loginBtn = (TextView) findViewById(R.id.loginBtn);
-        forgetpassword = (TextView) findViewById(R.id.forget_password);
+        ll_back = findViewById(R.id.ll_back);
+        edt_username = findViewById(R.id.edt_username);
+        edt_password = findViewById(R.id.edt_password);
+        loginBtn = findViewById(R.id.loginBtn);
+        forgetpassword = findViewById(R.id.forget_password);
 
     }
 
     private void initUI() {
         appContext = this;
-        facebook = (ImageView) findViewById(R.id.facebook);
-        google = (ImageView) findViewById(R.id.google);
+        facebook = findViewById(R.id.facebook);
+        google = findViewById(R.id.google);
 
         // Facebook Login Implementation
-        facebook_button = (LoginButton) findViewById(R.id.login_button);
+        facebook_button = findViewById(R.id.login_button);
         callbackManager = CallbackManager.Factory.create();
         List<String> permissions = Arrays.asList("email", "public_profile");
         facebook_button.setReadPermissions(permissions);

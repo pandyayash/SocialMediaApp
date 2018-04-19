@@ -79,20 +79,20 @@ public class DisplayServiceInclusionActivity extends BaseActivity {
 
     private void findViews() {
         appContext = this;
-        mediaCardView = (CardView) findViewById(R.id.media_card_view);
-        avatarImg = (CircularImageView) findViewById(R.id.avatar_img);
-        txtUserName = (TextView) findViewById(R.id.txtUserName);
-        ratingBar = (RatingBar) findViewById(R.id.ratingBar);
-        txtRating = (TextView) findViewById(R.id.txtRating);
-        txtReview = (TextView) findViewById(R.id.txtReview);
-        txtDistance = (TextView) findViewById(R.id.txtDistance);
-        txtGarageComment = (TextView) findViewById(R.id.txtGarageComment);
-        txtOfferPrice = (TextView) findViewById(R.id.txtOfferPrice);
-        txtAcceptAdditionalOffer = (TextView) findViewById(R.id.txtAcceptAdditionalOffer);
-        freeInclusionrecyclerview = (RecyclerView) findViewById(R.id.freeInclusionrecyclerview);
-        txtJobTitle = (TextView) findViewById(R.id.txtJobTitle);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        mediaCardView = findViewById(R.id.media_card_view);
+        avatarImg = findViewById(R.id.avatar_img);
+        txtUserName = findViewById(R.id.txtUserName);
+        ratingBar = findViewById(R.id.ratingBar);
+        txtRating = findViewById(R.id.txtRating);
+        txtReview = findViewById(R.id.txtReview);
+        txtDistance = findViewById(R.id.txtDistance);
+        txtGarageComment = findViewById(R.id.txtGarageComment);
+        txtOfferPrice = findViewById(R.id.txtOfferPrice);
+        txtAcceptAdditionalOffer = findViewById(R.id.txtAcceptAdditionalOffer);
+        freeInclusionrecyclerview = findViewById(R.id.freeInclusionrecyclerview);
+        txtJobTitle = findViewById(R.id.txtJobTitle);
+        recyclerView = findViewById(R.id.recycler_view);
+        ll_back = findViewById(R.id.ll_back);
 
         ll_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -170,8 +170,8 @@ public class DisplayServiceInclusionActivity extends BaseActivity {
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                services_text = (TextView) itemView.findViewById(R.id.autoText2);
-                service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
+                services_text = itemView.findViewById(R.id.autoText2);
+                service_ll = itemView.findViewById(R.id.service_ll);
             }
         }
     }

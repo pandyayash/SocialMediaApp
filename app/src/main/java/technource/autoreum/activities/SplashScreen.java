@@ -76,9 +76,9 @@ public class SplashScreen extends BaseActivity implements View.OnClickListener {
 
     public void getVies() {
         appContext = this;
-        howitworks = (TextView) findViewById(R.id.howitworks);
-        skip = (TextView) findViewById(R.id.skip);
-        play = (ImageView) findViewById(R.id.play);
+        howitworks = findViewById(R.id.howitworks);
+        skip = findViewById(R.id.skip);
+        play = findViewById(R.id.play);
         splashPojoArrayList = new ArrayList<>();
         flagvideo = false;
         flagforsplash = false;
@@ -200,7 +200,7 @@ public class SplashScreen extends BaseActivity implements View.OnClickListener {
         }) {
 
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
                 HashMap<String, String> headers = new HashMap<String, String>();
                 return headers;
             }

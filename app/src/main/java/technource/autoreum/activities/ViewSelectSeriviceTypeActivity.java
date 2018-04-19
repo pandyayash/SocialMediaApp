@@ -68,11 +68,11 @@ public class ViewSelectSeriviceTypeActivity extends BaseActivity {
         jobDetail_dbo = HelperMethods.getjobDetailsSharedPreferences(ViewSelectSeriviceTypeActivity.this);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         garageServicesArrayList = jobDetail_dbo.getGarageServicesArrayList();
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
+        recyclerView = findViewById(R.id.recyclerView);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_back = findViewById(R.id.ll_back);
+        ll_cancel = findViewById(R.id.ll_cancel);
         setData();
     }
 
@@ -140,7 +140,7 @@ public class ViewSelectSeriviceTypeActivity extends BaseActivity {
 
         }
         if (view == ll_back_button || view == ll_cancel || view == ll_back) {
-            adptGarageServiceType.sSelected = -1;
+            AdptGarageServiceType.sSelected = -1;
             finish();
             onBackPressed();
             activityTransition();

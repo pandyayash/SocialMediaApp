@@ -71,9 +71,9 @@ public class MyGaragesCarOwner extends Fragment {
     public void getViews(View rootView) {
         appContext = getActivity();
         awardJobArrayList = new ArrayList<>();
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerView);
-        pull_to_refresh = (SwipeRefreshLayout)rootView.findViewById(R.id.pull_to_refresh);
-        textView = (TextView) rootView.findViewById(R.id.text);
+        recyclerView = rootView.findViewById(R.id.recyclerView);
+        pull_to_refresh = rootView.findViewById(R.id.pull_to_refresh);
+        textView = rootView.findViewById(R.id.text);
         textView.setText("You don't have any garages.");
         textView.setVisibility(View.GONE);
         if (Connectivity.isConnected(appContext)) {

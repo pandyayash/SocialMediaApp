@@ -139,19 +139,19 @@ public class AdptAwardJobsCarOwner extends RecyclerView.Adapter<AdptAwardJobsCar
 
         public ViewHolder(View itemView) {
             super(itemView);
-            freeInclusionrecyclerview = (RecyclerView) itemView.findViewById(R.id.freeInclusionrecyclerview);
-            avatar_img = (ImageView) itemView.findViewById(R.id.avatar_img);
-            txtUserName = (TextView) itemView.findViewById(R.id.txtUserName);
-            txtReview = (TextView) itemView.findViewById(R.id.txtReview);
-            txtDistance = (TextView) itemView.findViewById(R.id.txtDistance);
-            txtBidPrice = (TextView) itemView.findViewById(R.id.txtBidPrice);
-            txtJobStatus = (TextView) itemView.findViewById(R.id.txtJobStatus);
-            txtPrintQuote = (TextView) itemView.findViewById(R.id.txtPrintQuote);
-            txtGarageComment = (TextView) itemView.findViewById(R.id.txtGarageComment);
-            txtOfferPrice = (TextView) itemView.findViewById(R.id.txtOfferPrice);
-            txtAcceptAdditionalOffer = (TextView) itemView.findViewById(R.id.txtAcceptAdditionalOffer);
-            txtRating = (TextView) itemView.findViewById(R.id.txtRating);
-            ratingBar = (RatingBar) itemView.findViewById(R.id.ratingBar);
+            freeInclusionrecyclerview = itemView.findViewById(R.id.freeInclusionrecyclerview);
+            avatar_img = itemView.findViewById(R.id.avatar_img);
+            txtUserName = itemView.findViewById(R.id.txtUserName);
+            txtReview = itemView.findViewById(R.id.txtReview);
+            txtDistance = itemView.findViewById(R.id.txtDistance);
+            txtBidPrice = itemView.findViewById(R.id.txtBidPrice);
+            txtJobStatus = itemView.findViewById(R.id.txtJobStatus);
+            txtPrintQuote = itemView.findViewById(R.id.txtPrintQuote);
+            txtGarageComment = itemView.findViewById(R.id.txtGarageComment);
+            txtOfferPrice = itemView.findViewById(R.id.txtOfferPrice);
+            txtAcceptAdditionalOffer = itemView.findViewById(R.id.txtAcceptAdditionalOffer);
+            txtRating = itemView.findViewById(R.id.txtRating);
+            ratingBar = itemView.findViewById(R.id.ratingBar);
         }
 
         public void setDummyData() {

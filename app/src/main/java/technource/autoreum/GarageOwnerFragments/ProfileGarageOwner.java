@@ -164,34 +164,34 @@ public class ProfileGarageOwner extends Fragment implements View.OnClickListener
     public void getViews() {
         appContext = getActivity();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        edt_fname = (EditText) v.findViewById(R.id.edt_fname);
-        edt_lname = (EditText) v.findViewById(R.id.edt_lname);
-        edt_email = (EditText) v.findViewById(R.id.edt_email);
-        edt_mobile = (EditText) v.findViewById(R.id.edt_mobile);
+        edt_fname = v.findViewById(R.id.edt_fname);
+        edt_lname = v.findViewById(R.id.edt_lname);
+        edt_email = v.findViewById(R.id.edt_email);
+        edt_mobile = v.findViewById(R.id.edt_mobile);
 
-        editstate = (TextView) v.findViewById(R.id.edt_state);
-        edt_subrub = (EditText) v.findViewById(R.id.edt_subrub);
-        edt_post_code = (EditText) v.findViewById(R.id.edt_post_code);
-        edt_bussinessname = (EditText) v.findViewById(R.id.edt_bussinessname);
-        edt_telephone = (EditText) v.findViewById(R.id.edt_telephone);
+        editstate = v.findViewById(R.id.edt_state);
+        edt_subrub = v.findViewById(R.id.edt_subrub);
+        edt_post_code = v.findViewById(R.id.edt_post_code);
+        edt_bussinessname = v.findViewById(R.id.edt_bussinessname);
+        edt_telephone = v.findViewById(R.id.edt_telephone);
         setPhoneFormatting();
-        iv_image = (ImageView) v.findViewById(R.id.iv_image);
-        location = (ImageView) v.findViewById(R.id.location);
-        ll_save = (LinearLayout) v.findViewById(R.id.ll_save);
-        footer_small = (RelativeLayout) v.findViewById(R.id.footer_small);
-        footer_big = (RelativeLayout) v.findViewById(R.id.footer_big);
+        iv_image = v.findViewById(R.id.iv_image);
+        location = v.findViewById(R.id.location);
+        ll_save = v.findViewById(R.id.ll_save);
+        footer_small = v.findViewById(R.id.footer_small);
+        footer_big = v.findViewById(R.id.footer_big);
 
-        gallery_big = (TextView) v.findViewById(R.id.gallery_big);
-        hours_big = (TextView) v.findViewById(R.id.hours_big);
-        services_big = (TextView) v.findViewById(R.id.services_big);
-        facilities_big = (TextView) v.findViewById(R.id.facilitie_big);
-        reviews_big = (TextView) v.findViewById(R.id.reviews_big);
+        gallery_big = v.findViewById(R.id.gallery_big);
+        hours_big = v.findViewById(R.id.hours_big);
+        services_big = v.findViewById(R.id.services_big);
+        facilities_big = v.findViewById(R.id.facilitie_big);
+        reviews_big = v.findViewById(R.id.reviews_big);
 
-        gallery = (TextView) v.findViewById(R.id.gallery);
-        hours = (TextView) v.findViewById(R.id.hours);
-        services = (TextView) v.findViewById(R.id.services);
-        facilities = (TextView) v.findViewById(R.id.facilities);
-        reviews = (TextView) v.findViewById(R.id.reviews);
+        gallery = v.findViewById(R.id.gallery);
+        hours = v.findViewById(R.id.hours);
+        services = v.findViewById(R.id.services);
+        facilities = v.findViewById(R.id.facilities);
+        reviews = v.findViewById(R.id.reviews);
 
 
     }
@@ -292,20 +292,15 @@ public class ProfileGarageOwner extends Fragment implements View.OnClickListener
 
     public boolean ProfileUpdateOrNot() {
 
-        if (edt_fname.getText().toString().equalsIgnoreCase(Firstname) &&
-                edt_lname.getText().toString().equalsIgnoreCase(lastname) &&
-                edt_email.getText().toString().equalsIgnoreCase(email) &&
-                edt_mobile.getText().toString().equalsIgnoreCase(phone) &&
-                editstate.getText().toString().equalsIgnoreCase(state) &&
-                edt_subrub.getText().toString().equalsIgnoreCase(sub) &&
-                edt_post_code.getText().toString().equalsIgnoreCase(zipcode) &&
-                edt_bussinessname.getText().toString().equalsIgnoreCase(bussinessname) &&
-                edt_telephone.getText().toString().equalsIgnoreCase(telephone)) {
-
-            return false;
-        }
-
-        return true;
+        return !edt_fname.getText().toString().equalsIgnoreCase(Firstname) ||
+                !edt_lname.getText().toString().equalsIgnoreCase(lastname) ||
+                !edt_email.getText().toString().equalsIgnoreCase(email) ||
+                !edt_mobile.getText().toString().equalsIgnoreCase(phone) ||
+                !editstate.getText().toString().equalsIgnoreCase(state) ||
+                !edt_subrub.getText().toString().equalsIgnoreCase(sub) ||
+                !edt_post_code.getText().toString().equalsIgnoreCase(zipcode) ||
+                !edt_bussinessname.getText().toString().equalsIgnoreCase(bussinessname) ||
+                !edt_telephone.getText().toString().equalsIgnoreCase(telephone);
     }
 
     public void RuntimeCameraGalleryPermission() {
@@ -877,7 +872,7 @@ public class ProfileGarageOwner extends Fragment implements View.OnClickListener
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 int digits = edt_telephone.getText().toString().length();
-                Log.d("LENGTH", "" + digits);
+                //Log.d("LENGTH", "" + digits);
                 if (!lastChar.equals(" ")) {
                     if (digits == 4 || digits == 8) {
                         edt_telephone.append(" ");

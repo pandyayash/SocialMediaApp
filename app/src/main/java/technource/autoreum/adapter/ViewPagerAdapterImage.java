@@ -105,8 +105,8 @@ public class ViewPagerAdapterImage extends PagerAdapter {
         final CarImageDBO carImageDBO = carImageArrayList.get(position);
         View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
 
-        ImageView imageView = (ImageView) itemView.findViewById(R.id.img_pager_item);
-        ImageView btn_play = (ImageView) itemView.findViewById(R.id.btn_play);
+        ImageView imageView = itemView.findViewById(R.id.img_pager_item);
+        ImageView btn_play = itemView.findViewById(R.id.btn_play);
         //imageView.setImageResource(mResources[position]);
 
         if (carImageArrayList.size() > 0) {
@@ -147,7 +147,7 @@ public class ViewPagerAdapterImage extends PagerAdapter {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.image_popup_for_postjob_4, null);
-        ImageView img = (ImageView) view.findViewById(R.id.img);
+        ImageView img = view.findViewById(R.id.img);
         TextView btnDownload = view.findViewById(R.id.btnDownload);
 
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);

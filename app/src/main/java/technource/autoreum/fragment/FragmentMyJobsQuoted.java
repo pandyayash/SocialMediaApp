@@ -61,9 +61,9 @@ public class FragmentMyJobsQuoted extends Fragment {
     public void getViews(View rootView) {
         appContext = getActivity();
         postedJobDboArrayList = new ArrayList<>();
-        jobsRecyclerview = (RecyclerView) rootView.findViewById(R.id.jobs_recyclerview);
-        pull_to_refresh = (SwipeRefreshLayout) rootView.findViewById(R.id.pull_to_refresh);
-        textView = (TextView) rootView.findViewById(R.id.text);
+        jobsRecyclerview = rootView.findViewById(R.id.jobs_recyclerview);
+        pull_to_refresh = rootView.findViewById(R.id.pull_to_refresh);
+        textView = rootView.findViewById(R.id.text);
         textView.setText("You don't have any quoted jobs.");
         textView.setVisibility(View.GONE);
         if (Connectivity.isConnected(appContext)) {

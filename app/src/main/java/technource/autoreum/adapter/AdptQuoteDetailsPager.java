@@ -146,56 +146,56 @@ public class AdptQuoteDetailsPager extends PagerAdapter {
 
     public int addView(View v, final int position, final AwardJobDBOCarOwner data, JobDetail_DBO jobDetails) {
 
-        mediaCardView = (CardView) v.findViewById(R.id.media_card_view);
-        txtQuoteFrom = (TextView) v.findViewById(R.id.txtQuoteFrom);
-        avatarImg = (ImageView) v.findViewById(R.id.avatar_img);
-        txtUserName = (TextView) v.findViewById(R.id.txtUserName);
-        ratingBar = (RatingBar) v.findViewById(R.id.ratingBar);
-        txtRating = (TextView) v.findViewById(R.id.txtRating);
-        txtReview = (TextView) v.findViewById(R.id.txtReview);
-        txtDistance = (TextView) v.findViewById(R.id.txtDistance);
-        txtGarageComment = (TextView) v.findViewById(R.id.txtGarageComment);
-        txtOfferPrice = (TextView) v.findViewById(R.id.txtOfferPrice);
-        txtAcceptAdditionalOffer = (TextView) v.findViewById(R.id.txtAcceptAdditionalOffer);
-        freeInclusionrecyclerview = (RecyclerView) v.findViewById(R.id.freeInclusionrecyclerview);
-        txtJobTitle = (TextView) v.findViewById(R.id.txtJobTitle);
-        txtJobNumber = (TextView) v.findViewById(R.id.txtJobNumber);
-        txtCategory = (TextView) v.findViewById(R.id.txtCategory);
-        txtSubCategory = (TextView) v.findViewById(R.id.txtSubCategory);
-        txtcar = (TextView) v.findViewById(R.id.txtcar);
-        txtJobDescription = (TextView) v.findViewById(R.id.txtJobDescription);
-        txtQuoteDescription = (TextView) v.findViewById(R.id.txtQuoteDescription);
+        mediaCardView = v.findViewById(R.id.media_card_view);
+        txtQuoteFrom = v.findViewById(R.id.txtQuoteFrom);
+        avatarImg = v.findViewById(R.id.avatar_img);
+        txtUserName = v.findViewById(R.id.txtUserName);
+        ratingBar = v.findViewById(R.id.ratingBar);
+        txtRating = v.findViewById(R.id.txtRating);
+        txtReview = v.findViewById(R.id.txtReview);
+        txtDistance = v.findViewById(R.id.txtDistance);
+        txtGarageComment = v.findViewById(R.id.txtGarageComment);
+        txtOfferPrice = v.findViewById(R.id.txtOfferPrice);
+        txtAcceptAdditionalOffer = v.findViewById(R.id.txtAcceptAdditionalOffer);
+        freeInclusionrecyclerview = v.findViewById(R.id.freeInclusionrecyclerview);
+        txtJobTitle = v.findViewById(R.id.txtJobTitle);
+        txtJobNumber = v.findViewById(R.id.txtJobNumber);
+        txtCategory = v.findViewById(R.id.txtCategory);
+        txtSubCategory = v.findViewById(R.id.txtSubCategory);
+        txtcar = v.findViewById(R.id.txtcar);
+        txtJobDescription = v.findViewById(R.id.txtJobDescription);
+        txtQuoteDescription = v.findViewById(R.id.txtQuoteDescription);
         txtQuoteDescription.getBackground().setLevel(2);
-        txtAdditionalDescription = (TextView) v.findViewById(R.id.txtAdditionalDescription);
-        hintOffer = (TextView) v.findViewById(R.id.hintOffer);
-        txtServiceInclusion = (TextView) v.findViewById(R.id.txtServiceInclusion);
-        txtFreeInclusion = (TextView) v.findViewById(R.id.txtFreeInclusion);
-        btnAward = (TextView) v.findViewById(R.id.btnAward);
-        btnInvoice = (TextView) v.findViewById(R.id.btnInvoice);
-        btnPaymentOption = (TextView) v.findViewById(R.id.btnPaymentOption);
-        btnPrintQuote = (TextView) v.findViewById(R.id.btnPrintQuote);
-        txtPrice = (TextView) v.findViewById(R.id.txtPrice);
-        txtSmallPrice = (TextView) v.findViewById(R.id.txtSmallPrice);
-        txtSmallStatus = (TextView) v.findViewById(R.id.txtSmallStatus);
-        btnOfferAccept = (TextView) v.findViewById(R.id.btnOfferAccept);
-        txtAddOfferPrice = (TextView) v.findViewById(R.id.txtAddOfferPrice);
-        btnUploadImgs = (TextView) v.findViewById(R.id.btnUploadImgs);
-        btnGenerateSafetyReport = (TextView) v.findViewById(R.id.btnGenerateSafetyReport);
-        txtFollowupWork = (TextView) v.findViewById(R.id.txtFollowupWork);
-        txtDropOffDate = (TextView) v.findViewById(R.id.txtDropOffDate);
-        txtPickupDate = (TextView) v.findViewById(R.id.txtPickupDate);
-        txtacceptNewTime = (TextView) v.findViewById(R.id.txtacceptNewTime);
-        viewpager = (ViewPager) v.findViewById(R.id.viewpager);
-        indicator = (CircleIndicator) v.findViewById(R.id.indicator);
-        lvFree = (ListView) v.findViewById(R.id.lvFree);
-        linear = (LinearLayout) v.findViewById(R.id.linear);
-        ll_upload_photos = (LinearLayout) v.findViewById(R.id.ll_upload_photos);
-        llFollowupWork = (LinearLayout) v.findViewById(R.id.llFollowupWork);
-        checkbox = (CheckBox) v.findViewById(R.id.checkbox);
-        llInnerTextFollow = (LinearLayout) v.findViewById(R.id.llInnerTextFollow);
-        ll_new_propose_time = (LinearLayout) v.findViewById(R.id.ll_new_propose_time);
-        ll_small_status = (LinearLayout) v.findViewById(R.id.ll_small_status);
-        ll_additional_offer = (LinearLayout) v.findViewById(R.id.ll_additional_offer);
+        txtAdditionalDescription = v.findViewById(R.id.txtAdditionalDescription);
+        hintOffer = v.findViewById(R.id.hintOffer);
+        txtServiceInclusion = v.findViewById(R.id.txtServiceInclusion);
+        txtFreeInclusion = v.findViewById(R.id.txtFreeInclusion);
+        btnAward = v.findViewById(R.id.btnAward);
+        btnInvoice = v.findViewById(R.id.btnInvoice);
+        btnPaymentOption = v.findViewById(R.id.btnPaymentOption);
+        btnPrintQuote = v.findViewById(R.id.btnPrintQuote);
+        txtPrice = v.findViewById(R.id.txtPrice);
+        txtSmallPrice = v.findViewById(R.id.txtSmallPrice);
+        txtSmallStatus = v.findViewById(R.id.txtSmallStatus);
+        btnOfferAccept = v.findViewById(R.id.btnOfferAccept);
+        txtAddOfferPrice = v.findViewById(R.id.txtAddOfferPrice);
+        btnUploadImgs = v.findViewById(R.id.btnUploadImgs);
+        btnGenerateSafetyReport = v.findViewById(R.id.btnGenerateSafetyReport);
+        txtFollowupWork = v.findViewById(R.id.txtFollowupWork);
+        txtDropOffDate = v.findViewById(R.id.txtDropOffDate);
+        txtPickupDate = v.findViewById(R.id.txtPickupDate);
+        txtacceptNewTime = v.findViewById(R.id.txtacceptNewTime);
+        viewpager = v.findViewById(R.id.viewpager);
+        indicator = v.findViewById(R.id.indicator);
+        lvFree = v.findViewById(R.id.lvFree);
+        linear = v.findViewById(R.id.linear);
+        ll_upload_photos = v.findViewById(R.id.ll_upload_photos);
+        llFollowupWork = v.findViewById(R.id.llFollowupWork);
+        checkbox = v.findViewById(R.id.checkbox);
+        llInnerTextFollow = v.findViewById(R.id.llInnerTextFollow);
+        ll_new_propose_time = v.findViewById(R.id.ll_new_propose_time);
+        ll_small_status = v.findViewById(R.id.ll_small_status);
+        ll_additional_offer = v.findViewById(R.id.ll_additional_offer);
 
 //        txtJobTitle.getBackground().setLevel(0);
 //        txtJobDescription.getBackground().setLevel(0);
@@ -233,11 +233,7 @@ public class AdptQuoteDetailsPager extends PagerAdapter {
         txtJobDescription.setText(jobDetails.getProblem_description());
         txtQuoteDescription.setText(data.getBid_comment());
         String time_flexibility = jobDetails.getTime_flexibility();
-        if (time_flexibility.equalsIgnoreCase("Flexible") || time_flexibility.equalsIgnoreCase("Very Flexible")) {
-            isFlexible = true;
-        } else {
-            isFlexible = false;
-        }
+        isFlexible = time_flexibility.equalsIgnoreCase("Flexible") || time_flexibility.equalsIgnoreCase("Very Flexible");
 
         if (data.getCurrent_job_status().equalsIgnoreCase("WorkDone")) {
             txtSmallStatus.setText("Complete");
@@ -901,7 +897,7 @@ public class AdptQuoteDetailsPager extends PagerAdapter {
                 viewHolder = new ViewHolder();
                 LayoutInflater inflater = LayoutInflater.from(getContext());
                 convertView = inflater.inflate(R.layout.list_row_items_for_inclusion, parent, false);
-                viewHolder.tv_name = (TextView) convertView.findViewById(R.id.tv_name);
+                viewHolder.tv_name = convertView.findViewById(R.id.tv_name);
                 result = convertView;
 
                 convertView.setTag(viewHolder);

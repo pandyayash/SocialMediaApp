@@ -151,29 +151,29 @@ public class QuoteJobGarageActivity extends BaseActivity {
         appContext = this;
         jobDetail_dbo = HelperMethods.getjobDetailsSharedPreferences(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        btnServiceType = (TextView) findViewById(R.id.btnServiceType);
-        edtComments = (EditText) findViewById(R.id.edtComments);
+        ll_back = findViewById(R.id.ll_back);
+        btnServiceType = findViewById(R.id.btnServiceType);
+        edtComments = findViewById(R.id.edtComments);
         edtComments.getBackground().setLevel(0);
-        edtPrice = (EditText) findViewById(R.id.edtPrice);
-        edtOfferPrice = (EditText) findViewById(R.id.edtOfferPrice);
-        edtTotalPrice = (EditText) findViewById(R.id.edtTotalPrice);
-        edtOffer = (EditText) findViewById(R.id.edtOffer);
+        edtPrice = findViewById(R.id.edtPrice);
+        edtOfferPrice = findViewById(R.id.edtOfferPrice);
+        edtTotalPrice = findViewById(R.id.edtTotalPrice);
+        edtOffer = findViewById(R.id.edtOffer);
         edtOffer.getBackground().setLevel(0);
-        btnInclusions = (TextView) findViewById(R.id.btnInclusions);
-        btnBid = (TextView) findViewById(R.id.btnBid);
-        txtjobTitle = (TextView) findViewById(R.id.txtjobTitle);
-        ll_propose_new_time = (LinearLayout) findViewById(R.id.ll_propose_new_time);
-        ll_new_time = (LinearLayout) findViewById(R.id.ll_new_time);
-        checkbox = (CheckBox) findViewById(R.id.checkbox);
-        tv_drop_off_date = (TextView) findViewById(R.id.tv_drop_off_date);
-        tv_drop_off_time = (TextView) findViewById(R.id.tv_drop_off_time);
-        tv_pick_up_date = (TextView) findViewById(R.id.tv_pick_up_date);
-        tv_pick_up_time = (TextView) findViewById(R.id.tv_pick_up_time);
-        ll_pick_up_time = (LinearLayout) findViewById(R.id.ll_pick_up_time);
-        ll_pick_up_date = (LinearLayout) findViewById(R.id.ll_pick_up_date);
-        ll_drop_off_date = (LinearLayout) findViewById(R.id.ll_drop_off_date);
-        ll_drop_off_time = (LinearLayout) findViewById(R.id.ll_drop_off_time);
+        btnInclusions = findViewById(R.id.btnInclusions);
+        btnBid = findViewById(R.id.btnBid);
+        txtjobTitle = findViewById(R.id.txtjobTitle);
+        ll_propose_new_time = findViewById(R.id.ll_propose_new_time);
+        ll_new_time = findViewById(R.id.ll_new_time);
+        checkbox = findViewById(R.id.checkbox);
+        tv_drop_off_date = findViewById(R.id.tv_drop_off_date);
+        tv_drop_off_time = findViewById(R.id.tv_drop_off_time);
+        tv_pick_up_date = findViewById(R.id.tv_pick_up_date);
+        tv_pick_up_time = findViewById(R.id.tv_pick_up_time);
+        ll_pick_up_time = findViewById(R.id.ll_pick_up_time);
+        ll_pick_up_date = findViewById(R.id.ll_pick_up_date);
+        ll_drop_off_date = findViewById(R.id.ll_drop_off_date);
+        ll_drop_off_time = findViewById(R.id.ll_drop_off_time);
 
         txtjobTitle.setText("Job title : " + job_title);
         if (isFlexible) {
@@ -477,9 +477,9 @@ public class QuoteJobGarageActivity extends BaseActivity {
         final Calendar c = Calendar.getInstance();
         int today_date = 0, today_month = 0, today_year = 0;
         Calendar min = Calendar.getInstance();
-        min.set(min.MONTH, Calendar.JANUARY);
-        min.set(min.DAY_OF_MONTH, 1);
-        min.set(min.YEAR, 1970);
+        min.set(Calendar.MONTH, Calendar.JANUARY);
+        min.set(Calendar.DAY_OF_MONTH, 1);
+        min.set(Calendar.YEAR, 1970);
         try {
 
         } catch (NumberFormatException e) {
@@ -554,7 +554,7 @@ public class QuoteJobGarageActivity extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = this.getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -634,7 +634,7 @@ public class QuoteJobGarageActivity extends BaseActivity {
             if (row == null) {
                 holder = new CustomListAdapterOther.ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
 
                 row.setTag(holder);
             } else {

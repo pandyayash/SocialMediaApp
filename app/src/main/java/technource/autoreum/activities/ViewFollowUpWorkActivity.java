@@ -71,8 +71,8 @@ public class ViewFollowUpWorkActivity extends BaseActivity {
     public void getViews() {
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         followupWorkArrayList = new ArrayList<>();
-        btnSubmit = (TextView) findViewById(R.id.btnSubmit);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        btnSubmit = findViewById(R.id.btnSubmit);
+        ll_back = findViewById(R.id.ll_back);
         Intent intent = getIntent();
         if (intent != null) {
             followupWorkArrayList = intent.getParcelableArrayListExtra("followupWorkArrayList");
@@ -80,7 +80,7 @@ public class ViewFollowUpWorkActivity extends BaseActivity {
             jid = intent.getStringExtra("jid");
             awarded_garage_id = intent.getStringExtra("garageId");
         }
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
         setData();
         if (loginDetail_dbo.getUser_Type().equalsIgnoreCase("1")) {
             btnSubmit.setVisibility(View.GONE);
@@ -327,12 +327,12 @@ public class ViewFollowUpWorkActivity extends BaseActivity {
 
             public ViewHolder(View itemView) {
                 super(itemView);
-                txtKey = (TextView) itemView.findViewById(R.id.txtKey);
-                txtValue = (TextView) itemView.findViewById(R.id.txtValue);
-                acceptOrReject = (RadioGroup) itemView.findViewById(R.id.acceptOrReject);
-                txtAcceptOrReject = (TextView) itemView.findViewById(R.id.txtAcceptOrReject);
-                radioAccept = (RadioButton) itemView.findViewById(R.id.radioAccept);
-                radioReject = (RadioButton) itemView.findViewById(R.id.radioReject);
+                txtKey = itemView.findViewById(R.id.txtKey);
+                txtValue = itemView.findViewById(R.id.txtValue);
+                acceptOrReject = itemView.findViewById(R.id.acceptOrReject);
+                txtAcceptOrReject = itemView.findViewById(R.id.txtAcceptOrReject);
+                radioAccept = itemView.findViewById(R.id.radioAccept);
+                radioReject = itemView.findViewById(R.id.radioReject);
             }
         }
     }

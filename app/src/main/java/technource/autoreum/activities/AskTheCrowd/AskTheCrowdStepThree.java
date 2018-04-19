@@ -96,44 +96,44 @@ public class AskTheCrowdStepThree extends BaseActivity {
     }
 
     public void getviews() {
-        edt_sub_category = (EditText) findViewById(R.id.edt_sub_category);
-        tyre_image = (ImageView) findViewById(R.id.tyre_image);
-        edt_drop_off_location = (TextView) findViewById(R.id.edt_drop_off_location);
-        rl_drop_off_location = (LinearLayout) findViewById(R.id.rl_drop_off_location);
-        ty_spec = (EditText) findViewById(R.id.ty_spec);
-        ty_bran = (EditText) findViewById(R.id.ty_bran);
-        ty_mod = (EditText) findViewById(R.id.ty_mod);
-        no_ty = (TextView) findViewById(R.id.no_ty);
-        tv_additional = (TextView) findViewById(R.id.tv_additional);
-        current_category = (TextView) findViewById(R.id.current_category);
-        ll_drop_off_location = (LinearLayout) findViewById(R.id.ll_drop_off_location);
-        rl_sub_category = (LinearLayout) findViewById(R.id.rl_sub_category);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        edt_sub_category = findViewById(R.id.edt_sub_category);
+        tyre_image = findViewById(R.id.tyre_image);
+        edt_drop_off_location = findViewById(R.id.edt_drop_off_location);
+        rl_drop_off_location = findViewById(R.id.rl_drop_off_location);
+        ty_spec = findViewById(R.id.ty_spec);
+        ty_bran = findViewById(R.id.ty_bran);
+        ty_mod = findViewById(R.id.ty_mod);
+        no_ty = findViewById(R.id.no_ty);
+        tv_additional = findViewById(R.id.tv_additional);
+        current_category = findViewById(R.id.current_category);
+        ll_drop_off_location = findViewById(R.id.ll_drop_off_location);
+        rl_sub_category = findViewById(R.id.rl_sub_category);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         appContext = this;
         catogoriesDBOArrayList = new ArrayList<>();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         jwt = loginDetail_dbo.getJWTToken();
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        help_image = (LinearLayout) findViewById(R.id.help_image);
-        ll_relevent = (LinearLayout) findViewById(R.id.ll_relevent);
-        ll_special_case = (LinearLayout) findViewById(R.id.ll_special_case);
-        ll_sub_category = (LinearLayout) findViewById(R.id.ll_sub_category);
-        ll_additional_inclusion = (LinearLayout) findViewById(R.id.ll_additional_inclusion);
-        ll_additional = (LinearLayout) findViewById(R.id.ll_additional);
-        ll_additional_1 = (LinearLayout) findViewById(R.id.ll_additional_1);
-        ll_fleet_managemnet = (LinearLayout) findViewById(R.id.ll_fleet_managemnet);
-        ll_include_roadside = (LinearLayout) findViewById(R.id.ll_include_roadside);
-        ll_include_standard = (LinearLayout) findViewById(R.id.ll_include_standard);
-        txt_include_roadside = (TextView) findViewById(R.id.txt_include_roadside);
-        txt_include_standard = (TextView) findViewById(R.id.txt_include_standard);
-        txtCount = (TextView) findViewById(R.id.txtCount);
-        iv_minus = (ImageView)findViewById(R.id.iv_minus);
-        iv_plus = (ImageView)findViewById(R.id.iv_plus);
-        newslettr = (CheckBox) findViewById(R.id.newslettr);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back = findViewById(R.id.ll_back);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        help_image = findViewById(R.id.help_image);
+        ll_relevent = findViewById(R.id.ll_relevent);
+        ll_special_case = findViewById(R.id.ll_special_case);
+        ll_sub_category = findViewById(R.id.ll_sub_category);
+        ll_additional_inclusion = findViewById(R.id.ll_additional_inclusion);
+        ll_additional = findViewById(R.id.ll_additional);
+        ll_additional_1 = findViewById(R.id.ll_additional_1);
+        ll_fleet_managemnet = findViewById(R.id.ll_fleet_managemnet);
+        ll_include_roadside = findViewById(R.id.ll_include_roadside);
+        ll_include_standard = findViewById(R.id.ll_include_standard);
+        txt_include_roadside = findViewById(R.id.txt_include_roadside);
+        txt_include_standard = findViewById(R.id.txt_include_standard);
+        txtCount = findViewById(R.id.txtCount);
+        iv_minus = findViewById(R.id.iv_minus);
+        iv_plus = findViewById(R.id.iv_plus);
+        newslettr = findViewById(R.id.newslettr);
 
         droppOffLocationDboArrayList = new ArrayList<>();
         list_subcatogory = new ArrayList<>();
@@ -468,10 +468,10 @@ public class AskTheCrowdStepThree extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Sub Category");
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -502,9 +502,9 @@ public class AskTheCrowdStepThree extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         View view = getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Select Address");
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -571,7 +571,7 @@ public class AskTheCrowdStepThree extends BaseActivity {
             if (row == null) {
                 holder = new CustomListAdapterOther.ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
                 row.setTag(holder);
             } else {
                 holder = (CustomListAdapterOther.ChallengerHolder) row.getTag();
@@ -631,7 +631,7 @@ public class AskTheCrowdStepThree extends BaseActivity {
             if (row == null) {
                 holder = new CustomListAdapterOtherForAddress.ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
                 row.setTag(holder);
             } else {
                 holder = (CustomListAdapterOtherForAddress.ChallengerHolder) row.getTag();
@@ -728,8 +728,8 @@ public class AskTheCrowdStepThree extends BaseActivity {
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                services_text = (TextView) itemView.findViewById(R.id.autoText2);
-                service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
+                services_text = itemView.findViewById(R.id.autoText2);
+                service_ll = itemView.findViewById(R.id.service_ll);
             }
 
             //if you implement onclick here you must have to use getposition() instead of making variable position global see documentation

@@ -65,7 +65,7 @@ public class LoadingDialog {
   }
 
   private void hideLoadingDialog() {
-    tv_loading = (TextView) view.findViewById(R.id.tv_loding);
+    tv_loading = view.findViewById(R.id.tv_loding);
     isLDShow = false;
     if (mDialog != null) {
       tv_loading.setVisibility(View.GONE);
@@ -78,9 +78,9 @@ public class LoadingDialog {
     mDialog = new Dialog(context, R.style.loading_dialog);
     view = LayoutInflater.from(context).inflate(
         R.layout.dialog_loading, null);
-    progressBar = (CirculerProgressView) view.findViewById(R.id.progressBar1);
+    progressBar = view.findViewById(R.id.progressBar1);
     startAnimationThreadStuff(1000);
-    tv_loading = (TextView) view.findViewById(R.id.tv_loding);
+    tv_loading = view.findViewById(R.id.tv_loding);
     if (text) {
       tv_loading.setVisibility(View.VISIBLE);
       tv_loading.setText(text_to_Set);

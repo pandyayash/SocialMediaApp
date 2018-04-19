@@ -43,7 +43,7 @@ public class ContactUsGarageOwner extends Fragment {
 
     public void getViews() {
         appContext = getActivity();
-        wv = (WebView) v.findViewById(R.id.wv);
+        wv = v.findViewById(R.id.wv);
         wv.loadUrl("http://greasecrowd.com.au/contact-us?web-view");
         wv.getSettings().setJavaScriptEnabled(true);
         wv.setWebViewClient(new MyBrowser());

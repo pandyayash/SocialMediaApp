@@ -85,8 +85,8 @@ public class AdptTransactionHistory extends RecyclerView.Adapter<AdptTransaction
         TextView textTransaction,textDate;
         public ViewHolder(View itemView) {
             super(itemView);
-            textTransaction = (TextView)itemView.findViewById(R.id.textTransaction);
-            textDate = (TextView)itemView.findViewById(R.id.textDate);
+            textTransaction = itemView.findViewById(R.id.textTransaction);
+            textDate = itemView.findViewById(R.id.textDate);
         }
 
     }

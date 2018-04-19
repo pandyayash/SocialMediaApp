@@ -87,14 +87,14 @@ public class CrowdDiscussionBoardActivity extends BaseActivity {
         myPreference = new MyPreference(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         discussionDboArrayList = new ArrayList<>();
-        rv_chat = (RecyclerView) findViewById(R.id.rv_chat);
-        et_message = (EditText) findViewById(R.id.et_message);
-        iv_send = (ImageView) findViewById(R.id.iv_send);
-        textView = (TextView) findViewById(R.id.textview);
-        typeMsg = (LinearLayout) findViewById(R.id.typeMsg);
+        rv_chat = findViewById(R.id.rv_chat);
+        et_message = findViewById(R.id.et_message);
+        iv_send = findViewById(R.id.iv_send);
+        textView = findViewById(R.id.textview);
+        typeMsg = findViewById(R.id.typeMsg);
         typeMsg.getBackground().setLevel(3);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        pull_to_refresh = (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
+        ll_back = findViewById(R.id.ll_back);
+        pull_to_refresh = findViewById(R.id.pull_to_refresh);
         if (Connectivity.isConnected(appContext)) {
             getHistoryMessage();
         } else {

@@ -173,12 +173,12 @@ public class HomeGarageOwner extends Fragment implements View.OnClickListener {
         appContext = getActivity();
         postedJobDboArrayList = new ArrayList<>();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        btnSearch = (TextView) v.findViewById(R.id.btnSearch);
-        btnSort = (TextView) v.findViewById(R.id.btnSort);
-        txtNoDataFound = (TextView) v.findViewById(R.id.txtNoDataFound);
-        crowd_recyclerview = (RecyclerView) v.findViewById(R.id.crowd_recyclerview);
-        pull_to_refresh = (SwipeRefreshLayout) v.findViewById(R.id.pull_to_refresh);
-        ll_back = (LinearLayout) v.findViewById(R.id.ll_back);
+        btnSearch = v.findViewById(R.id.btnSearch);
+        btnSort = v.findViewById(R.id.btnSort);
+        txtNoDataFound = v.findViewById(R.id.txtNoDataFound);
+        crowd_recyclerview = v.findViewById(R.id.crowd_recyclerview);
+        pull_to_refresh = v.findViewById(R.id.pull_to_refresh);
+        ll_back = v.findViewById(R.id.ll_back);
 
         crowd_recyclerview.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -235,10 +235,10 @@ public class HomeGarageOwner extends Fragment implements View.OnClickListener {
         final Dialog dialog = new Dialog(appContext);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = ((DashboardScreen) appContext).getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Sort By");
         ((DashboardScreen) appContext).getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -502,7 +502,7 @@ public class HomeGarageOwner extends Fragment implements View.OnClickListener {
             if (row == null) {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
                 row.setTag(holder);
             } else {
                 holder = (ChallengerHolder) row.getTag();

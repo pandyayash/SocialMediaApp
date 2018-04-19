@@ -27,7 +27,7 @@ public class DialogActivity extends BaseActivity implements View.OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alert_dialuge);
         Intent intent = getIntent();
-        close=(ImageView)findViewById(R.id.close);
+        close= findViewById(R.id.close);
         appContext = this;
         url = intent.getStringExtra("String");
         if (flag) {
@@ -47,7 +47,7 @@ public class DialogActivity extends BaseActivity implements View.OnClickListener
         super.onConfigurationChanged(newConfig);
     }
     public void OpenWebview(final Context context) {
-        video = (WebView) findViewById(R.id.videoweb);
+        video = findViewById(R.id.videoweb);
         video.loadUrl(url);
         video.getSettings().setDomStorageEnabled(true);
         video.getSettings().setJavaScriptEnabled(true);

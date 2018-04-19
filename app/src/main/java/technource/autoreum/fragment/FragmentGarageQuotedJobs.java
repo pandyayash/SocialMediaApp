@@ -66,13 +66,13 @@ public class FragmentGarageQuotedJobs extends Fragment {
     public void getViews(View rootView) {
         appContext = getActivity();
         postedJobDboArrayList = new ArrayList<>();
-        jobsRecyclerview = (RecyclerView) rootView.findViewById(R.id.jobs_recyclerview);
-        pull_to_refresh = (SwipeRefreshLayout) rootView.findViewById(R.id.pull_to_refresh);
+        jobsRecyclerview = rootView.findViewById(R.id.jobs_recyclerview);
+        pull_to_refresh = rootView.findViewById(R.id.pull_to_refresh);
         pull_to_refresh.setRefreshing(false);
-        textView = (TextView) rootView.findViewById(R.id.text);
+        textView = rootView.findViewById(R.id.text);
         textView.setText("You don't have any quoted jobs.");
         textView.setVisibility(View.GONE);
-        pull_to_refresh = (SwipeRefreshLayout) rootView.findViewById(R.id.pull_to_refresh);
+        pull_to_refresh = rootView.findViewById(R.id.pull_to_refresh);
         if (Connectivity.isConnected(appContext)) {
             getNewPostedJobData();
         } else {

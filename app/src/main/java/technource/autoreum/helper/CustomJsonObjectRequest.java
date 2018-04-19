@@ -30,7 +30,7 @@ public class CustomJsonObjectRequest extends JsonObjectRequest {
 
 
   @Override
-  public Map<String, String> getHeaders() throws AuthFailureError {
+  public Map<String, String> getHeaders() {
     Map<String, String> params = new HashMap<>();
     AppLog.Log("CustomJsonObjectRequest",
         "loginDetail_dbo.getLogin_token()=" + loginDetail_dbo.getJWTToken());

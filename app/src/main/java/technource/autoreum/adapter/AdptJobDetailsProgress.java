@@ -91,8 +91,8 @@ public class AdptJobDetailsProgress extends RecyclerView.Adapter<AdptJobDetailsP
         ImageView iv_car;
         public ViewHolder(View itemView) {
             super(itemView);
-            txtStatus = (TextView)itemView.findViewById(R.id.txtStatus);
-            iv_car = (ImageView)itemView.findViewById(R.id.iv_car);
+            txtStatus = itemView.findViewById(R.id.txtStatus);
+            iv_car = itemView.findViewById(R.id.iv_car);
         }
     }
 }

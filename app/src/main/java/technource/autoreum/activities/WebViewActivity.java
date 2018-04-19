@@ -24,7 +24,7 @@ public class WebViewActivity extends BaseActivity {
         if (intent!=null){
             url = intent.getStringExtra("url");
         }
-        WebView webView = (WebView) findViewById(R.id.webView);
+        WebView webView = findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
         String pdf = url;
         AppLog.Log("pdf",pdf);

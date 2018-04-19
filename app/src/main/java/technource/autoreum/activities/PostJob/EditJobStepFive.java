@@ -126,27 +126,27 @@ public class EditJobStepFive extends BaseActivity {
 
     public void getViewS() {
         appContext = this;
-        tv_drop_off_date = (TextView) findViewById(R.id.tv_drop_off_date);
-        tv_drop_off_time = (TextView) findViewById(R.id.tv_drop_off_time);
-        tv_pick_up_date = (TextView) findViewById(R.id.tv_pick_up_date);
-        tv_pick_up_time = (TextView) findViewById(R.id.tv_pick_up_time);
-        tv_flexibility = (TextView) findViewById(R.id.tv_flexibility);
+        tv_drop_off_date = findViewById(R.id.tv_drop_off_date);
+        tv_drop_off_time = findViewById(R.id.tv_drop_off_time);
+        tv_pick_up_date = findViewById(R.id.tv_pick_up_date);
+        tv_pick_up_time = findViewById(R.id.tv_pick_up_time);
+        tv_flexibility = findViewById(R.id.tv_flexibility);
 
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back = findViewById(R.id.ll_back);
 
-        ll_pick_up_time = (LinearLayout) findViewById(R.id.ll_pick_up_time);
-        ll_pick_up_date = (LinearLayout) findViewById(R.id.ll_pick_up_date);
-        ll_drop_off_date = (LinearLayout) findViewById(R.id.ll_drop_off_date);
-        ll_drop_off_time = (LinearLayout) findViewById(R.id.ll_drop_off_time);
+        ll_pick_up_time = findViewById(R.id.ll_pick_up_time);
+        ll_pick_up_date = findViewById(R.id.ll_pick_up_date);
+        ll_drop_off_date = findViewById(R.id.ll_drop_off_date);
+        ll_drop_off_time = findViewById(R.id.ll_drop_off_time);
 
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
 
         jwt = loginDetail_dbo.getJWTToken();
-        sv = (ScrollView) findViewById(R.id.sv);
-        mroot = (LinearLayout) findViewById(R.id.mroot);
+        sv = findViewById(R.id.sv);
+        mroot = findViewById(R.id.mroot);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -155,8 +155,8 @@ public class EditJobStepFive extends BaseActivity {
             help = intent.getStringExtra("help");
         }
 
-        message = (EditText) findViewById(R.id.message);
-        footer = (LinearLayout) findViewById(R.id.footer);
+        message = findViewById(R.id.message);
+        footer = findViewById(R.id.footer);
         AppLog.Log("place4 holder", "-->" + placeholder);
 
         //message.setHint(placeholder);
@@ -482,7 +482,7 @@ public class EditJobStepFive extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = this.getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -523,9 +523,9 @@ public class EditJobStepFive extends BaseActivity {
         final Calendar c = Calendar.getInstance();
         int today_date = 0, today_month = 0, today_year = 0;
         Calendar min = Calendar.getInstance();
-        min.set(min.MONTH, Calendar.JANUARY);
-        min.set(min.DAY_OF_MONTH, 1);
-        min.set(min.YEAR, 1970);
+        min.set(Calendar.MONTH, Calendar.JANUARY);
+        min.set(Calendar.DAY_OF_MONTH, 1);
+        min.set(Calendar.YEAR, 1970);
         try {
 
         } catch (NumberFormatException e) {
@@ -633,7 +633,7 @@ public class EditJobStepFive extends BaseActivity {
             if (row == null) {
                 holder = new CustomListAdapterOther.ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
 
                 row.setTag(holder);
             } else {

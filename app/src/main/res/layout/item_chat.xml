@@ -64,7 +64,8 @@
                     android:layout_gravity="end"
                     android:textColor="@color/boardarcolor"
                     android:textSize="@dimen/txt_size_1"
-                    android:layout_marginRight="@dimen/llSignInMain_margin_lr"/>
+                    android:layout_marginRight="@dimen/llSignInMain_margin_lr"
+                    android:visibility="gone"/>
 
             </LinearLayout>
 
@@ -187,7 +188,8 @@
                     android:paddingLeft="@dimen/SignIn_margin"
                     android:textColor="@color/boardarcolor"
                     android:layout_marginLeft="@dimen/SignIn_margin"
-                    android:layout_gravity="center_vertical"/>
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"/>
 
 
             </LinearLayout>

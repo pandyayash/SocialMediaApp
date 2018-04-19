@@ -58,12 +58,12 @@ public class GarageOwnerFacilitiesActivity extends BaseActivity {
     }
 
     private void getviews() {
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         facilitiesDBos = new ArrayList<>();
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         appContext = this;
-        cont = (TextView) findViewById(R.id.cont);
+        cont = findViewById(R.id.cont);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(this);
         cont.setVisibility(View.VISIBLE);
     }
@@ -274,8 +274,8 @@ public class GarageOwnerFacilitiesActivity extends BaseActivity {
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                services_text = (TextView) itemView.findViewById(R.id.autoText2);
-                service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
+                services_text = itemView.findViewById(R.id.autoText2);
+                service_ll = itemView.findViewById(R.id.service_ll);
             }
 
             //if you implement onclick here you must have to use getposition() instead of making variable position global see documentation

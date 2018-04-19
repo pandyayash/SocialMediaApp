@@ -9,8 +9,8 @@ android {
         applicationId "technource.autoreum"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 3
+        versionName "1.0.1"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -19,7 +19,9 @@ android {
         release {
             //multiDexKeepFile file 'multidex-config.txt'
             minifyEnabled false
+            //shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //proguardFiles getDefaultProguardFile('proguard-android.txt')
         }
         customDebugType {
             debuggable true
@@ -82,6 +84,8 @@ dependencies {
     compile 'com.braintreepayments.api:drop-in:3.2.1'
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.sprylab.android.texturevideoview:texturevideoview:1.0.2'
+
+
 
 
 

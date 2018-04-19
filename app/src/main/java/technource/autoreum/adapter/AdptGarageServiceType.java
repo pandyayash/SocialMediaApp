@@ -117,9 +117,9 @@ public class AdptGarageServiceType extends RecyclerView.Adapter<AdptGarageServic
 
         public ViewHolder(View itemView) {
             super(itemView);
-            services_text = (TextView) itemView.findViewById(R.id.autoText2);
-            service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
-            ll_info = (LinearLayout) itemView.findViewById(R.id.ll_info);
+            services_text = itemView.findViewById(R.id.autoText2);
+            service_ll = itemView.findViewById(R.id.service_ll);
+            ll_info = itemView.findViewById(R.id.ll_info);
         }
     }
 }

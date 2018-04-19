@@ -68,8 +68,8 @@ public class MailBoxGarageOwner extends Fragment implements View.OnClickListener
         appContext = getActivity();
         myPreference = new MyPreference(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        tabLayout = (TabLayout) v.findViewById(R.id.my_jobs_tablayout);
-        viewPager = (ViewPager) v.findViewById(R.id.view_pager);
+        tabLayout = v.findViewById(R.id.my_jobs_tablayout);
+        viewPager = v.findViewById(R.id.view_pager);
         viewPager.setOffscreenPageLimit(2);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
@@ -106,7 +106,7 @@ public class MailBoxGarageOwner extends Fragment implements View.OnClickListener
     }
 
     private void changeTabsFont() {
-        Typeface typeface = Typeface.createFromAsset(((DashboardScreen) appContext).getAssets(), Constants.Fonts.POPPINS_REGULAR);
+        Typeface typeface = Typeface.createFromAsset(appContext.getAssets(), Constants.Fonts.POPPINS_REGULAR);
         ViewGroup vg = (ViewGroup) tabLayout.getChildAt(0);
         int tabsCount = vg.getChildCount();
 
@@ -127,7 +127,7 @@ public class MailBoxGarageOwner extends Fragment implements View.OnClickListener
     }
 
     private void changeTabsFontUnselectedTab() {
-        Typeface typeface = Typeface.createFromAsset(((DashboardScreen) appContext).getAssets(), Constants.Fonts.POPPINS_REGULAR);
+        Typeface typeface = Typeface.createFromAsset(appContext.getAssets(), Constants.Fonts.POPPINS_REGULAR);
         ViewGroup vg = (ViewGroup) tabLayout.getChildAt(0);
         int tabsCount = vg.getChildCount();
 

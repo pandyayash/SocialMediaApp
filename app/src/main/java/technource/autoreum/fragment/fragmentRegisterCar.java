@@ -67,9 +67,9 @@ import technource.autoreum.model.SignUpDBO;
 public class fragmentRegisterCar extends Fragment implements OnClickListener {
 
     public String Selected_Make_id = "", Selected_model_id = "", Selected_badge_id = "", Selected_Check = "";
-    EditText edt_make, edt_model, edt_badge, edt_reg_number, edtyear;
+    EditText edt_make, edt_model, edt_badge, edt_reg_number, edtyear, edt_km;
     RelativeLayout ll_make, ll_model, ll_badge;
-    LinearLayout add_more_car,ll_register_no,ll_year;
+    LinearLayout add_more_car, ll_register_no, ll_year, ll_km;
     CheckBox autoCheck, manualCheck;
     TextView RegisterBtn;
     View v;
@@ -102,20 +102,22 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
     public void getViews() {
         appContext = getActivity();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        edt_make = (EditText) v.findViewById(R.id.edt_make);
-        edt_model = (EditText) v.findViewById(R.id.edt_model);
-        edt_badge = (EditText) v.findViewById(R.id.edt_badge);
-        edt_reg_number = (EditText) v.findViewById(R.id.edt_reg_number);
-        edtyear = (EditText) v.findViewById(R.id.edt_year);
-        ll_make = (RelativeLayout) v.findViewById(R.id.ll_make);
-        ll_model = (RelativeLayout) v.findViewById(R.id.ll_model);
-        ll_badge = (RelativeLayout) v.findViewById(R.id.ll_badge);
-        autoCheck = (CheckBox) v.findViewById(R.id.autoCheck);
-        manualCheck = (CheckBox) v.findViewById(R.id.manualCheck);
-        RegisterBtn = (TextView) v.findViewById(R.id.registerBtn);
-        add_more_car = (LinearLayout) v.findViewById(R.id.add_more_car);
-        ll_year = (LinearLayout) v.findViewById(R.id.ll_year);
-        ll_register_no = (LinearLayout) v.findViewById(R.id.ll_register_no);
+        edt_make = v.findViewById(R.id.edt_make);
+        edt_model = v.findViewById(R.id.edt_model);
+        edt_badge = v.findViewById(R.id.edt_badge);
+        edt_km = v.findViewById(R.id.edt_km);
+        edt_reg_number = v.findViewById(R.id.edt_reg_number);
+        edtyear = v.findViewById(R.id.edt_year);
+        ll_make = v.findViewById(R.id.ll_make);
+        ll_model = v.findViewById(R.id.ll_model);
+        ll_badge = v.findViewById(R.id.ll_badge);
+        autoCheck = v.findViewById(R.id.autoCheck);
+        manualCheck = v.findViewById(R.id.manualCheck);
+        RegisterBtn = v.findViewById(R.id.registerBtn);
+        add_more_car = v.findViewById(R.id.add_more_car);
+        ll_year = v.findViewById(R.id.ll_year);
+        ll_km = v.findViewById(R.id.ll_km);
+        ll_register_no = v.findViewById(R.id.ll_register_no);
         autoCheck.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -144,9 +146,9 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                if (editable.length()>0){
-                    HelperMethods.Valid(appContext,ll_register_no);
-                }else {
+                if (editable.length() > 0) {
+                    HelperMethods.Valid(appContext, ll_register_no);
+                } else {
                     // HelperMethods.ValidateFields(appContext,ll_fname);
                 }
             }
@@ -164,9 +166,9 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                if (editable.length()>0){
-                    HelperMethods.Valid(appContext,ll_year);
-                }else {
+                if (editable.length() > 0) {
+                    HelperMethods.Valid(appContext, ll_year);
+                } else {
                     // HelperMethods.ValidateFields(appContext,ll_fname);
                 }
             }
@@ -185,7 +187,7 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
     private void showMakeDialog() {
         final Dialog dialog = new Dialog(getActivity());
         View view = getActivity().getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new OnItemClickListener() {
             @Override
@@ -197,7 +199,7 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
                 edt_model.setText("");
                 Selected_badge_id = "";
                 edt_badge.setText("");
-                HelperMethods.Valid(appContext,ll_make);
+                HelperMethods.Valid(appContext, ll_make);
 
                 dialog.dismiss();
                 GetCarModels();
@@ -227,14 +229,14 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
     private void showModelDialog() {
         final Dialog dialog = new Dialog(getActivity());
         View view = getActivity().getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Selected_model_id = model_list.get(i).getId();
                 edt_model.setText(model_list.get(i).getName());
-                HelperMethods.Valid(appContext,ll_model);
+                HelperMethods.Valid(appContext, ll_model);
                 GetBadgeList();
                 dialog.dismiss();
             }
@@ -263,7 +265,7 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
     private void showBadgeDialog() {
         final Dialog dialog = new Dialog(getActivity());
         View view = getActivity().getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new OnItemClickListener() {
             @Override
@@ -305,7 +307,7 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
                     edt_badge.setText("");
                     showModelDialog();
                 } else {
-                    HelperMethods.Valid(appContext,ll_make);
+                    HelperMethods.Valid(appContext, ll_make);
                     ((SignUpCarOwner) appContext)
                             .showAlertDialog(getString(R.string.select_car_maker));
                 }
@@ -319,7 +321,7 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
                                 .showAlertDialog(getString(R.string.no_badges));
                     }
                 } else {
-                    HelperMethods.Valid(appContext,ll_model);
+                    HelperMethods.Valid(appContext, ll_model);
                     ((SignUpCarOwner) appContext)
                             .showAlertDialog(getString(R.string.select_car_model));
                 }
@@ -363,6 +365,7 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
         params.put(LoginType.BADGE_ID, Selected_badge_id);
         params.put(LoginType.REG_NO, edt_reg_number.getText().toString());
         params.put(LoginType.YEAR, edtyear.getText().toString());
+//        params.put(LoginType.TRAVELLED_KM, edt_km.getText().toString());
 
         AppLog.Log("TAG", "Params : " + new JSONObject(params).toString());
         CustomJsonObjectRequest jsonObjReq = new CustomJsonObjectRequest(Request.Method.POST,
@@ -426,49 +429,50 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
     }
 
     public boolean isValidate() {
-        String makers, models, badges, regnumber, year;
-        boolean isFirst=true;
+        String makers, models, badges, regnumber, year, km;
+        boolean isFirst = true;
         makers = edt_make.getText().toString();
         models = edt_model.getText().toString();
         badges = edt_badge.getText().toString();
         regnumber = edt_reg_number.getText().toString();
         year = edtyear.getText().toString();
+        km = edt_km.getText().toString();
 
         if (makers != null && makers.trim().length() > 0) {
-            HelperMethods.Valid(appContext,ll_make);
+            HelperMethods.Valid(appContext, ll_make);
         } else {
             edt_make.requestFocus();
-            HelperMethods.ValidateFields(appContext,ll_make);
-            if(isFirst) {
+            HelperMethods.ValidateFields(appContext, ll_make);
+            if (isFirst) {
                 ((SignUpCarOwner) appContext)
                         .showAlertDialog(getString(R.string.select_car_makers));
-                isFirst=false;
+                isFirst = false;
             }
 
         }
 
         if (models != null && models.trim().length() > 0) {
-            HelperMethods.Valid(appContext,ll_model);
+            HelperMethods.Valid(appContext, ll_model);
         } else {
             edt_model.requestFocus();
-            HelperMethods.ValidateFields(appContext,ll_model);
+            HelperMethods.ValidateFields(appContext, ll_model);
             if (isFirst) {
                 ((SignUpCarOwner) appContext)
                         .showAlertDialog(getString(R.string.please_select_model));
-                isFirst=false;
+                isFirst = false;
             }
 
         }
 
         if (regnumber != null && regnumber.trim().length() > 0) {
-            HelperMethods.Valid(appContext,ll_register_no);
+            HelperMethods.Valid(appContext, ll_register_no);
         } else {
             edt_reg_number.requestFocus();
-            HelperMethods.ValidateFields(appContext,ll_register_no);
-            if (isFirst){
+            HelperMethods.ValidateFields(appContext, ll_register_no);
+            if (isFirst) {
                 ((SignUpCarOwner) appContext)
                         .showAlertDialog(getString(R.string.emter_reg_number));
-                isFirst=false;
+                isFirst = false;
             }
 
         }
@@ -482,14 +486,26 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
 //    }
 
         if (year != null && year.trim().length() > 0) {
-            HelperMethods.Valid(appContext,ll_year);
+            HelperMethods.Valid(appContext, ll_year);
         } else {
             edtyear.requestFocus();
-            HelperMethods.ValidateFields(appContext,ll_year);
+            HelperMethods.ValidateFields(appContext, ll_year);
             if (isFirst) {
                 ((SignUpCarOwner) appContext)
                         .showAlertDialog(getString(R.string.please_enter_year));
-                isFirst=false;
+                isFirst = false;
+            }
+
+        }
+        if (km != null && km.trim().length() > 0) {
+            HelperMethods.Valid(appContext, ll_km);
+        } else {
+            edtyear.requestFocus();
+            HelperMethods.ValidateFields(appContext, ll_km);
+            if (isFirst) {
+                ((SignUpCarOwner) appContext)
+                        .showAlertDialog(getString(R.string.please_enter_km));
+                isFirst = false;
             }
 
         }
@@ -845,8 +861,8 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_dialog, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
-                holder.tv_header = (TextView) row.findViewById(R.id.tv_header);
+                holder.tv_name = row.findViewById(R.id.tv_name);
+                holder.tv_header = row.findViewById(R.id.tv_header);
 
                 row.setTag(holder);
             } else {
@@ -928,7 +944,7 @@ public class fragmentRegisterCar extends Fragment implements OnClickListener {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
 
                 row.setTag(holder);
             } else {

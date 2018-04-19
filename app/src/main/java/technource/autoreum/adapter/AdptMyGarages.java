@@ -125,14 +125,14 @@ public class AdptMyGarages extends RecyclerView.Adapter<AdptMyGarages.ViewHolder
         public ViewHolder(View itemView) {
             super(itemView);
 
-            avatar_img = (ImageView) itemView.findViewById(R.id.avatar_img);
-            txtGarageName = (TextView) itemView.findViewById(R.id.txtGarageName);
-            btnJobCompleteByGarage = (TextView) itemView.findViewById(R.id.btnJobCompleteByGarage);
-            btnPostJobGarage = (TextView) itemView.findViewById(R.id.btnPostJobGarage);
-            txtReview = (TextView) itemView.findViewById(R.id.txtReview);
-            txtDistance = (TextView) itemView.findViewById(R.id.txtDistance);
-            txtRating = (TextView) itemView.findViewById(R.id.txtRating);
-            ratingBar = (RatingBar) itemView.findViewById(R.id.ratingBar);
+            avatar_img = itemView.findViewById(R.id.avatar_img);
+            txtGarageName = itemView.findViewById(R.id.txtGarageName);
+            btnJobCompleteByGarage = itemView.findViewById(R.id.btnJobCompleteByGarage);
+            btnPostJobGarage = itemView.findViewById(R.id.btnPostJobGarage);
+            txtReview = itemView.findViewById(R.id.txtReview);
+            txtDistance = itemView.findViewById(R.id.txtDistance);
+            txtRating = itemView.findViewById(R.id.txtRating);
+            ratingBar = itemView.findViewById(R.id.ratingBar);
         }
     }
 }

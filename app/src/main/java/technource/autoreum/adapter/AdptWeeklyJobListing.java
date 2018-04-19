@@ -83,10 +83,10 @@ public class AdptWeeklyJobListing extends RecyclerView.Adapter<AdptWeeklyJobList
 
         public ViewHolder(View itemView) {
             super(itemView);
-            iv_close = (ImageView) itemView.findViewById(R.id.iv_close);
-            txtNotification = (TextView) itemView.findViewById(R.id.txtNotification);
-            txtDate = (TextView) itemView.findViewById(R.id.txtDate);
-            linear = (LinearLayout) itemView.findViewById(R.id.linear);
+            iv_close = itemView.findViewById(R.id.iv_close);
+            txtNotification = itemView.findViewById(R.id.txtNotification);
+            txtDate = itemView.findViewById(R.id.txtDate);
+            linear = itemView.findViewById(R.id.linear);
         }
 
         public String parseDateToddMMyyyy(String time) {

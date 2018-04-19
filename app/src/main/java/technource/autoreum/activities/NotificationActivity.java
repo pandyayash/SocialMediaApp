@@ -50,11 +50,11 @@ public class NotificationActivity extends BaseActivity {
 
   public void getViews() {
     setHeader(getResources().getString(R.string.notification));
-    iv_back = (LinearLayout) findViewById(R.id.ll_back);
-    SwitchPushNotifcation = (SwitchCompat) findViewById(R.id.switchPushNotification);
-    SwitchEmailNotification = (SwitchCompat) findViewById(R.id.switchEmailNotification);
-    SwitchTextNotification = (SwitchCompat) findViewById(R.id.switchTextnotification);
-    ll_back = (LinearLayout) findViewById(R.id.ll_back);
+    iv_back = findViewById(R.id.ll_back);
+    SwitchPushNotifcation = findViewById(R.id.switchPushNotification);
+    SwitchEmailNotification = findViewById(R.id.switchEmailNotification);
+    SwitchTextNotification = findViewById(R.id.switchTextnotification);
+    ll_back = findViewById(R.id.ll_back);
     loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
 
     getnotificationsetting();

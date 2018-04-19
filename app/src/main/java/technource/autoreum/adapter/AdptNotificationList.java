@@ -163,13 +163,13 @@ public class AdptNotificationList extends RecyclerView.Adapter<AdptNotificationL
 
         public ViewHolder(View itemView) {
             super(itemView);
-            iv_close = (ImageView) itemView.findViewById(R.id.iv_close);
-            iv_headerprofile = (ImageView) itemView.findViewById(R.id.iv_headerprofile);
-            txtNotification = (TextView) itemView.findViewById(R.id.txtNotification);
-            txtJobDetail = (TextView) itemView.findViewById(R.id.txtJobDetail);
-            txtChatMessage = (TextView) itemView.findViewById(R.id.txtChatMessage);
-            tv_date = (TextView) itemView.findViewById(R.id.tv_date);
-            linear = (LinearLayout) itemView.findViewById(R.id.linear);
+            iv_close = itemView.findViewById(R.id.iv_close);
+            iv_headerprofile = itemView.findViewById(R.id.iv_headerprofile);
+            txtNotification = itemView.findViewById(R.id.txtNotification);
+            txtJobDetail = itemView.findViewById(R.id.txtJobDetail);
+            txtChatMessage = itemView.findViewById(R.id.txtChatMessage);
+            tv_date = itemView.findViewById(R.id.tv_date);
+            linear = itemView.findViewById(R.id.linear);
         }
 
         public String parseDateToddMMyyyy(String time) {

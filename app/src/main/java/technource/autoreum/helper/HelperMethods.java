@@ -356,10 +356,7 @@ public class HelperMethods {
   }
 
   public static boolean jsonContains(String key, JSONObject jsonObject) {
-    if (jsonObject.has(key)) {
-      return true;
-    }
-    return false;
+      return jsonObject.has(key);
   }
 
   public static int randomInteger() {
@@ -463,7 +460,7 @@ public class HelperMethods {
     SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
     String formattedDate = sdf.format(now);
 
-    cal.add(cal.DAY_OF_MONTH, 1);
+    cal.add(Calendar.DAY_OF_MONTH, 1);
     Date tomorrow = cal.getTime();
     formattedDate = sdf.format(tomorrow);
     System.out.println(formattedDate);

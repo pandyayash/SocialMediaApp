@@ -148,16 +148,16 @@ public class PostNewJobStepFour extends BaseActivity {
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         setHeader(getString(R.string.gallaery));
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ll_upload = (LinearLayout) findViewById(R.id.ll_upload);
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
+        ll_back = findViewById(R.id.ll_back);
+        ll_upload = findViewById(R.id.ll_upload);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_back_button = findViewById(R.id.ll_back_button);
 
-        gridView = (GridView) findViewById(R.id.gridview);
-        gridview_video = (GridView) findViewById(R.id.gridview_video);
-        nodata = (TextView) findViewById(R.id.nodata);
-        nodata_video = (TextView) findViewById(R.id.nodata_video);
-        scrollView = (ScrollView) findViewById(R.id.scrollview);
+        gridView = findViewById(R.id.gridview);
+        gridview_video = findViewById(R.id.gridview_video);
+        nodata = findViewById(R.id.nodata);
+        nodata_video = findViewById(R.id.nodata_video);
+        scrollView = findViewById(R.id.scrollview);
 
 
         Intent intent = getIntent();
@@ -655,7 +655,7 @@ public class PostNewJobStepFour extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = getLayoutInflater().inflate(R.layout.image_popup_for_postjob_4, null);
-        ImageView img = (ImageView) view.findViewById(R.id.img);
+        ImageView img = view.findViewById(R.id.img);
 
 
         WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
@@ -688,8 +688,8 @@ public class PostNewJobStepFour extends BaseActivity {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = getLayoutInflater().inflate(R.layout.video_popup, null);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        VideoView vv = (VideoView) view.findViewById(R.id.vv);
-        ImageView close = (ImageView) view.findViewById(R.id.close);
+        VideoView vv = view.findViewById(R.id.vv);
+        ImageView close = view.findViewById(R.id.close);
 
         Uri uri = Uri.parse(path);
         vv.setVideoURI(uri);
@@ -723,7 +723,6 @@ public class PostNewJobStepFour extends BaseActivity {
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         lp.copyFrom(dialog.getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-        ;
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
         dialog.setContentView(view);
@@ -769,9 +768,9 @@ public class PostNewJobStepFour extends BaseActivity {
 
             if (convertView == null) {
                 convertView = inflater.inflate(R.layout.grid_row_gallary_post_job, null);
-                holder.iv_image = (Grid_image) convertView.findViewById(R.id.gridimage);
-                holder.video_button = (ImageView) convertView.findViewById(R.id.video_button);
-                holder.imgEdit = (ImageView) convertView.findViewById(R.id.imgEdit);
+                holder.iv_image = convertView.findViewById(R.id.gridimage);
+                holder.video_button = convertView.findViewById(R.id.video_button);
+                holder.imgEdit = convertView.findViewById(R.id.imgEdit);
                 holder.imgEdit.setVisibility(View.VISIBLE);
                 convertView.setTag(holder);
             } else {
@@ -819,7 +818,6 @@ public class PostNewJobStepFour extends BaseActivity {
             TextView tv_name;
             Grid_image iv_image;
             ImageView video_button, imgEdit;
-            ;
         }
     }
 
@@ -859,8 +857,8 @@ public class PostNewJobStepFour extends BaseActivity {
 
             if (convertView == null) {
                 convertView = inflater.inflate(R.layout.grid_row_gallary_post_job, null);
-                holder.iv_image = (Grid_image) convertView.findViewById(R.id.gridimage);
-                holder.video_button = (ImageView) convertView.findViewById(R.id.video_button);
+                holder.iv_image = convertView.findViewById(R.id.gridimage);
+                holder.video_button = convertView.findViewById(R.id.video_button);
                 convertView.setTag(holder);
             } else {
                 holder = (Favorite_AdapterForVideo.ViewHolder) convertView.getTag();

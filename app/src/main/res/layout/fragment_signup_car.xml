@@ -246,6 +246,30 @@
                     android:textSize="@dimen/txt_size_4" />
 
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/row_screening_detail_header_h"
+                android:layout_marginRight="@dimen/row_screening_detail_header_h"
+                android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
+                android:background="@color/edittext_bg">
+
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    android:id="@+id/edt_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/km_traveled"
+                    android:inputType="number"
+                    android:padding="@dimen/activity_add_child_downarrow_h"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white_90"
+                    android:textSize="@dimen/txt_size_4" />
+
+            </LinearLayout>
 
 
             <LinearLayout

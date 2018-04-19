@@ -59,15 +59,15 @@ public class SignUpCarOwner extends BaseActivity implements OnClickListener {
   public void getViews() {
     appContext = this;
     loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-    viewPager = (CustomViewPager) findViewById(R.id.viewpager);
+    viewPager = findViewById(R.id.viewpager);
     setupViewPager(viewPager);
     data = new SignUpDBO();
     viewPager.setPagingEnabled(false);
-    tabLayout = (TabLayout) findViewById(R.id.tabs);
+    tabLayout = findViewById(R.id.tabs);
     tabLayout.setupWithViewPager(viewPager);
     changeTabsFont();
-    ll_back = (ImageView) findViewById(R.id.ll_back);
-    tv_skipCarSign = (TextView) findViewById(R.id.tv_skipCarSign);
+    ll_back = findViewById(R.id.ll_back);
+    tv_skipCarSign = findViewById(R.id.tv_skipCarSign);
     tv_skipCarSign.setVisibility(View.GONE);
 
     getData();

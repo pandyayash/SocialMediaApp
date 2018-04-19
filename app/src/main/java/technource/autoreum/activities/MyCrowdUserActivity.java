@@ -153,13 +153,13 @@ public class MyCrowdUserActivity extends BaseActivity {
         myPreference = new MyPreference(appContext);
         crowdArrayList = new ArrayList<>();
         sortByArrayList = new ArrayList<>();
-        btnSearch = (TextView) findViewById(R.id.btnSearch);
-        btnSort = (TextView) findViewById(R.id.btnSort);
-        btnAskCrowd = (TextView) findViewById(R.id.btnAskCrowd);
-        txtNoDataFound = (TextView) findViewById(R.id.txtNoDataFound);
-        crowd_recyclerview = (RecyclerView) findViewById(R.id.crowd_recyclerview);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        pull_to_refresh = (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
+        btnSearch = findViewById(R.id.btnSearch);
+        btnSort = findViewById(R.id.btnSort);
+        btnAskCrowd = findViewById(R.id.btnAskCrowd);
+        txtNoDataFound = findViewById(R.id.txtNoDataFound);
+        crowd_recyclerview = findViewById(R.id.crowd_recyclerview);
+        ll_back = findViewById(R.id.ll_back);
+        pull_to_refresh = findViewById(R.id.pull_to_refresh);
 
         sortByArrayList.add("Date");
         sortByArrayList.add("Distance");
@@ -339,10 +339,10 @@ public class MyCrowdUserActivity extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Sort By");
         getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -411,7 +411,7 @@ public class MyCrowdUserActivity extends BaseActivity {
             if (row == null) {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
                 row.setTag(holder);
             } else {
                 holder = (ChallengerHolder) row.getTag();

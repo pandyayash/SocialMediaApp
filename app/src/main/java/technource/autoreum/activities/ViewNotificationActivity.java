@@ -111,11 +111,11 @@ public class ViewNotificationActivity extends BaseActivity {
         Constants.notify_count = "0";
         notificationArrayList = new ArrayList<>();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        recyclerNotification = (RecyclerView) findViewById(R.id.recyclerNotification);
-        pull_to_refresh = (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
-        textView = (TextView) findViewById(R.id.text);
+        recyclerNotification = findViewById(R.id.recyclerNotification);
+        pull_to_refresh = findViewById(R.id.pull_to_refresh);
+        textView = findViewById(R.id.text);
         textView.setText(getString(R.string.no_notifications_found));
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

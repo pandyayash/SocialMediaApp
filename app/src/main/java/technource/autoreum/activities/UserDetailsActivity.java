@@ -172,18 +172,18 @@ public class UserDetailsActivity extends BaseActivity {
 
     private void findViews() {
         appContext = this;
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        img = (RelativeLayout) findViewById(R.id.img);
-        ivImage = (ImageView) findViewById(R.id.iv_image);
-        llName = (LinearLayout) findViewById(R.id.llName);
-        tvName = (TextView) findViewById(R.id.tvName);
-        llAddres = (LinearLayout) findViewById(R.id.llAddres);
-        tvAddress = (TextView) findViewById(R.id.tvAddress);
-        llMail = (LinearLayout) findViewById(R.id.ll_mail);
-        tvMAil = (TextView) findViewById(R.id.tvMAil);
-        tvMailButton = (TextView) findViewById(R.id.tvMailButton);
-        tvRegisteredCarButton = (TextView) findViewById(R.id.tvRegisteredCarButton);
+        img = findViewById(R.id.img);
+        ivImage = findViewById(R.id.iv_image);
+        llName = findViewById(R.id.llName);
+        tvName = findViewById(R.id.tvName);
+        llAddres = findViewById(R.id.llAddres);
+        tvAddress = findViewById(R.id.tvAddress);
+        llMail = findViewById(R.id.ll_mail);
+        tvMAil = findViewById(R.id.tvMAil);
+        tvMailButton = findViewById(R.id.tvMailButton);
+        tvRegisteredCarButton = findViewById(R.id.tvRegisteredCarButton);
     }
 
     private void setOnclickListener() {

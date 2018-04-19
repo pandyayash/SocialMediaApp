@@ -90,10 +90,10 @@ public class AdptFollowupWork extends RecyclerView.Adapter<AdptFollowupWork.View
 
         public ViewHolder(View itemView) {
             super(itemView);
-            txtKey = (TextView) itemView.findViewById(R.id.txtKey);
-            txtValue = (TextView) itemView.findViewById(R.id.txtValue);
-            acceptOrReject = (RadioGroup) itemView.findViewById(R.id.acceptOrReject);
-            txtAcceptOrReject = (TextView) itemView.findViewById(R.id.txtAcceptOrReject);
+            txtKey = itemView.findViewById(R.id.txtKey);
+            txtValue = itemView.findViewById(R.id.txtValue);
+            acceptOrReject = itemView.findViewById(R.id.acceptOrReject);
+            txtAcceptOrReject = itemView.findViewById(R.id.txtAcceptOrReject);
         }
     }
 }

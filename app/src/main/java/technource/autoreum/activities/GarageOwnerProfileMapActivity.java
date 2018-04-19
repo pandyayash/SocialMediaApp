@@ -41,7 +41,7 @@ public class GarageOwnerProfileMapActivity extends BaseActivity implements OnMap
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
 
         Bundle b = getIntent().getExtras();
         if (b != null) {

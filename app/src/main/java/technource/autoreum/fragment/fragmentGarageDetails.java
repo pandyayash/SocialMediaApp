@@ -123,52 +123,52 @@ public class fragmentGarageDetails extends Fragment implements OnClickListener {
 
     public void getViews() {
         appContext = getActivity();
-        ll_owner_details = (LinearLayout) v.findViewById(R.id.ll_owner_details);
-        ll_user_details = (LinearLayout) v.findViewById(R.id.ll_user_details);
-        ll_business_details = (LinearLayout) v.findViewById(R.id.ll_business_details);
-        ll_businessname = (LinearLayout) v.findViewById(R.id.ll_businessname);
-        ll_fname = (LinearLayout) v.findViewById(R.id.ll_fname);
-        ll_lname = (LinearLayout) v.findViewById(R.id.ll_lname);
-        ll_business_email = (LinearLayout) v.findViewById(R.id.ll_business_email);
-        ll_business_c_email = (LinearLayout) v.findViewById(R.id.ll_business_c_email);
-        ll_business_mobile = (LinearLayout) v.findViewById(R.id.ll_business_mobile);
-        ll_business_telephone = (LinearLayout) v.findViewById(R.id.ll_business_telephone);
-        ll_username = (LinearLayout) v.findViewById(R.id.ll_username);
-        ll_streetnumber = (LinearLayout) v.findViewById(R.id.ll_streetnumber);
-        ll_subrub = (LinearLayout) v.findViewById(R.id.ll_subrub);
-        ll_state = (LinearLayout) v.findViewById(R.id.ll_state);
-        ll_post_code = (LinearLayout) v.findViewById(R.id.ll_post_code);
-        ll_abn_no = (LinearLayout) v.findViewById(R.id.ll_abn_no);
+        ll_owner_details = v.findViewById(R.id.ll_owner_details);
+        ll_user_details = v.findViewById(R.id.ll_user_details);
+        ll_business_details = v.findViewById(R.id.ll_business_details);
+        ll_businessname = v.findViewById(R.id.ll_businessname);
+        ll_fname = v.findViewById(R.id.ll_fname);
+        ll_lname = v.findViewById(R.id.ll_lname);
+        ll_business_email = v.findViewById(R.id.ll_business_email);
+        ll_business_c_email = v.findViewById(R.id.ll_business_c_email);
+        ll_business_mobile = v.findViewById(R.id.ll_business_mobile);
+        ll_business_telephone = v.findViewById(R.id.ll_business_telephone);
+        ll_username = v.findViewById(R.id.ll_username);
+        ll_streetnumber = v.findViewById(R.id.ll_streetnumber);
+        ll_subrub = v.findViewById(R.id.ll_subrub);
+        ll_state = v.findViewById(R.id.ll_state);
+        ll_post_code = v.findViewById(R.id.ll_post_code);
+        ll_abn_no = v.findViewById(R.id.ll_abn_no);
 
-        ll_password = (LinearLayout) v.findViewById(R.id.ll_password);
-        ll_confirm_password = (LinearLayout) v.findViewById(R.id.ll_confirm_password);
+        ll_password = v.findViewById(R.id.ll_password);
+        ll_confirm_password = v.findViewById(R.id.ll_confirm_password);
 
-        next_owner_details = (TextView) v.findViewById(R.id.next_owner_details);
-        termsandpolicy = (TextView) v.findViewById(R.id.termsandpolicy);
-        next_user_details = (TextView) v.findViewById(R.id.next_user_details);
-        next_business_details = (TextView) v.findViewById(R.id.next_business_details);
+        next_owner_details = v.findViewById(R.id.next_owner_details);
+        termsandpolicy = v.findViewById(R.id.termsandpolicy);
+        next_user_details = v.findViewById(R.id.next_user_details);
+        next_business_details = v.findViewById(R.id.next_business_details);
 
-        edt_businessname = (EditText) v.findViewById(R.id.edt_businessname);
+        edt_businessname = v.findViewById(R.id.edt_businessname);
         edt_businessname.requestFocus();
-        edt_abn_number = (EditText) v.findViewById(R.id.edt_abn_number);
-        edt_fname = (EditText) v.findViewById(R.id.edt_fname);
-        edt_lname = (EditText) v.findViewById(R.id.edt_lname);
-        edt_email = (EditText) v.findViewById(R.id.edt_email);
-        edt_confirm_email = (EditText) v.findViewById(R.id.edt_confirm_email);
-        edt_mobile = (EditText) v.findViewById(R.id.edt_mobile);
-        edt_telephone = (EditText) v.findViewById(R.id.edt_telephone);
+        edt_abn_number = v.findViewById(R.id.edt_abn_number);
+        edt_fname = v.findViewById(R.id.edt_fname);
+        edt_lname = v.findViewById(R.id.edt_lname);
+        edt_email = v.findViewById(R.id.edt_email);
+        edt_confirm_email = v.findViewById(R.id.edt_confirm_email);
+        edt_mobile = v.findViewById(R.id.edt_mobile);
+        edt_telephone = v.findViewById(R.id.edt_telephone);
 
-        edt_username = (EditText) v.findViewById(R.id.edt_uname);
-        edt_password = (EditText) v.findViewById(R.id.edt_password);
-        edt_confimepass = (EditText) v.findViewById(R.id.edt_confimepass);
+        edt_username = v.findViewById(R.id.edt_uname);
+        edt_password = v.findViewById(R.id.edt_password);
+        edt_confimepass = v.findViewById(R.id.edt_confimepass);
 
-        edt_streetnumber = (EditText) v.findViewById(R.id.edt_streetnumber);
-        editstate = (TextView) v.findViewById(R.id.edt_state);
-        edt_subrub = (EditText) v.findViewById(R.id.edt_subrub);
-        edt_refferelcode = (EditText) v.findViewById(R.id.edt_refferelcode);
-        edt_post_code = (EditText) v.findViewById(R.id.edt_post_code);
-        newslettr = (CheckBox) v.findViewById(R.id.newslettr);
-        terms = (CheckBox) v.findViewById(R.id.terms);
+        edt_streetnumber = v.findViewById(R.id.edt_streetnumber);
+        editstate = v.findViewById(R.id.edt_state);
+        edt_subrub = v.findViewById(R.id.edt_subrub);
+        edt_refferelcode = v.findViewById(R.id.edt_refferelcode);
+        edt_post_code = v.findViewById(R.id.edt_post_code);
+        newslettr = v.findViewById(R.id.newslettr);
+        terms = v.findViewById(R.id.terms);
         data = ((SignUpGarageOwner) appContext).data;
         device_token = HelperMethods.getDeviceTokenFCM();
 
@@ -207,7 +207,7 @@ public class fragmentGarageDetails extends Fragment implements OnClickListener {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 int digits = edit.getText().toString().length();
-                Log.d("LENGTH", "" + digits);
+                //Log.d("LENGTH", "" + digits);
                 if (!lastChar.equals(" ")) {
                     if (digits == 4 || digits == 8) {
                         edit.append(" ");

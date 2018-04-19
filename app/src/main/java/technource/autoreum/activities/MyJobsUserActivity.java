@@ -58,7 +58,7 @@ public class MyJobsUserActivity extends BaseActivity {
             }*/
 
         }
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(this);
 
     }
@@ -86,8 +86,8 @@ public class MyJobsUserActivity extends BaseActivity {
         appContext = MyJobsUserActivity.this;
         myPreference=new MyPreference(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        tabLayout = (TabLayout) findViewById(R.id.my_jobs_tablayout);
-        viewPager = (ViewPager) findViewById(R.id.view_pager);
+        tabLayout = findViewById(R.id.my_jobs_tablayout);
+        viewPager = findViewById(R.id.view_pager);
         viewPager.setOffscreenPageLimit(3);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));

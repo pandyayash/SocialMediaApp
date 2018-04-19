@@ -137,13 +137,13 @@ public class RegisterdCarsScreen extends BaseActivity {
     }
 
     private void getviews() {
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         appContext = this;
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
-        pull_to_refresh = (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
-        registernewcar = (TextView) findViewById(R.id.registernewcar);
+        pull_to_refresh = findViewById(R.id.pull_to_refresh);
+        registernewcar = findViewById(R.id.registernewcar);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
     }
 
@@ -596,13 +596,13 @@ public class RegisterdCarsScreen extends BaseActivity {
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                carname = (TextView) itemView.findViewById(R.id.carname);
-                registration_number = (TextView) itemView.findViewById(R.id.registration_number);
-                viewhistory = (TextView) itemView.findViewById(R.id.viewhistory);
-                edit = (TextView) itemView.findViewById(R.id.edit);
-                postjob = (TextView) itemView.findViewById(R.id.postjob);
-                askthecrowd = (TextView) itemView.findViewById(R.id.askthecrowd);
-                iv_image = (ImageView) itemView.findViewById(R.id.iv_image);
+                carname = itemView.findViewById(R.id.carname);
+                registration_number = itemView.findViewById(R.id.registration_number);
+                viewhistory = itemView.findViewById(R.id.viewhistory);
+                edit = itemView.findViewById(R.id.edit);
+                postjob = itemView.findViewById(R.id.postjob);
+                askthecrowd = itemView.findViewById(R.id.askthecrowd);
+                iv_image = itemView.findViewById(R.id.iv_image);
             }
 
         }

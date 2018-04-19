@@ -145,17 +145,17 @@ public class StaticScreen extends BaseActivity implements OnClickListener,
 
     private void initUI() {
         appContext = this;
-        facebook = (ImageView) findViewById(R.id.facebook);
-        google = (ImageView) findViewById(R.id.google);
+        facebook = findViewById(R.id.facebook);
+        google = findViewById(R.id.google);
 
-        ll_userlogin = (LinearLayout) findViewById(R.id.ll_login);
-        ll_garage_owner = (LinearLayout) findViewById(R.id.ll_garage_owner);
+        ll_userlogin = findViewById(R.id.ll_login);
+        ll_garage_owner = findViewById(R.id.ll_garage_owner);
 
-        UserSignUp = (TextView) findViewById(R.id.User_signup);
-        GarageUserSignUp = (TextView) findViewById(R.id.GarageUser_signup);
+        UserSignUp = findViewById(R.id.User_signup);
+        GarageUserSignUp = findViewById(R.id.GarageUser_signup);
 
         // Facebook Login Implementation
-        facebook_button = (LoginButton) findViewById(R.id.login_button);
+        facebook_button = findViewById(R.id.login_button);
         callbackManager = CallbackManager.Factory.create();
         List<String> permissions = Arrays.asList("email", "public_profile");
         facebook_button.setReadPermissions(permissions);

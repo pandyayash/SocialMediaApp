@@ -51,7 +51,7 @@ public class CustomDialog extends Dialog {
   }
 
   public void initUI() {
-    btn_cancel = (LinearLayout) findViewById(R.id.btn_cancel);
+    btn_cancel = findViewById(R.id.btn_cancel);
     btn_cancel.setOnClickListener(new View.OnClickListener() {
 
       @Override
@@ -61,8 +61,8 @@ public class CustomDialog extends Dialog {
       }
     });
 
-    tv_title = (TextView) findViewById(R.id.tv_title);
-    tv_message = (TextView) findViewById(R.id.tv_message);
+    tv_title = findViewById(R.id.tv_title);
+    tv_message = findViewById(R.id.tv_message);
     tv_title.setVisibility(View.GONE);
     tv_title.setText(title);
     tv_message.setText(message);

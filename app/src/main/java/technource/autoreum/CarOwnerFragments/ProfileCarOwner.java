@@ -114,7 +114,7 @@ public class ProfileCarOwner extends Fragment implements OnClickListener {
                 // Now user should be able to use camera
                 selectImage();
             } else {
-                Log.i("MainAcivity", "Permission has been denied by user");
+                //Log.i("MainAcivity", "Permission has been denied by user");
                 // showAlert();
                 // Your app will not have this permission. Turn off all functions
                 // that require this permission or it will force close like  your
@@ -148,16 +148,16 @@ public class ProfileCarOwner extends Fragment implements OnClickListener {
     public void getViews() {
         appContext = getActivity();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        edt_fname = (EditText) v.findViewById(R.id.edt_fname);
-        edt_lname = (EditText) v.findViewById(R.id.edt_lname);
-        edt_email = (EditText) v.findViewById(R.id.edt_email);
-        edt_mobile = (EditText) v.findViewById(R.id.edt_mobile);
-        editstate = (TextView) v.findViewById(R.id.edt_state);
-        edt_subrub = (EditText) v.findViewById(R.id.edt_subrub);
-        edt_post_code = (EditText) v.findViewById(R.id.edt_post_code);
-        iv_image = (ImageView) v.findViewById(R.id.iv_image);
-        ll_save = (LinearLayout) v.findViewById(R.id.ll_save);
-        ll_registerdcars = (LinearLayout) v.findViewById(R.id.ll_registerdcars);
+        edt_fname = v.findViewById(R.id.edt_fname);
+        edt_lname = v.findViewById(R.id.edt_lname);
+        edt_email = v.findViewById(R.id.edt_email);
+        edt_mobile = v.findViewById(R.id.edt_mobile);
+        editstate = v.findViewById(R.id.edt_state);
+        edt_subrub = v.findViewById(R.id.edt_subrub);
+        edt_post_code = v.findViewById(R.id.edt_post_code);
+        iv_image = v.findViewById(R.id.iv_image);
+        ll_save = v.findViewById(R.id.ll_save);
+        ll_registerdcars = v.findViewById(R.id.ll_registerdcars);
     }
 
     public void GetUserProfileData() {
@@ -302,18 +302,13 @@ public class ProfileCarOwner extends Fragment implements OnClickListener {
 
     public boolean ProfileUpdateOrNot() {
 
-        if (edt_fname.getText().toString().equalsIgnoreCase(Firstname) &&
-                edt_lname.getText().toString().equalsIgnoreCase(lastname) &&
-                edt_email.getText().toString().equalsIgnoreCase(email) &&
-                edt_mobile.getText().toString().equalsIgnoreCase(phone) &&
-                editstate.getText().toString().equalsIgnoreCase(state) &&
-                edt_subrub.getText().toString().equalsIgnoreCase(sub) &&
-                edt_post_code.getText().toString().equalsIgnoreCase(zipcode)) {
-
-            return false;
-        }
-
-        return true;
+        return !edt_fname.getText().toString().equalsIgnoreCase(Firstname) ||
+                !edt_lname.getText().toString().equalsIgnoreCase(lastname) ||
+                !edt_email.getText().toString().equalsIgnoreCase(email) ||
+                !edt_mobile.getText().toString().equalsIgnoreCase(phone) ||
+                !editstate.getText().toString().equalsIgnoreCase(state) ||
+                !edt_subrub.getText().toString().equalsIgnoreCase(sub) ||
+                !edt_post_code.getText().toString().equalsIgnoreCase(zipcode);
     }
 
     @SuppressWarnings("deprecation")
@@ -464,7 +459,6 @@ public class ProfileCarOwner extends Fragment implements OnClickListener {
 
     public boolean isValidate() {
         String fname, lname, email, mobile, state, subrub, postcode;
-        ;
 
         fname = edt_fname.getText().toString();
         lname = edt_lname.getText().toString();

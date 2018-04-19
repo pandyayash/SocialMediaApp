@@ -19,29 +19,6 @@
     </style>
 
 
-    <style name="StarRatingBar" parent="@android:style/Widget.Holo.Light.RatingBar.Indicator">
-        <item name="colorControlNormal">@color/view_color2</item>
-        <item name="colorControlActivated">@color/colorPrimary</item>
-    </style>
-
-    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
-        <item name="android:windowMinWidthMajor">90%</item>
-        <item name="android:windowMinWidthMinor">90%</item>
-    </style>
-
-
-    <style name="StarRatingSmall" parent="@android:style/Widget.Holo.Light.RatingBar.Small">
-        <item name="colorControlNormal">@color/view_color2</item>
-        <item name="colorControlActivated">@color/colorPrimary</item>
-    </style>
-
-    <style name="Noselection" parent="@android:style/Widget.Holo.Light.RatingBar.Small">
-        <item name="colorControlNormal">@color/view_color2</item>
-        <item name="colorControlActivated">@color/colorPrimary</item>
-    </style>
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
     <style name="loading_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowFrame">@null</item>
@@ -59,66 +36,6 @@
         <item name="android:maxLines">1</item>
         <item name="android:textColorHighlight">@color/green_click</item>
     </style>
-
-    <style name="mytheme" parent="android:style/Theme.Translucent">
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:background">@android:color/transparent</item>
-    </style>
-
-    <style name="BaseInputWhiteCursorMultiline">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txt_size_3</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:textColorHighlight">@color/green_click</item>
-
-    </style>
-
-    <style name="WhiteDrawerIconStyle" parent="Widget.AppCompat.DrawerArrowToggle">
-        <item name="spinBars">true</item>
-        <item name="android:height">100dp</item>
-        <item name="android:width">100dp</item>
-        <item name="color">@color/white</item>
-    </style>
-
-    <style name="BaseInputBlueCursor">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txt_size_3</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:textColorHighlight">@color/green_click</item>
-        <item name="android:textColor">@color/white</item>
-
-    </style>
-
-    <style name="BaseInputBlueCursorMultiline">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txt_size_3</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:textColorHighlight">@color/green_click</item>
-        <item name="android:textColor">@color/colorPrimary</item>
-
-    </style>
-
-    <style name="green_button">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txt_size_4</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:textColorHighlight">@color/colorPrimary</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:paddingBottom">@dimen/SignIn_margin</item>
-        <item name="android:paddingTop">@dimen/SignIn_margin</item>
-        <item name="android:paddingLeft">@dimen/sb_progrees_margin_t</item>
-        <item name="android:paddingRight">@dimen/sb_progrees_margin_t</item>
-
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.RedAccent">
         <item name="colorAccent">@color/colorPrimaryDark</item> <!-- Whatever color you want-->
@@ -141,85 +58,11 @@
         <item name="android:background">@color/white</item>
     </style>
 
-    <style name="MyTitleTextStyle">
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
-    </style>
-
-    <style name="Divider">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">1dp</item>
-        <item name="android:layout_marginTop">@dimen/icon_back_left_margin</item>
-        <item name="android:background">@color/white</item>
-    </style>
-
-    <style name="Divider_black">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">1dp</item>
-        <item name="android:layout_marginTop">@dimen/icon_back_left_margin</item>
-        <item name="android:background">@color/black_light_text</item>
-    </style>
-
-    <style name="NavigationViewStyle">
-        <item name="android:textSize">14sp</item> <!-- menu item text size-->
-        <item name="android:listPreferredItemHeightSmall">45dp</item><!-- menu item height-->
-
-    </style>
-
-    <style name="HeaderBlueText">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/txt_size_4</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:textColorHighlight">@color/green_click</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:background">@color/colorPrimary</item>
-
-        <item name="android:paddingBottom">@dimen/icon_back_left_margin</item>
-        <item name="android:paddingTop">@dimen/icon_back_left_margin</item>
-
-        <item name="android:paddingLeft">@dimen/SignIn_margin</item>
-        <item name="android:paddingRight">@dimen/SignIn_margin</item>
-    </style>
-
-    <style name="MySwitch" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/green_click</item>
-        <!-- active thumb & track color (30% transparency) -->
-        <item name="colorControlActivated">@color/colorPrimary</item>
-
-        <!-- inactive thumb color -->
-        <item name="colorSwitchThumbNormal">@color/colorPrimary</item>
-
-        <!-- inactive track color (30% transparency) -->
-        <item name="android:colorForeground">@color/green_click</item>
-    </style>
-
     <style name="Color1SwitchStyle">
         <item name="colorControlActivated">@color/color_Splash</item>
         <item name="android:colorForeground">@color/hint_color</item>
     </style>
 
-    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="android:textColorSecondary">@color/colorPrimary</item>
-    </style>
-
-    <style name="TextAppearance.Tabs" parent="TextAppearance.Design.Tab">
-        <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">normal</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">@color/tab_text</item>
-
-    </style>
-
-    <style name="TextAppearance.Tabs.Selected">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">false</item>
-
-    </style>
     <style name="RatingBarstyleNew" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/ratingbar</item>
         <item name="android:minHeight">22dip</item>

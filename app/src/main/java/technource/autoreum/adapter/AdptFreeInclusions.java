@@ -91,10 +91,10 @@ public class AdptFreeInclusions extends RecyclerView.Adapter<AdptFreeInclusions.
         TextView services_text;
         public ViewHolder(View itemView) {
             super(itemView);
-            services_text = (TextView) itemView.findViewById(R.id.autoText2);
-            service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
-            ll_info = (LinearLayout) itemView.findViewById(R.id.ll_info);
-            ll_add_new_inclusion = (LinearLayout) itemView.findViewById(R.id.ll_add_new_inclusion);
+            services_text = itemView.findViewById(R.id.autoText2);
+            service_ll = itemView.findViewById(R.id.service_ll);
+            ll_info = itemView.findViewById(R.id.ll_info);
+            ll_add_new_inclusion = itemView.findViewById(R.id.ll_add_new_inclusion);
         }
     }
 }

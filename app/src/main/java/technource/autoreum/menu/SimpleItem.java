@@ -75,7 +75,7 @@ public class SimpleItem extends DrawerItem<SimpleItem.ViewHolder> {
         public ViewHolder(View itemView) {
             super(itemView);
 //            icon = (ImageView) itemView.findViewById(R.id.icon);
-            title = (TextView) itemView.findViewById(R.id.tv_title);
+            title = itemView.findViewById(R.id.tv_title);
         }
     }
 }

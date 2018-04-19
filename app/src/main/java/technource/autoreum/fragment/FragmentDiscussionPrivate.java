@@ -92,7 +92,7 @@ public class FragmentDiscussionPrivate extends Fragment implements View.OnClickL
     private final BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Log.e("BroadcastReceiver", "onReceive");
+            //Log.e("BroadcastReceiver", "onReceive");
             if (intent != null) {
 
                 String text = intent.getStringExtra("text");
@@ -117,12 +117,12 @@ public class FragmentDiscussionPrivate extends Fragment implements View.OnClickL
         myPreference = new MyPreference(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         discussionDboArrayList = new ArrayList<>();
-        rv_chat = (RecyclerView) rootView.findViewById(R.id.rv_chat);
-        et_message = (EditText) rootView.findViewById(R.id.et_message);
-        iv_send = (ImageView) rootView.findViewById(R.id.iv_send);
-        textView = (TextView) rootView.findViewById(R.id.textview);
-        typeMsg = (LinearLayout) rootView.findViewById(R.id.typeMsg);
-        pull_to_refresh = (SwipeRefreshLayout) rootView.findViewById(R.id.pull_to_refresh);
+        rv_chat = rootView.findViewById(R.id.rv_chat);
+        et_message = rootView.findViewById(R.id.et_message);
+        iv_send = rootView.findViewById(R.id.iv_send);
+        textView = rootView.findViewById(R.id.textview);
+        typeMsg = rootView.findViewById(R.id.typeMsg);
+        pull_to_refresh = rootView.findViewById(R.id.pull_to_refresh);
         typeMsg.getBackground().setLevel(3);
 
         if (Connectivity.isConnected(appContext)) {

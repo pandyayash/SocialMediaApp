@@ -80,13 +80,13 @@ public class AdptCompleteJobByGarage extends RecyclerView.Adapter<AdptCompleteJo
         LinearLayout linear;
         public ViewHolder(View itemView) {
             super(itemView);
-            txtAddReview = (TextView) itemView.findViewById(R.id.txtAddReview);
-            textJobTitle = (TextView) itemView.findViewById(R.id.textJobTitle);
-            textDate = (TextView) itemView.findViewById(R.id.textDate);
-            textJobDescription = (TextView) itemView.findViewById(R.id.textJobDescription);
-            textDistance = (TextView) itemView.findViewById(R.id.textDistance);
-            textType = (TextView) itemView.findViewById(R.id.textType);
-            linear = (LinearLayout) itemView.findViewById(R.id.linear);
+            txtAddReview = itemView.findViewById(R.id.txtAddReview);
+            textJobTitle = itemView.findViewById(R.id.textJobTitle);
+            textDate = itemView.findViewById(R.id.textDate);
+            textJobDescription = itemView.findViewById(R.id.textJobDescription);
+            textDistance = itemView.findViewById(R.id.textDistance);
+            textType = itemView.findViewById(R.id.textType);
+            linear = itemView.findViewById(R.id.linear);
         }
         public String parseDateToddMMyyyy(String time) {
             String inputPattern = "yyyy-MM-dd HH:mm:ss";

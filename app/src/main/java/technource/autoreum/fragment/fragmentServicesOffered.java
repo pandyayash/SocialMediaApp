@@ -75,12 +75,12 @@ public class fragmentServicesOffered extends Fragment implements OnClickListener
     private void getviews() {
         appContext = getActivity();
         servicesDBOs = new ArrayList<>();
-        recyclerView = (RecyclerView) v.findViewById(R.id.recycler_view);
+        recyclerView = v.findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         recyclerView.setHasFixedSize(true);
-        cont = (TextView) v.findViewById(R.id.cont);
-        sitecheck = (CheckBox) v.findViewById(R.id.checksite);
-        mobilecheck = (CheckBox) v.findViewById(R.id.checkmobile);
+        cont = v.findViewById(R.id.cont);
+        sitecheck = v.findViewById(R.id.checksite);
+        mobilecheck = v.findViewById(R.id.checkmobile);
     }
 
     @Override

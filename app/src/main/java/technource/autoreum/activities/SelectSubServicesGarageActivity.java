@@ -94,29 +94,29 @@ public class SelectSubServicesGarageActivity extends BaseActivity {
         stringArrayList = new ArrayList<>();
         jobDetail_dbo = HelperMethods.getjobDetailsSharedPreferences(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setNestedScrollingEnabled(false);
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ll_fleet_managemnet = (LinearLayout) findViewById(R.id.ll_fleet_managemnet);
-        ll_include_roadside = (LinearLayout) findViewById(R.id.ll_include_roadside);
-        ll_include_standard = (LinearLayout) findViewById(R.id.ll_include_standard);
-        txt_include_roadside = (TextView) findViewById(R.id.txt_include_roadside);
-        txt_include_standard = (TextView) findViewById(R.id.txt_include_standard);
-        txtCount = (TextView) findViewById(R.id.txtCount);
-        txtCount_2 = (TextView) findViewById(R.id.txtCount_2);
-        txtCount_3 = (TextView) findViewById(R.id.txtCount_3);
-        iv_minus = (ImageView) findViewById(R.id.iv_minus);
-        iv_minus_2 = (ImageView) findViewById(R.id.iv_minus_2);
-        iv_minus_3 = (ImageView) findViewById(R.id.iv_minus_3);
-        iv_plus = (ImageView) findViewById(R.id.iv_plus);
-        iv_plus_2 = (ImageView) findViewById(R.id.iv_plus_2);
-        iv_plus_3 = (ImageView) findViewById(R.id.iv_plus_3);
-        edtNoVehicle = (EditText) findViewById(R.id.edtNoVehicle);
-        edtUnplannedBreakDown = (EditText) findViewById(R.id.edtUnplannedBreakDown);
-        edtLogbookService = (EditText) findViewById(R.id.edtLogbookService);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back = findViewById(R.id.ll_back);
+        ll_fleet_managemnet = findViewById(R.id.ll_fleet_managemnet);
+        ll_include_roadside = findViewById(R.id.ll_include_roadside);
+        ll_include_standard = findViewById(R.id.ll_include_standard);
+        txt_include_roadside = findViewById(R.id.txt_include_roadside);
+        txt_include_standard = findViewById(R.id.txt_include_standard);
+        txtCount = findViewById(R.id.txtCount);
+        txtCount_2 = findViewById(R.id.txtCount_2);
+        txtCount_3 = findViewById(R.id.txtCount_3);
+        iv_minus = findViewById(R.id.iv_minus);
+        iv_minus_2 = findViewById(R.id.iv_minus_2);
+        iv_minus_3 = findViewById(R.id.iv_minus_3);
+        iv_plus = findViewById(R.id.iv_plus);
+        iv_plus_2 = findViewById(R.id.iv_plus_2);
+        iv_plus_3 = findViewById(R.id.iv_plus_3);
+        edtNoVehicle = findViewById(R.id.edtNoVehicle);
+        edtUnplannedBreakDown = findViewById(R.id.edtUnplannedBreakDown);
+        edtLogbookService = findViewById(R.id.edtLogbookService);
         if (strServiceId.equalsIgnoreCase("7")) {
             recyclerView.setVisibility(View.GONE);
             ll_fleet_managemnet.setVisibility(View.VISIBLE);
@@ -157,7 +157,7 @@ public class SelectSubServicesGarageActivity extends BaseActivity {
             @Override
             public void onClick(View view, int position) {
                 strServiceId = garageServicesArrayList.get(position).getService_id();
-                TextView textView = (TextView) view.findViewById(R.id.autoText2);
+                TextView textView = view.findViewById(R.id.autoText2);
                 if (view == view.findViewById(R.id.service_ll)) {
                     Model_GarageServices modelFreeInclusions = garageServicesArrayList.get(position);
                     if (!modelFreeInclusions.isSelected()) {

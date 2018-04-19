@@ -67,20 +67,20 @@ public class ForgotPassword extends BaseActivity implements View.OnClickListener
     appContext = ForgotPassword.this;
     Intent intent = getIntent();
     type = intent.getStringExtra("USER_TYPE");
-    et_email = (EditText) findViewById(R.id.et_email);
-    et_code = (EditText) findViewById(R.id.et_code);
-    et_password = (EditText) findViewById(R.id.et_password);
-    et_confirm_password = (EditText) findViewById(R.id.et_confirm_password);
-    ll_back = (ImageView) findViewById(R.id.ll_back);
-    ll_enter_email = (LinearLayout) findViewById(R.id.ll_enter_email);
+    et_email = findViewById(R.id.et_email);
+    et_code = findViewById(R.id.et_code);
+    et_password = findViewById(R.id.et_password);
+    et_confirm_password = findViewById(R.id.et_confirm_password);
+    ll_back = findViewById(R.id.ll_back);
+    ll_enter_email = findViewById(R.id.ll_enter_email);
     ll_enter_email.setVisibility(View.VISIBLE);
-    ll_enter_code = (LinearLayout) findViewById(R.id.ll_enter_code);
+    ll_enter_code = findViewById(R.id.ll_enter_code);
     ll_enter_code.setVisibility(View.GONE);
-    ll_new_password = (LinearLayout) findViewById(R.id.ll_new_password);
+    ll_new_password = findViewById(R.id.ll_new_password);
     ll_new_password.setVisibility(View.GONE);
 
-    tv_restore_password = (TextView) findViewById(R.id.tv_restore_password);
-    sv = (ScrollView) findViewById(R.id.sv);
+    tv_restore_password = findViewById(R.id.tv_restore_password);
+    sv = findViewById(R.id.sv);
     et_email.setOnEditorActionListener(new EditText.OnEditorActionListener() {
 
       @Override
@@ -337,7 +337,7 @@ public class ForgotPassword extends BaseActivity implements View.OnClickListener
     }) {
 
       @Override
-      public Map<String, String> getHeaders() throws AuthFailureError {
+      public Map<String, String> getHeaders() {
 //                    String auth = "Bearer " + loginDetail_dbo.getLogin_token();
         HashMap<String, String> headers = new HashMap<String, String>();
 //                headers.put("Authorization", auth);

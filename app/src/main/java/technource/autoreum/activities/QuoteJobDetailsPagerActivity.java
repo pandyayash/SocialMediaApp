@@ -173,14 +173,14 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
         pagerAdapter = new AdptQuoteDetailsPager(apContext, new OnItemClickListener() {
             @Override
             public void onClick(View view, int position) {
-                CheckBox checkBox = (CheckBox) view.findViewById(R.id.checkbox);
-                TextView btnAward = (TextView) view.findViewById(R.id.btnAward);
-                TextView btnOfferAccept = (TextView) view.findViewById(R.id.btnOfferAccept);
-                TextView btnPaymentOption = (TextView) view.findViewById(R.id.btnPaymentOption);
-                TextView txtPrice = (TextView) view.findViewById(R.id.txtPrice);
-                TextView textView = (TextView) view.findViewById(R.id.txtJobNumber);
-                TextView btnInvoice = (TextView) view.findViewById(R.id.btnInvoice);
-                TextView txtServiceInclusion = (TextView) view.findViewById(R.id.txtServiceInclusion);
+                CheckBox checkBox = view.findViewById(R.id.checkbox);
+                TextView btnAward = view.findViewById(R.id.btnAward);
+                TextView btnOfferAccept = view.findViewById(R.id.btnOfferAccept);
+                TextView btnPaymentOption = view.findViewById(R.id.btnPaymentOption);
+                TextView txtPrice = view.findViewById(R.id.txtPrice);
+                TextView textView = view.findViewById(R.id.txtJobNumber);
+                TextView btnInvoice = view.findViewById(R.id.btnInvoice);
+                TextView txtServiceInclusion = view.findViewById(R.id.txtServiceInclusion);
 //                jid = textView.getText().toString();
                 if (view == view.findViewById(R.id.btnAward)) {
                     if (btnAward.getText().toString().equalsIgnoreCase("AWARD")) {
@@ -385,11 +385,11 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
                 }
             }
         });
-        pager = (ViewPager) findViewById(R.id.view_pager);
+        pager = findViewById(R.id.view_pager);
         pager.setAdapter(pagerAdapter);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(apContext);
         jwt = loginDetail_dbo.getJWTToken();
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -414,8 +414,9 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
     }
 
     public void onBraintreeSubmit() {
-        DropInRequest dropInRequest = new DropInRequest()
-                .clientToken(braintreeToken);
+
+        DropInRequest dropInRequest = new DropInRequest().clientToken(braintreeToken);
+
         startActivityForResult(dropInRequest.getIntent(this), REQUEST_CODE);
     }
 
@@ -424,9 +425,9 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
         final BottomSheetDialog mBottomSheetDialog = new BottomSheetDialog(apContext);
         View sheetView = getLayoutInflater().inflate(R.layout.payment_bottom_sheet, null);
         mBottomSheetDialog.setContentView(sheetView);
-        TextView txtPayOnPickup = (TextView) sheetView.findViewById(R.id.txtPayOnPickup);
-        TextView txtPayPal = (TextView) sheetView.findViewById(R.id.txtPayPal);
-        TextView txtCancel = (TextView) sheetView.findViewById(R.id.txtCancel);
+        TextView txtPayOnPickup = sheetView.findViewById(R.id.txtPayOnPickup);
+        TextView txtPayPal = sheetView.findViewById(R.id.txtPayPal);
+        TextView txtCancel = sheetView.findViewById(R.id.txtCancel);
 
         txtPayOnPickup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -473,11 +474,9 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
         int result = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
         //If permission is granted returning true
-        if (result == PackageManager.PERMISSION_GRANTED)
-            return true;
+        return result == PackageManager.PERMISSION_GRANTED;
 
         //If permission is not granted returning false
-        return false;
     }
 
     private void requestStoragePermission() {
@@ -499,12 +498,12 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
         for (String permission : permissions) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this, permission)) {
                 //denied
-                Log.e("denied", permission);
+                //Log.e("denied", permission);
                 requestStoragePermission();
             } else {
                 if (ActivityCompat.checkSelfPermission(this, permission) == PackageManager.PERMISSION_GRANTED) {
                     //allowed
-                    Log.e("allowed", permission);
+                    //Log.e("allowed", permission);
                     if (isPrintQuote) {
                         if (Connectivity.isConnected(apContext)) {
                             webCallPrintQuote(position);
@@ -522,7 +521,7 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
                     }
                 } else {
                     //set to never ask again
-                    Log.e("set to never ask again", permission);
+                   // Log.e("set to never ask again", permission);
                     // requestStoragePermission();
 
                     //do something here.
@@ -924,14 +923,14 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
         View view = getLayoutInflater().inflate(R.layout.activity_add_areview_popup, null);
 
 
-        final SimpleRatingBar ratingBar = (SimpleRatingBar) view.findViewById(R.id.ratingBar);
-        final EditText message = (EditText) view.findViewById(R.id.message);
-        TextView txtSubmitReview = (TextView) view.findViewById(R.id.txtSubmitReview);
-        TextView txtRemindMeLetter = (TextView) view.findViewById(R.id.txtRemindMeLetter);
-        ImageView close = (ImageView) view.findViewById(R.id.close);
-        TextView txtCancel = (TextView) view.findViewById(R.id.txtCancel);
-        TextView jobTitle = (TextView) view.findViewById(R.id.jobTitle);
-        tvCounter = (TextView) view.findViewById(R.id.tvCounter);
+        final SimpleRatingBar ratingBar = view.findViewById(R.id.ratingBar);
+        final EditText message = view.findViewById(R.id.message);
+        TextView txtSubmitReview = view.findViewById(R.id.txtSubmitReview);
+        TextView txtRemindMeLetter = view.findViewById(R.id.txtRemindMeLetter);
+        ImageView close = view.findViewById(R.id.close);
+        TextView txtCancel = view.findViewById(R.id.txtCancel);
+        TextView jobTitle = view.findViewById(R.id.jobTitle);
+        tvCounter = view.findViewById(R.id.tvCounter);
         message.addTextChangedListener(mTextEditorWatcher);
 
         jobTitle.setVisibility(View.GONE);
@@ -1057,17 +1056,17 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
         final View dialogView = inflater.inflate(R.layout.follow_up_work, null);
         dialogBuilder.setView(dialogView);
 
-        final EditText edtFollowup1 = (EditText) dialogView.findViewById(R.id.edtFollowup1);
-        final EditText edtFollowup2 = (EditText) dialogView.findViewById(R.id.edtFollowup2);
-        final EditText edtFollowup3 = (EditText) dialogView.findViewById(R.id.edtFollowup3);
-        final EditText edtFollowup4 = (EditText) dialogView.findViewById(R.id.edtFollowup4);
-        final EditText edtFollowup5 = (EditText) dialogView.findViewById(R.id.edtFollowup5);
+        final EditText edtFollowup1 = dialogView.findViewById(R.id.edtFollowup1);
+        final EditText edtFollowup2 = dialogView.findViewById(R.id.edtFollowup2);
+        final EditText edtFollowup3 = dialogView.findViewById(R.id.edtFollowup3);
+        final EditText edtFollowup4 = dialogView.findViewById(R.id.edtFollowup4);
+        final EditText edtFollowup5 = dialogView.findViewById(R.id.edtFollowup5);
 
-        final EditText edtPrice1 = (EditText) dialogView.findViewById(R.id.edtPrice1);
-        final EditText edtPrice2 = (EditText) dialogView.findViewById(R.id.edtPrice2);
-        final EditText edtPrice3 = (EditText) dialogView.findViewById(R.id.edtPrice3);
-        final EditText edtPrice4 = (EditText) dialogView.findViewById(R.id.edtPrice4);
-        final EditText edtPrice5 = (EditText) dialogView.findViewById(R.id.edtPrice5);
+        final EditText edtPrice1 = dialogView.findViewById(R.id.edtPrice1);
+        final EditText edtPrice2 = dialogView.findViewById(R.id.edtPrice2);
+        final EditText edtPrice3 = dialogView.findViewById(R.id.edtPrice3);
+        final EditText edtPrice4 = dialogView.findViewById(R.id.edtPrice4);
+        final EditText edtPrice5 = dialogView.findViewById(R.id.edtPrice5);
 
         final ArrayList<String> workArrayList = new ArrayList<>();
         final ArrayList<String> PriceArrayList = new ArrayList<>();
@@ -1523,6 +1522,7 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
         params.put(Constants.BRAINTREE_PAYMENT.AMT, amt);
         params.put(Constants.BRAINTREE_PAYMENT.GARAGE_ID, garage_id);
         params.put(Constants.BRAINTREE_PAYMENT.PAYMENTMETHODNONCE, nonse);
+        //params.put(Constants.BRAINTREE_PAYMENT.PAYMENTMETHODNONCE, "53246d57-4e8b-0aca-8b08-fa71ad8a98ce");
 
         AppLog.Log(TAG, "Params : " + params);
         CustomJsonObjectRequest jsonObjReq = new CustomJsonObjectRequest(Request.Method.POST,
@@ -1558,6 +1558,10 @@ public class QuoteJobDetailsPagerActivity extends BaseActivity {
                         showLoadingDialog(false);
                     }
                 });
+        jsonObjReq.setRetryPolicy(new DefaultRetryPolicy(
+                0,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
         queue.add(jsonObjReq);
     }
 

@@ -32,13 +32,13 @@
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:padding="@dimen/SignIn_margin"
-        android:visibility="gone"/>
+        android:visibility="visible"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/colorAccent"
-        android:visibility="gone"/>
+        android:visibility="visible"/>
 
     <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/txtCancel"

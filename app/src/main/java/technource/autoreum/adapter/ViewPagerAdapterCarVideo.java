@@ -83,9 +83,9 @@ public class ViewPagerAdapterCarVideo extends PagerAdapter {
         final CarVideosDbo carImageDBO = carImageArrayList.get(position);
         View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
 
-        ImageView imageView = (ImageView) itemView.findViewById(R.id.img_pager_item);
+        ImageView imageView = itemView.findViewById(R.id.img_pager_item);
 
-        ImageView btn_play = (ImageView) itemView.findViewById(R.id.btn_play);
+        ImageView btn_play = itemView.findViewById(R.id.btn_play);
         btn_play.setVisibility(View.VISIBLE);
         //imageView.setImageResource(mResources[position]);
 
@@ -147,8 +147,8 @@ public class ViewPagerAdapterCarVideo extends PagerAdapter {
 
         View view = layoutInflater.inflate(R.layout.video_popup, null);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        VideoView vv = (VideoView) view.findViewById(R.id.vv);
-        ImageView close = (ImageView) view.findViewById(R.id.close);
+        VideoView vv = view.findViewById(R.id.vv);
+        ImageView close = view.findViewById(R.id.close);
 
         Uri uri = Uri.parse(path);
         vv.setVideoURI(uri);
@@ -182,7 +182,6 @@ public class ViewPagerAdapterCarVideo extends PagerAdapter {
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         lp.copyFrom(dialog.getWindow().getAttributes());
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
-        ;
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
 
         dialog.setContentView(view);

@@ -102,10 +102,10 @@ public class How_it_works extends BaseActivity {
         }
 
 
-        viewPager = (ViewPager) findViewById(R.id.view_pager);
-        dotsLayout = (LinearLayout) findViewById(R.id.layoutDots);
-        btnSkip = (TextView) findViewById(R.id.btn_skip);
-        btnNext = (TextView) findViewById(R.id.btn_next);
+        viewPager = findViewById(R.id.view_pager);
+        dotsLayout = findViewById(R.id.layoutDots);
+        btnSkip = findViewById(R.id.btn_skip);
+        btnNext = findViewById(R.id.btn_next);
 
         myPreference = new MyPreference(this);
 
@@ -286,7 +286,7 @@ public class How_it_works extends BaseActivity {
         }) {
 
             @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
+            public Map<String, String> getHeaders() {
 //                    String auth = "Bearer " + loginDetail_dbo.getLogin_token();
                 HashMap<String, String> headers = new HashMap<String, String>();
 //                headers.put("Authorization", auth);
@@ -344,11 +344,11 @@ public class How_it_works extends BaseActivity {
             layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             View view = layoutInflater.inflate(layouts[position], container, false);
             container.addView(view);
-            title = (TextView) view.findViewById(R.id.title);
-            description = (TextView) view.findViewById(R.id.description);
+            title = view.findViewById(R.id.title);
+            description = view.findViewById(R.id.description);
             title.setText(splashPojoArrayList.get(position).getTitle());
             description.setText(splashPojoArrayList.get(position).getDescription());
-            logo = (ImageView) view.findViewById(R.id.image);
+            logo = view.findViewById(R.id.image);
 
             Glide.with(context).load(splashPojoArrayList.get(position).getImage_path())
                     .dontAnimate()

@@ -115,43 +115,43 @@ public class GarageOwnerDetailsActivity extends BaseActivity {
     private void findViews() {
         appContext = this;
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        tvGarageName = (TextView) findViewById(R.id.tvGarageName);
+        tvGarageName = findViewById(R.id.tvGarageName);
         carImageArrayList = new ArrayList<>();
-        img = (RelativeLayout) findViewById(R.id.img);
-        ivImage = (ImageView) findViewById(R.id.iv_image);
-        ratingBar = (SimpleRatingBar) findViewById(R.id.ratingBar);
-        rateCount = (TextView) findViewById(R.id.rate_count);
-        tvReviews = (TextView) findViewById(R.id.tvReviews);
-        tvDistnace = (TextView) findViewById(R.id.tvDistnace);
-        tvLocation = (TextView) findViewById(R.id.tvLocation);
-        tvCall = (TextView) findViewById(R.id.tvCall);
-        tvMsg = (TextView) findViewById(R.id.tvMsg);
-        tvVerified = (TextView) findViewById(R.id.tvVerified);
-        llNoCarImgs = (LinearLayout) findViewById(R.id.ll_no_car_imgs);
-        ivNoCarImg = (ImageView) findViewById(R.id.iv_no_car_img);
-        viewpager = (ViewPager) findViewById(R.id.viewpager);
-        indicator = (CircleIndicator) findViewById(R.id.indicator);
-        ll_verified = (LinearLayout) findViewById(R.id.ll_verified);
-        ll_map = (LinearLayout) findViewById(R.id.ll_map);
-        ll_call = (LinearLayout) findViewById(R.id.ll_call);
-        ll_mail = (LinearLayout) findViewById(R.id.ll_mail);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        footer_small = (RelativeLayout) findViewById(R.id.footer_small);
-        footer_big = (RelativeLayout) findViewById(R.id.footer_big);
+        img = findViewById(R.id.img);
+        ivImage = findViewById(R.id.iv_image);
+        ratingBar = findViewById(R.id.ratingBar);
+        rateCount = findViewById(R.id.rate_count);
+        tvReviews = findViewById(R.id.tvReviews);
+        tvDistnace = findViewById(R.id.tvDistnace);
+        tvLocation = findViewById(R.id.tvLocation);
+        tvCall = findViewById(R.id.tvCall);
+        tvMsg = findViewById(R.id.tvMsg);
+        tvVerified = findViewById(R.id.tvVerified);
+        llNoCarImgs = findViewById(R.id.ll_no_car_imgs);
+        ivNoCarImg = findViewById(R.id.iv_no_car_img);
+        viewpager = findViewById(R.id.viewpager);
+        indicator = findViewById(R.id.indicator);
+        ll_verified = findViewById(R.id.ll_verified);
+        ll_map = findViewById(R.id.ll_map);
+        ll_call = findViewById(R.id.ll_call);
+        ll_mail = findViewById(R.id.ll_mail);
+        ll_back = findViewById(R.id.ll_back);
+        footer_small = findViewById(R.id.footer_small);
+        footer_big = findViewById(R.id.footer_big);
 
-        gallery_big = (TextView) findViewById(R.id.gallery_big);
-        hours_big = (TextView) findViewById(R.id.hours_big);
-        services_big = (TextView) findViewById(R.id.services_big);
-        facilities_big = (TextView) findViewById(R.id.facilitie_big);
-        reviews_big = (TextView) findViewById(R.id.reviews_big);
+        gallery_big = findViewById(R.id.gallery_big);
+        hours_big = findViewById(R.id.hours_big);
+        services_big = findViewById(R.id.services_big);
+        facilities_big = findViewById(R.id.facilitie_big);
+        reviews_big = findViewById(R.id.reviews_big);
 
-        gallery = (TextView) findViewById(R.id.gallery);
-        hours = (TextView) findViewById(R.id.hours);
-        services = (TextView) findViewById(R.id.services);
-        facilities = (TextView) findViewById(R.id.facilities);
-        reviews = (TextView) findViewById(R.id.reviews);
-        img_verify_1 = (ImageView) findViewById(R.id.img_verify_1);
-        img_verify_2 = (ImageView) findViewById(R.id.img_verify_2);
+        gallery = findViewById(R.id.gallery);
+        hours = findViewById(R.id.hours);
+        services = findViewById(R.id.services);
+        facilities = findViewById(R.id.facilities);
+        reviews = findViewById(R.id.reviews);
+        img_verify_1 = findViewById(R.id.img_verify_1);
+        img_verify_2 = findViewById(R.id.img_verify_2);
     }
 
     public void setOnclickListener() {

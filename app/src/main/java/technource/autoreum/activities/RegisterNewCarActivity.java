@@ -45,7 +45,7 @@ public class RegisterNewCarActivity extends BaseActivity {
 
 
     public String Selected_Make_id = "", Selected_model_id = "", Selected_badge_id = "", Selected_Check = "";
-    EditText edt_make, edt_model, edt_badge, edt_reg_number, edtyear;
+    EditText edt_make, edt_model, edt_badge, edt_reg_number, edtyear, edt_km;
     RelativeLayout ll_make, ll_model, ll_badge;
     LinearLayout add_more_car, autometic, manual;
     TextView RegisterBtn, autotxt, manualtxt;
@@ -78,22 +78,23 @@ public class RegisterNewCarActivity extends BaseActivity {
     public void getViews() {
         appContext = this;
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        edt_make = (EditText) findViewById(R.id.edt_make);
-        edt_model = (EditText) findViewById(R.id.edt_model);
-        edt_badge = (EditText) findViewById(R.id.edt_badge);
-        edt_reg_number = (EditText) findViewById(R.id.edt_reg_number);
-        edtyear = (EditText) findViewById(R.id.edt_year);
-        ll_make = (RelativeLayout) findViewById(R.id.ll_make);
-        ll_model = (RelativeLayout) findViewById(R.id.ll_model);
-        ll_badge = (RelativeLayout) findViewById(R.id.ll_badge);
-        RegisterBtn = (TextView) findViewById(R.id.registerBtn);
-        add_more_car = (LinearLayout) findViewById(R.id.add_more_car);
-        autometic = (LinearLayout) findViewById(R.id.autometic);
-        manual = (LinearLayout) findViewById(R.id.manual);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        edt_make = findViewById(R.id.edt_make);
+        edt_model = findViewById(R.id.edt_model);
+        edt_badge = findViewById(R.id.edt_badge);
+        edt_km = findViewById(R.id.edt_km);
+        edt_reg_number = findViewById(R.id.edt_reg_number);
+        edtyear = findViewById(R.id.edt_year);
+        ll_make = findViewById(R.id.ll_make);
+        ll_model = findViewById(R.id.ll_model);
+        ll_badge = findViewById(R.id.ll_badge);
+        RegisterBtn = findViewById(R.id.registerBtn);
+        add_more_car = findViewById(R.id.add_more_car);
+        autometic = findViewById(R.id.autometic);
+        manual = findViewById(R.id.manual);
+        ll_back = findViewById(R.id.ll_back);
 
-        autotxt = (TextView) findViewById(R.id.autoText);
-        manualtxt = (TextView) findViewById(R.id.manualTxt);
+        autotxt = findViewById(R.id.autoText);
+        manualtxt = findViewById(R.id.manualTxt);
     }
 
     public void setOnCLickListener() {
@@ -182,8 +183,8 @@ public class RegisterNewCarActivity extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        ListView lv = view.findViewById(R.id.custom_list);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Select make");
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -224,8 +225,8 @@ public class RegisterNewCarActivity extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        ListView lv = view.findViewById(R.id.custom_list);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Model");
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -320,13 +321,14 @@ public class RegisterNewCarActivity extends BaseActivity {
     }
 
     public boolean isValidate() {
-        String makers, models, badges, regnumber, year;
+        String makers, models, badges, regnumber, year,km;
 
         makers = edt_make.getText().toString();
         models = edt_model.getText().toString();
         badges = edt_badge.getText().toString();
         regnumber = edt_reg_number.getText().toString();
         year = edtyear.getText().toString();
+        km = edt_km.getText().toString();
 
         if (makers != null && makers.trim().length() > 0) {
         } else {
@@ -362,6 +364,12 @@ public class RegisterNewCarActivity extends BaseActivity {
         } else {
             edtyear.requestFocus();
             showAlertDialog(getString(R.string.please_enter_year));
+            return false;
+        }
+        if (km != null && km.trim().length() > 0) {
+        } else {
+            edt_km.requestFocus();
+            showAlertDialog(getString(R.string.please_enter_km));
             return false;
         }
 
@@ -429,6 +437,7 @@ public class RegisterNewCarActivity extends BaseActivity {
         params.put(Constants.LoginType.BADGE_ID, Selected_badge_id);
         params.put(Constants.LoginType.REG_NO, edt_reg_number.getText().toString());
         params.put(Constants.LoginType.YEAR, edtyear.getText().toString());
+        //params.put(Constants.LoginType.TRAVELLED_KM, edt_km.getText().toString());
 
         AppLog.Log("TAG", "Params : " + params);
         CustomJsonObjectRequest jsonObjReq = new CustomJsonObjectRequest(Request.Method.POST,
@@ -490,8 +499,8 @@ public class RegisterNewCarActivity extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        ListView lv = view.findViewById(R.id.custom_list);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Select Badge");
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -610,8 +619,8 @@ public class RegisterNewCarActivity extends BaseActivity {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_dialog, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
-                holder.tv_header = (TextView) row.findViewById(R.id.tv_header);
+                holder.tv_name = row.findViewById(R.id.tv_name);
+                holder.tv_header = row.findViewById(R.id.tv_header);
 
                 row.setTag(holder);
             } else {
@@ -693,7 +702,7 @@ public class RegisterNewCarActivity extends BaseActivity {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
 
                 row.setTag(holder);
             } else {

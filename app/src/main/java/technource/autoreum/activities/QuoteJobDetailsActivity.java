@@ -120,18 +120,18 @@ public class QuoteJobDetailsActivity extends BaseActivity {
 
     private void findViews() {
         appContext = this;
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         awardJobArrayList = new ArrayList<>();
         sortList = new ArrayList<>();
         followupWorkArrayList = new ArrayList<>();
-        txtNoDataFound = (TextView) findViewById(R.id.txtNoDataFound);
-        tvJobTitle = (TextView) findViewById(R.id.tv_jobTitle);
-        spSort = (Spinner) findViewById(R.id.sp_sort);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        llHeader = (LinearLayout) findViewById(R.id.llHeader);
-        pull_to_refresh = (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
-        cart_badge_footer = (TextView) findViewById(R.id.cart_badge_footer);
+        txtNoDataFound = findViewById(R.id.txtNoDataFound);
+        tvJobTitle = findViewById(R.id.tv_jobTitle);
+        spSort = findViewById(R.id.sp_sort);
+        recyclerView = findViewById(R.id.recyclerView);
+        llHeader = findViewById(R.id.llHeader);
+        pull_to_refresh = findViewById(R.id.pull_to_refresh);
+        cart_badge_footer = findViewById(R.id.cart_badge_footer);
     }
 
     private void setOnClickListners() {
@@ -308,7 +308,7 @@ public class QuoteJobDetailsActivity extends BaseActivity {
                                     jobDetail_dbo.setAdditional_inclusions(jobJsonObj.getString("additional_inclusions"));
                                     JSONObject followupStringNew = jobJsonObj.getJSONObject("followup_string_new");
                                     String followupStatus = jobJsonObj.getString("followup_seen");
-                                    jobDetail_dbo.setFollowUpAccepted(followupStatus.equalsIgnoreCase("yes") ? true : false);
+                                    jobDetail_dbo.setFollowUpAccepted(followupStatus.equalsIgnoreCase("yes"));
                                     JSONArray jsonArray = followupStringNew.getJSONArray("work");
                                     JSONArray jsonArrayAccept = followupStringNew.getJSONArray("accept");
                                     if (jsonArray.length() > 0) {

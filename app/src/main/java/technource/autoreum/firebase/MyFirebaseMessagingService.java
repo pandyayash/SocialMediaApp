@@ -50,7 +50,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         Map<String, String> params = remoteMessage.getData();
         JSONObject object = new JSONObject(params);
-        Log.e("JSON_OBJECT", object.toString());
+        //Log.e("JSON_OBJECT", object.toString());
         loginDetail_dbo = HelperMethods
                 .getUserDetailsSharedPreferences(MyFirebaseMessagingService.this);
 

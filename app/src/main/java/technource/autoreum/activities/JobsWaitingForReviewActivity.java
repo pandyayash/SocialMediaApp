@@ -70,10 +70,10 @@ public class JobsWaitingForReviewActivity extends BaseActivity {
 
     private void getviews() {
         appContext = this;
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        ll_back = findViewById(R.id.ll_back);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
-        noData = (TextView) findViewById(R.id.noData);
+        noData = findViewById(R.id.noData);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
     }
 
@@ -190,12 +190,12 @@ public class JobsWaitingForReviewActivity extends BaseActivity {
 
             public ViewHolder(View itemView) {
                 super(itemView);
-                linear = (LinearLayout) itemView.findViewById(R.id.linear);
-                textJobTitle = (TextView) itemView.findViewById(R.id.textJobTitle);
-                textDate = (TextView) itemView.findViewById(R.id.textDate);
-                txtToUser = (TextView) itemView.findViewById(R.id.txtToUser);
-                textCarModel = (TextView) itemView.findViewById(R.id.textCarModel);
-                textPrice = (TextView) itemView.findViewById(R.id.textPrice);
+                linear = itemView.findViewById(R.id.linear);
+                textJobTitle = itemView.findViewById(R.id.textJobTitle);
+                textDate = itemView.findViewById(R.id.textDate);
+                txtToUser = itemView.findViewById(R.id.txtToUser);
+                textCarModel = itemView.findViewById(R.id.textCarModel);
+                textPrice = itemView.findViewById(R.id.textPrice);
             }
 
             public String parseDateToddMMyyyy(String time) {

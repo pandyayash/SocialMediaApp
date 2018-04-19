@@ -125,6 +125,7 @@ public class Constants {
         public static final String BADGE_ID = "badge_id";
         public static final String REG_NO = "reg_no";
         public static final String YEAR = "year";
+        public static final String TRAVELLED_KM = "travelled_km";
     }
 
 

@@ -122,9 +122,9 @@ public class NotificationGarageOwner extends Fragment {
         Constants.notify_count = "0";
         notificationArrayList = new ArrayList<>();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        recyclerNotification = (RecyclerView) view.findViewById(R.id.recyclerNotification);
-        pull_to_refresh = (SwipeRefreshLayout) view.findViewById(R.id.pull_to_refresh);
-        textView = (TextView) view.findViewById(R.id.text);
+        recyclerNotification = view.findViewById(R.id.recyclerNotification);
+        pull_to_refresh = view.findViewById(R.id.pull_to_refresh);
+        textView = view.findViewById(R.id.text);
         textView.setText(getString(R.string.no_notifications_found));
         ((DashboardScreen) appContext).cart_badge.setEnabled(false);
 

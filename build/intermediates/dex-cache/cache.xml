@@ -16,26 +16,8 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="22b6019534051746be71be5e38de3edc3cb88c7c">
+        sha1="773a5bedcaeac803c1f61059f29a4f2af6a662ce">
         <dex dex="/home/technource/Neha Chauhan/BitBucketTechnource/grease-crowd-android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4ddc417d0d343084ceb1b76ae7b01112dec1a926/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/technource/Neha Chauhan/BITBUCKET/Grease Crowd/grease-crowd/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
-        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/Grease Crowd/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c8cd7c132c0dca1161cac01384a955d315d38582/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/technource/Neha Chauhan/BITBUCKET/Grease Crowd/grease-crowd/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="0238a90426e28489253a0f8bd67852d9b5d44884">
-        <dex dex="/home/technource/Neha Chauhan/BITBUCKET/Grease Crowd/grease-crowd/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f8f0d1436c68b2190b39f041171a95fb826ca4ac/classes.dex" />
     </item>
 
 </items>

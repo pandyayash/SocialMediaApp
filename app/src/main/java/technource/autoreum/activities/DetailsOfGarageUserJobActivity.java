@@ -43,22 +43,22 @@ public class DetailsOfGarageUserJobActivity extends BaseActivity {
 
     private void findViews() {
         appContext = this;
-        txtGarageName = (TextView) findViewById(R.id.txtGarageName);
-        txtGarageAddress = (TextView) findViewById(R.id.txtGarageAddress);
-        txtGarageMobile = (TextView) findViewById(R.id.txtGarageMobile);
-        txtGarageEmail = (TextView) findViewById(R.id.txtGarageEmail);
-        txtGarageAbn = (TextView) findViewById(R.id.txtGarageAbn);
-        txtClientName = (TextView) findViewById(R.id.txtClientName);
-        txtClientSubrub = (TextView) findViewById(R.id.txtClientSubrub);
-        txtClientAddress = (TextView) findViewById(R.id.txtClientAddress);
-        txtClientMobile = (TextView) findViewById(R.id.txtClientMobile);
-        txtClientEmail = (TextView) findViewById(R.id.txtClientEmail);
-        txtCarMake = (TextView) findViewById(R.id.txtCarMake);
-        txtCarModel = (TextView) findViewById(R.id.txtCarModel);
-        txtCarBadge = (TextView) findViewById(R.id.txtCarBadge);
-        txtCarRegNum = (TextView) findViewById(R.id.txtCarRegNum);
-        txtCarType = (TextView) findViewById(R.id.txtCarType);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        txtGarageName = findViewById(R.id.txtGarageName);
+        txtGarageAddress = findViewById(R.id.txtGarageAddress);
+        txtGarageMobile = findViewById(R.id.txtGarageMobile);
+        txtGarageEmail = findViewById(R.id.txtGarageEmail);
+        txtGarageAbn = findViewById(R.id.txtGarageAbn);
+        txtClientName = findViewById(R.id.txtClientName);
+        txtClientSubrub = findViewById(R.id.txtClientSubrub);
+        txtClientAddress = findViewById(R.id.txtClientAddress);
+        txtClientMobile = findViewById(R.id.txtClientMobile);
+        txtClientEmail = findViewById(R.id.txtClientEmail);
+        txtCarMake = findViewById(R.id.txtCarMake);
+        txtCarModel = findViewById(R.id.txtCarModel);
+        txtCarBadge = findViewById(R.id.txtCarBadge);
+        txtCarRegNum = findViewById(R.id.txtCarRegNum);
+        txtCarType = findViewById(R.id.txtCarType);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

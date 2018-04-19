@@ -53,9 +53,9 @@ public class PaypalActivity extends BaseActivity {
 
     private void getviews() {
         appContext = this;
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        Edit_Paypal = (EditText) findViewById(R.id.ed_paypal);
-        BtnPaypal = (TextView) findViewById(R.id.btnPaypal);
+        ll_back = findViewById(R.id.ll_back);
+        Edit_Paypal = findViewById(R.id.ed_paypal);
+        BtnPaypal = findViewById(R.id.btnPaypal);
     }
 
     public void setOnClickListener() {

@@ -218,6 +218,29 @@
                     android:textCursorDrawable="@drawable/edittext_cursor"/>
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/row_screening_detail_header_h"
+                android:layout_marginRight="@dimen/row_screening_detail_header_h"
+                android:layout_marginTop="@dimen/row_screening_detail_pb_margin_lr"
+                android:background="@drawable/rect_inner_boarder">
+
+                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    android:id="@+id/edt_km"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/km_traveled"
+                    android:inputType="number"
+                    android:padding="@dimen/activity_add_child_new_margin_lr"
+                    android:singleLine="true"
+                    android:textColor="@color/black_light_text"
+                    android:textSize="@dimen/txt_size_4"
+                    android:textCursorDrawable="@drawable/edittext_cursor"/>
+
+            </LinearLayout>
 
 
             <LinearLayout

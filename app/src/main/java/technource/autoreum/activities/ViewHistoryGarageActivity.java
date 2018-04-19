@@ -68,12 +68,12 @@ public class ViewHistoryGarageActivity extends BaseActivity {
 
 
     private void getviews() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         appContext = this;
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         viewHistoryDBOArrayList = new ArrayList<>();
-        nohistory = (TextView) findViewById(R.id.nohistory);
+        nohistory = findViewById(R.id.nohistory);
 
     }
 
@@ -219,13 +219,13 @@ public class ViewHistoryGarageActivity extends BaseActivity {
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                jobtitle = (TextView) itemView.findViewById(R.id.jobtitle);
-                dateandtime = (TextView) itemView.findViewById(R.id.dateandtime);
-                description = (TextView) itemView.findViewById(R.id.description);
-                by = (TextView) itemView.findViewById(R.id.by);
-                ratingbarvalue = (TextView) itemView.findViewById(R.id.ratingbarvalue);
-                ratingBar = (SimpleRatingBar) itemView.findViewById(R.id.ratingBar);
-                type = (TextView) itemView.findViewById(R.id.type);
+                jobtitle = itemView.findViewById(R.id.jobtitle);
+                dateandtime = itemView.findViewById(R.id.dateandtime);
+                description = itemView.findViewById(R.id.description);
+                by = itemView.findViewById(R.id.by);
+                ratingbarvalue = itemView.findViewById(R.id.ratingbarvalue);
+                ratingBar = itemView.findViewById(R.id.ratingBar);
+                type = itemView.findViewById(R.id.type);
 
             }
         }

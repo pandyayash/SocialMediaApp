@@ -68,11 +68,11 @@ public class ChangepasswordActivity extends BaseActivity {
         appContext = this;
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         setHeader(getResources().getString(R.string.change_pass));
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        E_CurrentPass = (EditText) findViewById(R.id.edt_old_password);
-        E_New_pass = (EditText) findViewById(R.id.et_new_password);
-        E_Confirm_pass = (EditText) findViewById(R.id.et_cn_password);
-        Chnag_pass = (TextView) findViewById(R.id.buttonChange);
+        ll_back = findViewById(R.id.ll_back);
+        E_CurrentPass = findViewById(R.id.edt_old_password);
+        E_New_pass = findViewById(R.id.et_new_password);
+        E_Confirm_pass = findViewById(R.id.et_cn_password);
+        Chnag_pass = findViewById(R.id.buttonChange);
 
     }
 

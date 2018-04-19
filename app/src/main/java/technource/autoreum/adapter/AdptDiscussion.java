@@ -139,16 +139,16 @@ public class AdptDiscussion extends RecyclerView.Adapter<AdptDiscussion.ViewHold
         public ViewHolder(View itemView) {
             super(itemView);
 
-            llSend = (LinearLayout) itemView.findViewById(R.id.ll_send);
-            tvMessageS = (TextView) itemView.findViewById(R.id.tv_message_s);
-            ivProfileS = (ImageView) itemView.findViewById(R.id.iv_profile_s);
-            llReceive = (LinearLayout) itemView.findViewById(R.id.ll_receive);
-            ivProfileR = (ImageView) itemView.findViewById(R.id.iv_profile_r);
-            tvMessageR = (TextView) itemView.findViewById(R.id.tv_message_r);
-            senderName = (TextView) itemView.findViewById(R.id.senderName);
-            receiverName = (TextView) itemView.findViewById(R.id.receiverName);
-            receiverDateTime = (TextView) itemView.findViewById(R.id.receiverDateTime);
-            senderDateTime = (TextView) itemView.findViewById(R.id.senderDateTime);
+            llSend = itemView.findViewById(R.id.ll_send);
+            tvMessageS = itemView.findViewById(R.id.tv_message_s);
+            ivProfileS = itemView.findViewById(R.id.iv_profile_s);
+            llReceive = itemView.findViewById(R.id.ll_receive);
+            ivProfileR = itemView.findViewById(R.id.iv_profile_r);
+            tvMessageR = itemView.findViewById(R.id.tv_message_r);
+            senderName = itemView.findViewById(R.id.senderName);
+            receiverName = itemView.findViewById(R.id.receiverName);
+            receiverDateTime = itemView.findViewById(R.id.receiverDateTime);
+            senderDateTime = itemView.findViewById(R.id.senderDateTime);
 
         }
     }

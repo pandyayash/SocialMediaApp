@@ -45,7 +45,7 @@ public class DiscussionActivity extends BaseActivity {
         setfooter("job_details");
         setlistenrforfooter();
         getViews();
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(this);
         Intent intent = getIntent();
         if (intent != null) {
@@ -81,10 +81,10 @@ public class DiscussionActivity extends BaseActivity {
         myPreference = new MyPreference(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
 
-        cart_badge_footer = (TextView) findViewById(R.id.cart_badge_footer);
+        cart_badge_footer = findViewById(R.id.cart_badge_footer);
         cart_badge_footer.setText(notify_count_footer);
-        tabLayout = (TabLayout) findViewById(R.id.my_jobs_tablayout);
-        viewPager = (CustomViewPager) findViewById(R.id.view_pager);
+        tabLayout = findViewById(R.id.my_jobs_tablayout);
+        viewPager = findViewById(R.id.view_pager);
         viewPager.setOffscreenPageLimit(2);
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));

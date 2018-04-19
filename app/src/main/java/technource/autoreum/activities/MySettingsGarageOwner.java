@@ -52,11 +52,11 @@ public class MySettingsGarageOwner extends Fragment implements View.OnClickListe
     }
 
     private void getviews() {
-        ll_notification = (LinearLayout) v.findViewById(R.id.ll_notification);
-        ll_password = (LinearLayout) v.findViewById(R.id.ll_password);
-        ll_paypal = (LinearLayout) v.findViewById(R.id.ll_paypal);
-        view_pass = (View) v.findViewById(R.id.view_pass);
-        view_pay = (View) v.findViewById(R.id.pay_view);
+        ll_notification = v.findViewById(R.id.ll_notification);
+        ll_password = v.findViewById(R.id.ll_password);
+        ll_paypal = v.findViewById(R.id.ll_paypal);
+        view_pass = v.findViewById(R.id.view_pass);
+        view_pay = v.findViewById(R.id.pay_view);
 
         if (loginDetail_dbo.getUser_Type().equalsIgnoreCase(Constants.CAR_OWNER)) {
             ll_paypal.setVisibility(View.GONE);

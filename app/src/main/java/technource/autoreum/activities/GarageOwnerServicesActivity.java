@@ -57,12 +57,12 @@ public class GarageOwnerServicesActivity extends BaseActivity {
 
 
     private void getviews() {
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         appContext = this;
         servicesDBOs = new ArrayList<>();
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
-        cont = (TextView) findViewById(R.id.cont);
+        cont = findViewById(R.id.cont);
         cont.setVisibility(View.VISIBLE);
     }
 
@@ -280,8 +280,8 @@ public class GarageOwnerServicesActivity extends BaseActivity {
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                services_text = (TextView) itemView.findViewById(R.id.autoText2);
-                service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
+                services_text = itemView.findViewById(R.id.autoText2);
+                service_ll = itemView.findViewById(R.id.service_ll);
             }
         }
     }

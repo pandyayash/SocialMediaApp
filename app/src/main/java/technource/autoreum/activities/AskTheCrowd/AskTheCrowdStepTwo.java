@@ -76,16 +76,16 @@ public class AskTheCrowdStepTwo extends BaseActivity {
     }
 
     public void getviews() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         appContext = this;
         catogoriesDBOArrayList = new ArrayList<>();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         jwt = loginDetail_dbo.getJWTToken();
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_back = findViewById(R.id.ll_back);
         dropofflocation = new ArrayList<>();
     }
 
@@ -398,9 +398,9 @@ public class AskTheCrowdStepTwo extends BaseActivity {
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                services_text = (TextView) itemView.findViewById(R.id.autoText2);
-                service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
-                ll_info = (LinearLayout) itemView.findViewById(R.id.ll_info);
+                services_text = itemView.findViewById(R.id.autoText2);
+                service_ll = itemView.findViewById(R.id.service_ll);
+                ll_info = itemView.findViewById(R.id.ll_info);
             }
 
             //if you implement onclick here you must have to use getposition() instead of making variable position global see documentation

@@ -107,18 +107,18 @@ public class AdptMyCrowdList extends RecyclerView.Adapter<AdptMyCrowdList.ViewHo
 
         public ViewHolder(View itemView) {
             super(itemView);
-            textJobTitle = (TextView) itemView.findViewById(R.id.textJobTitle);
-            textDate = (TextView) itemView.findViewById(R.id.textDate);
-            textJobDescription = (TextView) itemView.findViewById(R.id.textJobDescription);
-            textCarModel = (TextView) itemView.findViewById(R.id.textCarModel);
-            textDistance = (TextView) itemView.findViewById(R.id.textDistance);
-            textResponses = (TextView) itemView.findViewById(R.id.textResponses);
-            textCategory = (TextView) itemView.findViewById(R.id.textCategory);
-            txtAddress = (TextView) itemView.findViewById(R.id.txtAddress);
-            txtPosterName = (TextView) itemView.findViewById(R.id.txtPosterName);
-            txtName = (TextView) itemView.findViewById(R.id.txtName);
-            linear = (LinearLayout) itemView.findViewById(R.id.linear);
-            ll_name_address = (LinearLayout) itemView.findViewById(R.id.ll_name_address);
+            textJobTitle = itemView.findViewById(R.id.textJobTitle);
+            textDate = itemView.findViewById(R.id.textDate);
+            textJobDescription = itemView.findViewById(R.id.textJobDescription);
+            textCarModel = itemView.findViewById(R.id.textCarModel);
+            textDistance = itemView.findViewById(R.id.textDistance);
+            textResponses = itemView.findViewById(R.id.textResponses);
+            textCategory = itemView.findViewById(R.id.textCategory);
+            txtAddress = itemView.findViewById(R.id.txtAddress);
+            txtPosterName = itemView.findViewById(R.id.txtPosterName);
+            txtName = itemView.findViewById(R.id.txtName);
+            linear = itemView.findViewById(R.id.linear);
+            ll_name_address = itemView.findViewById(R.id.ll_name_address);
         }
 
         public String parseDateToddMMyyyy(String time) {

@@ -80,13 +80,13 @@ public class AdptQuotedJobs extends RecyclerView.Adapter<AdptQuotedJobs.ViewHold
 
         public ViewHolder(View itemView) {
             super(itemView);
-            textJobTitle = (TextView) itemView.findViewById(R.id.textJobTitle);
-            textDate = (TextView) itemView.findViewById(R.id.textDate);
-            textJobDescription = (TextView) itemView.findViewById(R.id.textJobDescription);
-            textCarModel = (TextView) itemView.findViewById(R.id.textCarModel);
-            textQuotesCount = (TextView) itemView.findViewById(R.id.textQuotesCount);
-            textPrice = (TextView) itemView.findViewById(R.id.textPrice);
-            linear = (LinearLayout) itemView.findViewById(R.id.linear);
+            textJobTitle = itemView.findViewById(R.id.textJobTitle);
+            textDate = itemView.findViewById(R.id.textDate);
+            textJobDescription = itemView.findViewById(R.id.textJobDescription);
+            textCarModel = itemView.findViewById(R.id.textCarModel);
+            textQuotesCount = itemView.findViewById(R.id.textQuotesCount);
+            textPrice = itemView.findViewById(R.id.textPrice);
+            linear = itemView.findViewById(R.id.linear);
         }
 
         public String parseDateToddMMyyyy(String time) {

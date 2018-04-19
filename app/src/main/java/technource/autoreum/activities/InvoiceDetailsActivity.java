@@ -97,17 +97,17 @@ public class InvoiceDetailsActivity extends BaseActivity {
     }
 
     private void getviews() {
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         appContext = this;
         DeJobDBOArrayList = new ArrayList<>();
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        btnDetails = (TextView) findViewById(R.id.btnDetails);
-        btnPrint = (TextView) findViewById(R.id.btnPrint);
-        btmMail = (TextView) findViewById(R.id.btmMail);
-        txtInvoiceDate = (TextView) findViewById(R.id.txtInvoiceDate);
-        txtInvoice = (TextView) findViewById(R.id.txtInvoice);
+        btnDetails = findViewById(R.id.btnDetails);
+        btnPrint = findViewById(R.id.btnPrint);
+        btmMail = findViewById(R.id.btmMail);
+        txtInvoiceDate = findViewById(R.id.txtInvoiceDate);
+        txtInvoice = findViewById(R.id.txtInvoice);
     }
 
     @Override

@@ -426,13 +426,13 @@ public class RecycleradapterforRegisteredcar extends
     public Recycleviewholder(View itemView) {
       super(itemView);
       view = itemView;
-      carname = (TextView) itemView.findViewById(R.id.carname);
-      registration_number = (TextView) itemView.findViewById(R.id.registration_number);
-      viewhistory = (TextView) itemView.findViewById(R.id.viewhistory);
-      edit = (TextView) itemView.findViewById(R.id.edit);
-      postjob = (TextView) itemView.findViewById(R.id.postjob);
-      askthecrowd = (TextView) itemView.findViewById(R.id.askthecrowd);
-      iv_image = (ImageView) itemView.findViewById(R.id.iv_image);
+      carname = itemView.findViewById(R.id.carname);
+      registration_number = itemView.findViewById(R.id.registration_number);
+      viewhistory = itemView.findViewById(R.id.viewhistory);
+      edit = itemView.findViewById(R.id.edit);
+      postjob = itemView.findViewById(R.id.postjob);
+      askthecrowd = itemView.findViewById(R.id.askthecrowd);
+      iv_image = itemView.findViewById(R.id.iv_image);
     }
 
   }

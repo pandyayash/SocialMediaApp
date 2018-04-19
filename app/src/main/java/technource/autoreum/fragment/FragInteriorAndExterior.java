@@ -105,13 +105,13 @@ public class FragInteriorAndExterior extends Fragment {
     public void getViews(View view){
         stringArrayList = new ArrayList<>();
         DescArrayList = new ArrayList<>();
-        recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
+        recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setNestedScrollingEnabled(false);
-        btnSave = (TextView) view.findViewById(R.id.btnSave);
-        btnPrint = (TextView) view.findViewById(R.id.btnPrint);
-        btnDetails = (TextView) view.findViewById(R.id.btnDetails);
-        edtComment = (EditText) view.findViewById(R.id.edtComment);
-        ll_general_comment = (LinearLayout) view.findViewById(R.id.ll_general_comment);
+        btnSave = view.findViewById(R.id.btnSave);
+        btnPrint = view.findViewById(R.id.btnPrint);
+        btnDetails = view.findViewById(R.id.btnDetails);
+        edtComment = view.findViewById(R.id.edtComment);
+        ll_general_comment = view.findViewById(R.id.ll_general_comment);
         ll_general_comment.setVisibility(View.VISIBLE);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(getActivity());
 
@@ -338,11 +338,9 @@ public class FragInteriorAndExterior extends Fragment {
         int result = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
 
         //If permission is granted returning true
-        if (result == PackageManager.PERMISSION_GRANTED)
-            return true;
+        return result == PackageManager.PERMISSION_GRANTED;
 
         //If permission is not granted returning false
-        return false;
     }
 
     private void requestStoragePermission(){
@@ -364,12 +362,12 @@ public class FragInteriorAndExterior extends Fragment {
         for(String permission: permissions){
             if(ActivityCompat.shouldShowRequestPermissionRationale(getActivity(), permission)){
                 //denied
-                Log.e("denied", permission);
+                //Log.e("denied", permission);
                 requestStoragePermission();
             }else{
                 if(ActivityCompat.checkSelfPermission(getActivity(), permission) == PackageManager.PERMISSION_GRANTED){
                     //allowed
-                    Log.e("allowed", permission);
+                    //Log.e("allowed", permission);
 
                 } else{
                     //set to never ask again

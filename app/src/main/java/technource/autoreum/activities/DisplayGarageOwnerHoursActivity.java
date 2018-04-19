@@ -59,11 +59,11 @@ public class DisplayGarageOwnerHoursActivity extends BaseActivity {
         appContext = this;
         traddingHoursDBoArrayList = new ArrayList<>();
         jarray = new JSONArray();
-        save = (TextView) findViewById(R.id.save);
+        save = findViewById(R.id.save);
         save.setVisibility(View.GONE);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        lv = (ListView) findViewById(R.id.listfordays);
-        footer = (LinearLayout) findViewById(R.id.footer);
+        ll_back = findViewById(R.id.ll_back);
+        lv = findViewById(R.id.listfordays);
+        footer = findViewById(R.id.footer);
         footer.setVisibility(View.GONE);
     }
 
@@ -120,20 +120,20 @@ public class DisplayGarageOwnerHoursActivity extends BaseActivity {
                 holder = new ChallengerHolder();
                 v = layoutInflater.inflate(R.layout.list_row_profile_hours, parent, false);
 
-                holder.day = (TextView) v.findViewById(R.id.day_name);
-                holder.intime = (LinearLayout) v.findViewById(R.id.sun);
-                holder.intimeampm = (LinearLayout) v.findViewById(R.id.sun1);
-                holder.outtime = (LinearLayout) v.findViewById(R.id.sun2);
-                holder.outtimeampm = (LinearLayout) v.findViewById(R.id.sun3);
-                holder.edt_sun_time = (EditText) v.findViewById(R.id.edt_sun_time);
-                holder.edt1_sun_time = (EditText) v.findViewById(R.id.edt1_sun_time);
-                holder.edt_am_pm_sun = (EditText) v.findViewById(R.id.edt_am_pm_sun);
-                holder.edt1_am_pm_sun = (EditText) v.findViewById(R.id.edt1_am_pm_sun);
-                holder.row = (LinearLayout) v.findViewById(R.id.row);
-                holder.dropdown = (ImageView) v.findViewById(R.id.dropdown);
-                holder.dropdown1 = (ImageView) v.findViewById(R.id.dropdown1);
-                holder.dropdown2 = (ImageView) v.findViewById(R.id.dropdown2);
-                holder.dropdown3 = (ImageView) v.findViewById(R.id.dropdown3);
+                holder.day = v.findViewById(R.id.day_name);
+                holder.intime = v.findViewById(R.id.sun);
+                holder.intimeampm = v.findViewById(R.id.sun1);
+                holder.outtime = v.findViewById(R.id.sun2);
+                holder.outtimeampm = v.findViewById(R.id.sun3);
+                holder.edt_sun_time = v.findViewById(R.id.edt_sun_time);
+                holder.edt1_sun_time = v.findViewById(R.id.edt1_sun_time);
+                holder.edt_am_pm_sun = v.findViewById(R.id.edt_am_pm_sun);
+                holder.edt1_am_pm_sun = v.findViewById(R.id.edt1_am_pm_sun);
+                holder.row = v.findViewById(R.id.row);
+                holder.dropdown = v.findViewById(R.id.dropdown);
+                holder.dropdown1 = v.findViewById(R.id.dropdown1);
+                holder.dropdown2 = v.findViewById(R.id.dropdown2);
+                holder.dropdown3 = v.findViewById(R.id.dropdown3);
 
                 v.setTag(holder);
 

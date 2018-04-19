@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +18,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -96,17 +100,17 @@ public class EditJobStepTwo extends BaseActivity {
     }
 
     public void getviews() {
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
         appContext = this;
         catogoriesDBOArrayList = new ArrayList<>();
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         jobDetail_dbo = HelperMethods.getjobDetailsSharedPreferences(appContext);
         jwt = loginDetail_dbo.getJWTToken();
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_back = findViewById(R.id.ll_back);
         dropofflocation = new ArrayList<>();
     }
 
@@ -185,6 +189,7 @@ public class EditJobStepTwo extends BaseActivity {
 
                                     categories.setName(obj.getString("name"));
                                     categories.setItext(obj.getString("itext"));
+                                    categories.setImage(obj.getString("image"));
 
                                     catogoriesDBOArrayList.add(categories);
                                 }
@@ -354,7 +359,7 @@ public class EditJobStepTwo extends BaseActivity {
         @Override
         public Recycleradapter.Recycleviewholder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_row_services_with_info, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_categories_new, parent, false);
             Recycleradapter.Recycleviewholder recycleviewholder = new Recycleradapter.Recycleviewholder(view);
             return recycleviewholder;
         }
@@ -363,23 +368,40 @@ public class EditJobStepTwo extends BaseActivity {
         public void onBindViewHolder(final Recycleradapter.Recycleviewholder holder, final int position) {
 
             holder.services_text.setText(services.get(position).getName());
+            Glide.with(appContext)
+                    .load(services.get(position).getImage())
+                    .asBitmap()
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .placeholder(R.drawable.ic_dummy)
+                    .error(R.drawable.ic_dummy)
+                    .into(holder.iv_category);
+
+
 
             if (services.get(position).isSelected()) {
-                holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
-                holder.services_text.setTextColor(getResources().getColor(R.color.white));
+                //holder.checkbox.setOnCheckedChangeListener(null);
+                holder.iv_check.setImageResource(R.drawable.checked);
+                //holder.checkbox.setChecked(true);
+//                holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
+//                holder.services_text.setTextColor(getResources().getColor(R.color.white));
 
             } else {
-                holder.service_ll.setBackground(getResources().getDrawable(R.drawable.rect_inner_boarder));
-                holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
+                holder.iv_check.setImageResource(R.drawable.box);
+                holder.checkbox.setChecked(false);
+//                holder.service_ll.setBackground(getResources().getDrawable(R.drawable.rect_inner_boarder));
+//                holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
 
             }
+
             holder.service_ll.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     services.get(position).setSelected(!services.get(position).isSelected());
                     if (services.get(position).isSelected()) {
-                        holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
-                        holder.services_text.setTextColor(getResources().getColor(R.color.white));
+                        holder.checkbox.setChecked(true);
+                        holder.iv_check.setImageResource(R.drawable.checked);
+//                        holder.service_ll.setBackgroundColor(getResources().getColor(R.color.edittext_bg));
+//                        holder.services_text.setTextColor(getResources().getColor(R.color.white));
                         for (int i = 0; i < services.size(); i++) {
                             if (!(position == i)) {
                                 catogoriesDBOArrayList.get(i).setSelected(false);
@@ -387,8 +409,10 @@ public class EditJobStepTwo extends BaseActivity {
                         }
                         adapter.notifyDataSetChanged();
                     } else {
-                        holder.service_ll.setBackground(getDrawable(R.drawable.rect_inner_boarder));
-                        holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
+                        holder.checkbox.setChecked(false);
+                        holder.iv_check.setImageResource(R.drawable.box);
+//                        holder.service_ll.setBackground(getDrawable(R.drawable.rect_inner_boarder));
+//                        holder.services_text.setTextColor(getResources().getColor(R.color.text_color2));
                         category_id = "";
 
                     }
@@ -422,15 +446,19 @@ public class EditJobStepTwo extends BaseActivity {
         public class Recycleviewholder extends RecyclerView.ViewHolder {
             private View view;
             LinearLayout service_ll, ll_info;
-
+            ImageView iv_category,iv_check;
+            CheckBox checkbox;
             TextView services_text;
 
             public Recycleviewholder(View itemView) {
                 super(itemView);
                 view = itemView;
-                services_text = (TextView) itemView.findViewById(R.id.autoText2);
-                service_ll = (LinearLayout) itemView.findViewById(R.id.service_ll);
-                ll_info = (LinearLayout) itemView.findViewById(R.id.ll_info);
+                services_text = itemView.findViewById(R.id.autoText2);
+                service_ll = itemView.findViewById(R.id.service_ll);
+                ll_info = itemView.findViewById(R.id.ll_info);
+                iv_category = itemView.findViewById(R.id.iv_category);
+                iv_check = itemView.findViewById(R.id.iv_check);
+                checkbox = itemView.findViewById(R.id.checkbox);
             }
 
             //if you implement onclick here you must have to use getposition() instead of making variable position global see documentation

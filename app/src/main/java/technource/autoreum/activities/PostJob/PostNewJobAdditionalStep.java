@@ -156,12 +156,12 @@ public class PostNewJobAdditionalStep extends BaseActivity {
 
     public void getViews() {
         appContext = this;
-        current_location = (EditText) findViewById(R.id.current_location);
-        destination_location = (EditText) findViewById(R.id.destination_location);
-        ty_company = (EditText) findViewById(R.id.ty_company);
-        ty_policy_num = (EditText) findViewById(R.id.ty_policy_num);
-        ty_claim_number = (EditText) findViewById(R.id.ty_claim_number);
-        message = (EditText) findViewById(R.id.message);
+        current_location = findViewById(R.id.current_location);
+        destination_location = findViewById(R.id.destination_location);
+        ty_company = findViewById(R.id.ty_company);
+        ty_policy_num = findViewById(R.id.ty_policy_num);
+        ty_claim_number = findViewById(R.id.ty_claim_number);
+        message = findViewById(R.id.message);
 
 
         message.setOnTouchListener(new View.OnTouchListener() {
@@ -207,16 +207,16 @@ public class PostNewJobAdditionalStep extends BaseActivity {
                 return false;
             }
         });
-        tv_insuarnce = (TextView) findViewById(R.id.tv_insuarnce);
-        tv_emergency = (TextView) findViewById(R.id.tv_emergency);
+        tv_insuarnce = findViewById(R.id.tv_insuarnce);
+        tv_emergency = findViewById(R.id.tv_emergency);
 
 
-        ll_emergency = (LinearLayout) findViewById(R.id.ll_emergency);
-        ll_special_case = (LinearLayout) findViewById(R.id.ll_special_case);
-        ll_insuarnce = (LinearLayout) findViewById(R.id.ll_insuarnce);
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
+        ll_emergency = findViewById(R.id.ll_emergency);
+        ll_special_case = findViewById(R.id.ll_special_case);
+        ll_insuarnce = findViewById(R.id.ll_insuarnce);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_back = findViewById(R.id.ll_back);
+        ll_back_button = findViewById(R.id.ll_back_button);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         jwt = loginDetail_dbo.getJWTToken();
         Intent intent = getIntent();

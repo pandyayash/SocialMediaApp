@@ -82,10 +82,10 @@ public class AskTheCrowdStepFive extends BaseActivity  {
         appContext = this;
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         jwt = loginDetail_dbo.getJWTToken();
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back = findViewById(R.id.ll_back);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -94,7 +94,7 @@ public class AskTheCrowdStepFive extends BaseActivity  {
             help = intent.getStringExtra("help");
         }
 
-        message = (EditText) findViewById(R.id.message);
+        message = findViewById(R.id.message);
         AppLog.Log("place4 holder", "-->" + placeholder);
 
         message.setHint(placeholder);

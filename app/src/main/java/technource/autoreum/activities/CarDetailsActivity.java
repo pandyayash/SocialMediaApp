@@ -20,7 +20,7 @@ public class CarDetailsActivity extends BaseActivity {
 
     private void getviews() {
 
-        ll_back = (LinearLayout)findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
     }
 
     private void setonclicklistener() {

@@ -30,8 +30,15 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
+import com.facebook.GraphRequest;
+import com.facebook.GraphResponse;
+import com.facebook.HttpMethod;
 import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.model.ShareOpenGraphAction;
+import com.facebook.share.model.ShareOpenGraphContent;
+import com.facebook.share.model.ShareOpenGraphObject;
 import com.facebook.share.widget.ShareButton;
 import com.facebook.share.widget.ShareDialog;
 import com.iarcuschin.simpleratingbar.SimpleRatingBar;
@@ -120,7 +127,7 @@ public class JobDetailsActivity extends BaseActivity {
     CallbackManager callbackManager;
     ShareDialog shareDialog;
     ShareButton shareButton;
-    String shareGarageImg,shareGarageName,shareReview,shareRatting;
+    String shareGarageImg,shareGarageName,shareReview,shareRatting,share_url;
 
 
     @Override
@@ -150,7 +157,7 @@ public class JobDetailsActivity extends BaseActivity {
         setlistenrforfooter();
         setJobDetailsFooter(getApplicationContext());
         // setJobDetailsFooter(appContext);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(this);
 
         getViews();
@@ -158,7 +165,7 @@ public class JobDetailsActivity extends BaseActivity {
 
         callbackManager = CallbackManager.Factory.create();
         shareDialog = new ShareDialog(this);
-        shareButton = (ShareButton) findViewById(R.id.fb_share_button);
+        shareButton = findViewById(R.id.fb_share_button);
         //shareDialog.registerCallback(callbackManager, callback);
 
     }
@@ -180,75 +187,75 @@ public class JobDetailsActivity extends BaseActivity {
         stringArrayList = new ArrayList<>();
         awardJobArrayList = new ArrayList<>();
 
-        txtUsername = (TextView) findViewById(R.id.txtUsername);
-        txtLocation = (TextView) findViewById(R.id.txtLocation);
-        txtDistance = (TextView) findViewById(R.id.txtDistance);
-        txtQuotes = (TextView) findViewById(R.id.txtQuotes);
-        txtMobile = (TextView) findViewById(R.id.txtMobile);
-        txtMake = (TextView) findViewById(R.id.txtMake);
-        txtModel = (TextView) findViewById(R.id.txtModel);
-        txtBadge = (TextView) findViewById(R.id.txtBadge);
-        txtRegNumber = (TextView) findViewById(R.id.txtRegNumber);
-        txtTransmission = (TextView) findViewById(R.id.txtTransmission);
-        txtYear = (TextView) findViewById(R.id.txtYear);
-        txtDropOffDate = (TextView) findViewById(R.id.txtDropOffDate);
-        txtPickupDate = (TextView) findViewById(R.id.txtPickupDate);
-        txtFlexibility = (TextView) findViewById(R.id.txtFlexibility);
-        btnEdit = (TextView) findViewById(R.id.btnEdit);
-        btnClose = (TextView) findViewById(R.id.btnClose);
-        btnDelete = (TextView) findViewById(R.id.btnDelete);
-        txtInsuranceCompany = (TextView) findViewById(R.id.txtInsuranceCompany);
-        txtPolicynumber = (TextView) findViewById(R.id.txtPolicynumber);
-        txtClaimnumber = (TextView) findViewById(R.id.txtClaimnumber);
-        txtJobTitle = (TextView) findViewById(R.id.txtJobTitle);
+        txtUsername = findViewById(R.id.txtUsername);
+        txtLocation = findViewById(R.id.txtLocation);
+        txtDistance = findViewById(R.id.txtDistance);
+        txtQuotes = findViewById(R.id.txtQuotes);
+        txtMobile = findViewById(R.id.txtMobile);
+        txtMake = findViewById(R.id.txtMake);
+        txtModel = findViewById(R.id.txtModel);
+        txtBadge = findViewById(R.id.txtBadge);
+        txtRegNumber = findViewById(R.id.txtRegNumber);
+        txtTransmission = findViewById(R.id.txtTransmission);
+        txtYear = findViewById(R.id.txtYear);
+        txtDropOffDate = findViewById(R.id.txtDropOffDate);
+        txtPickupDate = findViewById(R.id.txtPickupDate);
+        txtFlexibility = findViewById(R.id.txtFlexibility);
+        btnEdit = findViewById(R.id.btnEdit);
+        btnClose = findViewById(R.id.btnClose);
+        btnDelete = findViewById(R.id.btnDelete);
+        txtInsuranceCompany = findViewById(R.id.txtInsuranceCompany);
+        txtPolicynumber = findViewById(R.id.txtPolicynumber);
+        txtClaimnumber = findViewById(R.id.txtClaimnumber);
+        txtJobTitle = findViewById(R.id.txtJobTitle);
         txtJobTitle.getBackground().setLevel(3);
-        txtJobNumber = (TextView) findViewById(R.id.txtJobNumber);
-        txtCategory = (TextView) findViewById(R.id.txtCategory);
-        txtSubCategory = (TextView) findViewById(R.id.txtSubCategory);
-        txtjobDesc = (TextView) findViewById(R.id.txtjobDesc);
-        txtCurrentTyreBrand = (TextView) findViewById(R.id.txtCurrentTyreBrand);
-        txtCurrentTyreModel = (TextView) findViewById(R.id.txtCurrentTyreModel);
-        txtTyreDetail = (TextView) findViewById(R.id.txtTyreDetail);
-        txtNoTyreReplaced = (TextView) findViewById(R.id.txtNoTyreReplaced);
-        txtSameorEquivalent = (TextView) findViewById(R.id.txtSameorEquivalent);
-        txtadditionalInclusions = (TextView) findViewById(R.id.txtadditionalInclusions);
-        txt_include_roadside_assistance = (TextView) findViewById(R.id.txt_include_roadside_assistance);
-        txt_include_standard_logbook = (TextView) findViewById(R.id.txt_include_standard_logbook);
-        txt_no_of_vehicles = (TextView) findViewById(R.id.txt_no_of_vehicles);
-        txtDropOffLocation = (TextView) findViewById(R.id.txtDropOffLocation);
-        txtCurrentLocation = (TextView) findViewById(R.id.txtCurrentLocation);
-        txtdestAddress = (TextView) findViewById(R.id.txtdestAddress);
+        txtJobNumber = findViewById(R.id.txtJobNumber);
+        txtCategory = findViewById(R.id.txtCategory);
+        txtSubCategory = findViewById(R.id.txtSubCategory);
+        txtjobDesc = findViewById(R.id.txtjobDesc);
+        txtCurrentTyreBrand = findViewById(R.id.txtCurrentTyreBrand);
+        txtCurrentTyreModel = findViewById(R.id.txtCurrentTyreModel);
+        txtTyreDetail = findViewById(R.id.txtTyreDetail);
+        txtNoTyreReplaced = findViewById(R.id.txtNoTyreReplaced);
+        txtSameorEquivalent = findViewById(R.id.txtSameorEquivalent);
+        txtadditionalInclusions = findViewById(R.id.txtadditionalInclusions);
+        txt_include_roadside_assistance = findViewById(R.id.txt_include_roadside_assistance);
+        txt_include_standard_logbook = findViewById(R.id.txt_include_standard_logbook);
+        txt_no_of_vehicles = findViewById(R.id.txt_no_of_vehicles);
+        txtDropOffLocation = findViewById(R.id.txtDropOffLocation);
+        txtCurrentLocation = findViewById(R.id.txtCurrentLocation);
+        txtdestAddress = findViewById(R.id.txtdestAddress);
 
-        iv_user = (CircularImageView) findViewById(R.id.iv_user);
-        iv_no_car_img = (ImageView) findViewById(R.id.iv_no_car_img);
-        ll_emergency = (LinearLayout) findViewById(R.id.ll_emergency);
-        ll_insurance_claim = (LinearLayout) findViewById(R.id.ll_insurance_claim);
-        ll_insurance_company = (LinearLayout) findViewById(R.id.ll_insurance_company);
-        ll_policy_number = (LinearLayout) findViewById(R.id.ll_policy_number);
-        ll_claim_number = (LinearLayout) findViewById(R.id.ll_claim_number);
-        ll_no_car_imgs = (LinearLayout) findViewById(R.id.ll_no_car_imgs);
-        ll_no_car_videos = (LinearLayout) findViewById(R.id.ll_no_car_videos);
-        ll_quotes_from_garage = (LinearLayout) findViewById(R.id.ll_quotes_from_garage);
-        ll_auto_tyre = (LinearLayout) findViewById(R.id.ll_auto_tyre);
-        ll_additional_inclusions = (LinearLayout) findViewById(R.id.ll_additional_inclusions);
-        ll_edt_del_close = (LinearLayout) findViewById(R.id.ll_edt_del_close);
-        ll_fleet_managemnet = (LinearLayout) findViewById(R.id.ll_fleet_managemnet);
-        ll_auto_panel = (LinearLayout) findViewById(R.id.ll_auto_panel);
-        ll_current_location = (LinearLayout) findViewById(R.id.ll_current_location);
-        ll_destination_address = (LinearLayout) findViewById(R.id.ll_destination_address);
-        ll_pick_up = (LinearLayout) findViewById(R.id.ll_pick_up);
-        ll_drop_off = (LinearLayout) findViewById(R.id.ll_drop_off);
-        ll_time_flexibility = (LinearLayout) findViewById(R.id.ll_time_flexibility);
-
-
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        quotesRecyclerview = (RecyclerView) findViewById(R.id.quotesRecyclerview);
+        iv_user = findViewById(R.id.iv_user);
+        iv_no_car_img = findViewById(R.id.iv_no_car_img);
+        ll_emergency = findViewById(R.id.ll_emergency);
+        ll_insurance_claim = findViewById(R.id.ll_insurance_claim);
+        ll_insurance_company = findViewById(R.id.ll_insurance_company);
+        ll_policy_number = findViewById(R.id.ll_policy_number);
+        ll_claim_number = findViewById(R.id.ll_claim_number);
+        ll_no_car_imgs = findViewById(R.id.ll_no_car_imgs);
+        ll_no_car_videos = findViewById(R.id.ll_no_car_videos);
+        ll_quotes_from_garage = findViewById(R.id.ll_quotes_from_garage);
+        ll_auto_tyre = findViewById(R.id.ll_auto_tyre);
+        ll_additional_inclusions = findViewById(R.id.ll_additional_inclusions);
+        ll_edt_del_close = findViewById(R.id.ll_edt_del_close);
+        ll_fleet_managemnet = findViewById(R.id.ll_fleet_managemnet);
+        ll_auto_panel = findViewById(R.id.ll_auto_panel);
+        ll_current_location = findViewById(R.id.ll_current_location);
+        ll_destination_address = findViewById(R.id.ll_destination_address);
+        ll_pick_up = findViewById(R.id.ll_pick_up);
+        ll_drop_off = findViewById(R.id.ll_drop_off);
+        ll_time_flexibility = findViewById(R.id.ll_time_flexibility);
 
 
-        viewpager = (ViewPager) findViewById(R.id.viewpager);
-        viewpager1 = (ViewPager) findViewById(R.id.viewpager1);
-        indicator = (CircleIndicator) findViewById(R.id.indicator);
-        indicator1 = (CircleIndicator) findViewById(R.id.indicator1);
+        recyclerView = findViewById(R.id.recyclerView);
+        quotesRecyclerview = findViewById(R.id.quotesRecyclerview);
+
+
+        viewpager = findViewById(R.id.viewpager);
+        viewpager1 = findViewById(R.id.viewpager1);
+        indicator = findViewById(R.id.indicator);
+        indicator1 = findViewById(R.id.indicator1);
 
         stringArrayList.add("Posted");
         stringArrayList.add("Quoted");
@@ -258,18 +265,18 @@ public class JobDetailsActivity extends BaseActivity {
         stringArrayList.add("Pickup");
 
 
-        iv_image = (ImageView) findViewById(R.id.iv_image);
-        tv_name = (TextView) findViewById(R.id.tv_name);
-        rate_count = (TextView) findViewById(R.id.rate_count);
-        tv_desc = (TextView) findViewById(R.id.tv_desc);
-        txtSubmitReview = (TextView) findViewById(R.id.txtSubmitReview);
-        ratingBar = (SimpleRatingBar) findViewById(R.id.ratingBar);
-        jobsReviewResponses = (RecyclerView) findViewById(R.id.jobsReviewResponses);
-        jobReview = (LinearLayout) findViewById(R.id.jobReview);
+        iv_image = findViewById(R.id.iv_image);
+        tv_name = findViewById(R.id.tv_name);
+        rate_count = findViewById(R.id.rate_count);
+        tv_desc = findViewById(R.id.tv_desc);
+        txtSubmitReview = findViewById(R.id.txtSubmitReview);
+        ratingBar = findViewById(R.id.ratingBar);
+        jobsReviewResponses = findViewById(R.id.jobsReviewResponses);
+        jobReview = findViewById(R.id.jobReview);
 
-        shareWithFb = (ImageView) findViewById(R.id.shareWithFb);
-        shareWithTwiiter = (ImageView) findViewById(R.id.shareWithTwiiter);
-        cart_badge_footer = (TextView) findViewById(R.id.cart_badge_footer);
+        shareWithFb = findViewById(R.id.shareWithFb);
+        shareWithTwiiter = findViewById(R.id.shareWithTwiiter);
+        cart_badge_footer = findViewById(R.id.cart_badge_footer);
         /*llReply = (LinearLayout) findViewById(R.id.llReply);
         llReplyMessage = (LinearLayout) findViewById(R.id.llReplyMessage);
         message = (EditText) findViewById(R.id.message);*/
@@ -379,7 +386,9 @@ public class JobDetailsActivity extends BaseActivity {
                         try {
                             String status = response.getString(Constants.STATUS);
                             if (status.equalsIgnoreCase(Constants.SUCCESS)) {
+
                                 JSONObject jsonObject = response.getJSONObject("data");
+                                share_url  = jsonObject.optString("share_url");
                                 // userImage = response.getString("user_img");
                                 JSONArray userDetailsArray = jsonObject.getJSONArray("user_details");
                                 JSONArray dropoff_location = jsonObject.getJSONArray("drop_off_location");
@@ -819,7 +828,8 @@ public class JobDetailsActivity extends BaseActivity {
             popupDeleteJOb();
         }
         if (view == shareWithFb) {
-            sendData();
+            sendData(share_url);
+            //shareAppLinkViaFacebook();
             // shareAppLinkViaFacebook("http://greasecrowd.com.au/");
         }
         if (view == shareWithTwiiter) {
@@ -851,12 +861,13 @@ public class JobDetailsActivity extends BaseActivity {
                 .show();
     }
 
-    public void sendData() {
+    public void sendData(String share_url) {
 
         if (ShareDialog.canShow(ShareLinkContent.class)) {
             String str="\""+tv_desc.getText().toString()+"\"";
             ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                    .setQuote("http://greasecrowd.com.au/\n"+str+"\n\n"+shareGarageName+ "\nRated \""+ shareRatting +"\" out of 5 and "+ shareReview +" reviewed."+" \n#AUTOREUM")
+                    .setContentUrl(Uri.parse(share_url))
+                    .setQuote("Visit our market place and post your own jobs\n"+getString(R.string.str_url)+"\n\n"+str+"\n\n"+shareGarageName+ " \n#AUTOREUM")
                     .build();
             shareDialog.show(linkContent);
             // Show facebook ShareDialog
@@ -896,27 +907,27 @@ public class JobDetailsActivity extends BaseActivity {
 */
     }
 
-    private void shareAppLinkViaFacebook(String urlToShare) {
+    private void shareAppLinkViaFacebook() {
 
-        String str = "\"" + loginDetail_dbo.getLast_name() + "\"";
-        Intent shareIntent = new Intent(android.content.Intent.ACTION_SEND);
-        shareIntent.setType("text/plain");
-        shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Content to share");
-        shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, urlToShare);
-        shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, str);
-        PackageManager pm = getPackageManager();
-        List<ResolveInfo> activityList = pm.queryIntentActivities(shareIntent, 0);
-        for (final ResolveInfo app : activityList) {
-            if ((app.activityInfo.name).contains("facebook")) {
-                final ActivityInfo activity = app.activityInfo;
-                final ComponentName name = new ComponentName(activity.applicationInfo.packageName, activity.name);
-                shareIntent.addCategory(Intent.CATEGORY_LAUNCHER);
-                shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
-                shareIntent.setComponent(name);
-                startActivity(shareIntent);
-                break;
-            }
-        }
+        ShareOpenGraphObject object = new ShareOpenGraphObject.Builder()
+                .putString("og:type", "fitness.course")
+                .putString("og:title", "Sample Course")
+                .putString("og:description", "This is a sample course.")
+                .putInt("fitness:duration:value", 100)
+                .putString("fitness:duration:units", "s")
+                .putInt("fitness:distance:value", 12)
+                .putString("fitness:distance:units", "km")
+                .putInt("fitness:speed:value", 5)
+                .putString("fitness:speed:units", "m/s")
+                .build();
+        ShareOpenGraphAction action = new ShareOpenGraphAction.Builder()
+                .setActionType("fitness.runs")
+                .putObject("fitness:course", object)
+                .build();
+        ShareOpenGraphContent content = new ShareOpenGraphContent.Builder()
+                .setPreviewPropertyName("fitness:course")
+                .setAction(action)
+                .build();
     }
 
     private void shareTwitter() {
@@ -956,7 +967,7 @@ public class JobDetailsActivity extends BaseActivity {
         try {
             return URLEncoder.encode(s, "UTF-8");
         } catch (UnsupportedEncodingException e) {
-            Log.wtf(TAG, "UTF-8 should always be supported", e);
+            //Log.wtf(TAG, "UTF-8 should always be supported", e);
             return "";
         }
     }
@@ -1081,8 +1092,8 @@ public class JobDetailsActivity extends BaseActivity {
             public ViewHolder(View itemView) {
                 super(itemView);
 
-                response_title = (TextView) itemView.findViewById(R.id.response_title);
-                tv_response = (TextView) itemView.findViewById(R.id.tv_response);
+                response_title = itemView.findViewById(R.id.response_title);
+                tv_response = itemView.findViewById(R.id.tv_response);
 
             }
 

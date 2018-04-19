@@ -95,13 +95,13 @@ public class FreeInclusionGarageActivity extends BaseActivity {
         jobDetail_dbo = HelperMethods.getjobDetailsSharedPreferences(appContext);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
        // inclusionsArrayList = jobDetail_dbo.getFreeInclusionsArrayList();
-        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
-        nestedScroll = (NestedScrollView) findViewById(R.id.nestedScroll);
+        recyclerView = findViewById(R.id.recyclerView);
+        nestedScroll = findViewById(R.id.nestedScroll);
         recyclerView.setNestedScrollingEnabled(false);
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_back_button = findViewById(R.id.ll_back_button);
+        ll_cancel = findViewById(R.id.ll_cancel);
+        ll_back = findViewById(R.id.ll_back);
     }
     private void setClickListeners() {
         ll_continue.setOnClickListener(this);
@@ -115,7 +115,7 @@ public class FreeInclusionGarageActivity extends BaseActivity {
             @Override
             public void onClick(View view, int position) {
                 strServiceId = inclusionsArrayList.get(position).getId();
-                TextView textView = (TextView) view.findViewById(R.id.autoText2);
+                TextView textView = view.findViewById(R.id.autoText2);
                 if (view==view.findViewById(R.id.ll_add_new_inclusion)){
                     ShowAddNewInclusionPopup();
                 }
@@ -200,7 +200,7 @@ public class FreeInclusionGarageActivity extends BaseActivity {
         final View dialogView = inflater.inflate(R.layout.new_inclusion_popup, null);
         dialogBuilder.setView(dialogView);
 
-        final EditText edtInclucion = (EditText) dialogView.findViewById(R.id.edtInclucion);
+        final EditText edtInclucion = dialogView.findViewById(R.id.edtInclucion);
 
         dialogBuilder.setTitle("Add New Inclusion");
         //dialogBuilder.setMessage("Enter text below");

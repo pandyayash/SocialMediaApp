@@ -97,19 +97,19 @@ public class WeeklyDetailsActivity extends BaseActivity {
     private void findViews() {
         appContext = this;
         DeJobDBOArrayList = new ArrayList<>();
-        txtWeeklyReportDate = (TextView) findViewById(R.id.txtWeeklyReportDate);
-        txtPrint = (TextView) findViewById(R.id.txtPrint);
-        txtGarageName = (TextView) findViewById(R.id.txtGarageName);
-        txtGarageAddress = (TextView) findViewById(R.id.txtGarageAddress);
-        txtGarageMobile = (TextView) findViewById(R.id.txtGarageMobile);
-        txtGarageEmail = (TextView) findViewById(R.id.txtGarageEmail);
-        txtGarageAbn = (TextView) findViewById(R.id.txtGarageAbn);
-        txtGarageNameTitle = (TextView) findViewById(R.id.txtGarageNameTitle);
-        txtJobsCompleted = (TextView) findViewById(R.id.txtJobsCompleted);
-        txtStarReview = (TextView) findViewById(R.id.txtStarReview);
-        txtTotalEarning = (TextView) findViewById(R.id.txtTotalEarning);
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        txtWeeklyReportDate = findViewById(R.id.txtWeeklyReportDate);
+        txtPrint = findViewById(R.id.txtPrint);
+        txtGarageName = findViewById(R.id.txtGarageName);
+        txtGarageAddress = findViewById(R.id.txtGarageAddress);
+        txtGarageMobile = findViewById(R.id.txtGarageMobile);
+        txtGarageEmail = findViewById(R.id.txtGarageEmail);
+        txtGarageAbn = findViewById(R.id.txtGarageAbn);
+        txtGarageNameTitle = findViewById(R.id.txtGarageNameTitle);
+        txtJobsCompleted = findViewById(R.id.txtJobsCompleted);
+        txtStarReview = findViewById(R.id.txtStarReview);
+        txtTotalEarning = findViewById(R.id.txtTotalEarning);
+        recyclerView = findViewById(R.id.recycler_view);
+        ll_back = findViewById(R.id.ll_back);
 
     }
 

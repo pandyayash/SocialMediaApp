@@ -133,26 +133,26 @@ public class fragmentKeywords extends Fragment implements OnClickListener {
 
     private void getviews() {
         device_token = HelperMethods.getDeviceTokenFCM();
-        keywords = (EditText) v.findViewById(R.id.keywords);
+        keywords = v.findViewById(R.id.keywords);
         appContext = getActivity();
         facilitiesDBos = new ArrayList<>();
-        recyclerView = (RecyclerView) v.findViewById(R.id.recycler_view);
+        recyclerView = v.findViewById(R.id.recycler_view);
         recyclerView.setNestedScrollingEnabled(false);
-        cont = (TextView) v.findViewById(R.id.cont);
-        t_hours = (LinearLayout) v.findViewById(R.id.t_hours);
-        continueto = (TextView) v.findViewById(R.id.continueto);
-        registerBtn = (TextView) v.findViewById(R.id.registerBtn);
-        facilities = (NestedScrollView) v.findViewById(R.id.facilities);
-        laststep = (ScrollView) v.findViewById(R.id.laststep);
+        cont = v.findViewById(R.id.cont);
+        t_hours = v.findViewById(R.id.t_hours);
+        continueto = v.findViewById(R.id.continueto);
+        registerBtn = v.findViewById(R.id.registerBtn);
+        facilities = v.findViewById(R.id.facilities);
+        laststep = v.findViewById(R.id.laststep);
         traddingHoursDBoArrayList = new ArrayList<>();
 
         data = new SignUpDBO();
 
-        checkmodels = (CheckBox) v.findViewById(R.id.checkmodels);
-        checkmakes = (CheckBox) v.findViewById(R.id.checkmakes);
+        checkmodels = v.findViewById(R.id.checkmodels);
+        checkmakes = v.findViewById(R.id.checkmakes);
         edt_models = (EditText) v.findViewById(R.id.edt_models);
 
-        lv = (ListView) v.findViewById(R.id.listfordays);
+        lv = v.findViewById(R.id.listfordays);
         jarray = new JSONArray();
 
         for (int i = 0; i < days.length; i++) {
@@ -580,7 +580,7 @@ public class fragmentKeywords extends Fragment implements OnClickListener {
         final Dialog dialog = new Dialog(getActivity());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = getActivity().getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -625,7 +625,7 @@ public class fragmentKeywords extends Fragment implements OnClickListener {
         final Dialog dialog = new Dialog(getActivity());
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = getActivity().getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -699,7 +699,7 @@ public class fragmentKeywords extends Fragment implements OnClickListener {
             if (row == null) {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
 
                 row.setTag(holder);
             } else {
@@ -768,16 +768,16 @@ public class fragmentKeywords extends Fragment implements OnClickListener {
                 holder = new ChallengerHolder();
                 v = layoutInflater.inflate(R.layout.custome_traddinghour_row, parent, false);
 
-                holder.day = (TextView) v.findViewById(R.id.day_name);
-                holder.intime = (LinearLayout) v.findViewById(R.id.sun);
-                holder.intimeampm = (LinearLayout) v.findViewById(R.id.sun1);
-                holder.outtime = (LinearLayout) v.findViewById(R.id.sun2);
-                holder.outtimeampm = (LinearLayout) v.findViewById(R.id.sun3);
-                holder.edt_sun_time = (EditText) v.findViewById(R.id.edt_sun_time);
-                holder.edt1_sun_time = (EditText) v.findViewById(R.id.edt1_sun_time);
-                holder.edt_am_pm_sun = (EditText) v.findViewById(R.id.edt_am_pm_sun);
-                holder.edt1_am_pm_sun = (EditText) v.findViewById(R.id.edt1_am_pm_sun);
-                holder.row = (LinearLayout) v.findViewById(R.id.row);
+                holder.day = v.findViewById(R.id.day_name);
+                holder.intime = v.findViewById(R.id.sun);
+                holder.intimeampm = v.findViewById(R.id.sun1);
+                holder.outtime = v.findViewById(R.id.sun2);
+                holder.outtimeampm = v.findViewById(R.id.sun3);
+                holder.edt_sun_time = v.findViewById(R.id.edt_sun_time);
+                holder.edt1_sun_time = v.findViewById(R.id.edt1_sun_time);
+                holder.edt_am_pm_sun = v.findViewById(R.id.edt_am_pm_sun);
+                holder.edt1_am_pm_sun = v.findViewById(R.id.edt1_am_pm_sun);
+                holder.row = v.findViewById(R.id.row);
 
                 v.setTag(holder);
 

@@ -141,11 +141,11 @@ public class TransactionsCarOwner extends Fragment {
         monthArrayList = new ArrayList<>();
         yearArrayList = new ArrayList<>();
 
-        txtNoDataFound = (TextView)v.findViewById(R.id.txtNoDataFound);
-        recyclerview = (RecyclerView) v.findViewById(R.id.recyclerview);
-        pull_to_refresh = (SwipeRefreshLayout)v.findViewById(R.id.pull_to_refresh);
-        sp_month = (Spinner) v.findViewById(R.id.sp_month);
-        sp_year = (Spinner) v.findViewById(R.id.sp_year);
+        txtNoDataFound = v.findViewById(R.id.txtNoDataFound);
+        recyclerview = v.findViewById(R.id.recyclerview);
+        pull_to_refresh = v.findViewById(R.id.pull_to_refresh);
+        sp_month = v.findViewById(R.id.sp_month);
+        sp_year = v.findViewById(R.id.sp_year);
         months = appContext.getResources().getStringArray(R.array.months_array);
 
 
@@ -279,13 +279,7 @@ public class TransactionsCarOwner extends Fragment {
 
                 @Override
                 public boolean isEnabled(int position) {
-                    if (position == 0) {
-
-                        return false;
-                    } else {
-
-                        return true;
-                    }
+                    return position != 0;
                 }
 
                 @Override
@@ -344,13 +338,7 @@ public class TransactionsCarOwner extends Fragment {
 
             @Override
             public boolean isEnabled(int position) {
-                if (position == 0) {
-
-                    return false;
-                } else {
-
-                    return true;
-                }
+                return position != 0;
             }
 
             @Override

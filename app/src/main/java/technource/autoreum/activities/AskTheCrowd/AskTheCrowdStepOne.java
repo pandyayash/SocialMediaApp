@@ -107,19 +107,19 @@ public class AskTheCrowdStepOne extends BaseActivity {
         appContext = this;
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         jwt = loginDetail_dbo.getJWTToken();
-        edt_jobtitle = (EditText) findViewById(R.id.edt_jobtitle);
-        edt_car = (EditText) findViewById(R.id.edt_car);
-        edt_model = (TextView) findViewById(R.id.edt_model);
-        edt_badge = (TextView) findViewById(R.id.edt_badge);
-        edt_registration = (TextView) findViewById(R.id.edt_registration);
-        edt_autometic_or_manual = (TextView) findViewById(R.id.edt_autometic_or_manual);
-        edt_year = (TextView) findViewById(R.id.edt_year);
-        rl_model = (RelativeLayout) findViewById(R.id.rl_model);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ll_back_button = (LinearLayout) findViewById(R.id.ll_back_button);
+        edt_jobtitle = findViewById(R.id.edt_jobtitle);
+        edt_car = findViewById(R.id.edt_car);
+        edt_model = findViewById(R.id.edt_model);
+        edt_badge = findViewById(R.id.edt_badge);
+        edt_registration = findViewById(R.id.edt_registration);
+        edt_autometic_or_manual = findViewById(R.id.edt_autometic_or_manual);
+        edt_year = findViewById(R.id.edt_year);
+        rl_model = findViewById(R.id.rl_model);
+        ll_back = findViewById(R.id.ll_back);
+        ll_back_button = findViewById(R.id.ll_back_button);
 
-        ll_continue = (LinearLayout) findViewById(R.id.ll_continue);
-        ll_cancel = (LinearLayout) findViewById(R.id.ll_cancel);
+        ll_continue = findViewById(R.id.ll_continue);
+        ll_cancel = findViewById(R.id.ll_cancel);
     }
 
     public void setViews() {
@@ -320,9 +320,9 @@ public class AskTheCrowdStepOne extends BaseActivity {
         final Dialog dialog = new Dialog(appContext);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = this.getLayoutInflater().inflate(R.layout.custome_dialogue_header_popup, null);
-        TextView title = (TextView) view.findViewById(R.id.title);
+        TextView title = view.findViewById(R.id.title);
         title.setText("Select Car");
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -386,8 +386,8 @@ public class AskTheCrowdStepOne extends BaseActivity {
             if (row == null) {
                 holder = new CustomListAdapterDialog.ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_dialog, parent, false);
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
-                holder.tv_header = (TextView) row.findViewById(R.id.tv_header);
+                holder.tv_name = row.findViewById(R.id.tv_name);
+                holder.tv_header = row.findViewById(R.id.tv_header);
 
                 row.setTag(holder);
             } else {

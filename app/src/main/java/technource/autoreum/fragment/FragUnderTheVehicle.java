@@ -43,11 +43,11 @@ public class FragUnderTheVehicle extends Fragment {
 
     public void getViews(View view){
         stringArrayList = new ArrayList<>();
-        recyclerView = (RecyclerView)view.findViewById(R.id.recyclerView);
+        recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setNestedScrollingEnabled(false);
-        btnSave = (TextView) view.findViewById(R.id.btnSave);
-        btnPrint = (TextView) view.findViewById(R.id.btnPrint);
-        btnDetails = (TextView) view.findViewById(R.id.btnDetails);
+        btnSave = view.findViewById(R.id.btnSave);
+        btnPrint = view.findViewById(R.id.btnPrint);
+        btnDetails = view.findViewById(R.id.btnDetails);
 
 
         btnPrint.setVisibility(View.INVISIBLE);

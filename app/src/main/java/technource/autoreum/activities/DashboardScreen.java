@@ -117,7 +117,7 @@ public class DashboardScreen extends BaseActivity implements
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
         getViews();
         setOnClicklistener();
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         AppLog.Log("FCM-->", "device token-->" + HelperMethods.getDeviceTokenFCM());
 
@@ -242,19 +242,19 @@ public class DashboardScreen extends BaseActivity implements
     }
 
     public void getViews() {
-        iv_image = (ImageView) findViewById(R.id.iv_image);
-        ll_jobs = (LinearLayout) findViewById(R.id.ll_jobs);
-        ll_crowd = (LinearLayout) findViewById(R.id.ll_crowd);
-        ll_tab = (LinearLayout) findViewById(R.id.ll_tab);
-        ll_jobs_crowd = (LinearLayout) findViewById(R.id.ll_jobs_crowd);
-        tv_jobs = (TextView) findViewById(R.id.tv_jobs);
-        tv_crowd = (TextView) findViewById(R.id.tv_crowd);
-        tv_title = (TextView) findViewById(R.id.tv_title_header);
-        img_job = (ImageView) findViewById(R.id.imgJob);
-        ImgCrowd = (ImageView) findViewById(R.id.imgCrowd);
-        imgNotification = (ImageView) findViewById(R.id.imgNotification);
+        iv_image = findViewById(R.id.iv_image);
+        ll_jobs = findViewById(R.id.ll_jobs);
+        ll_crowd = findViewById(R.id.ll_crowd);
+        ll_tab = findViewById(R.id.ll_tab);
+        ll_jobs_crowd = findViewById(R.id.ll_jobs_crowd);
+        tv_jobs = findViewById(R.id.tv_jobs);
+        tv_crowd = findViewById(R.id.tv_crowd);
+        tv_title = findViewById(R.id.tv_title_header);
+        img_job = findViewById(R.id.imgJob);
+        ImgCrowd = findViewById(R.id.imgCrowd);
+        imgNotification = findViewById(R.id.imgNotification);
         catogoriesDBOsaArrayList = new ArrayList<>();
-        cart_badge = (TextView) findViewById(R.id.cart_badge);
+        cart_badge = findViewById(R.id.cart_badge);
     }
 
     public void setCrowds() {
@@ -290,14 +290,14 @@ public class DashboardScreen extends BaseActivity implements
         View view = getLayoutInflater().inflate(R.layout.activity_add_areview_popup, null);
 
 
-        final SimpleRatingBar ratingBar = (SimpleRatingBar) view.findViewById(R.id.ratingBar);
-        final EditText message = (EditText) view.findViewById(R.id.message);
-        TextView txtSubmitReview = (TextView) view.findViewById(R.id.txtSubmitReview);
-        TextView txtRemindMeLetter = (TextView) view.findViewById(R.id.txtRemindMeLetter);
-        ImageView close = (ImageView) view.findViewById(R.id.close);
-        TextView txtCancel = (TextView) view.findViewById(R.id.txtCancel);
-        TextView jobTitle = (TextView) view.findViewById(R.id.jobTitle);
-        tvCounter = (TextView) view.findViewById(R.id.tvCounter);
+        final SimpleRatingBar ratingBar = view.findViewById(R.id.ratingBar);
+        final EditText message = view.findViewById(R.id.message);
+        TextView txtSubmitReview = view.findViewById(R.id.txtSubmitReview);
+        TextView txtRemindMeLetter = view.findViewById(R.id.txtRemindMeLetter);
+        ImageView close = view.findViewById(R.id.close);
+        TextView txtCancel = view.findViewById(R.id.txtCancel);
+        TextView jobTitle = view.findViewById(R.id.jobTitle);
+        tvCounter = view.findViewById(R.id.tvCounter);
         message.addTextChangedListener(mTextEditorWatcher);
 
         jobTitle.setText(loginDetail_dbo.getJobTitle());
@@ -437,10 +437,10 @@ public class DashboardScreen extends BaseActivity implements
 
         adapter.setListener(this);
 
-        RecyclerView list = (RecyclerView) findViewById(R.id.list);
-        iv_image = (ImageView) findViewById(R.id.iv_image);
-        textiew = (TextView) findViewById(R.id.username);
-        balance = (TextView) findViewById(R.id.balance);
+        RecyclerView list = findViewById(R.id.list);
+        iv_image = findViewById(R.id.iv_image);
+        textiew = findViewById(R.id.username);
+        balance = findViewById(R.id.balance);
         if (loginDetail_dbo.getUser_Type().equalsIgnoreCase("1")) {
             balance.setVisibility(View.VISIBLE);
             //balance.setText("Balance: $"+loginDetail_dbo.getGarage_balance());
@@ -456,8 +456,8 @@ public class DashboardScreen extends BaseActivity implements
         } else {
             balance.setVisibility(View.GONE);
         }
-        LinearLayout ll_top = (LinearLayout) findViewById(R.id.ll_top);
-        LinearLayout ll_logout = (LinearLayout) findViewById(R.id.ll_logout);
+        LinearLayout ll_top = findViewById(R.id.ll_top);
+        LinearLayout ll_logout = findViewById(R.id.ll_logout);
 
 
         AppLog.Log("image path", " " + loginDetail_dbo.getImage());

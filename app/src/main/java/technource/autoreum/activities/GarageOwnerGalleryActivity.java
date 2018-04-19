@@ -117,13 +117,13 @@ public class GarageOwnerGalleryActivity extends BaseActivity implements OnClickL
         appContext = this;
         setHeader(getString(R.string.gallaery));
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        ll_upload = (LinearLayout) findViewById(R.id.ll_upload);
-        gridView = (GridView) findViewById(R.id.gridview);
-        nodata = (TextView) findViewById(R.id.nodata);
-        scrollView = (ScrollView) findViewById(R.id.scrollview);
-        motorImage = (ImageView) findViewById(R.id.motorImage);
-        editBtn = (ImageView) findViewById(R.id.editBtn);
+        ll_back = findViewById(R.id.ll_back);
+        ll_upload = findViewById(R.id.ll_upload);
+        gridView = findViewById(R.id.gridview);
+        nodata = findViewById(R.id.nodata);
+        scrollView = findViewById(R.id.scrollview);
+        motorImage = findViewById(R.id.motorImage);
+        editBtn = findViewById(R.id.editBtn);
 
         setfooter("garageowner");
         setHomeFooterGarage(appContext);
@@ -206,7 +206,7 @@ public class GarageOwnerGalleryActivity extends BaseActivity implements OnClickL
                 // Now user should be able to use camera
                 selectImage();
             } else {
-                Log.i("MainAcivity", "Permission has been denied by user");
+               // Log.i("MainAcivity", "Permission has been denied by user");
                 // showAlert();
                 // Your app will not have this permission. Turn off all functions
                 // that require this permission or it will force close like  your
@@ -733,9 +733,9 @@ public class GarageOwnerGalleryActivity extends BaseActivity implements OnClickL
 
             if (convertView == null) {
                 convertView = inflater.inflate(R.layout.grid_row_gallary, null);
-                holder.iv_image = (Grid_image) convertView.findViewById(R.id.gridimage);
-                holder.Edit = (ImageView) convertView.findViewById(R.id.editBtn);
-                holder.Delete = (ImageView) convertView.findViewById(R.id.deleteBtn);
+                holder.iv_image = convertView.findViewById(R.id.gridimage);
+                holder.Edit = convertView.findViewById(R.id.editBtn);
+                holder.Delete = convertView.findViewById(R.id.deleteBtn);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();

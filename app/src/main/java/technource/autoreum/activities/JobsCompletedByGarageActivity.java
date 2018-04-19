@@ -68,9 +68,9 @@ public class JobsCompletedByGarageActivity extends BaseActivity {
         setfooter("jobs");
         setJobDetailsQuoteFooter(appContext);
         setlistenrforfooter();
-        jobsRecyclerview = (RecyclerView)findViewById(R.id.recyclerView);
-        pull_to_refresh = (SwipeRefreshLayout) findViewById(R.id.pull_to_refresh);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
+        jobsRecyclerview = findViewById(R.id.recyclerView);
+        pull_to_refresh = findViewById(R.id.pull_to_refresh);
+        ll_back = findViewById(R.id.ll_back);
         ll_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

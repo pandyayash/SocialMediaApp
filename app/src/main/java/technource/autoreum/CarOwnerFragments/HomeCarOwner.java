@@ -73,7 +73,7 @@ public class HomeCarOwner extends Fragment {
             ((DashboardScreen) apContext).setCrowds();
         }
 
-        ((DashboardScreen) apContext).first = true;
+        DashboardScreen.first = true;
         ((DashboardScreen) apContext).setHomeFooter(apContext);
         CheckForRegisteredCar();
 
@@ -86,7 +86,7 @@ public class HomeCarOwner extends Fragment {
         apContext = getActivity();
         differentDensityAndScreenSize(apContext);
         pagerAdapter = new MainPagerAdapter();
-        pager = (ViewPager) v.findViewById(R.id.view_pager);
+        pager = v.findViewById(R.id.view_pager);
         pager.setAdapter(pagerAdapter);
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(apContext);
         jwt = loginDetail_dbo.getJWTToken();
@@ -111,13 +111,13 @@ public class HomeCarOwner extends Fragment {
         LayoutInflater inflater2 = getActivity().getLayoutInflater();
         for (int i = 0; i < count; i++) {
             LinearLayout v0 = (LinearLayout) inflater2.inflate(R.layout.frames_categories, null);
-            LinearLayout ll_cat1 = (LinearLayout) v0.findViewById(R.id.ll_cat1);
-            LinearLayout ll_cat2 = (LinearLayout) v0.findViewById(R.id.ll_cat2);
-            TextView cat1 = (TextView) v0.findViewById(R.id.cat_1);
-            TextView cat2 = (TextView) v0.findViewById(R.id.cat_2);
-            ImageView img1 = (ImageView) v0.findViewById(R.id.img1);
-            ImageView img2 = (ImageView) v0.findViewById(R.id.img2);
-            tv_postjob = (TextView) v0.findViewById(R.id.tv_new_postjob);
+            LinearLayout ll_cat1 = v0.findViewById(R.id.ll_cat1);
+            LinearLayout ll_cat2 = v0.findViewById(R.id.ll_cat2);
+            TextView cat1 = v0.findViewById(R.id.cat_1);
+            TextView cat2 = v0.findViewById(R.id.cat_2);
+            ImageView img1 = v0.findViewById(R.id.img1);
+            ImageView img2 = v0.findViewById(R.id.img2);
+            tv_postjob = v0.findViewById(R.id.tv_new_postjob);
             cat1.setText(((DashboardScreen) apContext).catogoriesDBOsaArrayList.get(count_1).getName());
             Glide.with(apContext)
                     .load(((DashboardScreen) apContext).catogoriesDBOsaArrayList.get(count_1).getImage())
@@ -203,14 +203,14 @@ public class HomeCarOwner extends Fragment {
     }
 
     public void notifypageadapter() {
-        ((DashboardScreen) apContext).first = true;
+        DashboardScreen.first = true;
         if (pager != null) {
             pager.setAdapter(null);
         }
         pagerAdapter = new MainPagerAdapter();
         pager.setAdapter(pagerAdapter);
         setUpVIewPager();
-        AppLog.Log("here", "you are in notify" + ((DashboardScreen) apContext).first);
+        AppLog.Log("here", "you are in notify" + DashboardScreen.first);
         AppLog.Log("here", "" + ((DashboardScreen) apContext).selected);
 
     }
@@ -419,11 +419,7 @@ public class HomeCarOwner extends Fragment {
                         AppLog.Log("Response", response.toString());
                         try {
                             String status = response.getString(Constants.STATUS);
-                            if (status.equalsIgnoreCase(Constants.SUCCESS)) {
-                                flag = true;
-                            } else {
-                                flag = false;
-                            }
+                            flag = status.equalsIgnoreCase(Constants.SUCCESS);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -488,7 +484,7 @@ public class HomeCarOwner extends Fragment {
         public int addView(View v, int position, final TextView cat1, final TextView cat2,
                            final LinearLayout ll_cat1, final LinearLayout ll_cat2, final int arraylistpos) {
 
-            final TextView title = (TextView) v.findViewById(R.id.tv_new_postjob);
+            final TextView title = v.findViewById(R.id.tv_new_postjob);
             if (!(((DashboardScreen) apContext).selected)) {
                 title.setText("POST A NEW JOB");
             } else {

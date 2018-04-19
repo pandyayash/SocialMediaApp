@@ -92,21 +92,21 @@ public class EditRegisteredCarActivity extends BaseActivity {
     private void getviews() {
         appContext = this;
         loginDetail_dbo = HelperMethods.getUserDetailsSharedPreferences(appContext);
-        edt_make = (EditText) findViewById(R.id.edt_make);
-        edt_model = (EditText) findViewById(R.id.edt_model);
-        edt_badge = (EditText) findViewById(R.id.edt_badge);
-        edt_reg_number = (EditText) findViewById(R.id.edt_reg_number);
-        edtyear = (EditText) findViewById(R.id.edt_year);
-        ll_make = (RelativeLayout) findViewById(R.id.ll_make);
-        ll_model = (RelativeLayout) findViewById(R.id.ll_model);
-        ll_badge = (RelativeLayout) findViewById(R.id.ll_badge);
-        RegisterBtn = (TextView) findViewById(R.id.registerBtn);
-        add_more_car = (LinearLayout) findViewById(R.id.add_more_car);
-        autometic = (LinearLayout) findViewById(R.id.autometic);
-        manual = (LinearLayout) findViewById(R.id.manual);
-        ll_back = (LinearLayout) findViewById(R.id.ll_back);
-        autotxt = (TextView) findViewById(R.id.autoText);
-        manualtxt = (TextView) findViewById(R.id.manualTxt);
+        edt_make = findViewById(R.id.edt_make);
+        edt_model = findViewById(R.id.edt_model);
+        edt_badge = findViewById(R.id.edt_badge);
+        edt_reg_number = findViewById(R.id.edt_reg_number);
+        edtyear = findViewById(R.id.edt_year);
+        ll_make = findViewById(R.id.ll_make);
+        ll_model = findViewById(R.id.ll_model);
+        ll_badge = findViewById(R.id.ll_badge);
+        RegisterBtn = findViewById(R.id.registerBtn);
+        add_more_car = findViewById(R.id.add_more_car);
+        autometic = findViewById(R.id.autometic);
+        manual = findViewById(R.id.manual);
+        ll_back = findViewById(R.id.ll_back);
+        autotxt = findViewById(R.id.autoText);
+        manualtxt = findViewById(R.id.manualTxt);
 
     }
 
@@ -313,7 +313,7 @@ public class EditRegisteredCarActivity extends BaseActivity {
     private void showMakeDialog() {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -403,7 +403,7 @@ public class EditRegisteredCarActivity extends BaseActivity {
     private void showModelDialog() {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -491,7 +491,7 @@ public class EditRegisteredCarActivity extends BaseActivity {
     private void showBadgeDialog() {
         final Dialog dialog = new Dialog(appContext);
         View view = this.getLayoutInflater().inflate(R.layout.dialog_main, null);
-        ListView lv = (ListView) view.findViewById(R.id.custom_list);
+        ListView lv = view.findViewById(R.id.custom_list);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
@@ -664,7 +664,7 @@ public class EditRegisteredCarActivity extends BaseActivity {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_items, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
+                holder.tv_name = row.findViewById(R.id.tv_name);
 
                 row.setTag(holder);
             } else {
@@ -731,8 +731,8 @@ public class EditRegisteredCarActivity extends BaseActivity {
                 holder = new ChallengerHolder();
                 row = layoutInflater.inflate(R.layout.list_row_dialog, parent, false);
 
-                holder.tv_name = (TextView) row.findViewById(R.id.tv_name);
-                holder.tv_header = (TextView) row.findViewById(R.id.tv_header);
+                holder.tv_name = row.findViewById(R.id.tv_name);
+                holder.tv_header = row.findViewById(R.id.tv_header);
 
                 row.setTag(holder);
             } else {

@@ -30,7 +30,7 @@
       android:id="@+id/Profile_omg"
       android:layout_width="@dimen/listitem_purchase_h"
       android:layout_height="@dimen/listitem_purchase_h"
-      android:src="@drawable/tp"
+      android:src="@drawable/ic_dummy"
         app:civ_border_color="@color/white"
         android:layout_marginLeft="@dimen/SignIn_margin"/>
 

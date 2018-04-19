@@ -109,12 +109,12 @@ public class AdptInvoiceListing extends RecyclerView.Adapter<RecyclerView.ViewHo
         public ItemViewHolder(View v) {
             super(v);
             View = v;
-            txtJobId = (TextView) View.findViewById(R.id.txtJobId);
-            txtJobDescription = (TextView) View.findViewById(R.id.txtJobDescription);
-            txtUnit = (TextView) View.findViewById(R.id.txtUnit);
-            txtUnitPrice = (TextView) View.findViewById(R.id.txtUnitPrice);
-            txtGstPercent = (TextView) View.findViewById(R.id.txtGstPercent);
-            txtGstAmount = (TextView) View.findViewById(R.id.txtGstAmount);
+            txtJobId = View.findViewById(R.id.txtJobId);
+            txtJobDescription = View.findViewById(R.id.txtJobDescription);
+            txtUnit = View.findViewById(R.id.txtUnit);
+            txtUnitPrice = View.findViewById(R.id.txtUnitPrice);
+            txtGstPercent = View.findViewById(R.id.txtGstPercent);
+            txtGstAmount = View.findViewById(R.id.txtGstAmount);
 
         }
 
@@ -133,12 +133,12 @@ public class AdptInvoiceListing extends RecyclerView.Adapter<RecyclerView.ViewHo
         public FooterViewHolder(View v) {
             super(v);
             View = v;
-            txtJobId = (TextView) View.findViewById(R.id.txtJobId);
-            txtExclGst = (TextView) View.findViewById(R.id.txtExclGst);
-            txtUnit = (TextView) View.findViewById(R.id.txtUnit);
-            txtGst = (TextView) View.findViewById(R.id.txtGst);
-            txtGstPercent = (TextView) View.findViewById(R.id.txtGstPercent);
-            txtTotal = (TextView) View.findViewById(R.id.txtTotal);
+            txtJobId = View.findViewById(R.id.txtJobId);
+            txtExclGst = View.findViewById(R.id.txtExclGst);
+            txtUnit = View.findViewById(R.id.txtUnit);
+            txtGst = View.findViewById(R.id.txtGst);
+            txtGstPercent = View.findViewById(R.id.txtGstPercent);
+            txtTotal = View.findViewById(R.id.txtTotal);
 
         }
 

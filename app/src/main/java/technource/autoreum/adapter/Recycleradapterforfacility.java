@@ -74,7 +74,7 @@ public class Recycleradapterforfacility extends RecyclerView.Adapter<Recyclerada
         public Recycleviewholder(View itemView) {
             super(itemView);
             view = itemView;
-            services_text = (TextView) itemView.findViewById(R.id. autoText2);
+            services_text = itemView.findViewById(R.id. autoText2);
         }
 
         //if you implement onclick here you must have to use getposition() instead of making variable position global see documentation

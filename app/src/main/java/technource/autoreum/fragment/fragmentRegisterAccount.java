@@ -129,44 +129,44 @@ public class fragmentRegisterAccount extends Fragment implements OnClickListener
     public void getViews() {
         device_token = HelperMethods.getDeviceTokenFCM();
         appContext = getActivity();
-        ll_personal_details = (LinearLayout) v.findViewById(R.id.ll_personal_details);
-        ll_user_details = (LinearLayout) v.findViewById(R.id.ll_user_details);
-        ll_your_details = (LinearLayout) v.findViewById(R.id.ll_your_details);
-        ll_fname = (LinearLayout) v.findViewById(R.id.ll_fname);
-        ll_lname = (LinearLayout) v.findViewById(R.id.ll_lname);
-        ll_email = (LinearLayout) v.findViewById(R.id.ll_email);
-        ll_c_email = (LinearLayout) v.findViewById(R.id.ll_c_email);
-        ll_contact = (LinearLayout) v.findViewById(R.id.ll_contact);
-        ll_state = (LinearLayout) v.findViewById(R.id.ll_state);
-        ll_subrub = (LinearLayout) v.findViewById(R.id.ll_subrub);
-        ll_post_code = (LinearLayout) v.findViewById(R.id.ll_post_code);
-        ll_refferelcode = (LinearLayout) v.findViewById(R.id.ll_refferelcode);
-        ll_username = (LinearLayout) v.findViewById(R.id.ll_username);
+        ll_personal_details = v.findViewById(R.id.ll_personal_details);
+        ll_user_details = v.findViewById(R.id.ll_user_details);
+        ll_your_details = v.findViewById(R.id.ll_your_details);
+        ll_fname = v.findViewById(R.id.ll_fname);
+        ll_lname = v.findViewById(R.id.ll_lname);
+        ll_email = v.findViewById(R.id.ll_email);
+        ll_c_email = v.findViewById(R.id.ll_c_email);
+        ll_contact = v.findViewById(R.id.ll_contact);
+        ll_state = v.findViewById(R.id.ll_state);
+        ll_subrub = v.findViewById(R.id.ll_subrub);
+        ll_post_code = v.findViewById(R.id.ll_post_code);
+        ll_refferelcode = v.findViewById(R.id.ll_refferelcode);
+        ll_username = v.findViewById(R.id.ll_username);
 
-        next_personal_details = (TextView) v.findViewById(R.id.next_personal_details);
-        next_user_details = (TextView) v.findViewById(R.id.next_user_details);
-        next_your_details = (TextView) v.findViewById(R.id.next_your_details);
-        ll_password = (LinearLayout) v.findViewById(R.id.ll_password);
-        ll_confirmpasseord = (LinearLayout) v.findViewById(R.id.ll_confirm_password);
+        next_personal_details = v.findViewById(R.id.next_personal_details);
+        next_user_details = v.findViewById(R.id.next_user_details);
+        next_your_details = v.findViewById(R.id.next_your_details);
+        ll_password = v.findViewById(R.id.ll_password);
+        ll_confirmpasseord = v.findViewById(R.id.ll_confirm_password);
 
-        edt_fname = (EditText) v.findViewById(R.id.edt_fname);
+        edt_fname = v.findViewById(R.id.edt_fname);
         edt_fname.requestFocus();
-        edt_lname = (EditText) v.findViewById(R.id.edt_lname);
-        edt_email = (EditText) v.findViewById(R.id.edt_email);
-        edt_confirm_email = (EditText) v.findViewById(R.id.edt_confirm_email);
-        edt_mobile = (EditText) v.findViewById(R.id.edt_mobile);
+        edt_lname = v.findViewById(R.id.edt_lname);
+        edt_email = v.findViewById(R.id.edt_email);
+        edt_confirm_email = v.findViewById(R.id.edt_confirm_email);
+        edt_mobile = v.findViewById(R.id.edt_mobile);
 
-        edt_username = (EditText) v.findViewById(R.id.edt_uname);
-        edt_password = (EditText) v.findViewById(R.id.edt_password);
-        edt_confimepass = (EditText) v.findViewById(R.id.edt_confimepass);
-        editstate = (TextView) v.findViewById(R.id.edt_state);
-        edt_subrub = (EditText) v.findViewById(R.id.edt_subrub);
-        edt_refferelcode = (EditText) v.findViewById(R.id.edt_refferelcode);
-        edt_post_code = (EditText) v.findViewById(R.id.edt_post_code);
-        isNews = (CheckBox) v.findViewById(R.id.newslettr);
-        terms = (CheckBox) v.findViewById(R.id.terms);
-        termsandpolicy = (TextView) v.findViewById(R.id.termsandpolicy);
-        txtzero = (TextView) v.findViewById(R.id.txtzero);
+        edt_username = v.findViewById(R.id.edt_uname);
+        edt_password = v.findViewById(R.id.edt_password);
+        edt_confimepass = v.findViewById(R.id.edt_confimepass);
+        editstate = v.findViewById(R.id.edt_state);
+        edt_subrub = v.findViewById(R.id.edt_subrub);
+        edt_refferelcode = v.findViewById(R.id.edt_refferelcode);
+        edt_post_code = v.findViewById(R.id.edt_post_code);
+        isNews = v.findViewById(R.id.newslettr);
+        terms = v.findViewById(R.id.terms);
+        termsandpolicy = v.findViewById(R.id.termsandpolicy);
+        txtzero = v.findViewById(R.id.txtzero);
 
         data = ((SignUpCarOwner) appContext).data;
         current_position = 0;
@@ -1008,7 +1008,7 @@ public class fragmentRegisterAccount extends Fragment implements OnClickListener
 
     private void createCustomTab(String url) {
         CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder()
-                .setExitAnimations(((SignUpCarOwner) appContext), android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+                .setExitAnimations(appContext, android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         BitmapDrawable current = (BitmapDrawable) getResources()
                 .getDrawable(R.drawable.arrow);
         builder.setCloseButtonIcon(current.getBitmap());
@@ -1016,7 +1016,7 @@ public class fragmentRegisterAccount extends Fragment implements OnClickListener
         builder.setShowTitle(true);
         CustomTabsIntent customTabsIntent = builder.build();
         customTabsIntent.intent.setPackage("com.android.chrome");
-        customTabsIntent.launchUrl(((SignUpCarOwner) appContext), Uri.parse(url));
+        customTabsIntent.launchUrl(appContext, Uri.parse(url));
 
     }
 

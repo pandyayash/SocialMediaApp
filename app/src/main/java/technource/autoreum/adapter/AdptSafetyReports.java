@@ -322,11 +322,11 @@ public class AdptSafetyReports extends RecyclerView.Adapter<AdptSafetyReports.Vi
 
         public ViewHolder(View itemView) {
             super(itemView);
-            textView = (TextView) itemView.findViewById(R.id.text);
-            imgGreen = (ImageView) itemView.findViewById(R.id.imgGreen);
-            imgYellow = (ImageView) itemView.findViewById(R.id.imgYellow);
-            imgRed = (ImageView) itemView.findViewById(R.id.imgRed);
-            edtRecommendation = (EditText) itemView.findViewById(R.id.edtRecommendation);
+            textView = itemView.findViewById(R.id.text);
+            imgGreen = itemView.findViewById(R.id.imgGreen);
+            imgYellow = itemView.findViewById(R.id.imgYellow);
+            imgRed = itemView.findViewById(R.id.imgRed);
+            edtRecommendation = itemView.findViewById(R.id.edtRecommendation);
         }
     }
 }

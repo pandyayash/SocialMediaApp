@@ -178,16 +178,16 @@ public class AdptNewPostedJobs extends RecyclerView.Adapter<AdptNewPostedJobs.Vi
 
         public ViewHolder(View itemView) {
             super(itemView);
-            ratingBar = (RatingBar) itemView.findViewById(R.id.ratingBar);
-            txtAddReview = (TextView) itemView.findViewById(R.id.txtAddReview);
-            textJobTitle = (TextView) itemView.findViewById(R.id.textJobTitle);
-            textDate = (TextView) itemView.findViewById(R.id.textDate);
-            textJobDescription = (TextView) itemView.findViewById(R.id.textJobDescription);
-            textDistance = (TextView) itemView.findViewById(R.id.textDistance);
-            textCarModel = (TextView) itemView.findViewById(R.id.textCarModel);
-            textQuotesCount = (TextView) itemView.findViewById(R.id.textQuotesCount);
-            textPrice = (TextView) itemView.findViewById(R.id.textPrice);
-            linear = (LinearLayout) itemView.findViewById(R.id.linear);
+            ratingBar = itemView.findViewById(R.id.ratingBar);
+            txtAddReview = itemView.findViewById(R.id.txtAddReview);
+            textJobTitle = itemView.findViewById(R.id.textJobTitle);
+            textDate = itemView.findViewById(R.id.textDate);
+            textJobDescription = itemView.findViewById(R.id.textJobDescription);
+            textDistance = itemView.findViewById(R.id.textDistance);
+            textCarModel = itemView.findViewById(R.id.textCarModel);
+            textQuotesCount = itemView.findViewById(R.id.textQuotesCount);
+            textPrice = itemView.findViewById(R.id.textPrice);
+            linear = itemView.findViewById(R.id.linear);
         }
 
         public String parseDateToddMMyyyy(String time) {

@@ -178,7 +178,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void setHeader(String title) {
-        tv_header = (TextView) findViewById(R.id.tv_header);
+        tv_header = findViewById(R.id.tv_header);
         tv_header.setText(title);
 
     }
@@ -202,66 +202,66 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void setfooter(String key) {
-        ll_postjobs_crowd = (LinearLayout) findViewById(R.id.ll_postjob_crowd);
-        ll_myjobs_crowd = (LinearLayout) findViewById(R.id.ll_myjobs_crowd);
-        ll_home_crowd = (LinearLayout) findViewById(R.id.ll_home_crowd);
-        ll_for_jobdetails = (LinearLayout) findViewById(R.id.ll_for_jobdetails);
+        ll_postjobs_crowd = findViewById(R.id.ll_postjob_crowd);
+        ll_myjobs_crowd = findViewById(R.id.ll_myjobs_crowd);
+        ll_home_crowd = findViewById(R.id.ll_home_crowd);
+        ll_for_jobdetails = findViewById(R.id.ll_for_jobdetails);
 
-        ll_post_jobs = (LinearLayout) findViewById(R.id.ll_postjob);
-        ll_myjobs = (LinearLayout) findViewById(R.id.ll_myjobs);
-        ll_home = (LinearLayout) findViewById(R.id.ll_home);
-
-
-        ll_postjob_garageowner = (LinearLayout) findViewById(R.id.ll_postjob_garageowner);
-        ll_home_garage = (LinearLayout) findViewById(R.id.ll_home_garage);
-        ll_myjobs_garage = (LinearLayout) findViewById(R.id.ll_myjobs_garage);
+        ll_post_jobs = findViewById(R.id.ll_postjob);
+        ll_myjobs = findViewById(R.id.ll_myjobs);
+        ll_home = findViewById(R.id.ll_home);
 
 
-        ll_job_details = (LinearLayout) findViewById(R.id.ll_job_details);
-        ll_Quotes = (LinearLayout) findViewById(R.id.ll_Quotes);
-        ll_discussion = (LinearLayout) findViewById(R.id.ll_discussion);
+        ll_postjob_garageowner = findViewById(R.id.ll_postjob_garageowner);
+        ll_home_garage = findViewById(R.id.ll_home_garage);
+        ll_myjobs_garage = findViewById(R.id.ll_myjobs_garage);
 
 
-        tv_postjob_garage = (TextView) findViewById(R.id.tv_postjob_garage);
-        tv_home_garage = (TextView) findViewById(R.id.tv_home_garage);
-        tv_my_jobs_garage = (TextView) findViewById(R.id.tv_my_jobs_garage);
-
-        tv_job_details = (TextView) findViewById(R.id.tv_job_details);
-        tv_quotes = (TextView) findViewById(R.id.tv_quotes);
-        tv_discussion = (TextView) findViewById(R.id.tv_discussion);
+        ll_job_details = findViewById(R.id.ll_job_details);
+        ll_Quotes = findViewById(R.id.ll_Quotes);
+        ll_discussion = findViewById(R.id.ll_discussion);
 
 
-        iv_post_image_garage = (ImageView) findViewById(R.id.iv_post_image_garage);
-        iv_home_image_garage = (ImageView) findViewById(R.id.iv_home_image_garage);
-        iv_jobs_image_garage = (ImageView) findViewById(R.id.iv_jobs_image_garage);
+        tv_postjob_garage = findViewById(R.id.tv_postjob_garage);
+        tv_home_garage = findViewById(R.id.tv_home_garage);
+        tv_my_jobs_garage = findViewById(R.id.tv_my_jobs_garage);
 
-        iv_job_details = (ImageView) findViewById(R.id.iv_job_details);
-        iv_quotes = (ImageView) findViewById(R.id.iv_quotes);
-        iv_discussion = (ImageView) findViewById(R.id.iv_discussion);
-
-
-        ll_for_job = (LinearLayout) findViewById(R.id.ll_for_job);
-        ll_for_crowd = (LinearLayout) findViewById(R.id.ll_for_crowd);
-        ll_for_garageowner = (LinearLayout) findViewById(R.id.ll_for_garageowner);
+        tv_job_details = findViewById(R.id.tv_job_details);
+        tv_quotes = findViewById(R.id.tv_quotes);
+        tv_discussion = findViewById(R.id.tv_discussion);
 
 
-        tv_postjob = (TextView) findViewById(R.id.tv_postjob);
-        tv_home = (TextView) findViewById(R.id.tv_home);
-        tv_my_jobs = (TextView) findViewById(R.id.tv_my_jobs);
+        iv_post_image_garage = findViewById(R.id.iv_post_image_garage);
+        iv_home_image_garage = findViewById(R.id.iv_home_image_garage);
+        iv_jobs_image_garage = findViewById(R.id.iv_jobs_image_garage);
 
-        iv_post_image = (ImageView) findViewById(R.id.iv_post_image);
-        iv_home_image = (ImageView) findViewById(R.id.iv_home_image);
-        iv_jobs_image = (ImageView) findViewById(R.id.iv_jobs_image);
-
-
-        tv_postjob_crowd = (TextView) findViewById(R.id.tv_postjob_crowd);
-        tv_home_crowd = (TextView) findViewById(R.id.tv_home_crowd);
-        tv_my_jobs_crowd = (TextView) findViewById(R.id.tv_my_jobs_crowd);
+        iv_job_details = findViewById(R.id.iv_job_details);
+        iv_quotes = findViewById(R.id.iv_quotes);
+        iv_discussion = findViewById(R.id.iv_discussion);
 
 
-        iv_post_image_crowd = (ImageView) findViewById(R.id.iv_post_image_crowd);
-        iv_home_image_crowd = (ImageView) findViewById(R.id.iv_home_image_crowd);
-        iv_jobs_image_crowd = (ImageView) findViewById(R.id.iv_jobs_image_crowd);
+        ll_for_job = findViewById(R.id.ll_for_job);
+        ll_for_crowd = findViewById(R.id.ll_for_crowd);
+        ll_for_garageowner = findViewById(R.id.ll_for_garageowner);
+
+
+        tv_postjob = findViewById(R.id.tv_postjob);
+        tv_home = findViewById(R.id.tv_home);
+        tv_my_jobs = findViewById(R.id.tv_my_jobs);
+
+        iv_post_image = findViewById(R.id.iv_post_image);
+        iv_home_image = findViewById(R.id.iv_home_image);
+        iv_jobs_image = findViewById(R.id.iv_jobs_image);
+
+
+        tv_postjob_crowd = findViewById(R.id.tv_postjob_crowd);
+        tv_home_crowd = findViewById(R.id.tv_home_crowd);
+        tv_my_jobs_crowd = findViewById(R.id.tv_my_jobs_crowd);
+
+
+        iv_post_image_crowd = findViewById(R.id.iv_post_image_crowd);
+        iv_home_image_crowd = findViewById(R.id.iv_home_image_crowd);
+        iv_jobs_image_crowd = findViewById(R.id.iv_jobs_image_crowd);
 
         if (key.equalsIgnoreCase("jobs")) {
             ll_for_job.setVisibility(View.VISIBLE);
@@ -518,11 +518,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
                         AppLog.Log("Response", response.toString());
                         try {
                             String status = response.optString(Constants.STATUS);
-                            if (status.equalsIgnoreCase(Constants.SUCCESS)) {
-                                flag = true;
-                            } else {
-                                flag = false;
-                            }
+                            flag = status.equalsIgnoreCase(Constants.SUCCESS);
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
