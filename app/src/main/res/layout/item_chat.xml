@@ -22,14 +22,17 @@
             android:layout_marginTop="@dimen/SignIn_margin"
             android:gravity="right"
             android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tv_message_s"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -46,7 +49,7 @@
                         android:paddingTop="@dimen/icon_back_left_margin"
                         android:text="@string/app_name"
                         android:textColor="@color/black"
-                        android:textSize="@dimen/txt_size_3"/>
+                        android:textSize="@dimen/txt_size_3" />
 
                     <ImageView
                         android:layout_width="@dimen/cb_keepSignIn_hw"
@@ -56,22 +59,19 @@
                         android:tint="@color/white" />
 
                 </LinearLayout>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/senderDateTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="02/04/2018 1:00 PM"
                     android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/llSignInMain_margin_lr"
+                    android:text="02/04/2018 1:00 PM"
                     android:textColor="@color/boardarcolor"
                     android:textSize="@dimen/txt_size_1"
-                    android:layout_marginRight="@dimen/llSignInMain_margin_lr"
-                    android:visibility="gone"/>
+                    android:visibility="visible" />
 
             </LinearLayout>
-
-
-
-
 
 
             <LinearLayout
@@ -79,13 +79,15 @@
                 android:layout_height="wrap_content"
                 android:gravity="end"
                 android:orientation="vertical">
-                <technource.autoreum.CustomViews.Widgets.CircularImageView
+
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
                     android:id="@+id/iv_profile_s"
                     android:layout_width="@dimen/listitem_purchase_btn_h"
                     android:layout_height="@dimen/listitem_purchase_btn_h"
                     android:layout_marginTop="@dimen/SignIn_margin"
                     android:src="@drawable/no_user" />
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/senderName"
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
@@ -98,11 +100,7 @@
             </LinearLayout>
 
 
-
         </LinearLayout>
-
-
-
 
 
     </LinearLayout>
@@ -126,33 +124,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-                <technource.autoreum.CustomViews.Widgets.CircularImageView
+
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
                     android:id="@+id/iv_profile_r"
                     android:layout_width="@dimen/listitem_purchase_btn_h"
                     android:layout_height="@dimen/listitem_purchase_btn_h"
                     android:layout_marginTop="@dimen/SignIn_margin"
                     android:src="@drawable/no_user" />
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/receiverName"
                     android:layout_width="45dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:minLines="1"
+                    android:singleLine="true"
                     android:text="@string/app_name"
                     android:textColor="@color/colorPrimary"
-                    android:textSize="@dimen/txt_size_2"
-                    android:singleLine="true"/>
+                    android:textSize="@dimen/txt_size_2" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <ImageView
                         android:layout_width="@dimen/cb_keepSignIn_hw"
                         android:layout_height="@dimen/cb_keepSignIn_hw"
@@ -160,7 +162,8 @@
                         android:rotation="180"
                         android:src="@drawable/triangle"
                         android:tint="@color/colorPrimary" />
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tv_message_r"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -176,32 +179,26 @@
                         android:paddingTop="@dimen/icon_back_left_margin"
                         android:text="@string/app_name"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/txt_size_3"/>
+                        android:textSize="@dimen/txt_size_3" />
 
                 </LinearLayout>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/receiverDateTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="02/04/2018 1:00 PM"
-                    android:textSize="@dimen/txt_size_1"
-                    android:paddingLeft="@dimen/SignIn_margin"
-                    android:textColor="@color/boardarcolor"
-                    android:layout_marginLeft="@dimen/SignIn_margin"
                     android:layout_gravity="center_vertical"
-                    android:visibility="gone"/>
+                    android:layout_marginLeft="@dimen/SignIn_margin"
+                    android:paddingLeft="@dimen/SignIn_margin"
+                    android:text="02/04/2018 1:00 PM"
+                    android:textColor="@color/boardarcolor"
+                    android:textSize="@dimen/txt_size_1"
+                    android:visibility="visible" />
 
 
             </LinearLayout>
 
-
-
-
-
         </LinearLayout>
-
-
-
 
     </LinearLayout>
 

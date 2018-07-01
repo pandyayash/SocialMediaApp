@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:441276563472:android:912d4323fac00db5",
         "android_client_info": {
-          "package_name": "technource.autoreum"
+          "package_name": "aayushiprojects.greasecrowd"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "441276563472-em18fk3ks6igr0envdt93hppa1864dul.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "technource.autoreum",
+            "package_name": "aayushiprojects.greasecrowd",
             "certificate_hash": "e9dd763dafda4ddd9148759738ca0c2daf000b63"
           }
         },
@@ -26,7 +26,7 @@
           "client_id": "441276563472-bt5cc8tfue1ri1hgutpqt8e81furb269.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "technource.autoreum",
+            "package_name": "aayushiprojects.greasecrowd",
             "certificate_hash": "26050ac26bf5757c9be628b80d9d2abb5656a79f"
           }
         },
@@ -34,7 +34,7 @@
           "client_id": "441276563472-pdcnlum7ij07aj51mni5vmv3eme42jgi.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "technource.autoreum",
+            "package_name": "aayushiprojects.greasecrowd",
             "certificate_hash": "2a8a3eec21515f93824090ef0ca80571346eeb2c"
           }
         },
@@ -42,7 +42,7 @@
           "client_id": "441276563472-ak9d0vspmfl79e05dlond7t1um7a7ton.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "technource.autoreum",
+            "package_name": "aayushiprojects.greasecrowd",
             "certificate_hash": "5f52f1e02922896f42fdd6d79cbdd9abe533fd87"
           }
         },

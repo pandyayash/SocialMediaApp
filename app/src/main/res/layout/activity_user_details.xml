@@ -30,7 +30,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center">
 
-                    <technource.autoreum.CustomViews.Widgets.CircularImageView
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
                         android:id="@+id/iv_image"
                         android:layout_width="@dimen/img_width_height"
                         android:layout_height="@dimen/img_width_height"
@@ -54,7 +54,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvAddress"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvMAil"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
 
             </LinearLayout>
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/tvMailButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_size_4" />
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/tvRegisteredCarButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -24,7 +24,7 @@
                 android:orientation="vertical">
 
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/txt_size_4"
@@ -38,7 +38,7 @@
                     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
                     android:layout_marginRight="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                         android:inputType="textNoSuggestions|textCapSentences"
                         android:id="@+id/edt_jobtitle"
                         android:layout_width="0dp"
@@ -54,7 +54,7 @@
                         android:textSize="@dimen/txt_size_4" />
                 </LinearLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/txt_size_4"
@@ -70,7 +70,7 @@
                     android:layout_marginTop="@dimen/activity_add_child_new_sub_layout_padding"
                     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
                     android:layout_marginRight="@dimen/activity_add_child_downarrow_h">
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/edt_car"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                     android:layout_marginTop="@dimen/activity_add_child_new_sub_layout_padding"
                     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
                     android:layout_marginRight="@dimen/activity_add_child_downarrow_h">
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/edt_model"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -119,7 +119,7 @@
                     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
                     android:layout_marginRight="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/edt_badge"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -143,7 +143,7 @@
                     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
                     android:layout_marginRight="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/edt_registration"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -167,7 +167,7 @@
                     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
                     android:layout_marginRight="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/edt_autometic_or_manual"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -189,7 +189,7 @@
                     android:layout_marginLeft="@dimen/activity_add_child_downarrow_h"
                     android:layout_marginRight="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/edt_year"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -218,7 +218,7 @@
                     android:padding="@dimen/activity_add_child_new_margin_tb"
                     android:background="@drawable/corner_button"
                     android:gravity="center">
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/buttonChange"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -241,7 +241,7 @@
                     android:padding="@dimen/activity_add_child_new_margin_tb"
                     android:background="@drawable/grey_rounder_corner">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
@@ -262,7 +262,7 @@
                     android:padding="@dimen/activity_add_child_new_margin_tb"
                     android:background="@drawable/grey_rounder_corner">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"

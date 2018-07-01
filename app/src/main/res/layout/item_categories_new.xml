@@ -39,7 +39,7 @@
                     android:layout_gravity="center_vertical"
                     android:src="@drawable/ic_dummy"/>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/autoText2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

@@ -10,7 +10,7 @@
     android:orientation="horizontal"
     android:padding="@dimen/icon_back_left_margin">
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/txtKey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         android:textColor="@color/black"
         android:textSize="@dimen/txt_size_3" />
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/txtValue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
             android:text="Reject" />
     </RadioGroup>
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/txtAcceptOrReject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/technource/Neha Chauhan/BitBucketTechnource/grease-crowd-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="E:\Work\Portfolio\grease-crowd-android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
-        <dex dex="/home/technource/Neha Chauhan/BitBucketTechnource/grease-crowd-android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_897813e8cfca9e8b5946b0ec5393932d3bc2a6f8/classes.dex" />
+        <dex dex="E:\Work\Portfolio\grease-crowd-android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_2d1dfe9c2f1816ff8d79d7bc5c58b54331429c1c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/technource/Neha Chauhan/BitBucketTechnource/grease-crowd-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="E:\Work\Portfolio\grease-crowd-android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="773a5bedcaeac803c1f61059f29a4f2af6a662ce">
-        <dex dex="/home/technource/Neha Chauhan/BitBucketTechnource/grease-crowd-android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4ddc417d0d343084ceb1b76ae7b01112dec1a926/classes.dex" />
+        sha1="37919fba6a3e2e3238f8c19b547678fb5a005a40">
+        <dex dex="E:\Work\Portfolio\grease-crowd-android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_28610f9afc9b8f33966375891e0ab6fec490a2eb\classes.dex" />
     </item>
 
 </items>

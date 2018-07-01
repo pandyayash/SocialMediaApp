@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtJobId"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -21,7 +21,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/txt_size_3" />
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtExclGst"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtUnit"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -57,7 +57,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/txt_size_3" />
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtGst"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtGstPercent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
             android:textColor="@color/black"
             android:textSize="@dimen/txt_size_3" />
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtTotal"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

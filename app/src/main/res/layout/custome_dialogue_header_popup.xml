@@ -6,7 +6,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview xmlns:android="http://schemas.android.com/apk/res/android"
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

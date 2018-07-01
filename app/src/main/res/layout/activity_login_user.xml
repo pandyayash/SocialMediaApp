@@ -44,12 +44,11 @@
 
           <ImageView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/textlogo"
+            android:src="@drawable/tempbg"
               android:visibility="visible"/>
-          <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
+          <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:text="@string/app_name"
@@ -75,7 +74,7 @@
           android:layout_marginRight="@dimen/activity_add_child_spinner_h"
           android:background="@color/edittext_bg">
 
-          <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+          <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
               android:inputType="textNoSuggestions|textCapSentences"
             android:id="@+id/edt_username"
             android:layout_width="match_parent"
@@ -97,7 +96,7 @@
           android:layout_marginRight="@dimen/activity_add_child_spinner_h"
           android:background="@color/edittext_bg">
 
-          <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+          <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
             android:id="@+id/edt_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -120,7 +119,7 @@
           android:layout_marginRight="@dimen/activity_add_child_spinner_h"
             android:background="@drawable/white_bg">
 
-          <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+          <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -132,7 +131,7 @@
 
         </LinearLayout>
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
           android:id="@+id/forget_password"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -178,7 +177,7 @@
 
         </LinearLayout>
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
           android:id="@+id/signup_txt"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"

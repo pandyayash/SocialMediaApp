@@ -15,7 +15,7 @@
             android:layout_height="@dimen/iv_forward_wh"
             android:layout_gravity="center"/>
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/txtStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

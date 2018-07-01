@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.ViewHistoryGarageActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.ViewHistoryGarageActivity">
 
 
     <include layout="@layout/app_header" />
@@ -20,7 +20,7 @@
         android:layout_weight="1"
         android:visibility="gone" />
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
         android:id="@+id/nohistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -12,7 +12,7 @@
         android:background="@drawable/rect_inner_boarder"
         android:gravity="center">
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

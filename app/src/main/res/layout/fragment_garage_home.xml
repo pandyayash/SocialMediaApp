@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.MycrowdgarageActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.MycrowdgarageActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             android:layout_margin="@dimen/SignIn_margin"
             android:orientation="horizontal">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                 android:id="@+id/btnSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/txt_size_6" />
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                 android:id="@+id/btnSort"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
 
         </LinearLayout>
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
             android:id="@+id/txtNoDataFound"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

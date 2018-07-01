@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.MycrowdgarageActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.MycrowdgarageActivity">
 
   <LinearLayout
       android:layout_width="match_parent"
@@ -81,7 +81,7 @@
 
     </LinearLayout>
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
         android:id="@+id/txtNoDataFound"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

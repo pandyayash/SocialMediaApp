@@ -25,7 +25,7 @@
                 android:orientation="vertical">
 
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                     android:id="@+id/current_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
                     android:textSize="@dimen/txt_size_3"
                     android:textCursorDrawable="@drawable/edittext_cursor"/>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                     android:id="@+id/destination_location"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
                         android:background="@drawable/rect_inner_boarder"
                         android:gravity="center">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:id="@+id/tv_emergency"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
                         android:background="@drawable/rect_inner_boarder"
                         android:gravity="center">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:id="@+id/tv_insuarnce"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -162,7 +162,7 @@
                         android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
                         android:orientation="horizontal">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -172,7 +172,7 @@
                             android:textColor="@color/black_light_text"
                             android:textSize="@dimen/txt_size_3" />
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                             android:id="@+id/ty_company"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -205,7 +205,7 @@
                         android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
                         android:orientation="horizontal">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -215,7 +215,7 @@
                             android:textColor="@color/black_light_text"
                             android:textSize="@dimen/txt_size_3" />
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                             android:id="@+id/ty_policy_num"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -248,7 +248,7 @@
                         android:layout_marginRight="@dimen/activity_add_child_downarrow_h"
                         android:orientation="horizontal">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -258,7 +258,7 @@
                             android:textColor="@color/black_light_text"
                             android:textSize="@dimen/txt_size_3" />
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                             android:id="@+id/ty_claim_number"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -290,7 +290,7 @@
                     android:orientation="vertical"
                     android:padding="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -299,7 +299,7 @@
                         android:textColor="@color/black_light_text"
                         android:textSize="@dimen/txt_size_4" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/message"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -334,7 +334,7 @@
                         android:gravity="center"
                         android:padding="@dimen/activity_add_child_new_margin_tb">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:id="@+id/buttonChange"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -356,7 +356,7 @@
                         android:background="@drawable/grey_rounder_corner"
                         android:padding="@dimen/activity_add_child_new_margin_tb">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
@@ -378,7 +378,7 @@
                         android:background="@drawable/grey_rounder_corner"
                         android:padding="@dimen/activity_add_child_new_margin_tb">
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"

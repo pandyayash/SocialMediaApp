@@ -6,7 +6,7 @@
     android:background="@color/white"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.GarageOwnerServicesActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.GarageOwnerServicesActivity">
 
     <include layout="@layout/app_header"/>
     <android.support.v4.widget.NestedScrollView
@@ -22,7 +22,7 @@
             android:orientation="vertical">
 
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -54,7 +54,7 @@
                 android:padding="@dimen/activity_add_child_new_margin_tb"
                 android:background="@drawable/corner_button"
                 android:gravity="center">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/buttonChange"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -75,7 +75,7 @@
                 android:padding="@dimen/activity_add_child_new_margin_tb"
                 android:background="@drawable/grey_rounder_corner">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -98,7 +98,7 @@
                 android:padding="@dimen/activity_add_child_new_margin_tb"
                 android:background="@drawable/grey_rounder_corner">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
@@ -109,7 +109,7 @@
                     android:textSize="@dimen/txt_size_5" />
 
             </LinearLayout>
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:visibility="invisible"
                 android:background="@color/colorPrimary"

@@ -15,7 +15,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -49,7 +49,7 @@
                         android:layout_centerVertical="true"
                         android:checked="true" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/autoText1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                         android:layout_centerVertical="true"
                         android:checked="true" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/autoText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -113,7 +113,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -136,7 +136,7 @@
 
             </LinearLayout>
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/cont"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

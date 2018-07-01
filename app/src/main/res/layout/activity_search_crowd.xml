@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.SearchCrowdActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.SearchCrowdActivity">
 
     <include layout="@layout/app_header" />
 
@@ -27,7 +27,7 @@
                 android:orientation="vertical">
 
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -56,7 +56,7 @@
                         android:src="@drawable/ic_search_grey_400_18dp"
                         android:visibility="visible" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
                         android:id="@+id/edtSearchforProject"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
 
                 </LinearLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -111,7 +111,7 @@
                         android:src="@drawable/down" />
                 </RelativeLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -130,7 +130,7 @@
                     android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
                     android:background="@drawable/rect_inner_boarder">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/edt_make"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                         android:src="@drawable/down" />
                 </RelativeLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -171,7 +171,7 @@
                     android:layout_marginTop="@dimen/activity_add_child_new_margin_lr"
                     android:background="@drawable/rect_inner_boarder">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/edt_model"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
                         android:src="@drawable/down" />
                 </RelativeLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/btnSearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

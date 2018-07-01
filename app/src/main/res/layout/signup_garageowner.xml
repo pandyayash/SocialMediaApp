@@ -19,7 +19,7 @@
             android:src="@drawable/arrow" />
 
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -27,7 +27,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/txt_size_4" />
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/tv_skipGarageSign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         app:tabSelectedTextColor="@color/white"
         app:tabTextColor="@color/black" />
 
-    <technource.autoreum.CustomViews.Widgets.CustomViewPager
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.CustomViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

@@ -8,7 +8,7 @@
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/txtPayOnPickup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +23,7 @@
         android:layout_height="1dp"
         android:background="@color/colorAccent"/>
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/txtPayPal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         android:background="@color/colorAccent"
         android:visibility="visible"/>
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/txtCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

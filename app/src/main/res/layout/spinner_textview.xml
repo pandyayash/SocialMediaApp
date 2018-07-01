@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview xmlns:android="http://schemas.android.com/apk/res/android"
+<aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/spinnerTextview"
     style="@style/Widget.Holo.TextView.SpinnerItem"
     android:layout_width="match_parent"
@@ -12,4 +12,4 @@
     android:textColor="@color/hint_color"
     android:textSize="@dimen/txt_size_3">
 
-</technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview>
+</aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview>

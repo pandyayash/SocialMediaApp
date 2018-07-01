@@ -19,7 +19,7 @@
             android:orientation="vertical"
             android:padding="@dimen/activity_add_child_downarrow_h">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/tvGarageName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center">
 
-                    <technource.autoreum.CustomViews.Widgets.CircularImageView
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
                         android:id="@+id/iv_image"
                         android:layout_width="@dimen/img_width_height"
                         android:layout_height="@dimen/img_width_height"
@@ -85,7 +85,7 @@
                         app:srb_starSize="15dp"
                         app:srb_stepSize="0.5"/>
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/rate_count"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
                     android:gravity="center_horizontal"
                     android:layout_weight="1.2">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/tvReviews"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -119,7 +119,7 @@
                     android:gravity="center"
                     android:layout_weight="0.9">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/tvDistnace"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
@@ -152,7 +152,7 @@
                         android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                         android:src="@drawable/location" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvLocation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -182,7 +182,7 @@
                         android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                         android:src="@drawable/call" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvCall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
                         android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                         android:src="@drawable/msg" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/tvMsg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -243,7 +243,7 @@
                     android:layout_margin="@dimen/activity_add_child_new_margin_tb"
                     android:src="@drawable/verified" />
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/tvVerified"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -286,7 +286,7 @@
                             android:layout_height="@dimen/activity_reports_new_btn_w"
                             android:src="@drawable/car_demo" />
 
-                        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_horizontal"

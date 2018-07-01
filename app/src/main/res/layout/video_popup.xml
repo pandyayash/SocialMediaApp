@@ -22,7 +22,7 @@
             android:layout_gravity="center"
             android:layout_weight="5"
             android:visibility="visible"/>
-        <technource.autoreum.CustomViews.CustomTextureVideoView
+        <aayushiprojects.greasecrowd.CustomViews.CustomTextureVideoView
             android:id="@+id/vv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

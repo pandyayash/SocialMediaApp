@@ -7,11 +7,11 @@
   android:layout_height="match_parent"
   android:background="@color/white"
   android:orientation="vertical"
-  tools:context="technource.autoreum.activities.GarageOwnerReviewsActivity">
+  tools:context="aayushiprojects.greasecrowd.activities.GarageOwnerReviewsActivity">
 
   <include layout="@layout/app_header" />
 
-  <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+  <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="@dimen/icon_back_left_margin"
@@ -26,7 +26,7 @@
     android:orientation="horizontal">
 
 
-    <technource.autoreum.CustomViews.Widgets.CircularImageView
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
       android:id="@+id/Profile_omg"
       android:layout_width="@dimen/listitem_purchase_h"
       android:layout_height="@dimen/listitem_purchase_h"
@@ -40,7 +40,7 @@
         android:layout_marginLeft="@dimen/SignIn_margin"
       android:orientation="vertical">
 
-      <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
         android:id="@+id/tv_businessname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
           app:srb_starSize="21dp"
             app:srb_stepSize="0.5"/>
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
           android:id="@+id/tv_ratingCount"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
@@ -78,7 +78,7 @@
           android:textSize="@dimen/txt_size_3"
             android:layout_gravity="center_vertical"/>
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
           android:id="@+id/tvrreview_count"
           android:layout_width="wrap_content"
           android:layout_height="match_parent"
@@ -89,7 +89,7 @@
 
       </LinearLayout>
 
-      <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginTop="6dp"

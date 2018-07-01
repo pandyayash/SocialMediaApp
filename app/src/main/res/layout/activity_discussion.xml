@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.MycrowdgarageActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.MycrowdgarageActivity">
 
     <include layout="@layout/app_header" />
 
@@ -28,7 +28,7 @@
         android:background="@color/tab_text" />
 
 
-    <technource.autoreum.CustomViews.Widgets.CustomViewPager
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.CustomViewPager
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

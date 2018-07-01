@@ -18,7 +18,7 @@
     android:layout_marginRight="@dimen/icon_back_left_margin"
     android:orientation="horizontal">
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
       android:id="@+id/tv_title"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"

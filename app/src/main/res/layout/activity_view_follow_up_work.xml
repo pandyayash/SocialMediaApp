@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.ViewFollowUpWorkActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.ViewFollowUpWorkActivity">
 
     <include layout="@layout/app_header" />
 
@@ -24,7 +24,7 @@
 
     </LinearLayout>
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/btnSubmit"
         android:layout_width="@dimen/dialog_app_info_logo_w"
         android:layout_height="wrap_content"

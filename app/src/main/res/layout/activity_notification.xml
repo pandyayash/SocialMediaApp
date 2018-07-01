@@ -24,7 +24,7 @@
             android:orientation="horizontal"
             android:padding="@dimen/iv_AddChild_margin_r">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_vertical"
@@ -59,7 +59,7 @@
             android:orientation="horizontal"
             android:padding="@dimen/iv_AddChild_margin_r">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_vertical"
@@ -93,7 +93,7 @@
             android:orientation="horizontal"
             android:padding="@dimen/iv_AddChild_margin_r">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|center_vertical"

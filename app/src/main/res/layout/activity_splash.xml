@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="technource.autoreum.activities.SplashScreen"
+    tools:context="aayushiprojects.greasecrowd.activities.SplashScreen"
     android:weightSum="10"
     android:background="@color/color_Splash"
     android:orientation="vertical"
@@ -23,12 +23,12 @@
         android:layout_weight="2.5"
         android:layout_gravity="center"
         android:layout_height="0dp"
-        app:srcCompat="@drawable/textlogo"
+        app:srcCompat="@drawable/tempbg"
         android:id="@+id/imageView"
         android:layout_marginTop="@dimen/text_margin"
         android:visibility="visible"/>
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Bold_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Bold_Textview
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/app_name"
@@ -55,7 +55,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:src="@drawable/logoicon"
+        android:src="@drawable/tempbg"
         android:id="@+id/imageView2"
         android:layout_weight="3"
         />
@@ -68,7 +68,7 @@
       android:orientation="vertical"
       android:gravity="center">
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:gravity="center"
@@ -90,7 +90,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/SignIn_margin"/>
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"

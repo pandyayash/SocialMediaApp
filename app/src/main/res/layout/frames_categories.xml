@@ -30,7 +30,7 @@
                 android:layout_marginTop="@dimen/llTabMain_margin_rl"
                 android:background="@drawable/rounded_linearlayout">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/tv_new_postjob"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -71,7 +71,7 @@
 
                 </RelativeLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
                     android:id="@+id/cat_1"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
@@ -116,7 +116,7 @@
 
                 </RelativeLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
                     android:id="@+id/cat_2"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"

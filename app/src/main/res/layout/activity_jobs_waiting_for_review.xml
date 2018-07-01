@@ -14,7 +14,7 @@
         android:layout_weight="1"
         android:visibility="visible" />
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
         android:id="@+id/noData"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

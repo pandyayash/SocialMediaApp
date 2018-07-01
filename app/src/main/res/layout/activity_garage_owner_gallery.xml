@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.GarageOwnerGalleryActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.GarageOwnerGalleryActivity">
 
     <include layout="@layout/app_header" />
 
@@ -34,7 +34,7 @@
                 android:layout_margin="@dimen/activity_add_child_new_margin_lr"
                 android:orientation="vertical">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
@@ -87,7 +87,7 @@
                         android:layout_marginTop="5dp"
                         android:src="@drawable/upload_icon" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -95,7 +95,7 @@
                         android:text="@string/upload_here"
                         android:textSize="@dimen/txt_size_2" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -106,7 +106,7 @@
 
                 </LinearLayout>
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_add_child_downarrow_h"
@@ -119,7 +119,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="@dimen/activity_add_child_downarrow_h">
 
-                    <technource.autoreum.CustomViews.MyGridView
+                    <aayushiprojects.greasecrowd.CustomViews.MyGridView
                         android:id="@+id/gridview"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

@@ -6,7 +6,7 @@
   android:padding="@dimen/activity_add_child_new_margin_tb"
   android:orientation="vertical">
 
-  <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+  <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
     android:id="@+id/tv_header"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
       android:id="@+id/tv_name"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"

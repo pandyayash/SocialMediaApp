@@ -15,7 +15,7 @@
         android:paddingRight="@dimen/SignIn_margin"
         android:orientation="horizontal">
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
             android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
         android:paddingLeft="@dimen/SignIn_margin"
         android:paddingRight="@dimen/SignIn_margin"
         android:paddingBottom="@dimen/SignIn_margin">
-        <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
             android:id="@+id/edtRecommendation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context="technource.autoreum.activities.GarageOwnerHoursActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.GarageOwnerHoursActivity">
 
     <include layout="@layout/app_header" />
 
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/save"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

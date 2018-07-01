@@ -1,12 +1,10 @@
 <component name="libraryTable">
   <library name="Gradle: com.android.support:cardview-v7-26.0.0">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/6e73cdebc5fc02cdfd556ccf15d3e90a323a3096/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/6e73cdebc5fc02cdfd556ccf15d3e90a323a3096/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/1922268ce4930a0626fdb3e6eacb88d08271ee24/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/1922268ce4930a0626fdb3e6eacb88d08271ee24/output/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/cardview-v7/26.0.0/9ef0bba6610aece98ee1c6c94d6432ad3f361c7b/cardview-v7-26.0.0-sources.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

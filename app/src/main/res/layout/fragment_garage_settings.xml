@@ -22,7 +22,7 @@
         android:orientation="horizontal">
 
 
-      <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="8"
@@ -52,7 +52,7 @@
 
 
 
-      <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="8"
@@ -83,7 +83,7 @@
         android:orientation="horizontal">
 
 
-      <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
           android:layout_width="0dp"
           android:layout_height="wrap_content"
           android:layout_weight="8"

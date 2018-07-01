@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             android:visibility="visible">
 
-            <technource.autoreum.CustomViews.Widgets.CircularImageView
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
                 android:id="@+id/iv_image"
                 android:layout_width="@dimen/width_height_ivHelp"
                 android:layout_height="@dimen/width_height_ivHelp"
@@ -51,7 +51,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/carname"
                 android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
                 android:layout_weight="1.5"
                 android:layout_gravity="center"
                 android:textColor="@color/black"/>
-            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/edit"
                 android:layout_height="wrap_content"
@@ -82,7 +82,7 @@
             android:layout_marginTop="@dimen/icon_back_left_margin"
             android:orientation="horizontal">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/registration_number"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:layout_weight="1.5"
                 android:layout_gravity="center"/>
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/postjob"
                 android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
             android:orientation="horizontal"
             android:layout_marginTop="@dimen/icon_back_left_margin">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/viewhistory"
                 android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
                 android:gravity="bottom"
                 android:layout_marginTop="@dimen/icon_back_left_margin"/>
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Light_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Light_Textview
                 android:layout_width="match_parent"
                 android:id="@+id/askthecrowd"
                 android:layout_height="wrap_content"

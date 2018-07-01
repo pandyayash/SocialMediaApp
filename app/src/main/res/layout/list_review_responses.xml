@@ -6,7 +6,7 @@
     android:background="@color/white_light"
     android:orientation="vertical">
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
         android:id="@+id/response_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         android:textColor="@color/colorPrimary"
         android:textSize="@dimen/txt_size_3" />
 
-    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
         android:id="@+id/tv_response"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

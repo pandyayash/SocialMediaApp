@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/continueto"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -68,7 +68,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -93,7 +93,7 @@
                     android:background="@drawable/rect_border">
 
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/keywords"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -121,7 +121,7 @@
             </LinearLayout>
 
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -145,7 +145,7 @@
 
             </LinearLayout>
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/cont"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -208,7 +208,7 @@
                         android:layout_gravity="center"
                         android:checked="true" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignLeft="@+id/auto"
@@ -253,7 +253,7 @@
                         android:layout_gravity="center"
                         android:checked="false" />
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -290,7 +290,7 @@
                     android:background="@drawable/rect_border">
 
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                         android:id="@+id/edt_models"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -326,7 +326,7 @@
                 android:layout_marginTop="@dimen/activity_reports_new_ll_h"
                 android:background="@drawable/white_bg">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:id="@+id/registerBtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

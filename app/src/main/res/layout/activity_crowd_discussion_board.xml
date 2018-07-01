@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="technource.autoreum.fragment.FragmentDiscussionPublic">
+    tools:context="aayushiprojects.greasecrowd.fragment.FragmentDiscussionPublic">
 
 
     <include layout="@layout/app_header" />
@@ -43,7 +43,7 @@
                     card_view:reverseLayout="true" />
 
             </android.support.v4.widget.SwipeRefreshLayout>
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -59,7 +59,7 @@
                 android:background="@drawable/rect_inner_boarder"
                 android:orientation="horizontal">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Edittext
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Edittext
                     android:id="@+id/et_message"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

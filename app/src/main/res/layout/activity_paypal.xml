@@ -19,7 +19,7 @@
             android:layout_marginTop="@dimen/ivObservationNote_h"
             android:orientation="vertical">
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/paypal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
                 android:textSize="@dimen/txt_size_4" />
 
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_EditText
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_EditText
                 android:id="@+id/ed_paypal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
                 android:textSize="@dimen/txt_size_4" />
 
 
-            <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+            <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                 android:id="@+id/btnPaypal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

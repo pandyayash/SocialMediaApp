@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context="technource.autoreum.activities.MycrowdgarageActivity">
+    tools:context="aayushiprojects.greasecrowd.activities.MycrowdgarageActivity">
 
     <include layout="@layout/app_header" />
 
@@ -42,7 +42,7 @@
                 android:paddingTop="@dimen/icon_back_left_margin"
                 android:paddingBottom="@dimen/icon_back_left_margin">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/job_detail"
@@ -58,7 +58,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Job Title :"
@@ -66,7 +66,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtJobTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Job# :"
@@ -93,7 +93,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtJobNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Category :"
@@ -120,7 +120,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtCategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -139,7 +139,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Sub-Category :"
@@ -147,7 +147,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtSubCategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
                 android:paddingTop="@dimen/icon_back_left_margin"
                 android:paddingBottom="@dimen/icon_back_left_margin">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/user_detail"
@@ -191,7 +191,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:layout_weight="1">
-                    <technource.autoreum.CustomViews.Widgets.CircularImageView
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
                         android:id="@+id/iv_user"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
@@ -208,7 +208,7 @@
                     android:layout_marginRight="@dimen/SignIn_margin"
                     android:layout_weight="1">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtUsername"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -217,7 +217,7 @@
                         android:textColor="@color/boardarcolor"
                         android:background="@drawable/blue_textview_border"/>
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtLocation"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -226,7 +226,7 @@
                         android:textColor="@color/boardarcolor"
                         android:background="@drawable/blue_textview_border"
                         android:layout_marginTop="@dimen/icon_back_left_margin"/>
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtDistance"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -236,7 +236,7 @@
                         android:background="@drawable/blue_textview_border"
                         android:layout_marginTop="@dimen/icon_back_left_margin"
                         android:visibility="gone"/>
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtMobile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -258,7 +258,7 @@
                 android:paddingTop="@dimen/icon_back_left_margin"
                 android:paddingBottom="@dimen/icon_back_left_margin">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/car_detail"
@@ -274,7 +274,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Make :"
@@ -282,7 +282,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtMake"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -302,7 +302,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Model :"
@@ -310,7 +310,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtModel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -332,7 +332,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Badge/Variant :"
@@ -340,7 +340,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtBadge"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -362,7 +362,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Registartion Number :"
@@ -370,7 +370,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtRegNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -392,7 +392,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Transmission :"
@@ -400,7 +400,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtTransmission"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -422,7 +422,7 @@
                 android:layout_marginLeft="@dimen/SignIn_margin"
                 android:layout_marginRight="@dimen/SignIn_margin"
                 android:orientation="horizontal">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Year :"
@@ -430,7 +430,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtYear"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -453,7 +453,7 @@
                 android:paddingTop="@dimen/icon_back_left_margin"
                 android:paddingBottom="@dimen/icon_back_left_margin">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/photos_videos"
@@ -532,7 +532,7 @@
                     android:orientation="horizontal"
                     android:weightSum="2"
                     android:layout_weight="1">
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Drop off :"
@@ -540,7 +540,7 @@
                         android:layout_weight="1"
                         android:textColor="@color/black"
                         android:layout_marginLeft="@dimen/SignIn_margin"/>
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtDropOffDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -559,7 +559,7 @@
                     android:layout_marginTop="@dimen/icon_back_left_margin"
                     android:weightSum="2"
                     android:layout_weight="1">
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Pick Up :"
@@ -567,7 +567,7 @@
                         android:layout_weight="1"
                         android:textColor="@color/black"
                         android:layout_marginLeft="@dimen/SignIn_margin"/>
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtPickupDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -586,7 +586,7 @@
                     android:layout_marginTop="@dimen/icon_back_left_margin"
                     android:weightSum="2"
                     android:layout_weight="1">
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Time Flexibility :"
@@ -594,7 +594,7 @@
                         android:layout_weight="1"
                         android:textColor="@color/black"
                         android:layout_marginLeft="@dimen/SignIn_margin"/>
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                         android:id="@+id/txtFlexibility"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -622,7 +622,7 @@
                 android:visibility="gone">
 
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/str_Emergency"
@@ -642,7 +642,7 @@
                 android:paddingBottom="@dimen/icon_back_left_margin"
                 android:visibility="gone">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/str_insurance_claim"
@@ -662,7 +662,7 @@
                 android:weightSum="2"
                 android:layout_weight="1"
                 android:visibility="gone">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/str_insurance_Company"
@@ -670,7 +670,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtInsuranceCompany"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -693,7 +693,7 @@
                 android:weightSum="2"
                 android:layout_weight="1"
                 android:visibility="gone">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/str_policy_number"
@@ -701,7 +701,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtPolicynumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -724,7 +724,7 @@
                 android:weightSum="2"
                 android:layout_weight="1"
                 android:visibility="gone">
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/str_claim_number"
@@ -732,7 +732,7 @@
                     android:layout_weight="1"
                     android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/txtClaimnumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -753,7 +753,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/btnEdit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -765,7 +765,7 @@
                     android:paddingBottom="@dimen/margin_3dp"
                     android:textAlignment="center"
                     android:layout_weight="1"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/btnClose"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -778,7 +778,7 @@
                     android:textAlignment="center"
                     android:layout_weight="1"
                     android:layout_marginLeft="@dimen/SignIn_margin"/>
-                <technource.autoreum.CustomViews.Widgets.Poppins_Regular_Textview
+                <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Regular_Textview
                     android:id="@+id/btnDelete"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

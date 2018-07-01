@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="technource.autoreum">
+    package="aayushiprojects.greasecrowd">
 
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -20,14 +20,14 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <application
-        android:name="technource.autoreum.helper.AppController"
+        android:name="aayushiprojects.greasecrowd.helper.AppController"
         android:allowBackup="true"
         android:icon="@drawable/app_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="technource.autoreum.activities.SplashScreen"
+            android:name="aayushiprojects.greasecrowd.activities.SplashScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
@@ -43,16 +43,16 @@
             android:exported="true" />
 
         <activity
-            android:name="technource.autoreum.activities.LoginScreen"
+            android:name="aayushiprojects.greasecrowd.activities.LoginScreen"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.ForgotPassword"
+            android:name="aayushiprojects.greasecrowd.activities.ForgotPassword"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.StaticScreen"
+            android:name="aayushiprojects.greasecrowd.activities.StaticScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
@@ -72,44 +72,44 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="technource.autoreum.activities.How_it_works"
+            android:name="aayushiprojects.greasecrowd.activities.How_it_works"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="technource.autoreum.activities.SignUpCarOwner"
+            android:name="aayushiprojects.greasecrowd.activities.SignUpCarOwner"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.SignUpGarageOwner"
+            android:name="aayushiprojects.greasecrowd.activities.SignUpGarageOwner"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.DialogActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DialogActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name="technource.autoreum.activities.DashboardScreen"
+            android:name="aayushiprojects.greasecrowd.activities.DashboardScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.ChangepasswordActivity"
+            android:name="aayushiprojects.greasecrowd.activities.ChangepasswordActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.NotificationActivity"
+            android:name="aayushiprojects.greasecrowd.activities.NotificationActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.RegisterdCarsScreen"
+            android:name="aayushiprojects.greasecrowd.activities.RegisterdCarsScreen"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PaypalActivity"
+            android:name="aayushiprojects.greasecrowd.activities.PaypalActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.PostNewJobStepOne"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.PostNewJobStepOne"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
@@ -121,304 +121,303 @@
             android:value="@string/api_key" />
 
         <activity
-            android:name="technource.autoreum.activities.GarageOwnerProfileMapActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GarageOwnerProfileMapActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.RegisterNewCarActivity"
+            android:name="aayushiprojects.greasecrowd.activities.RegisterNewCarActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.GarageOwnerGalleryActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GarageOwnerGalleryActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.GarageOwnerHoursActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GarageOwnerHoursActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.GarageOwnerServicesActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GarageOwnerServicesActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.GarageOwnerFacilitiesActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GarageOwnerFacilitiesActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.GarageOwnerReviewsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GarageOwnerReviewsActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.ViewHistoryGarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.ViewHistoryGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.EditRegisteredCarActivity"
+            android:name="aayushiprojects.greasecrowd.activities.EditRegisteredCarActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
 
-        <service android:name="technource.autoreum.firebase.MyFirebaseMessagingService">
+        <service android:name="aayushiprojects.greasecrowd.firebase.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
         <activity
-            android:name="technource.autoreum.activities.CarDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.CarDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.StaticWebpages"
+            android:name="aayushiprojects.greasecrowd.activities.StaticWebpages"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.PostNewJobStepTwo"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.PostNewJobStepTwo"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.PostNewJobStepThree"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.PostNewJobStepThree"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.MyJobsUserActivity"
+            android:name="aayushiprojects.greasecrowd.activities.MyJobsUserActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.MyCrowdUserActivity"
+            android:name="aayushiprojects.greasecrowd.activities.MyCrowdUserActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.MyJobsGarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.MyJobsGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.MycrowdgarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.MycrowdgarageActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.PostNewJobStepFour"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.PostNewJobStepFour"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.PostNewJobFive"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.PostNewJobFive"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.PostNewJobAdditionalStep"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.PostNewJobAdditionalStep"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepOne"
+            android:name="aayushiprojects.greasecrowd.activities.AskTheCrowd.AskTheCrowdStepOne"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepTwo"
+            android:name="aayushiprojects.greasecrowd.activities.AskTheCrowd.AskTheCrowdStepTwo"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="adjustPan|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepThree"
+            android:name="aayushiprojects.greasecrowd.activities.AskTheCrowd.AskTheCrowdStepThree"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepFour"
+            android:name="aayushiprojects.greasecrowd.activities.AskTheCrowd.AskTheCrowdStepFour"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.JobDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.JobDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdStepFive"
+            android:name="aayushiprojects.greasecrowd.activities.AskTheCrowd.AskTheCrowdStepFive"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustNothing" />
         <activity
-            android:name="technource.autoreum.activities.AskTheCrowd.AskTheCrowdAdditionalStep"
+            android:name="aayushiprojects.greasecrowd.activities.AskTheCrowd.AskTheCrowdAdditionalStep"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.QuotedjobDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.QuotedjobDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.EditJobStepOne"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.EditJobStepOne"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.EditJobStepTwo"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.EditJobStepTwo"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.EditJobStepThree"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.EditJobStepThree"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.EditJobStepFour"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.EditJobStepFour"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.PostJob.EditJobStepFive"
+            android:name="aayushiprojects.greasecrowd.activities.PostJob.EditJobStepFive"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.SearchCrowdActivity"
+            android:name="aayushiprojects.greasecrowd.activities.SearchCrowdActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.ViewNotificationActivity"
+            android:name="aayushiprojects.greasecrowd.activities.ViewNotificationActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.MyCrowdDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.MyCrowdDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.ViewNewJobsFeedDetailActivity"
+            android:name="aayushiprojects.greasecrowd.activities.ViewNewJobsFeedDetailActivity"
             android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.SearchGarageActivity"
-            android:screenOrientation="sensorPortrait"
-            android:theme="@style/AppThemeNavigation"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity
-            android:name="technource.autoreum.activities.QuoteJobDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.SearchGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.QuoteJobDetailsPagerActivity"
+            android:name="aayushiprojects.greasecrowd.activities.QuoteJobDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.QuoteJobGarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.QuoteJobDetailsPagerActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="aayushiprojects.greasecrowd.activities.QuoteJobGarageActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.UpdateQuoteGarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.UpdateQuoteGarageActivity"
             android:launchMode="singleInstance"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.ViewSelectSeriviceTypeActivity"
+            android:name="aayushiprojects.greasecrowd.activities.ViewSelectSeriviceTypeActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.ViewFreeInclusionsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.ViewFreeInclusionsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.FreeInclusionGarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.FreeInclusionGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.SelectSubServicesGarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.SelectSubServicesGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.DiscussionActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DiscussionActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.GarageOwnerDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GarageOwnerDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.DisplayGarageOwnerHoursActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DisplayGarageOwnerHoursActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.DisplayGarageOwnerServicesActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DisplayGarageOwnerServicesActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.DisplayGarageOwnerFacilitiesActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DisplayGarageOwnerFacilitiesActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.DisplayGarageOwnerReviewsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DisplayGarageOwnerReviewsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.UserDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.UserDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.GenerateSafetyReportGarageActivity"
+            android:name="aayushiprojects.greasecrowd.activities.GenerateSafetyReportGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.UserDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.UserDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.DisplayUserRegisterdCarsScreen"
+            android:name="aayushiprojects.greasecrowd.activities.DisplayUserRegisterdCarsScreen"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.InvoiceDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.InvoiceDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.DetailsOfGarageUserJobActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DetailsOfGarageUserJobActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppThemeNavigation"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="aayushiprojects.greasecrowd.activities.WebViewActivity" />
+        <activity
+            android:name="aayushiprojects.greasecrowd.activities.WeeklyDetailsActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.WebViewActivity" />
-        <activity
-            android:name="technource.autoreum.activities.WeeklyDetailsActivity"
+            android:name="aayushiprojects.greasecrowd.activities.JobsWaitingForReviewActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.JobsWaitingForReviewActivity"
+            android:name="aayushiprojects.greasecrowd.activities.AddAReviewScreenActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity
-            android:name="technource.autoreum.activities.AddAReviewScreenActivity"
+            android:name="aayushiprojects.greasecrowd.activities.JobsCompletedByGarageActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity
-            android:name="technource.autoreum.activities.JobsCompletedByGarageActivity"
-            android:screenOrientation="sensorPortrait"
-            android:theme="@style/AppThemeNavigation"
-            android:windowSoftInputMode="stateHidden|adjustPan" />
-        <activity android:name="technource.autoreum.activities.ViewFollowUpWorkActivity" />
+        <activity android:name="aayushiprojects.greasecrowd.activities.ViewFollowUpWorkActivity" />
         <activity
             android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
             android:launchMode="singleTask">
@@ -432,12 +431,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="technource.autoreum.activities.DisplayServiceInclusionActivity"
+            android:name="aayushiprojects.greasecrowd.activities.DisplayServiceInclusionActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
-            android:name="technource.autoreum.activities.CrowdDiscussionBoardActivity"
+            android:name="aayushiprojects.greasecrowd.activities.CrowdDiscussionBoardActivity"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppThemeNavigation"
             android:windowSoftInputMode="stateHidden|adjustResize" />

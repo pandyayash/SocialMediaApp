@@ -24,7 +24,7 @@
       android:layout_height="wrap_content"
       android:background="@drawable/blue_circle">
 
-      <technource.autoreum.CustomViews.Widgets.CircularImageView
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.CircularImageView
         android:id="@+id/iv_image"
         android:layout_width="@dimen/ivNewScreening_h"
         android:layout_height="@dimen/ivNewScreening_h"
@@ -39,7 +39,7 @@
         android:layout_marginLeft="@dimen/llSignInMain_margin_lr"
         android:layout_gravity="center"
         android:orientation="vertical">
-      <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
           android:id="@+id/username"
           android:textStyle="bold"
           android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
           android:text="John Deo"
           android:textColor="@color/colorPrimary"
           android:textSize="@dimen/txt_size_6" />
-      <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+      <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
           android:id="@+id/balance"
           android:textStyle="bold"
           android:layout_width="wrap_content"

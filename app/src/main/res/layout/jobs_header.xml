@@ -46,7 +46,7 @@
                     android:paddingRight="@dimen/icon_back_left_margin"
                     android:paddingTop="3dp">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/tv_crowd"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -72,7 +72,7 @@
                     android:paddingRight="@dimen/icon_back_left_margin"
                     android:paddingTop="3dp">
 
-                    <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+                    <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
                         android:id="@+id/tv_jobs"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -126,7 +126,7 @@
 
         </LinearLayout>
 
-        <technource.autoreum.CustomViews.Widgets.Poppins_Medium_Textview
+        <aayushiprojects.greasecrowd.CustomViews.Widgets.Poppins_Medium_Textview
             android:id="@+id/tv_title_header"
             android:layout_width="0dp"
             android:layout_height="match_parent"
